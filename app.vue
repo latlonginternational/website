@@ -18,7 +18,7 @@
 
           <div class="logo-box">
             <a href="/" aria-label="logo image"
-              ><img src="../assets/images/resources/logo-1.png" width="155" alt=""
+              ><img src="/assets/images/resources/logo-1.png" width="155" alt=""
             /></a>
           </div>
           <!-- /.logo-box -->
