@@ -1,0 +1,18 @@
+# vercel-merge.yml
+name: Deploy to vercel on merge
+on:
+    push:
+        branches:
+            - main
+jobs:
+    build_and_deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - uses: amondnet/vercel-action@v25
+              with:
+                  vercel-token: 2kAoOgsYSB7RPbzhav4Dasr2
+                  github-token: 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
+                  vercel-args: "--prod"
+                  vercel-org-id: 000
+                  vercel-project-id: 000

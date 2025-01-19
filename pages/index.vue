@@ -68,7 +68,7 @@
                   <div class="main-slider__content">
                     <h2>Technologies Modernes</h2>
                     <p>Protégez vos actifs avec des solutions avancées.</p>
-                    <a href="services.html" class="thm-btn">Découvrez nos services</a>
+                    <a href="/services" class="thm-btn">Découvrez nos services</a>
                   </div>
                 </div>
               </div>
@@ -99,7 +99,7 @@
                       de Confiance
                     </h2>
                     <p>Des experts locaux au service de votre sécurité.</p>
-                    <a href="contact.html" class="thm-btn">Contactez-nous</a>
+                    <a href="/contact" class="thm-btn">Contactez-nous</a>
                   </div>
                 </div>
               </div>
@@ -133,7 +133,7 @@
                 <div class="feature-one__icon-box">
                   <div class="feature-one__icon-title-box">
                     <h3 class="feature-one__icon-title">
-                      <a href="consumer-product.html">Sécurité</a>
+                      <a href="#">Sécurité</a>
                     </h3>
                   </div>
                   <div class="feature-one__icon">
@@ -151,7 +151,7 @@
                     <span class="icon-strategy"></span>
                   </div>
                   <h4 class="feature-one__hover-title">
-                    <a href="consumer-product.html">Sécurité</a>
+                    <a href="#">Sécurité</a>
                   </h4>
                   <p class="feature-one__hover-text">
                     Transport de fonds, évacuations d’urgence, lutte contre l’incendie,
@@ -171,7 +171,7 @@
                 <div class="feature-one__icon-box">
                   <div class="feature-one__icon-title-box">
                     <h3 class="feature-one__icon-title">
-                      <a href="audit-marketing.html">Protection</a>
+                      <a href="/services/protection">Protection</a>
                     </h3>
                   </div>
                   <div class="feature-one__icon">
@@ -189,7 +189,7 @@
                     <span class="icon-point-of-sale"></span>
                   </div>
                   <h4 class="feature-one__hover-title">
-                    <a href="audit-marketing.html">Protection</a>
+                    <a href="/services/protection">Protection</a>
                   </h4>
                   <p class="feature-one__hover-text">
                     Surveillance humaine, intervention, salle de contrôle, escortes,
@@ -209,7 +209,7 @@
                 <div class="feature-one__icon-box">
                   <div class="feature-one__icon-title-box">
                     <h3 class="feature-one__icon-title">
-                      <a href="financial-advice.html">Consultance</a>
+                      <a href="/services/consultancy">Consultance</a>
                     </h3>
                   </div>
                   <div class="feature-one__icon">
@@ -227,7 +227,7 @@
                     <span class="icon-consumer-behavior"></span>
                   </div>
                   <h4 class="feature-one__hover-title">
-                    <a href="financial-advice.html">Consultance</a>
+                    <a href="/services/consultancy/">Consultance</a>
                   </h4>
                   <p class="feature-one__hover-text">
                     Évaluations de sécurité, gestion des missions, stratégie, plans
@@ -322,7 +322,7 @@
 
               <div class="about-one__bottom">
                 <div class="about-one__btn-box">
-                  <a href="latlong.html" class="thm-btn about-one__btn">En savoir plus</a>
+                  <a href="/about" class="thm-btn about-one__btn">En savoir plus</a>
                 </div>
                 <div class="about-one__contact">
                   <div class="about-one__contact-icon">
@@ -359,7 +359,7 @@
               <h2 class="our-mission__title">
                 Garantir votre <br /><span>sécurité</span> est notre mission.
               </h2>
-              <a href="contact.html" class="thm-btn our-mission__btn">Nous contacter</a>
+              <a href="/contact" class="thm-btn our-mission__btn">Nous contacter</a>
             </div>
           </div>
         </div>
