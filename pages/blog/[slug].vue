@@ -102,12 +102,12 @@
             <div class="sidebar">
               <div class="sidebar__single sidebar__search">
                 <form action="#" class="sidebar__search-form">
-                  <input type="search" placeholder="Search here" />
+                  <input type="search" placeholder="Faire une recherche" />
                   <button type="submit"><i class="icon-magnifying-glass"></i></button>
                 </form>
               </div>
               <div class="sidebar__single sidebar__post">
-                <h3 class="sidebar__title">Latest Posts</h3>
+                <h3 class="sidebar__title">Publication récentes</h3>
                 <ul class="sidebar__post-list list-unstyled">
                   <li>
                     <div class="sidebar__post-image">
@@ -118,7 +118,7 @@
                         <span class="sidebar__post-content-meta"
                           ><i class="far fa-user-circle"></i>Admin</span
                         >
-                        <a href="/blog/details-id">A Quick Solutions for Daily Banking</a>
+                        <a href="/blog/details-id">Je suis un titre de cet article</a>
                       </h3>
                     </div>
                   </li>
@@ -131,7 +131,7 @@
                         <span class="sidebar__post-content-meta"
                           ><i class="far fa-user-circle"></i>Admin</span
                         >
-                        <a href="/blog/details-id">A Quick Solutions for Daily Banking</a>
+                        <a href="/blog/details-id">Je suis un titre de cet article</a>
                       </h3>
                     </div>
                   </li>
@@ -144,7 +144,7 @@
                         <span class="sidebar__post-content-meta"
                           ><i class="far fa-user-circle"></i>Admin</span
                         >
-                        <a href="/blog/details-id">A Quick Solutions for Daily Banking</a>
+                        <a href="/blog/details-id">Je suis un titre de cet article</a>
                       </h3>
                     </div>
                   </li>
@@ -152,7 +152,7 @@
               </div>
 
               <div class="sidebar__single sidebar__tags">
-                <h3 class="sidebar__title">Tags</h3>
+                <h3 class="sidebar__title">Étiquettes</h3>
                 <div class="sidebar__tags-list">
                   <a href="#">Consulting</a>
                   <a href="#">Advice</a>
