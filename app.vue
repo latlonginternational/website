@@ -28,11 +28,11 @@
           <ul class="mobile-nav__contact list-unstyled">
             <li>
               <i class="fa fa-envelope"></i>
-              <a href="mailto:needhelp@packageName__.com">needhelp@conult.com</a>
+              <a href="mailto:info@latlongcongo.com">info@latlongcongo.com</a>
             </li>
             <li>
               <i class="fa fa-phone-alt"></i>
-              <a href="tel:666-888-0000">666 888 0000</a>
+              <a href="tel:+243810041500">+243810041500</a>
             </li>
           </ul>
           <!-- /.mobile-nav__contact -->
