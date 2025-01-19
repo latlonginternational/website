@@ -1,0 +1,32 @@
+{
+	"icon": {
+		"desktop": {
+			"regularIconTransformation": {
+				"type": "none"
+			},
+			"darkIconType": "none"
+		},
+		"touch": {
+			"transformation": {
+				"type": "background",
+				"backgroundColor": "#ffffff",
+				"backgroundRadius": 0,
+				"imageScale": 0.7
+			},
+			"appTitle": "MyWebSite"
+		},
+		"webAppManifest": {
+			"transformation": {
+				"type": "background",
+				"backgroundColor": "#ffffff",
+				"backgroundRadius": 0,
+				"imageScale": 0.5
+			},
+			"backgroundColor": "#ffffff",
+			"name": "Latlong International",
+			"shortName": "Latlong International",
+			"themeColor": "#ffffff"
+		}
+	},
+	"path": "/asset/img/"
+}
