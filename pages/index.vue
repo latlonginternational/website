@@ -84,7 +84,7 @@
             <div
               class="image-layer"
               style="
-                background-image: url(/assets/images/backgrounds/image3.jpg);
+                background-image: url(/assets/images/backgrounds/confbg.jpg);
               "
             ></div>
             <div class="main-slider-shape-1">
@@ -135,7 +135,7 @@
               <div class="feature-one__img-box">
                 <div class="feature-one__img h-64">
                   <img
-                    src="/assets/images/resources/securite.jpg"
+                    src="/assets/images/resources/prot1.jpg"
                     alt=""
                     class="h-full w-full object-cover"
                   />
@@ -220,7 +220,7 @@
               <div class="feature-one__img-box">
                 <div class="feature-one__img h-64">
                   <img
-                    src="/assets/images/resources/consultance.jpg"
+                    src="/assets/images/resources/lat1.jpg"
                     alt=""
                     class="h-full w-full object-cover"
                   />
@@ -274,7 +274,7 @@
             >
               <div class="about-one__img">
                 <img
-                  src="/assets/images/resources/solutions_innovantes570-600.jpg"
+                  src="/assets/images/resources/pat.jpg"
                   alt="Map showing LatLong"
                 />
               </div>
@@ -427,10 +427,7 @@
             <div class="col-xl-6">
               <div class="building-experience__bottom-content">
                 <div class="building-experience__bottom-img">
-                  <img
-                    src="/assets/images/resources/haute_satis348-431.jpg"
-                    alt=""
-                  />
+                  <img src="/assets/images/resources/exp.jpg" alt="" />
                 </div>
                 <div class="building-experience__progress">
                   <div class="building-experience__progress-wrap">
@@ -692,7 +689,7 @@
           "
         ></div>
         <div class="counter-one-img">
-          <img src="/assets/images/resources/reff.jpg" alt="" />
+          <img src="/assets/images/resources/ref.jpg" alt="" />
         </div>
         <div class="counter-one-shape-2">
           <img src="/assets/images/shapes/counter-one-shape-2.png" alt="" />
@@ -775,10 +772,7 @@
               <!--News One Single-->
               <div class="news-one__single">
                 <div class="news-one__img">
-                  <img
-                    src="/assets/images/blog/nouvelles strat-a propos.png"
-                    alt="Actualités"
-                  />
+                  <img src="/assets/images/blog/art1.jpg" alt="Actualités" />
                   <a href="/blog/details-id">
                     <span class="news-one__plus"></span>
                   </a>
@@ -821,10 +815,7 @@
               <!--News One Single-->
               <div class="news-one__single">
                 <div class="news-one__img">
-                  <img
-                    src="/assets/images/blog/protection zone sens370-307.jpg"
-                    alt="Actualités"
-                  />
+                  <img src="/assets/images/blog/art2.jpg" alt="Actualités" />
                   <a href="/blog/details-id">
                     <span class="news-one__plus"></span>
                   </a>
@@ -867,10 +858,7 @@
               <!--News One Single-->
               <div class="news-one__single">
                 <div class="news-one__img">
-                  <img
-                    src="/assets/images/blog/renforcement des capacites370-307.jpg"
-                    alt="Actualités"
-                  />
+                  <img src="/assets/images/blog/art3.jpg" alt="Actualités" />
                   <a href="/blog/details-id">
                     <span class="news-one__plus"></span>
                   </a>
@@ -911,10 +899,7 @@
               <!--News One Single-->
               <div class="news-one__single">
                 <div class="news-one__img">
-                  <img
-                    src="/assets/images/blog/surveillance avancee-a propos.png"
-                    alt="Actualités"
-                  />
+                  <img src="/assets/images/blog/art4.jpg" alt="Actualités" />
                   <a href="/blog/details-id">
                     <span class="news-one__plus"></span>
                   </a>
@@ -993,43 +978,43 @@
         >
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="/assets/images/brand/brand-1-1.png" alt="" />
+              <img src="/assets/images/brand/brasimba.png" alt="" />
             </div>
             <!-- /.swiper-slide -->
             <div class="swiper-slide">
-              <img src="/assets/images/brand/brand-1-2.png" alt="" />
+              <img src="/assets/images/brand/easter.png" alt="" />
             </div>
             <!-- /.swiper-slide -->
             <div class="swiper-slide">
-              <img src="/assets/images/brand/brand-1-3.png" alt="" />
+              <img src="/assets/images/brand/europeanunion.png" alt="" />
             </div>
             <!-- /.swiper-slide -->
             <div class="swiper-slide">
-              <img src="/assets/images/brand/brand-1-4.png" alt="" />
+              <img src="/assets/images/brand/instituufrancais.png" alt="" />
             </div>
             <!-- /.swiper-slide -->
             <div class="swiper-slide">
-              <img src="/assets/images/brand/brand-1-5.png" alt="" />
+              <img src="/assets/images/brand/janegoodall.png" alt="" />
             </div>
             <!-- /.swiper-slide -->
             <div class="swiper-slide">
-              <img src="/assets/images/brand/brand-1-1.png" alt="" />
+              <img src="/assets/images/brand/oim.png" alt="" />
             </div>
             <!-- /.swiper-slide -->
             <div class="swiper-slide">
-              <img src="/assets/images/brand/brand-1-2.png" alt="" />
+              <img src="/assets/images/brand/sgml.png" alt="" />
             </div>
             <!-- /.swiper-slide -->
             <div class="swiper-slide">
-              <img src="/assets/images/brand/brand-1-3.png" alt="" />
+              <img src="/assets/images/brand/skyborn.png" alt="" />
             </div>
             <!-- /.swiper-slide -->
             <div class="swiper-slide">
-              <img src="/assets/images/brand/brand-1-4.png" alt="" />
+              <img src="/assets/images/brand/tearfund.png" alt="" />
             </div>
             <!-- /.swiper-slide -->
             <div class="swiper-slide">
-              <img src="/assets/images/brand/brand-1-5.png" alt="" />
+              <img src="/assets/images/brand/tmk.png" alt="" />
             </div>
             <!-- /.swiper-slide -->
           </div>
