@@ -4,7 +4,7 @@
     <section class="page-header">
       <div
         class="page-header-bg"
-        style="background-image: url(/assets/images/backgrounds/page-header-bg.jpg)"
+        style="background-image: url(/assets/images/services/bgg.png)"
       ></div>
       <div class="container">
         <div class="page-header__inner">
@@ -32,7 +32,7 @@
             <div class="services-one__single">
               <div class="services-one__img-box">
                 <div class="services-one__img">
-                  <img src="/assets/images/services/services-page-img-1.jpg" alt="" />
+                  <img :src="item.image" alt="" />
                 </div>
                 <div class="services-one__icon">
                   <span :class="item.icon"></span>
@@ -46,7 +46,9 @@
                   {{ item.description }}
                 </p>
                 <div class="services-one__bottom">
-                  <a :href="item.link" class="services-one__btn">En savoir plus</a>
+                  <a :href="item.link" class="services-one__btn"
+                    >En savoir plus</a
+                  >
                   <a :href="item.link" class="services-one__arrow"
                     ><span class="icon-right-arrow"></span
                   ></a>
@@ -68,7 +70,7 @@ const services_data = [
     description:
       "Assurez une sécurité optimale avec nos solutions de protection complètes adaptées à vos besoins.",
     link: "/services/protection",
-    image: "",
+    image: "/assets/images/services/protection.png",
     icon: "icon-strategy",
   },
   {
@@ -76,7 +78,8 @@ const services_data = [
     description:
       "Transformez votre sécurité avec des solutions technologiques de pointe avec notre expertise averée.",
     link: "/services/technology",
-    image: "",
+    image: "/assets/images/services/technologie.png",
+
     icon: "icon-mobile-analytics",
   },
   {
@@ -84,7 +87,7 @@ const services_data = [
     description:
       "Une stratégie solide est la clé d'une sécurité réussie. Nous pouvons vous accompagner.",
     link: "/services/consultancy",
-    image: "",
+    image: "/assets/images/services/consultance.png",
     icon: "icon-consultant",
   },
   {
@@ -92,7 +95,7 @@ const services_data = [
     description:
       "Soyez prêt à faire face aux défis de sécurité grâce à nos formations professionnelles et pratiques.",
     link: "/services/training",
-    image: "",
+    image: "/assets/images/services/formation.png",
     icon: "icon-creative",
   },
   {
@@ -100,7 +103,7 @@ const services_data = [
     description:
       "Une sécurité globale avec des solutions complémentaires adaptées à vos besoins spécifiques.",
     link: "/services/others-security-services",
-    image: "",
+    image: "/assets/images/services/autres services.png",
     icon: "icon-analysis",
   },
 ];

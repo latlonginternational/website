@@ -23,7 +23,9 @@
           <div class="swiper-slide">
             <div
               class="image-layer"
-              style="background-image: url(/assets/images/backgrounds/image1.png)"
+              style="
+                background-image: url(/assets/images/backgrounds/image1.png);
+              "
             ></div>
             <div class="main-slider-shape-1">
               <img src="/assets/images/shapes/main-slider-shape-1.png" alt="" />
@@ -46,11 +48,12 @@
               </div>
             </div>
           </div>
+          <!-- deuxieme slide -->
           <div class="swiper-slide">
             <div
               class="image-layer"
               style="
-                background-image: url(/assets/images/backgrounds/main-slider-1-2.jpg);
+                background-image: url(/assets/images/backgrounds/image2.jpg);
               "
             ></div>
             <div class="main-slider-shape-1">
@@ -68,17 +71,20 @@
                   <div class="main-slider__content">
                     <h2>Technologies Modernes</h2>
                     <p>Protégez vos actifs avec des solutions avancées.</p>
-                    <a href="/services" class="thm-btn">Découvrez nos services</a>
+                    <a href="/services" class="thm-btn"
+                      >Découvrez nos services</a
+                    >
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- troisieme slide -->
           <div class="swiper-slide">
             <div
               class="image-layer"
               style="
-                background-image: url(/assets/images/backgrounds/main-slider-1-3.jpg);
+                background-image: url(/assets/images/backgrounds/image3.jpg);
               "
             ></div>
             <div class="main-slider-shape-1">
@@ -122,13 +128,17 @@
     <!--Feature One Start-->
     <section class="feature-one">
       <div class="container">
-        <div class="row">
+        <div class="row flex flex-wrap">
           <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
             <!--Feature One Single-->
             <div class="feature-one__single">
               <div class="feature-one__img-box">
-                <div class="feature-one__img">
-                  <img src="/assets/images/resources/feature-one-img-1.jpg" alt="" />
+                <div class="feature-one__img h-64">
+                  <img
+                    src="/assets/images/resources/securite.jpg"
+                    alt=""
+                    class="h-full w-full object-cover"
+                  />
                 </div>
                 <div class="feature-one__icon-box">
                   <div class="feature-one__icon-title-box">
@@ -144,7 +154,7 @@
                   <div
                     class="feature-one__hover-bg"
                     style="
-                      background-image: url(/assets/images/resources/feature-one-hover-img-1.jpg);
+                      background-image: url(/assets/images/resources/consultances.jpg);
                     "
                   ></div>
                   <div class="feature-one__hover-icon">
@@ -154,8 +164,9 @@
                     <a href="#">Sécurité</a>
                   </h4>
                   <p class="feature-one__hover-text">
-                    Transport de fonds, évacuations d’urgence, lutte contre l’incendie,
-                    assistance médicale, rapports de sécurité, alertes.
+                    Transport de fonds, évacuations d’urgence, lutte contre
+                    l’incendie, assistance médicale, rapports de sécurité,
+                    alertes.
                   </p>
                 </div>
               </div>
@@ -165,8 +176,12 @@
             <!--Feature One Single-->
             <div class="feature-one__single">
               <div class="feature-one__img-box">
-                <div class="feature-one__img">
-                  <img src="/assets/images/resources/feature-one-img-2.jpg" alt="" />
+                <div class="feature-one__img h-64">
+                  <img
+                    src="/assets/images/resources/protection.jpg"
+                    alt=""
+                    class="h-full w-full object-cover"
+                  />
                 </div>
                 <div class="feature-one__icon-box">
                   <div class="feature-one__icon-title-box">
@@ -182,7 +197,7 @@
                   <div
                     class="feature-one__hover-bg"
                     style="
-                      background-image: url(/assets/images/resources/feature-one-hover-img-1.jpg);
+                      background-image: url(/assets/images/resources/protections.jpg);
                     "
                   ></div>
                   <div class="feature-one__hover-icon">
@@ -192,8 +207,8 @@
                     <a href="/services/protection">Protection</a>
                   </h4>
                   <p class="feature-one__hover-text">
-                    Surveillance humaine, intervention, salle de contrôle, escortes,
-                    protection VIP, sécurité événementielle, ...
+                    Surveillance humaine, intervention, salle de contrôle,
+                    escortes, protection VIP, sécurité événementielle, ...
                   </p>
                 </div>
               </div>
@@ -203,8 +218,12 @@
             <!--Feature One Single-->
             <div class="feature-one__single">
               <div class="feature-one__img-box">
-                <div class="feature-one__img">
-                  <img src="/assets/images/resources/feature-one-img-3.jpg" alt="" />
+                <div class="feature-one__img h-64">
+                  <img
+                    src="/assets/images/resources/consultance.jpg"
+                    alt=""
+                    class="h-full w-full object-cover"
+                  />
                 </div>
                 <div class="feature-one__icon-box">
                   <div class="feature-one__icon-title-box">
@@ -220,7 +239,7 @@
                   <div
                     class="feature-one__hover-bg"
                     style="
-                      background-image: url(/assets/images/resources/feature-one-hover-img-1.jpg);
+                      background-image: url(/assets/images/resources/consultances.jpg);
                     "
                   ></div>
                   <div class="feature-one__hover-icon">
@@ -230,8 +249,8 @@
                     <a href="/services/consultancy/">Consultance</a>
                   </h4>
                   <p class="feature-one__hover-text">
-                    Évaluations de sécurité, gestion des missions, stratégie, plans
-                    d’évacuation et gestion de crise.
+                    Évaluations de sécurité, gestion des missions, stratégie,
+                    plans d’évacuation et gestion de crise.
                   </p>
                 </div>
               </div>
@@ -255,7 +274,7 @@
             >
               <div class="about-one__img">
                 <img
-                  src="/assets/images/resources/about-one-img-1.png"
+                  src="/assets/images/resources/solutions_innovantes570-600.jpg"
                   alt="Map showing LatLong"
                 />
               </div>
@@ -275,8 +294,8 @@
                 </h2>
               </div>
               <p class="about-one__business-start-text">
-                Latlong vous offre des outils modernes pour une sécurité renforcée et une
-                gestion optimisée de vos opérations.
+                Latlong vous offre des outils modernes pour une sécurité
+                renforcée et une gestion optimisée de vos opérations.
               </p>
 
               <div class="about-one__points-box">
@@ -300,7 +319,9 @@
                   </li>
                 </ul>
                 <!-- Second Column -->
-                <ul class="list-unstyled about-one__points about-one__points-two">
+                <ul
+                  class="list-unstyled about-one__points about-one__points-two"
+                >
                   <li>
                     <div class="icon">
                       <i class="fa fa-check"></i>
@@ -322,7 +343,9 @@
 
               <div class="about-one__bottom">
                 <div class="about-one__btn-box">
-                  <a href="/about" class="thm-btn about-one__btn">En savoir plus</a>
+                  <a href="/about" class="thm-btn about-one__btn"
+                    >En savoir plus</a
+                  >
                 </div>
                 <div class="about-one__contact">
                   <div class="about-one__contact-icon">
@@ -349,7 +372,9 @@
           data-jarallax
           data-speed="0.2"
           data-imgPosition="50% 0%"
-          style="background-image: url(/assets/images/backgrounds/our-mission-bg.jpg)"
+          style="
+            background-image: url(/assets/images/backgrounds/nous_contacter.jpg);
+          "
         ></div>
       </div>
       <div class="container">
@@ -359,7 +384,9 @@
               <h2 class="our-mission__title">
                 Garantir votre <br /><span>sécurité</span> est notre mission.
               </h2>
-              <a href="/contact" class="thm-btn our-mission__btn">Nous contacter</a>
+              <a href="/contact" class="thm-btn our-mission__btn"
+                >Nous contacter</a
+              >
             </div>
           </div>
         </div>
@@ -375,7 +402,9 @@
             <div class="col-xl-7">
               <div class="building-experience__top-left">
                 <div class="section-title text-left">
-                  <span class="section-title__tagline">Avantages & Solutions</span>
+                  <span class="section-title__tagline"
+                    >Avantages & Solutions</span
+                  >
                   <h2 class="section-title__title">
                     Expertise & <br />
                     Haute Satisfaction
@@ -386,8 +415,8 @@
             <div class="col-xl-5">
               <div class="building-experience__top-right">
                 <p class="building-experience__top-right-text">
-                  Latlong offre des solutions de sécurité fiables, combinant expertise
-                  locale et technologies avancées.
+                  Latlong offre des solutions de sécurité fiables, combinant
+                  expertise locale et technologies avancées.
                 </p>
               </div>
             </div>
@@ -399,7 +428,7 @@
               <div class="building-experience__bottom-content">
                 <div class="building-experience__bottom-img">
                   <img
-                    src="/assets/images/resources/building-experience-bottom-img.jpg"
+                    src="/assets/images/resources/haute_satis348-431.jpg"
                     alt=""
                   />
                 </div>
@@ -455,9 +484,9 @@
                       <div class="inner">
                         <p>
                           Latlong propose des services de sécurité physique, de
-                          surveillance électronique, de gestion des risques et de
-                          protection d'événements, adaptés aux besoins spécifiques de ses
-                          clients dans l'Est de la RDC.
+                          surveillance électronique, de gestion des risques et
+                          de protection d'événements, adaptés aux besoins
+                          spécifiques de ses clients dans l'Est de la RDC.
                         </p>
                       </div>
                       <!-- /.inner -->
@@ -465,14 +494,17 @@
                   </div>
                   <div class="accrodion">
                     <div class="accrodion-title">
-                      <h4>Latlong peut-il intervenir dans des zones éloignées ?</h4>
+                      <h4>
+                        Latlong peut-il intervenir dans des zones éloignées ?
+                      </h4>
                     </div>
                     <div class="accrodion-content">
                       <div class="inner">
                         <p>
-                          Oui, Latlong est équipé pour fournir des services dans des zones
-                          éloignées ou difficiles d'accès grâce à une équipe expérimentée
-                          et des outils adaptés à ces environnements.
+                          Oui, Latlong est équipé pour fournir des services dans
+                          des zones éloignées ou difficiles d'accès grâce à une
+                          équipe expérimentée et des outils adaptés à ces
+                          environnements.
                         </p>
                       </div>
                       <!-- /.inner -->
@@ -480,15 +512,17 @@
                   </div>
                   <div class="accrodion last-chiled">
                     <div class="accrodion-title">
-                      <h4>Comment Latlong garantit-il la qualité de ses services ?</h4>
+                      <h4>
+                        Comment Latlong garantit-il la qualité de ses services ?
+                      </h4>
                     </div>
                     <div class="accrodion-content">
                       <div class="inner">
                         <p>
-                          La qualité est assurée grâce à une formation continue du
-                          personnel, l'utilisation de technologies de pointe, et un suivi
-                          régulier pour s'assurer que les besoins des clients sont
-                          toujours satisfaits.
+                          La qualité est assurée grâce à une formation continue
+                          du personnel, l'utilisation de technologies de pointe,
+                          et un suivi régulier pour s'assurer que les besoins
+                          des clients sont toujours satisfaits.
                         </p>
                       </div>
                       <!-- /.inner -->
@@ -532,7 +566,9 @@
     <section class="testimonial-one">
       <div
         class="testimonial-one-map"
-        style="background-image: url(/assets/images/shapes/testimonial-one-map.png)"
+        style="
+          background-image: url(/assets/images/shapes/testimonial-one-map.png);
+        "
       ></div>
       <div class="container">
         <div class="section-title text-center">
@@ -552,16 +588,24 @@
                   <i class="fa fa-star"></i>
                 </p>
                 <p class="testimonial-one__text">
-                  LatLong a transformé notre gestion de sécurité. L’équipe est proactive
-                  et toujours disponible pour répondre à nos besoins spécifiques.
+                  LatLong a transformé notre gestion de sécurité. L’équipe est
+                  proactive et toujours disponible pour répondre à nos besoins
+                  spécifiques.
                 </p>
                 <div class="testimonial-one__author">
                   <div class="testimonial-one__author-img">
-                    <img src="/assets/images/testimonial/testi-author-1.jpg" alt="" />
+                    <img
+                      src="/assets/images/testimonial/temoignage1.jpg"
+                      alt=""
+                    />
                   </div>
                   <div class="testimonial-one__author-details">
-                    <h4 class="testimonial-one__author-name">Christine Muhindo</h4>
-                    <p class="testimonial-one__author-title">CEO - Amaliza Store</p>
+                    <h4 class="testimonial-one__author-name">
+                      Christine Muhindo
+                    </h4>
+                    <p class="testimonial-one__author-title">
+                      CEO - Amaliza Store
+                    </p>
                   </div>
                 </div>
                 <div class="testimonial-one__quote-icon">
@@ -583,7 +627,10 @@
                 </p>
                 <div class="testimonial-one__author">
                   <div class="testimonial-one__author-img">
-                    <img src="/assets/images/testimonial/testi-author-2.jpg" alt="" />
+                    <img
+                      src="/assets/images/testimonial/temoignage2.jpg"
+                      alt=""
+                    />
                   </div>
                   <div class="testimonial-one__author-details">
                     <h4 class="testimonial-one__author-name">Kevin Banza</h4>
@@ -604,16 +651,24 @@
                   <i class="fa fa-star"></i>
                 </p>
                 <p class="testimonial-one__text">
-                  LatLong nous a aidés à sécuriser nos opérations. Nous recommandons leurs
-                  services à toute organisation recherchant une sécurité fiable.
+                  LatLong nous a aidés à sécuriser nos opérations. Nous
+                  recommandons leurs services à toute organisation recherchant
+                  une sécurité fiable.
                 </p>
                 <div class="testimonial-one__author">
                   <div class="testimonial-one__author-img">
-                    <img src="/assets/images/testimonial/testi-author-3.jpg" alt="" />
+                    <img
+                      src="/assets/images/testimonial/temoignage3.jpg"
+                      alt=""
+                    />
                   </div>
                   <div class="testimonial-one__author-details">
-                    <h4 class="testimonial-one__author-name">Jessica Byamungu</h4>
-                    <p class="testimonial-one__author-title">Directrice Habana Habi</p>
+                    <h4 class="testimonial-one__author-name">
+                      Jessica Byamungu
+                    </h4>
+                    <p class="testimonial-one__author-title">
+                      Directrice Habana Habi
+                    </p>
                   </div>
                 </div>
                 <div class="testimonial-one__quote-icon">
@@ -632,10 +687,12 @@
       <div class="counter-one-wrap">
         <div
           class="counter-one-shape"
-          style="background-image: url(/assets/images/shapes/counter-one-shape.png)"
+          style="
+            background-image: url(/assets/images/shapes/counter-one-shape.png);
+          "
         ></div>
         <div class="counter-one-img">
-          <img src="/assets/images/resources/counter-one-img.jpg" alt="" />
+          <img src="/assets/images/resources/reff.jpg" alt="" />
         </div>
         <div class="counter-one-shape-2">
           <img src="/assets/images/shapes/counter-one-shape-2.png" alt="" />
@@ -658,7 +715,10 @@
               <div class="col-xl-12">
                 <ul class="counter-one__list list-unstyled">
                   <!-- Cas complétés -->
-                  <li class="counter-one__single wow fadeInUp" data-wow-delay="100ms">
+                  <li
+                    class="counter-one__single wow fadeInUp"
+                    data-wow-delay="100ms"
+                  >
                     <div class="counter-one__icon">
                       <span class="icon-help"></span>
                     </div>
@@ -668,7 +728,10 @@
                     </div>
                   </li>
                   <!-- Clients satisfaits -->
-                  <li class="counter-one__single wow fadeInUp" data-wow-delay="200ms">
+                  <li
+                    class="counter-one__single wow fadeInUp"
+                    data-wow-delay="200ms"
+                  >
                     <div class="counter-one__icon">
                       <span class="icon-customer-review"></span>
                     </div>
@@ -678,7 +741,10 @@
                     </div>
                   </li>
                   <!-- Experts en sécurité -->
-                  <li class="counter-one__single wow fadeInUp" data-wow-delay="300ms">
+                  <li
+                    class="counter-one__single wow fadeInUp"
+                    data-wow-delay="300ms"
+                  >
                     <div class="counter-one__icon">
                       <span class="icon-consultant"></span>
                     </div>
@@ -709,7 +775,10 @@
               <!--News One Single-->
               <div class="news-one__single">
                 <div class="news-one__img">
-                  <img src="/assets/images/blog/news-one-img-1.jpg" alt="Actualités" />
+                  <img
+                    src="/assets/images/blog/nouvelles strat-a propos.png"
+                    alt="Actualités"
+                  />
                   <a href="/blog/details-id">
                     <span class="news-one__plus"></span>
                   </a>
@@ -731,13 +800,18 @@
                     </li>
                   </ul>
                   <h3 class="news-one__title">
-                    <a href="/blog/details-id">Nouvelles stratégies de sécurité</a>
+                    <a href="/blog/details-id"
+                      >Nouvelles stratégies de sécurité</a
+                    >
                   </h3>
                   <p class="news-one__text">
-                    Découvrez nos approches innovantes pour sécuriser vos opérations.
+                    Découvrez nos approches innovantes pour sécuriser vos
+                    opérations.
                   </p>
                   <div class="news-one__bottom">
-                    <a href="/blog/details-id" class="news-one__btn">Lire plus</a>
+                    <a href="/blog/details-id" class="news-one__btn"
+                      >Lire plus</a
+                    >
                     <a href="/blog/details-id" class="news-one__arrow"
                       ><span class="icon-right-arrow"></span
                     ></a>
@@ -747,7 +821,10 @@
               <!--News One Single-->
               <div class="news-one__single">
                 <div class="news-one__img">
-                  <img src="/assets/images/blog/news-one-img-2.jpg" alt="Actualités" />
+                  <img
+                    src="/assets/images/blog/protection zone sens370-307.jpg"
+                    alt="Actualités"
+                  />
                   <a href="/blog/details-id">
                     <span class="news-one__plus"></span>
                   </a>
@@ -769,13 +846,18 @@
                     </li>
                   </ul>
                   <h3 class="news-one__title">
-                    <a href="/blog/details-id">Protection des zones sensibles</a>
+                    <a href="/blog/details-id"
+                      >Protection des zones sensibles</a
+                    >
                   </h3>
                   <p class="news-one__text">
-                    Nos services protègent les infrastructures critiques efficacement.
+                    Nos services protègent les infrastructures critiques
+                    efficacement.
                   </p>
                   <div class="news-one__bottom">
-                    <a href="/blog/details-id" class="news-one__btn">Lire plus</a>
+                    <a href="/blog/details-id" class="news-one__btn"
+                      >Lire plus</a
+                    >
                     <a href="/blog/details-id" class="news-one__arrow"
                       ><span class="icon-right-arrow"></span
                     ></a>
@@ -785,7 +867,10 @@
               <!--News One Single-->
               <div class="news-one__single">
                 <div class="news-one__img">
-                  <img src="/assets/images/blog/news-one-img-3.jpg" alt="Actualités" />
+                  <img
+                    src="/assets/images/blog/renforcement des capacites370-307.jpg"
+                    alt="Actualités"
+                  />
                   <a href="/blog/details-id">
                     <span class="news-one__plus"></span>
                   </a>
@@ -810,10 +895,13 @@
                     <a href="/blog/details-id">Renforcement des capacités</a>
                   </h3>
                   <p class="news-one__text">
-                    Des formations spécialisées pour un personnel hautement qualifié.
+                    Des formations spécialisées pour un personnel hautement
+                    qualifié.
                   </p>
                   <div class="news-one__bottom">
-                    <a href="/blog/details-id" class="news-one__btn">Lire plus</a>
+                    <a href="/blog/details-id" class="news-one__btn"
+                      >Lire plus</a
+                    >
                     <a href="/blog/details-id" class="news-one__arrow"
                       ><span class="icon-right-arrow"></span
                     ></a>
@@ -823,7 +911,10 @@
               <!--News One Single-->
               <div class="news-one__single">
                 <div class="news-one__img">
-                  <img src="/assets/images/blog/news-one-img-4.jpg" alt="Actualités" />
+                  <img
+                    src="/assets/images/blog/surveillance avancee-a propos.png"
+                    alt="Actualités"
+                  />
                   <a href="/blog/details-id">
                     <span class="news-one__plus"></span>
                   </a>
@@ -852,7 +943,9 @@
                     surveillance.
                   </p>
                   <div class="news-one__bottom">
-                    <a href="/blog/details-id" class="news-one__btn">Lire plus</a>
+                    <a href="/blog/details-id" class="news-one__btn"
+                      >Lire plus</a
+                    >
                     <a href="/blog/details-id" class="news-one__arrow"
                       ><span class="icon-right-arrow"></span
                     ></a>

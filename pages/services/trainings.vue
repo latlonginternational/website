@@ -4,7 +4,7 @@
     <section class="page-header">
       <div
         class="page-header-bg"
-        style="background-image: url(/assets/images/backgrounds/page-header-bg.jpg)"
+        style="background-image: url(/assets/images/services/fobg.jpg)"
       ></div>
       <div class="container">
         <div class="page-header__inner">
@@ -49,7 +49,8 @@
                   </li>
                   <li>
                     <a href="/services/others-security-services"
-                      >Autres services de sécurité <span class="icon-right-arrow"></span
+                      >Autres services de sécurité
+                      <span class="icon-right-arrow"></span
                     ></a>
                   </li>
                 </ul>
@@ -58,7 +59,7 @@
                 <div
                   class="service-details__need-help-bg"
                   style="
-                    background-image: url(/assets/images/backgrounds/service-details-need-help-bg.jpg);
+                    background-image: url(/assets/images/services/conta.jpg);
                   "
                 ></div>
                 <h2 class="service-details__need-help-title">Nous contacter</h2>
@@ -75,13 +76,15 @@
           <div class="col-xl-8 col-lg-7">
             <div class="service-details__right">
               <div class="service-details__img">
-                <img src="/assets/images/services/service-details-img-6.jpg" alt="" />
+                <img src="/assets/images/services/for.png" alt="" />
                 <div class="service-details__img-icon">
                   <span :class="service_info[0].icon"></span>
                 </div>
               </div>
               <div class="service-details__content">
-                <h3 class="service-details__title">{{ service_info[0].title }}</h3>
+                <h3 class="service-details__title">
+                  {{ service_info[0].title }}
+                </h3>
                 <p
                   v-for="(p, index) in service_info[0].details"
                   :class="[
@@ -105,10 +108,7 @@
                 <div class="row">
                   <div class="col-xl-4">
                     <div class="service-details__how-we-help-img">
-                      <img
-                        src="/assets/images/services/service-details-how-we-help-img.jpg"
-                        alt=""
-                      />
+                      <img src="/assets/images/services/proc.png" alt="" />
                     </div>
                   </div>
                   <div class="col-xl-8">
@@ -117,7 +117,9 @@
                         Comment proceder ?
                       </h3>
                       <br />
-                      <ul class="service-details__how-we-help-points list-unstyled">
+                      <ul
+                        class="service-details__how-we-help-points list-unstyled"
+                      >
                         <li v-for="item in service_info[0].process" :key="item">
                           <div class="icon">
                             <i class="fa fa-arrow-right"></i>
@@ -186,7 +188,8 @@ const service_info = [
     faq: [
       {
         question: "Vos formations sont-elles certifiées ?",
-        answer: "Oui, toutes nos formations incluent une certification reconnue.",
+        answer:
+          "Oui, toutes nos formations incluent une certification reconnue.",
       },
       {
         question: "Pouvez-vous former de grandes équipes ?",

@@ -4,7 +4,7 @@
     <section class="page-header">
       <div
         class="page-header-bg"
-        style="background-image: url(/assets/images/backgrounds/page-header-bg.jpg)"
+        style="background-image: url(/assets/images/backgrounds/image1.png)"
       ></div>
       <div class="container">
         <div class="page-header__inner">
@@ -25,15 +25,17 @@
           <div class="col-xl-5">
             <div class="get-to-know__left">
               <div class="section-title text-left">
-                <span class="section-title__tagline">Faites connaissance avec nous</span>
+                <span class="section-title__tagline"
+                  >Faites connaissance avec nous</span
+                >
                 <h2 class="section-title__title">
                   Votre partenaire pour une sécurité fiable
                 </h2>
               </div>
               <p class="get-to-know__text">
-                LatLong Congo, fondée en 2012, est un leader en solutions de sécurité dans
-                l’est de la RDC. Nous combinons expertise locale et technologie moderne
-                pour protéger vos biens et vos intérêts.
+                LatLong Congo, fondée en 2012, est un leader en solutions de
+                sécurité dans l’est de la RDC. Nous combinons expertise locale
+                et technologie moderne pour protéger vos biens et vos intérêts.
               </p>
               <ul class="list-unstyled get-to-know__points">
                 <li>
@@ -77,7 +79,7 @@
                 <li>
                   <div class="get-to-know__img-1">
                     <img
-                      src="/assets/images/resources/get-to-know-img-1.jpg"
+                      src="/assets/images/resources/a propos-partmatsec2.png"
                       alt="Équipe LatLong"
                     />
                   </div>
@@ -85,7 +87,7 @@
                 <li>
                   <div class="get-to-know__img-2">
                     <img
-                      src="/assets/images/resources/get-to-know-img-2.jpg"
+                      src="/assets/images/resources/a propos-partmatsec1.png"
                       alt="Opérations LatLong"
                     />
                   </div>
@@ -115,7 +117,9 @@
           <div class="col-xl-4 col-lg-4">
             <div class="mission-box">
               <h3 class="mission-title">Mission</h3>
-              <p>Offrir des solutions de sécurité innovantes et performantes.</p>
+              <p>
+                Offrir des solutions de sécurité innovantes et performantes.
+              </p>
             </div>
           </div>
           <div class="col-xl-4 col-lg-4">
@@ -123,14 +127,16 @@
               <h3 class="objective-title">Objectifs</h3>
               <ul class="list-unstyled">
                 <li>
-                  <i class="fa fa-check-circle"></i> Garantir la sécurité de nos clients.
+                  <i class="fa fa-check-circle"></i> Garantir la sécurité de nos
+                  clients.
                 </li>
                 <li>
-                  <i class="fa fa-check-circle"></i> Proposer des solutions adaptées.
+                  <i class="fa fa-check-circle"></i> Proposer des solutions
+                  adaptées.
                 </li>
                 <li>
-                  <i class="fa fa-check-circle"></i> Innover avec des technologies
-                  avancées.
+                  <i class="fa fa-check-circle"></i> Innover avec des
+                  technologies avancées.
                 </li>
               </ul>
             </div>
@@ -153,12 +159,15 @@
           <div class="col-xl-12">
             <div class="operational-zone-map">
               <p class="text-center">
-                Nous opérons principalement dans l'Est de la République Démocratique du
-                Congo, avec une présence stratégique dans les provinces du Nord et du
-                Sud-Kivu. Notre expansion nationale nous permet de répondre efficacement à
-                une clientèle diversifiée.
+                Nous opérons principalement dans l'Est de la République
+                Démocratique du Congo, avec une présence stratégique dans les
+                provinces du Nord et du Sud-Kivu. Notre expansion nationale nous
+                permet de répondre efficacement à une clientèle diversifiée.
               </p>
-              <div id="map" style="height: 500px; width: 100%; margin-top: 20px"></div>
+              <div
+                id="map"
+                style="height: 500px; width: 100%; margin-top: 20px"
+              ></div>
             </div>
           </div>
         </div>
@@ -251,7 +260,9 @@
     <section class="testimonial-one">
       <div
         class="testimonial-one-map"
-        style="background-image: url(/assets/images/shapes/testimonial-one-map.png)"
+        style="
+          background-image: url(/assets/images/shapes/testimonial-one-map.png);
+        "
       ></div>
       <div class="container">
         <div class="section-title text-center">
@@ -271,16 +282,24 @@
                   <i class="fa fa-star"></i>
                 </p>
                 <p class="testimonial-one__text">
-                  LatLong a transformé notre gestion de sécurité. L’équipe est proactive
-                  et toujours disponible pour répondre à nos besoins spécifiques.
+                  LatLong a transformé notre gestion de sécurité. L’équipe est
+                  proactive et toujours disponible pour répondre à nos besoins
+                  spécifiques.
                 </p>
                 <div class="testimonial-one__author">
                   <div class="testimonial-one__author-img">
-                    <img src="/assets/images/testimonial/testi-author-1.jpg" alt="" />
+                    <img
+                      src="/assets/images/testimonial/testi-author-1.jpg"
+                      alt=""
+                    />
                   </div>
                   <div class="testimonial-one__author-details">
-                    <h4 class="testimonial-one__author-name">Christine Muhindo</h4>
-                    <p class="testimonial-one__author-title">CEO - Amaliza Store</p>
+                    <h4 class="testimonial-one__author-name">
+                      Christine Muhindo
+                    </h4>
+                    <p class="testimonial-one__author-title">
+                      CEO - Amaliza Store
+                    </p>
                   </div>
                 </div>
                 <div class="testimonial-one__quote-icon">
@@ -302,7 +321,10 @@
                 </p>
                 <div class="testimonial-one__author">
                   <div class="testimonial-one__author-img">
-                    <img src="/assets/images/testimonial/testi-author-2.jpg" alt="" />
+                    <img
+                      src="/assets/images/testimonial/testi-author-2.jpg"
+                      alt=""
+                    />
                   </div>
                   <div class="testimonial-one__author-details">
                     <h4 class="testimonial-one__author-name">Kevin Banza</h4>
@@ -323,16 +345,24 @@
                   <i class="fa fa-star"></i>
                 </p>
                 <p class="testimonial-one__text">
-                  LatLong nous a aidés à sécuriser nos opérations. Nous recommandons leurs
-                  services à toute organisation recherchant une sécurité fiable.
+                  LatLong nous a aidés à sécuriser nos opérations. Nous
+                  recommandons leurs services à toute organisation recherchant
+                  une sécurité fiable.
                 </p>
                 <div class="testimonial-one__author">
                   <div class="testimonial-one__author-img">
-                    <img src="/assets/images/testimonial/testi-author-3.jpg" alt="" />
+                    <img
+                      src="/assets/images/testimonial/testi-author-3.jpg"
+                      alt=""
+                    />
                   </div>
                   <div class="testimonial-one__author-details">
-                    <h4 class="testimonial-one__author-name">Jessica Byamungu</h4>
-                    <p class="testimonial-one__author-title">Directrice Habana Habi</p>
+                    <h4 class="testimonial-one__author-name">
+                      Jessica Byamungu
+                    </h4>
+                    <p class="testimonial-one__author-title">
+                      Directrice Habana Habi
+                    </p>
                   </div>
                 </div>
                 <div class="testimonial-one__quote-icon">
@@ -351,7 +381,9 @@
       <div class="counter-one-wrap">
         <div
           class="counter-one-shape"
-          style="background-image: url(/assets/images/shapes/counter-one-shape.png)"
+          style="
+            background-image: url(/assets/images/shapes/counter-one-shape.png);
+          "
         ></div>
         <div class="counter-one-img">
           <img src="/assets/images/resources/counter-one-img.jpg" alt="" />
@@ -377,7 +409,10 @@
               <div class="col-xl-12">
                 <ul class="counter-one__list list-unstyled">
                   <!-- Cas complétés -->
-                  <li class="counter-one__single wow fadeInUp" data-wow-delay="100ms">
+                  <li
+                    class="counter-one__single wow fadeInUp"
+                    data-wow-delay="100ms"
+                  >
                     <div class="counter-one__icon">
                       <span class="icon-help"></span>
                     </div>
@@ -387,7 +422,10 @@
                     </div>
                   </li>
                   <!-- Clients satisfaits -->
-                  <li class="counter-one__single wow fadeInUp" data-wow-delay="200ms">
+                  <li
+                    class="counter-one__single wow fadeInUp"
+                    data-wow-delay="200ms"
+                  >
                     <div class="counter-one__icon">
                       <span class="icon-customer-review"></span>
                     </div>
@@ -397,7 +435,10 @@
                     </div>
                   </li>
                   <!-- Experts en sécurité -->
-                  <li class="counter-one__single wow fadeInUp" data-wow-delay="300ms">
+                  <li
+                    class="counter-one__single wow fadeInUp"
+                    data-wow-delay="300ms"
+                  >
                     <div class="counter-one__icon">
                       <span class="icon-consultant"></span>
                     </div>
@@ -453,7 +494,10 @@
           <div class="col-xl-3 col-lg-3 wow fadeInUp" data-wow-delay="200ms">
             <div class="team-one__single">
               <div class="team-one__img">
-                <img src="/assets/images/team/2.png" alt="Marcellin Kabundi, DG" />
+                <img
+                  src="/assets/images/team/2.png"
+                  alt="Marcellin Kabundi, DG"
+                />
                 <ul class="list-unstyled team-one__social">
                   <li>
                     <a href="mailto:admin@latlongcongo.com"
@@ -503,7 +547,10 @@
           <div class="col-xl-3 col-lg-3 wow fadeInUp" data-wow-delay="400ms">
             <div class="team-one__single">
               <div class="team-one__img">
-                <img src="/assets/images/team/1.png" alt="Mack Mupita Henry, BM" />
+                <img
+                  src="/assets/images/team/1.png"
+                  alt="Mack Mupita Henry, BM"
+                />
                 <ul class="list-unstyled team-one__social">
                   <li>
                     <a href="mailto:henry@latlongcongo.com"
