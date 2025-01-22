@@ -4,7 +4,7 @@
     <section class="page-header">
       <div
         class="page-header-bg"
-        style="background-image: url(/assets/images/backgrounds/page-header-bg.jpg)"
+        style="background-image: url(/assets/images/backgrounds/cont.jpg)"
       ></div>
       <div class="container">
         <div class="page-header__inner">
@@ -42,20 +42,22 @@
               <div class="contact-page-details__content">
                 <div class="contact-page-details__content-img">
                   <img
-                    src="/assets/images/resources/contact-page-details-content-img.jpg"
+                    src="/assets/images/resources/co.jpg"
                     alt="Latlong International"
                   />
                 </div>
                 <div class="contact-page-details__content-text-box">
                   <p class="contact-page-details__content-text-1">
-                    Latlong International est une entreprise de sécurité opérant dans
-                    l'est de la RDC depuis 2012, avec une expertise dans la protection, la
-                    technologie et les solutions de sécurité avancées.
+                    Latlong International est une entreprise de sécurité opérant
+                    dans l'est de la RDC depuis 2012, avec une expertise dans la
+                    protection, la technologie et les solutions de sécurité
+                    avancées.
                   </p>
                   <p class="contact-page-details__content-text-2">
-                    Notre mission est de fournir des solutions de sécurité intégrées de
-                    classe mondiale en dépassant constamment les attentes grâce à
-                    l'innovation et l'excellence opérationnelle.
+                    Notre mission est de fournir des solutions de sécurité
+                    intégrées de classe mondiale en dépassant constamment les
+                    attentes grâce à l'innovation et l'excellence
+                    opérationnelle.
                   </p>
                   <h2 class="contact-page-details__sign">Équipe Latlong</h2>
                 </div>
@@ -71,7 +73,11 @@
                 </li>
                 <li>
                   <span>Envoyez un email</span>
-                  <p><a href="mailto:info@latlongcongo.com">info@latlongcongo.com</a></p>
+                  <p>
+                    <a href="mailto:info@latlongcongo.com"
+                      >info@latlongcongo.com</a
+                    >
+                  </p>
                 </li>
                 <li>
                   <span>Visitez nos bureaux</span>
@@ -117,7 +123,11 @@
                   </div>
                   <div class="col-xl-6">
                     <div class="comment-form__input-box">
-                      <input type="email" placeholder="Votre Email" name="email" />
+                      <input
+                        type="email"
+                        placeholder="Votre Email"
+                        name="email"
+                      />
                     </div>
                   </div>
                   <div class="col-xl-6">
@@ -134,7 +144,10 @@
                 <div class="row">
                   <div class="col-xl-12">
                     <div class="comment-form__input-box">
-                      <textarea name="message" placeholder="Votre Message"></textarea>
+                      <textarea
+                        name="message"
+                        placeholder="Votre Message"
+                      ></textarea>
                     </div>
                     <button type="submit" class="thm-btn comment-form__btn">
                       Envoyer le message

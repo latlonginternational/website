@@ -591,10 +591,7 @@
                 </p>
                 <div class="testimonial-one__author">
                   <div class="testimonial-one__author-img">
-                    <img
-                      src="/assets/images/testimonial/temoignage1.jpg"
-                      alt=""
-                    />
+                    <img src="/assets/images/testimonial/avatar3.jpg" alt="" />
                   </div>
                   <div class="testimonial-one__author-details">
                     <h4 class="testimonial-one__author-name">
@@ -624,10 +621,7 @@
                 </p>
                 <div class="testimonial-one__author">
                   <div class="testimonial-one__author-img">
-                    <img
-                      src="/assets/images/testimonial/temoignage2.jpg"
-                      alt=""
-                    />
+                    <img src="/assets/images/testimonial/avatar6.jpg" alt="" />
                   </div>
                   <div class="testimonial-one__author-details">
                     <h4 class="testimonial-one__author-name">Kevin Banza</h4>
@@ -654,10 +648,7 @@
                 </p>
                 <div class="testimonial-one__author">
                   <div class="testimonial-one__author-img">
-                    <img
-                      src="/assets/images/testimonial/temoignage3.jpg"
-                      alt=""
-                    />
+                    <img src="/assets/images/testimonial/avatar5.jpg" alt="" />
                   </div>
                   <div class="testimonial-one__author-details">
                     <h4 class="testimonial-one__author-name">

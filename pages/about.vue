@@ -79,7 +79,7 @@
                 <li>
                   <div class="get-to-know__img-1">
                     <img
-                      src="/assets/images/resources/a propos-partmatsec2.png"
+                      src="/assets/images/resources/blacks.jpg"
                       alt="Équipe LatLong"
                     />
                   </div>
