@@ -23,9 +23,7 @@
           <div class="swiper-slide">
             <div
               class="image-layer"
-              style="
-                background-image: url(/assets/images/backgrounds/image1.png);
-              "
+              style="background-image: url(/assets/images/backgrounds/blo.jpg)"
             ></div>
             <div class="main-slider-shape-1">
               <img src="/assets/images/shapes/main-slider-shape-1.png" alt="" />
@@ -83,9 +81,7 @@
           <div class="swiper-slide">
             <div
               class="image-layer"
-              style="
-                background-image: url(/assets/images/backgrounds/confbg.jpg);
-              "
+              style="background-image: url(/assets/images/backgrounds/eq.jpg)"
             ></div>
             <div class="main-slider-shape-1">
               <img src="/assets/images/shapes/main-slider-shape-1.png" alt="" />

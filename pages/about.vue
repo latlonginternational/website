@@ -211,43 +211,43 @@
         >
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="/assets/images/brand/brand-1-1.png" alt="" />
+              <img src="/assets/images/brand/brasimba.png" alt="" />
             </div>
             <!-- /.swiper-slide -->
             <div class="swiper-slide">
-              <img src="/assets/images/brand/brand-1-2.png" alt="" />
+              <img src="/assets/images/brand/easter.png" alt="" />
             </div>
             <!-- /.swiper-slide -->
             <div class="swiper-slide">
-              <img src="/assets/images/brand/brand-1-3.png" alt="" />
+              <img src="/assets/images/brand/europeanunion.png" alt="" />
             </div>
             <!-- /.swiper-slide -->
             <div class="swiper-slide">
-              <img src="/assets/images/brand/brand-1-4.png" alt="" />
+              <img src="/assets/images/brand/instituufrancais.png" alt="" />
             </div>
             <!-- /.swiper-slide -->
             <div class="swiper-slide">
-              <img src="/assets/images/brand/brand-1-5.png" alt="" />
+              <img src="/assets/images/brand/janegoodall.png" alt="" />
             </div>
             <!-- /.swiper-slide -->
             <div class="swiper-slide">
-              <img src="/assets/images/brand/brand-1-1.png" alt="" />
+              <img src="/assets/images/brand/oim.png" alt="" />
             </div>
             <!-- /.swiper-slide -->
             <div class="swiper-slide">
-              <img src="/assets/images/brand/brand-1-2.png" alt="" />
+              <img src="/assets/images/brand/sgml.png" alt="" />
             </div>
             <!-- /.swiper-slide -->
             <div class="swiper-slide">
-              <img src="/assets/images/brand/brand-1-3.png" alt="" />
+              <img src="/assets/images/brand/skyborn.png" alt="" />
             </div>
             <!-- /.swiper-slide -->
             <div class="swiper-slide">
-              <img src="/assets/images/brand/brand-1-4.png" alt="" />
+              <img src="/assets/images/brand/tearfund.png" alt="" />
             </div>
             <!-- /.swiper-slide -->
             <div class="swiper-slide">
-              <img src="/assets/images/brand/brand-1-5.png" alt="" />
+              <img src="/assets/images/brand/tmk.png" alt="" />
             </div>
             <!-- /.swiper-slide -->
           </div>
@@ -288,10 +288,7 @@
                 </p>
                 <div class="testimonial-one__author">
                   <div class="testimonial-one__author-img">
-                    <img
-                      src="/assets/images/testimonial/testi-author-1.jpg"
-                      alt=""
-                    />
+                    <img src="/assets/images/testimonial/avatar3.jpg" alt="" />
                   </div>
                   <div class="testimonial-one__author-details">
                     <h4 class="testimonial-one__author-name">
@@ -321,10 +318,7 @@
                 </p>
                 <div class="testimonial-one__author">
                   <div class="testimonial-one__author-img">
-                    <img
-                      src="/assets/images/testimonial/testi-author-2.jpg"
-                      alt=""
-                    />
+                    <img src="/assets/images/testimonial/avatar6.jpg" alt="" />
                   </div>
                   <div class="testimonial-one__author-details">
                     <h4 class="testimonial-one__author-name">Kevin Banza</h4>
@@ -351,10 +345,7 @@
                 </p>
                 <div class="testimonial-one__author">
                   <div class="testimonial-one__author-img">
-                    <img
-                      src="/assets/images/testimonial/testi-author-3.jpg"
-                      alt=""
-                    />
+                    <img src="/assets/images/testimonial/avatar5.jpg" alt="" />
                   </div>
                   <div class="testimonial-one__author-details">
                     <h4 class="testimonial-one__author-name">
@@ -375,7 +366,6 @@
       </div>
     </section>
     <!--Testimonial One End-->
-
     <!--Counter One Start-->
     <section class="counter-one">
       <div class="counter-one-wrap">
@@ -386,7 +376,7 @@
           "
         ></div>
         <div class="counter-one-img">
-          <img src="/assets/images/resources/counter-one-img.jpg" alt="" />
+          <img src="/assets/images/resources/aba.jpg" alt="" />
         </div>
         <div class="counter-one-shape-2">
           <img src="/assets/images/shapes/counter-one-shape-2.png" alt="" />

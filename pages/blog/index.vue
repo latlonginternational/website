@@ -4,7 +4,7 @@
     <section class="page-header">
       <div
         class="page-header-bg"
-        style="background-image: url(/assets/images/backgrounds/page-header-bg.jpg)"
+        style="background-image: url(/assets/images/backgrounds/blo.jpg)"
       ></div>
       <div class="container">
         <div class="page-header__inner">
@@ -56,8 +56,8 @@
                   <a href="/blog/details-id">Je suis un titre de cet article</a>
                 </h3>
                 <p class="news-one__text">
-                  Je suis la brève description de cet article publié sur le site de
-                  LatLong International SARL
+                  Je suis la brève description de cet article publié sur le site
+                  de LatLong International SARL
                 </p>
                 <div class="news-one__bottom">
                   <a href="/blog/details-id" class="news-one__btn">Lire plus</a>

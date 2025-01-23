@@ -70,7 +70,7 @@ const services_data = [
     description:
       "Assurez une sécurité optimale avec nos solutions de protection complètes adaptées à vos besoins.",
     link: "/services/protection",
-    image: "/assets/images/services/protection.png",
+    image: "/assets/images/services/serv.jpg",
     icon: "icon-strategy",
   },
   {
@@ -95,7 +95,7 @@ const services_data = [
     description:
       "Soyez prêt à faire face aux défis de sécurité grâce à nos formations professionnelles et pratiques.",
     link: "/services/training",
-    image: "/assets/images/services/formation.png",
+    image: "/assets/images/services/form.jpg",
     icon: "icon-creative",
   },
   {
