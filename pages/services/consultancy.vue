@@ -49,8 +49,7 @@
                   </li>
                   <li>
                     <a href="/services/others-security-services"
-                      >Autres services de sécurité
-                      <span class="icon-right-arrow"></span
+                      >Autres services de sécurité <span class="icon-right-arrow"></span
                     ></a>
                   </li>
                 </ul>
@@ -58,9 +57,7 @@
               <div class="service-details__need-help">
                 <div
                   class="service-details__need-help-bg"
-                  style="
-                    background-image: url(/assets/images/services/conta.jpg);
-                  "
+                  style="background-image: url(/assets/images/services/conta.jpg)"
                 ></div>
                 <h2 class="service-details__need-help-title">Nous contacter</h2>
                 <div class="service-details__need-help-icon">
@@ -117,9 +114,7 @@
                         Comment proceder ?
                       </h3>
                       <br />
-                      <ul
-                        class="service-details__how-we-help-points list-unstyled"
-                      >
+                      <ul class="service-details__how-we-help-points list-unstyled">
                         <li v-for="item in service_info[0].process" :key="item">
                           <div class="icon">
                             <i class="fa fa-arrow-right"></i>
@@ -165,6 +160,7 @@
 </template>
 
 <script setup>
+// dd
 const service_info = [
   {
     title: "Consultance",
@@ -192,8 +188,7 @@ const service_info = [
           "Oui, nous effectuons des audits sur site avec des recommandations concrètes.",
       },
       {
-        question:
-          "Vos plans de gestion de crise incluent-ils des exercices pratiques ?",
+        question: "Vos plans de gestion de crise incluent-ils des exercices pratiques ?",
         answer: "Absolument, nous organisons des simulations régulières.",
       },
       {
