@@ -366,6 +366,10 @@ ul {
 	padding: 5px 0;
 }
 
+.bg-black {
+	background-color: var(--conult-black) !important;
+}
+
 .main-header__top-left {
 	position: relative;
 	display: block;
@@ -639,7 +643,7 @@ ul {
 
 .main-menu .main-menu__list > li + li,
 .stricky-header .main-menu__list > li + li {
-	margin-left: 70px;
+	margin-left: 50px;
 }
 
 .main-menu .main-menu__list > li > a,
@@ -5736,6 +5740,8 @@ ul {
 .team-one__img img {
 	width: 100%;
 	transition-delay: 0.1s;
+	height: 270px;
+	object-fit: cover;
 	transition-timing-function: ease-in-out;
 	transition-duration: 0.7s;
 	transition-property: all;

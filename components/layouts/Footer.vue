@@ -87,7 +87,10 @@
                 </div>
                 <div class="site-footer__top-right-phone">
                   <p class="site-footer__top-right-phone-tagline">Appelez-nous</p>
-                  <a href="tel:+243810041500">+243810041500</a>
+                 <p class="text-white mt-3">
+                    <a class="text-white hover:underline" href="tel:+243810041500">+243810041500</a> <br>
+                    <a class="text-white hover:underline" href="tel:+243993400082">+243993400082</a>
+                  </p> 
                 </div>
               </div>
             </div>

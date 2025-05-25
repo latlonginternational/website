@@ -512,7 +512,7 @@
           <div class="col-xl-3 col-lg-3 wow fadeInUp" data-wow-delay="300ms">
             <div class="team-one__single">
               <div class="team-one__img">
-                <img src="/assets/images/team/3.png" alt="Gilbert Dilis, DO" />
+                <img src="/assets/images/team/1723267753376.jpeg" alt="Roger Nde, DO" />
                 <ul class="list-unstyled team-one__social">
                   <li>
                     <a href="mailto:gilbert@latlongcongo.com"
@@ -528,7 +528,7 @@
                 </ul>
               </div>
               <div class="team-one__content">
-                <h4 class="team-one__name">Gilbert Dilis</h4>
+                <h4 class="team-one__name">Roger Nde</h4>
                 <p class="team-one__title">DO</p>
               </div>
             </div>

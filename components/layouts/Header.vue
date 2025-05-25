@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header class="main-header clearfix">
+    <header class="main-header clearfix" :class="{ 'header-hidden': isHeaderHidden, 'header-visible': isHeaderVisible }">
       <div class="main-header__top clearfix">
         <div class="main-header__top-inner clearfix">
           <div class="main-header__top-left">
@@ -29,6 +29,15 @@
                   <p><a href="tel:+243810041500">+243 810 041 500</a></p>
                 </div>
               </li>
+
+              <li>
+                <div class="icon">
+                  <span class="icon-phone"></span>
+                </div>
+                <div class="text">
+                  <p><a href="tel:+243993400082">+243 993 400 082</a></p>
+                </div>
+              </li>
             </ul>
           </div>
           <div class="main-header__top-right">
@@ -42,7 +51,7 @@
           </div>
         </div>
       </div>
-      <nav class="main-menu clearfix">
+      <nav class="main-menu clearfix" :class="{ 'scrolled': isScrolled }">
         <div class="main-menu-wrapper clearfix">
           <div class="main-menu-wrapper__left">
             <div class="main-menu-wrapper__logo">
@@ -126,7 +135,9 @@
               </div>
               <div class="main-menu-wrapper__call-number">
                 <p>Appelez-nous</p>
-                <h5><a href="tel:+243810041500">+243 810 041 500</a></h5>
+                <h5>
+                 <a class="text-white hover:underline" href="tel:+243810041500">Contacts</a>
+                </h5>
               </div>
             </div>
           </div>
@@ -134,10 +145,92 @@
       </nav>
     </header>
 
-    <div class="stricky-header stricked-menu main-menu">
+    <div class="stricky-header stricked-menu main-menu" :class="{ 'header-hidden': isHeaderHidden, 'header-visible': isHeaderVisible }">
       <div class="sticky-header__content"></div>
       <!-- /.sticky-header__content -->
     </div>
     <!-- /.stricky-header -->
   </div>
 </template>
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+  data() {
+    return {
+      lastScrollY: 0,
+      isHeaderHidden: false,
+      isHeaderVisible: false,
+      scrollTimeout: null as number | null,
+      isScrolled: false
+    }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.handleScroll)
+  },
+  methods: {
+    handleScroll() {
+      const currentScrollY = window.scrollY
+      
+      // Gérer l'état du scroll pour le fond du menu
+      this.isScrolled = currentScrollY > 50
+      
+      // Masquer le header lors du scroll vers le bas
+      if (currentScrollY > this.lastScrollY && currentScrollY > 100) {
+        this.isHeaderHidden = true
+        this.isHeaderVisible = false
+      }
+      // Afficher le header lors du scroll vers le haut
+      else if (currentScrollY < this.lastScrollY) {
+        this.isHeaderHidden = false
+        this.isHeaderVisible = true
+      }
+      
+      this.lastScrollY = currentScrollY
+    }
+  }
+})
+</script>
+
+<style scoped>
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  transition: transform 0.3s ease-in-out;
+}
+
+.main-menu {
+  transition: all 0.3s ease-in-out;
+  background-color: transparent;
+}
+
+.main-menu.scrolled {
+  background-color: rgba(3, 20, 48, 0.7);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.header-hidden {
+  transform: translateY(-100%);
+}
+
+.header-visible {
+  transform: translateY(0);
+}
+
+.stricky-header {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Ajuster le contenu principal pour compenser le header fixe */
+:deep(body) {
+  padding-top: var(--header-height, 120px);
+}
+</style>
