@@ -35,8 +35,8 @@
 							<div class="row">
 								<div class="col-xl-7">
 									<div class="main-slider__content">
-										<h2>Solutions Adaptées</h2>
-										<p>Latlong, votre partenaire pour des solutions fiables.</p>
+										<h2>Des solutions adaptées</h2>
+										<p>LatLong, votre partenaire pour des solutions de sécurité fiables.</p>
 										<a href="/about" class="thm-btn">En savoir plus</a>
 									</div>
 								</div>
@@ -59,7 +59,7 @@
 							<div class="row">
 								<div class="col-xl-7">
 									<div class="main-slider__content">
-										<h2>Technologies Modernes</h2>
+										<h2>Des technologies modernes</h2>
 										<p>Protégez vos actifs avec des solutions avancées.</p>
 										<a href="/services" class="thm-btn">Découvrez nos services</a>
 									</div>
@@ -84,8 +84,8 @@
 								<div class="col-xl-7">
 									<div class="main-slider__content">
 										<h2>
-											Une Équipe <br />
-											de Confiance
+											Une équipe <br />
+											de confiance
 										</h2>
 										<p>Des experts locaux au service de votre sécurité.</p>
 										<a href="/contact" class="thm-btn">Contactez-nous</a>
@@ -130,14 +130,14 @@
 									</div>
 								</div>
 								<div class="feature-one__hover">
-									<div class="feature-one__hover-bg" style="background-image: url(/assets/images/resources/consultances.jpg)"></div>
+									<div class="feature-one__hover-bg" style="background-image: url(~/assets/images/resources/consultances.jpg)"></div>
 									<div class="feature-one__hover-icon">
 										<span class="icon-strategy"></span>
 									</div>
 									<h4 class="feature-one__hover-title">
 										<a href="#">Sécurité</a>
 									</h4>
-									<p class="feature-one__hover-text">Transport de fonds, évacuations d’urgence, lutte contre l’incendie, assistance médicale, rapports de sécurité, alertes.</p>
+									<p class="feature-one__hover-text">Transport de fonds, évacuations d'urgence, lutte contre l'incendie, assistance médicale, rapports de sécurité, alertes.</p>
 								</div>
 							</div>
 						</div>
@@ -190,14 +190,14 @@
 									</div>
 								</div>
 								<div class="feature-one__hover">
-									<div class="feature-one__hover-bg" style="background-image: url(/assets/images/resources/consultances.jpg)"></div>
+									<div class="feature-one__hover-bg" style="background-image: url(~/assets/images/resources/consultances.jpg)"></div>
 									<div class="feature-one__hover-icon">
 										<span class="icon-consumer-behavior"></span>
 									</div>
 									<h4 class="feature-one__hover-title">
 										<a href="/services/consultancy/">Consultance</a>
 									</h4>
-									<p class="feature-one__hover-text">Évaluations de sécurité, gestion des missions, stratégie, plans d’évacuation et gestion de crise.</p>
+									<p class="feature-one__hover-text">Évaluations de sécurité, gestion des missions, stratégie, plans d'évacuation et gestion de crise.</p>
 								</div>
 							</div>
 						</div>
@@ -215,7 +215,7 @@
 					<div class="col-xl-6">
 						<div class="about-one__left wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
 							<div class="about-one__img">
-								<img src="/assets/images/resources/pat.jpg" alt="Map showing LatLong" />
+								<img class="h-[520px] object-cover" src="/assets/images/blog/art2.jpg" alt="Map showing LatLong" />
 							</div>
 							<div class="about-one__shape">
 								<img src="/assets/images/shapes/about-one-shape.png" alt="" />
@@ -227,10 +227,10 @@
 					<div class="col-xl-6">
 						<div class="about-one__right">
 							<div class="section-title text-left">
-								<span class="section-title__tagline">Solutions innovantes</span>
+								<span class="section-title__tagline">Notre offre</span>
 								<h2 class="section-title__title">Votre partenaire en gestion de sécurité</h2>
 							</div>
-							<p class="about-one__business-start-text">Latlong vous offre des outils modernes pour une sécurité renforcée et une gestion optimisée de vos opérations.</p>
+							<p class="about-one__business-start-text">LatLong vous offre des outils modernes pour une sécurité renforcée et une gestion optimisée de vos opérations.</p>
 
 							<div class="about-one__points-box">
 								<!-- First Column -->
@@ -330,7 +330,7 @@
 						</div>
 						<div class="col-xl-5">
 							<div class="building-experience__top-right">
-								<p class="building-experience__top-right-text">Latlong offre des solutions de sécurité fiables, combinant expertise locale et technologies avancées.</p>
+								<p class="building-experience__top-right-text">LatLong offre des solutions de sécurité fiables, combinant expertise locale et technologies avancées.</p>
 							</div>
 						</div>
 					</div>
@@ -380,29 +380,29 @@
 								<div class="accrodion-grp" data-grp-name="faq-one-accrodion">
 									<div class="accrodion active">
 										<div class="accrodion-title">
-											<h4>Quels types de services offre Latlong ?</h4>
+											<h4>Quels types de services offre LatLong ?</h4>
 										</div>
 										<div class="accrodion-content">
 											<div class="inner">
-												<p>Latlong propose des services de sécurité physique, de surveillance électronique, de gestion des risques et de protection d'événements, adaptés aux besoins spécifiques de ses clients.</p>
+												<p>LatLong propose des services de sécurité physique, de surveillance électronique, de gestion des risques et de protection d'événements, adaptés aux besoins spécifiques de ses clients.</p>
 											</div>
 											<!-- /.inner -->
 										</div>
 									</div>
 									<div class="accrodion">
 										<div class="accrodion-title">
-											<h4>Latlong peut-il intervenir dans des zones éloignées ?</h4>
+											<h4>LatLong peut-il intervenir dans des zones éloignées ?</h4>
 										</div>
 										<div class="accrodion-content">
 											<div class="inner">
-												<p>Oui, Latlong est équipé pour fournir des services dans des zones éloignées ou difficiles d'accès grâce à une équipe expérimentée et des outils adaptés à ces environnements.</p>
+												<p>Oui, LatLong est équipé pour fournir des services dans des zones éloignées ou difficiles d'accès grâce à une équipe expérimentée et des outils adaptés à ces environnements.</p>
 											</div>
 											<!-- /.inner -->
 										</div>
 									</div>
 									<div class="accrodion last-chiled">
 										<div class="accrodion-title">
-											<h4>Comment Latlong garantit-il la qualité de ses services ?</h4>
+											<h4>Comment LatLong garantit-il la qualité de ses services ?</h4>
 										</div>
 										<div class="accrodion-content">
 											<div class="inner">
@@ -447,7 +447,7 @@
 			<div class="container">
 				<div class="section-title text-center">
 					<span class="section-title__tagline">Nos témoignages</span>
-					<h2 class="section-title__title">Ce qu’ils disent</h2>
+					<h2 class="section-title__title">Ce qu'ils disent</h2>
 				</div>
 				<div class="row">
 					<div class="col-xl-12">
@@ -461,7 +461,7 @@
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
 								</p>
-								<p class="testimonial-one__text">LatLong a transformé notre gestion de sécurité. L’équipe est proactive et toujours disponible pour répondre à nos besoins spécifiques.</p>
+								<p class="testimonial-one__text">LatLong a transformé notre gestion de sécurité. L'équipe est proactive et toujours disponible pour répondre à nos besoins spécifiques.</p>
 								<div class="testimonial-one__author">
 									<div class="testimonial-one__author-img">
 										<img src="/assets/images/testimonial/avatar3.jpg" alt="" />
@@ -530,18 +530,19 @@
 
 		<!--Counter One Start-->
 		<section class="counter-one">
-			<div class="counter-one-wrap">
-				<div class="counter-one-shape" style="background-image: url(/assets/images/shapes/counter-one-shape.png)"></div>
-				<div class="counter-one-img">
-					<img src="/assets/images/resources/ref.jpg" alt="" />
+			<div class="counter-one-wrap px-8 relative">
+				<div class="absolute top-0 z-10 opacity-40 left-0 right-0 bottom-0 bg-black" style="background-image: url(/assets/images/shapes/counter-one-shape.png)s"></div>
+				<div class="counter-one-shape z-0" style="background-image: url(/assets/images/shapes/counter-one-shape.png)"></div>
+				<div class="counter-one-img z-0" style="background-image: url(/assets/images/resources/ref.jpg)">
+					
 				</div>
-				<div class="counter-one-shape-2">
+				<div class="counter-one-shape-2 z-0">
 					<img src="/assets/images/shapes/counter-one-shape-2.png" alt="" />
 				</div>
-				<div class="counter-one-shape-3">
+				<div class="counter-one-shape-3 z-0">
 					<img src="/assets/images/shapes/counter-one-shape-3.png" alt="" />
 				</div>
-				<div class="container">
+				<div class="container z-50 relative">
 					<div class="counter-one__top">
 						<div class="row">
 							<div class="col-xl-5 col-lg-6">
@@ -593,136 +594,45 @@
 		</section>
 		<!--Counter One End-->
 		<!--News One Start-->
-		<section class="news-one">
-			<div class="news-one__container">
-				<div class="section-title text-center">
-					<span class="section-title__tagline">Actualités récentes</span>
-					<h2 class="section-title__title">Articles</h2>
+		<section class="py-20">
+			<div class="container mx-auto">
+				<!-- Section Title -->
+				<div class="text-center mb-12">
+					<span class="text-conult-base font-conult text-sm uppercase tracking-wider mb-2 block">Actualités récentes</span>
+					<h2 class="text-3xl md:text-4xl font-conult font-bold text-conult-black">Articles</h2>
 				</div>
-				<div class="row">
-					<div class="col-xl-12">
-						<div class="news-one__carousel owl-theme owl-carousel">
-							<!--News One Single-->
-							<div class="news-one__single">
-								<div class="news-one__img">
-									<img src="/assets/images/blog/art1.jpg" alt="Actualités" />
-									<a href="/blog/details-id">
-										<span class="news-one__plus"></span>
-									</a>
-									<div class="news-one__date">
-										<p>15 Jan</p>
-									</div>
-								</div>
-								<div class="news-one__content">
-									<ul class="list-unstyled news-one__meta">
-										<li>
-											<a href="/blog/details-id"><i class="far fa-user-circle"></i> Par Latlong</a>
-										</li>
-										<li>
-											<a href="/blog/details-id"><i class="far fa-comments"></i> 3 Commentaires</a>
-										</li>
-									</ul>
-									<h3 class="news-one__title">
-										<a href="/blog/details-id">Nouvelles stratégies de sécurité</a>
-									</h3>
-									<p class="news-one__text">Découvrez nos approches innovantes pour sécuriser vos opérations.</p>
-									<div class="news-one__bottom">
-										<a href="/blog/details-id" class="news-one__btn">Lire plus</a>
-										<a href="/blog/details-id" class="news-one__arrow"><span class="icon-right-arrow"></span></a>
-									</div>
-								</div>
-							</div>
-							<!--News One Single-->
-							<div class="news-one__single">
-								<div class="news-one__img">
-									<img src="/assets/images/blog/art2.jpg" alt="Actualités" />
-									<a href="/blog/details-id">
-										<span class="news-one__plus"></span>
-									</a>
-									<div class="news-one__date">
-										<p>20 Fév</p>
-									</div>
-								</div>
-								<div class="news-one__content">
-									<ul class="list-unstyled news-one__meta">
-										<li>
-											<a href="/blog/details-id"><i class="far fa-user-circle"></i> Par Latlong</a>
-										</li>
-										<li>
-											<a href="/blog/details-id"><i class="far fa-comments"></i> 5 Commentaires</a>
-										</li>
-									</ul>
-									<h3 class="news-one__title">
-										<a href="/blog/details-id">Protection des zones sensibles</a>
-									</h3>
-									<p class="news-one__text">Nos services protègent les infrastructures critiques efficacement.</p>
-									<div class="news-one__bottom">
-										<a href="/blog/details-id" class="news-one__btn">Lire plus</a>
-										<a href="/blog/details-id" class="news-one__arrow"><span class="icon-right-arrow"></span></a>
-									</div>
-								</div>
-							</div>
-							<!--News One Single-->
-							<div class="news-one__single">
-								<div class="news-one__img">
-									<img src="/assets/images/blog/art3.jpg" alt="Actualités" />
-									<a href="/blog/details-id">
-										<span class="news-one__plus"></span>
-									</a>
-									<div class="news-one__date">
-										<p>10 Mar</p>
-									</div>
-								</div>
-								<div class="news-one__content">
-									<ul class="list-unstyled news-one__meta">
-										<li>
-											<a href="/blog/details-id"><i class="far fa-user-circle"></i> Par Latlong</a>
-										</li>
-										<li>
-											<a href="/blog/details-id"><i class="far fa-comments"></i> 2 Commentaires</a>
-										</li>
-									</ul>
-									<h3 class="news-one__title">
-										<a href="/blog/details-id">Renforcement des capacités</a>
-									</h3>
-									<p class="news-one__text">Des formations spécialisées pour un personnel hautement qualifié.</p>
-									<div class="news-one__bottom">
-										<a href="/blog/details-id" class="news-one__btn">Lire plus</a>
-										<a href="/blog/details-id" class="news-one__arrow"><span class="icon-right-arrow"></span></a>
-									</div>
-								</div>
-							</div>
-							<!--News One Single-->
-							<div class="news-one__single">
-								<div class="news-one__img">
-									<img src="/assets/images/blog/art4.jpg" alt="Actualités" />
-									<a href="/blog/details-id">
-										<span class="news-one__plus"></span>
-									</a>
-									<div class="news-one__date">
-										<p>25 Mar</p>
-									</div>
-								</div>
-								<div class="news-one__content">
-									<ul class="list-unstyled news-one__meta">
-										<li>
-											<a href="/blog/details-id"><i class="far fa-user-circle"></i> Par Latlong</a>
-										</li>
-										<li>
-											<a href="/blog/details-id"><i class="far fa-comments"></i> 1 Commentaire</a>
-										</li>
-									</ul>
-									<h3 class="news-one__title">
-										<a href="/blog/details-id">Surveillance avancée</a>
-									</h3>
-									<p class="news-one__text">Les nouvelles technologies révolutionnent nos systèmes de surveillance.</p>
-									<div class="news-one__bottom">
-										<a href="/blog/details-id" class="news-one__btn">Lire plus</a>
-										<a href="/blog/details-id" class="news-one__arrow"><span class="icon-right-arrow"></span></a>
-									</div>
-								</div>
+
+				<!-- News Carousel -->
+				<div class="relative">
+					<!-- Carousel Container -->
+					<div class="overflow-hidden">
+						<div class="flex transition-transform duration-500 ease-in-out space-x-4" 
+							 :style="{ transform: `translateX(-${currentSlide * slideWidth}%)` }">
+							<div v-for="actualite in actualites" :key="actualite.id" 
+								 class="w-full sm:w-full md:w-1/2 lg:w-1/3 flex-shrink-0">
+								<DefaultCard :data="actualite" />
 							</div>
 						</div>
+					</div>
+
+					<!-- Navigation Buttons -->
+					<button @click="prevSlide" 
+							class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-6 w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-conult-base hover:bg-conult-base hover:text-white transition-colors z-10">
+						<i class="fas fa-arrow-left"></i>
+					</button>
+					<button @click="nextSlide" 
+							class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-6 w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-conult-base hover:bg-conult-base hover:text-white transition-colors z-10">
+						<i class="fas fa-arrow-right"></i>
+					</button>
+
+					<!-- Dots Navigation -->
+					<div class="flex justify-center mt-8 gap-2">
+						<button v-for="(_, index) in totalSlides" 
+								:key="index"
+								@click="currentSlide = index"
+								class="w-3 h-3 rounded-full transition-colors"
+								:class="currentSlide === index ? 'bg-conult-base' : 'bg-gray-300 hover:bg-conult-base/50'">
+						</button>
 					</div>
 				</div>
 			</div>
@@ -810,4 +720,168 @@
 	</div>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref, onMounted, onUnmounted, computed, watch } from 'vue'
+
+const actualites = [
+	{
+		id: 1,
+		image: '/assets/images/blog/art1.jpg',
+		date: '15 Jan 2025',
+		auteur: 'LatLong',
+		commentaires: 3,
+		titre: 'Nouvelles stratégies de sécurité',
+		description: 'Découvrez nos approches innovantes pour sécuriser vos opérations.',
+		lien: '/blog/details-id'
+	},
+	{
+		id: 2,
+		image: '/assets/images/blog/art2.jpg',
+		date: '20 Fév 2025',
+		auteur: 'LatLong',
+		commentaires: 5,
+		titre: 'Protection des zones sensibles',
+		description: 'Nos services protègent les infrastructures critiques efficacement.',
+		lien: '/blog/details-id'
+	},
+	{
+		id: 3,
+		image: '/assets/images/blog/art3.jpg',
+		date: '10 Mar 2025',
+		auteur: 'LatLong',
+		commentaires: 2,
+		titre: 'Renforcement des capacités',
+		description: 'Des formations spécialisées pour un personnel hautement qualifié.',
+		lien: '/blog/details-id'
+	},
+	{
+		id: 4,
+		image: '/assets/images/blog/art4.jpg',
+		date: '25 Mar 2025',
+		auteur: 'Latlong',
+		commentaires: 1,
+		titre: 'Surveillance avancée',
+		description: 'Les nouvelles technologies révolutionnent nos systèmes de surveillance.',
+		lien: '/blog/details-id'
+	}
+]
+
+const currentSlide = ref(0)
+const autoplayInterval = ref(null)
+const windowWidth = ref(typeof window !== 'undefined' ? window.innerWidth : 0)
+
+// Calcul du nombre d'éléments par slide selon la largeur de l'écran
+const itemsPerSlide = computed(() => {
+	if (windowWidth.value >= 1024) return 3 // lg
+	if (windowWidth.value >= 768) return 2  // md
+	return 1 // sm et en dessous
+})
+
+// Calcul du nombre total de slides
+const totalSlides = computed(() => {
+	return Math.ceil(actualites.length / itemsPerSlide.value)
+})
+
+// Calcul de la largeur de déplacement pour chaque slide
+const slideWidth = computed(() => {
+	return (100 / itemsPerSlide.value)
+})
+
+// Mise à jour de la largeur de la fenêtre
+const updateWindowWidth = () => {
+	windowWidth.value = window.innerWidth
+	// Réinitialiser le slide courant si nécessaire
+	if (currentSlide.value >= totalSlides.value) {
+		currentSlide.value = 0
+	}
+}
+
+const nextSlide = () => {
+	currentSlide.value = (currentSlide.value + 1) % totalSlides.value
+}
+
+const prevSlide = () => {
+	currentSlide.value = (currentSlide.value - 1 + totalSlides.value) % totalSlides.value
+}
+
+const startAutoplay = () => {
+	autoplayInterval.value = setInterval(() => {
+		nextSlide()
+	}, 5000)
+}
+
+const stopAutoplay = () => {
+	if (autoplayInterval.value) {
+		clearInterval(autoplayInterval.value)
+	}
+}
+
+// Surveiller les changements de taille d'écran
+onMounted(() => {
+	window.addEventListener('resize', updateWindowWidth)
+	startAutoplay()
+})
+
+onUnmounted(() => {
+	window.removeEventListener('resize', updateWindowWidth)
+	stopAutoplay()
+})
+
+// Réinitialiser l'autoplay quand on change manuellement de slide
+watch(currentSlide, () => {
+	stopAutoplay()
+	startAutoplay()
+})
+</script>
+
+<style scoped>
+/* Styles pour le carousel personnalisé */
+.carousel-container {
+	@apply relative overflow-hidden;
+}
+
+.carousel-slide {
+	@apply transition-transform duration-500 ease-in-out;
+}
+
+/* Styles pour les boutons de navigation */
+.carousel-button {
+	@apply absolute top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-conult-base hover:bg-conult-base hover:text-white transition-colors z-10;
+}
+
+.carousel-button-prev {
+	@apply -left-6;
+}
+
+.carousel-button-next {
+	@apply -right-6;
+}
+
+/* Styles pour les points de navigation */
+.carousel-dots {
+	@apply flex justify-center mt-8 gap-2;
+}
+
+.carousel-dot {
+	@apply w-3 h-3 rounded-full transition-colors;
+}
+
+.carousel-dot-active {
+	@apply bg-conult-base;
+}
+
+/* Ajustements pour le responsive */
+@media (max-width: 640px) {
+	.carousel-button {
+		@apply w-10 h-10;
+	}
+	
+	.carousel-button-prev {
+		@apply -left-4;
+	}
+	
+	.carousel-button-next {
+		@apply -right-4;
+	}
+}
+</style>

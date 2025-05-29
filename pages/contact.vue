@@ -37,18 +37,18 @@
           <div class="col-xl-8 col-lg-7">
             <div class="contact-page-details__left">
               <h3 class="contact-page-details__title">
-                À propos de Latlong International
+                À propos de LatLong International
               </h3>
               <div class="contact-page-details__content">
                 <div class="contact-page-details__content-img">
                   <img
                     src="/assets/images/resources/co.jpg"
-                    alt="Latlong International"
+                    alt="LatLong International"
                   />
                 </div>
                 <div class="contact-page-details__content-text-box">
                   <p class="contact-page-details__content-text-1">
-                    Latlong International est une entreprise de sécurité opérant
+                    LatLong International est une entreprise de sécurité opérant
                     dans l'est de la RDC depuis 2012, avec une expertise dans la
                     protection, la technologie et les solutions de sécurité
                     avancées.
@@ -59,7 +59,7 @@
                     attentes grâce à l'innovation et l'excellence
                     opérationnelle.
                   </p>
-                  <h2 class="contact-page-details__sign">Équipe Latlong</h2>
+                  <h2 class="contact-page-details__sign">Équipe LatLong</h2>
                 </div>
               </div>
             </div>
@@ -105,60 +105,52 @@
       <div class="container">
         <div class="section-title text-center">
           <span class="section-title__tagline">Contactez-nous</span>
-          <h2 class="section-title__title">Envoyez-nous un Message</h2>
+          <h2 class="section-title__title">Envoyez-nous un message</h2>
         </div>
         <div class="row">
           <div class="col-xl-12">
             <div class="contact-page__form">
-              <form
-                action="/assets/inc/sendemail.php"
-                class="comment-one__form contact-form-validated"
-                novalidate="novalidate"
-              >
-                <div class="row">
-                  <div class="col-xl-6">
-                    <div class="comment-form__input-box">
-                      <input type="text" placeholder="Votre Nom" name="name" />
-                    </div>
-                  </div>
-                  <div class="col-xl-6">
-                    <div class="comment-form__input-box">
-                      <input
-                        type="email"
-                        placeholder="Votre Email"
-                        name="email"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-xl-6">
-                    <div class="comment-form__input-box">
-                      <input type="text" placeholder="Téléphone" name="phone" />
-                    </div>
-                  </div>
-                  <div class="col-xl-6">
-                    <div class="comment-form__input-box">
-                      <input type="text" placeholder="Sujet" name="subject" />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-xl-12">
-                    <div class="comment-form__input-box">
-                      <textarea
-                        name="message"
-                        placeholder="Votre Message"
-                      ></textarea>
-                    </div>
-                    <button type="submit" class="thm-btn comment-form__btn">
-                      Envoyer le message
-                    </button>
-                  </div>
-                </div>
-              </form>
+              <ContactForm />
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!--Contact Page Form End-->
   </div>
 </template>
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+import ContactForm from '~/components/ContactForm.vue'
+
+export default defineComponent({
+  name: 'ContactPage',
+  components: {
+    ContactForm
+  }
+})
+</script>
+
+<style scoped>
+.contact-page {
+  padding: 120px 0;
+}
+
+.contact-page__content {
+  background-color: #ffffff;
+  padding: 60px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 767px) {
+  .contact-page {
+    padding: 80px 0;
+  }
+  
+  .contact-page__content {
+    padding: 30px;
+  }
+}
+</style>

@@ -2,29 +2,57 @@
 export default defineNuxtConfig({
 	compatibilityDate: "2024-11-01",
 	devtools: { enabled: true },
+	css: ["~/public/assets/css/main.css"],
+
+	modules: ["nuxt-mail"],
+
+	runtimeConfig: {
+		mail: {
+			message: {
+				to: ["hello@vincentasani.me", "info@latlongcongo.com"]
+			},
+			smtp: {
+				host: process.env.SMTP_HOST || "smtp.titan.email",
+				port: process.env.SMTP_PORT,
+				secure: false,
+				auth: {
+					user: process.env.SMTP_USER,
+					pass: process.env.SMTP_PASS
+				}
+			}
+		}
+	},
+
+	postcss: {
+		plugins: {
+			tailwindcss: {},
+			autoprefixer: {}
+		}
+	},
+
 	app: {
 		head: {
-			title: "Latlong International", // Autres méta-informations
+			title: "LatLong International", // Autres méta-informations
 
 			meta: [
 				{ charset: "utf-8" }, // Définir le charset
 				{ name: "viewport", content: "width=device-width, initial-scale=1.0" }, // Viewport responsive
-				{ name: "description", content: "Latlong International - Your Gateway to Secure Business in Africa" }, // Description
+				{ name: "description", content: "LatLong International - Your Gateway to Secure Business in Africa" }, // Description
 				{ name: "format-detection", content: "telephone=no" },
-				{ property: "og:title", content: "Latlong International" },
+				{ property: "og:title", content: "LatLong International" },
 				{
 					property: "og:description",
-					content: "Latlong International - Your Gateway to Secure Business in Africa"
+					content: "LatLong International - Your Gateway to Secure Business in Africa"
 				},
 				{ property: "og:url", content: "https://latlong.witoxr.app" },
 				{
 					property: "og:image",
 					content: "/cover.png"
 				},
-				{ name: "twitter:title", content: "Latlong International" },
+				{ name: "twitter:title", content: "LatLong International" },
 				{
 					name: "twitter:description",
-					content: "Latlong International - Your Gateway to Secure Business in Africa"
+					content: "LatLong International - Your Gateway to Secure Business in Africa"
 				},
 				{
 					name: "twitter:image",

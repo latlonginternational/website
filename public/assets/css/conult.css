@@ -736,7 +736,6 @@ ul {
 	font-size: 16px;
 	line-height: 30px;
 	color: var(--conult-black);
-	text-transform: capitalize;
 	letter-spacing: 0;
 	font-weight: 500;
 	display: flex;
@@ -3233,7 +3232,7 @@ ul {
 	position: relative;
 	display: block;
 	margin: 0 auto;
-	max-width: 1410px;
+	max-width: 1505.99px;
 	width: 100%;
 	background-color: var(--conult-black);
 	overflow: hidden;
@@ -3257,6 +3256,13 @@ ul {
 	position: absolute;
 	top: 0;
 	right: 0;
+	left: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .counter-one-shape-2 {

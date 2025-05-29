@@ -1,7 +1,7 @@
 <template>
   <div>
-    <header class="main-header clearfix" :class="{ 'header-hidden': isHeaderHidden, 'header-visible': isHeaderVisible }">
-      <div class="main-header__top clearfix">
+    <header class="main-header clearfix">
+      <div class="main-header__top clearfix" :class="{ 'header-hidden': isTopHidden, 'header-visible': isTopVisible }">
         <div class="main-header__top-inner clearfix">
           <div class="main-header__top-left">
             <ul class="list-unstyled main-header__top-address">
@@ -29,7 +29,6 @@
                   <p><a href="tel:+243810041500">+243 810 041 500</a></p>
                 </div>
               </li>
-
               <li>
                 <div class="icon">
                   <span class="icon-phone"></span>
@@ -61,37 +60,14 @@
             </div>
             <div class="main-menu-wrapper__main-menu">
               <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
-              <ul class="main-menu__list">
+              <ul class="main-menu__list mt-1">
                 <!-- Home -->
-                <!-- class="dropdown current" -->
                 <li>
                   <a href="/">Accueil</a>
                 </li>
                 <!-- À propos -->
                 <li class="dropdown">
                   <a href="/about">À propos</a>
-                  <ul>
-                    <li><a href="#deta">A propos de nous</a></li>
-
-                    <li class="dropdown">
-                      <a href="#">Ressources</a>
-                      <ul>
-                        <li><a href="#">Guidelines</a></li>
-                        <li><a href="#">Rapports</a></li>
-                        <li><a href="#">Présentations</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#">Images et Autres</a>
-                      <ul>
-                        <li><a href="#">Galerie</a></li>
-                        <li><a href="#">Infographies</a></li>
-                        <li><a href="#">Vidéos</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Partenaires</a></li>
-                    <li><a href="#">FAQ</a></li>
-                  </ul>
                 </li>
 
                 <!-- Services -->
@@ -107,28 +83,21 @@
                     </li>
                   </ul>
                 </li>
-                <!-- Blog -->
-                <li>
-                  <a href="/blog">Blog</a>
-                </li>
-                <!-- Appels d'offres -->
-                <li>
-                  <a href="#">Appels d'offres</a>
-                </li>
-                <!-- Contact -->
-                <li>
-                  <a href="/contact">Contact</a>
+                <!-- Éthique -->
+                <li class="dropdown">
+                  <a href="/ethique">Éthique</a>
+                  <ul style="width: 240px !important;">
+                    <li><a href="/ethique/conseils">Conseils</a></li>
+                    <li><a href="/ethique/rse">Responsabilité sociétale</a></li>
+                    <li><a href="/ethique/termes-conditions">Termes et conditions</a></li>
+                    <li><a href="/ethique/code-conduite">Code de conduite</a></li>
+                    <li><a href="/ethique/icoca">ICoCA</a></li>
+                  </ul>
                 </li>
               </ul>
             </div>
           </div>
           <div class="main-menu-wrapper__right">
-            <div class="main-menu-wrapper__search-cat">
-              <a
-                href="#"
-                class="main-menu-wrapper__search search-toggler icon-magnifying-glass"
-              ></a>
-            </div>
             <div class="main-menu-wrapper__call">
               <div class="main-menu-wrapper__call-icon">
                 <span class="icon-phone"></span>
@@ -136,7 +105,7 @@
               <div class="main-menu-wrapper__call-number">
                 <p>Appelez-nous</p>
                 <h5>
-                 <a class="text-white hover:underline" href="tel:+243810041500">Contacts</a>
+                  <a class="text-white hover:underline" href="tel:+243810041500">Contacts</a>
                 </h5>
               </div>
             </div>
@@ -145,11 +114,9 @@
       </nav>
     </header>
 
-    <div class="stricky-header stricked-menu main-menu" :class="{ 'header-hidden': isHeaderHidden, 'header-visible': isHeaderVisible }">
+    <div class="stricky-header stricked-menu main-menu" :class="{ 'scrolled': isScrolled }">
       <div class="sticky-header__content"></div>
-      <!-- /.sticky-header__content -->
     </div>
-    <!-- /.stricky-header -->
   </div>
 </template>
 
@@ -160,9 +127,8 @@ export default defineComponent({
   data() {
     return {
       lastScrollY: 0,
-      isHeaderHidden: false,
-      isHeaderVisible: false,
-      scrollTimeout: null as number | null,
+      isTopHidden: false,
+      isTopVisible: false,
       isScrolled: false
     }
   },
@@ -179,15 +145,15 @@ export default defineComponent({
       // Gérer l'état du scroll pour le fond du menu
       this.isScrolled = currentScrollY > 50
       
-      // Masquer le header lors du scroll vers le bas
+      // Masquer le header top lors du scroll vers le bas
       if (currentScrollY > this.lastScrollY && currentScrollY > 100) {
-        this.isHeaderHidden = true
-        this.isHeaderVisible = false
+        this.isTopHidden = true
+        this.isTopVisible = false
       }
-      // Afficher le header lors du scroll vers le haut
+      // Afficher le header top lors du scroll vers le haut
       else if (currentScrollY < this.lastScrollY) {
-        this.isHeaderHidden = false
-        this.isHeaderVisible = true
+        this.isTopHidden = false
+        this.isTopVisible = true
       }
       
       this.lastScrollY = currentScrollY
@@ -203,18 +169,34 @@ export default defineComponent({
   left: 0;
   right: 0;
   z-index: 999;
+}
+
+.main-header__top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   transition: transform 0.3s ease-in-out;
 }
 
 .main-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   transition: all 0.3s ease-in-out;
   background-color: transparent;
 }
 
 .main-menu.scrolled {
-  background-color: rgba(3, 20, 48, 0.7);
+  background-color: rgba(3, 20, 48, 0.85);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+}
+
+/* Déplacer le menu vers le bas quand le header top est visible */
+.main-header__top:not(.header-hidden) + .main-menu {
+  top: var(--header-top-height, 40px);
 }
 
 .header-hidden {
@@ -226,11 +208,35 @@ export default defineComponent({
 }
 
 .stricky-header {
-  transition: transform 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Ajuster le contenu principal pour compenser le header fixe */
 :deep(body) {
   padding-top: var(--header-height, 120px);
+}
+
+/* Styles pour les écrans < 1260px */
+@media (max-width: 1259px) {
+  .main-header__top {
+    display: none !important;
+  }
+
+  .main-menu {
+    top: 0 !important;
+  }
+
+  .main-header__top:not(.header-hidden) + .main-menu {
+    top: 0 !important;
+  }
+
+  /* Ajuster le padding du body pour les petits écrans */
+  :deep(body) {
+    padding-top: var(--header-height-mobile, 80px);
+  }
 }
 </style>

@@ -1,44 +1,73 @@
 <?php
+header('Content-Type: application/json');
 
-// Define some constants
-define( "RECIPIENT_NAME", "John Doe" );
-define( "RECIPIENT_EMAIL", "mail@mail.com" );
+// Définir les destinataires
+$recipients = [
+    "test@wito-inc.com",
+    "info@latlongcongo.com"
+];
 
-// Read the form values
+// Lire les valeurs du formulaire
 $success = false;
-$name = isset( $_POST['name'] ) ? preg_replace( "/[^\.\-\' a-zA-Z0-9]/", "", $_POST['name'] ) : "";
-$senderEmail = isset( $_POST['email'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['email'] ) : "";
-$phone = isset( $_POST['phone'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['phone'] ) : "";
-$services = isset( $_POST['services'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['services'] ) : "";
-$subject = isset( $_POST['subject'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['subject'] ) : "";
-$address = isset( $_POST['address'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['address'] ) : "";
-$website = isset( $_POST['website'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['website'] ) : "";
-$message = isset( $_POST['message'] ) ? preg_replace( "/(From:|To:|BCC:|CC:|Subject:|Content-Type:)/", "", $_POST['message'] ) : "";
+$name = isset($_POST['name']) ? preg_replace("/[^\.\-\' a-zA-Z0-9]/", "", $_POST['name']) : "";
+$email = isset($_POST['email']) ? preg_replace("/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['email']) : "";
+$phone = isset($_POST['phone']) ? preg_replace("/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['phone']) : "";
+$subject = isset($_POST['subject']) ? preg_replace("/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['subject']) : "";
+$message = isset($_POST['message']) ? preg_replace("/(From:|To:|BCC:|CC:|Subject:|Content-Type:)/", "", $_POST['message']) : "";
 
-$mail_subject = 'A contact request send by ' . $name;
-
-$body = 'Name: '. $name . "\r\n";
-$body .= 'Email: '. $senderEmail . "\r\n";
-
-
-if ($phone) {$body .= 'Phone: '. $phone . "\r\n"; }
-if ($services) {$body .= 'services: '. $services . "\r\n"; }
-if ($subject) {$body .= 'Subject: '. $subject . "\r\n"; }
-if ($address) {$body .= 'Address: '. $address . "\r\n"; }
-if ($website) {$body .= 'Website: '. $website . "\r\n"; }
-
-$body .= 'message: ' . "\r\n" . $message;
-
-
-
-// If all values exist, send the email
-if ( $name && $senderEmail && $message ) {
-  $recipient = RECIPIENT_NAME . " <" . RECIPIENT_EMAIL . ">";
-  $headers = "From: " . $name . " <" . $senderEmail . ">";  
-  $success = mail( $recipient, $mail_subject, $body, $headers );
-  echo "<div class='inner success'><p class='success'>Thanks for contacting us. We will contact you ASAP!</p></div><!-- /.inner -->";
-}else {
-	echo "<div class='inner error'><p class='error'>Something went wrong. Please try again.</p></div><!-- /.inner -->";
+// Vérifier que tous les champs requis sont remplis
+if (!$name || !$email || !$phone || !$subject || !$message) {
+    echo json_encode([
+        'success' => false,
+        'message' => 'Veuillez remplir tous les champs requis.'
+    ]);
+    exit;
 }
 
-?>
+// Vérifier le format de l'email
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    echo json_encode([
+        'success' => false,
+        'message' => 'Veuillez entrer une adresse email valide.'
+    ]);
+    exit;
+}
+
+// Vérifier le format du numéro de téléphone (format congolais)
+if (!preg_match('/^\+243[0-9]{9}$/', $phone)) {
+    echo json_encode([
+        'success' => false,
+        'message' => 'Veuillez entrer un numéro de téléphone valide au format +243XXXXXXXXX.'
+    ]);
+    exit;
+}
+
+$mail_subject = 'Nouveau message de contact - ' . $subject;
+
+$body = "Nouveau message de contact depuis le site web LatLong International\n\n";
+$body .= "Nom: " . $name . "\n";
+$body .= "Email: " . $email . "\n";
+$body .= "Téléphone: " . $phone . "\n";
+$body .= "Sujet: " . $subject . "\n\n";
+$body .= "Message:\n" . $message;
+
+$headers = "From: " . $name . " <" . $email . ">\r\n";
+$headers .= "Reply-To: " . $email . "\r\n";
+$headers .= "X-Mailer: PHP/" . phpversion();
+
+$success = true;
+$error_message = '';
+
+// Envoyer l'email à tous les destinataires
+foreach ($recipients as $recipient) {
+    if (!mail($recipient, $mail_subject, $body, $headers)) {
+        $success = false;
+        $error_message = "Erreur lors de l'envoi de l'email.";
+        break;
+    }
+}
+
+echo json_encode([
+    'success' => $success,
+    'message' => $success ? 'Votre message a été envoyé avec succès. Nous vous contacterons bientôt.' : $error_message
+]);
