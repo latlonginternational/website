@@ -34,7 +34,7 @@
               </div>
               <p class="get-to-know__text">
                 LatLong Congo, fondée en 2012, est un leader en solutions de
-                sécurité dans l’est de la RDC. Nous combinons expertise locale
+                sécurité dans l'est de la RDC. Nous combinons expertise locale
                 et technologie moderne pour protéger vos biens et vos intérêts.
               </p>
               <ul class="list-unstyled get-to-know__points">
@@ -111,7 +111,7 @@
           <div class="col-xl-4 col-lg-4">
             <div class="vision-box">
               <h3 class="vision-title">Vision</h3>
-              <p>Être l’entreprise de sécurité de référence en Afrique.</p>
+              <p>Être l'entreprise de sécurité de référence en Afrique.</p>
             </div>
           </div>
           <div class="col-xl-4 col-lg-4">
@@ -153,7 +153,7 @@
       <div class="container">
         <div class="section-title text-center">
           <span class="section-title__tagline"></span>
-          <h2 class="section-title__title">Zone d’Opération</h2>
+          <h2 class="section-title__title">Zone d'Opération</h2>
         </div>
         <div class="row">
           <div class="col-xl-12">
@@ -267,7 +267,7 @@
       <div class="container">
         <div class="section-title text-center">
           <span class="section-title__tagline">Nos témoignages</span>
-          <h2 class="section-title__title">Ce qu’ils disent</h2>
+          <h2 class="section-title__title">Ce qu'ils disent</h2>
         </div>
         <div class="row">
           <div class="col-xl-12">
@@ -282,7 +282,7 @@
                   <i class="fa fa-star"></i>
                 </p>
                 <p class="testimonial-one__text">
-                  LatLong a transformé notre gestion de sécurité. L’équipe est
+                  LatLong a transformé notre gestion de sécurité. L'équipe est
                   proactive et toujours disponible pour répondre à nos besoins
                   spécifiques.
                 </p>
@@ -605,25 +605,152 @@ onMounted(() => {
 
   // Données pour les marqueurs des villes
   const cities = [
-    {
-      name: "Kinshasa",
-      coordinates: [15.2258, -4.4447],
-      color: "#FF5733", // Couleur du marqueur pour Kinshasa
-      description: "Capitale politique et économique de la RDC.",
-    },
-    {
-      name: "Goma",
-      coordinates: [29.2192, -1.6768],
-      color: "#33C1FF", // Couleur du marqueur pour Goma
-      description: "Base principale de nos opérations.",
-    },
-    {
-      name: "Lubumbashi",
-      coordinates: [27.4348, -11.6477],
-      color: "#76FF33", // Couleur du marqueur pour Lubumbashi
-      description: "Hub minier et centre économique du Katanga.",
-    },
-  ];
+  {
+    name: "Kinshasa",
+    coordinates: [15.3136, -4.3276],
+    color: "#FF5733",
+    description: "Capitale politique et économique de la RDC.",
+  },
+  {
+    name: "Goma",
+    coordinates: [29.2333, -1.6833],
+    color: "#33C1FF",
+    description: "Base principale de nos opérations.",
+  },
+  {
+    name: "Lubumbashi",
+    coordinates: [27.4794, -11.6609],
+    color: "#76FF33",
+    description: "Hub minier et centre économique du Katanga.",
+  },
+  {
+    name: "Bisie",
+    coordinates: [27.2500, -1.0000],
+    color: "#FFB300",
+    description: "Site minier important.",
+  },
+  {
+    name: "Bukavu",
+    coordinates: [28.8428, -2.4908],
+    color: "#FFB300",
+    description: "Ville du Sud-Kivu.",
+  },
+  {
+    name: "Bule",
+    coordinates: [30.6000, 1.9167],
+    color: "#FFB300",
+    description: "Localité de l'Ituri.",
+  },
+  {
+    name: "Bunia",
+    coordinates: [30.2522, 1.5594],
+    color: "#FFB300",
+    description: "Chef-lieu de l'Ituri.",
+  },
+  {
+    name: "Butembo",
+    coordinates: [29.2912, 0.1416],
+    color: "#FFB300",
+    description: "Ville commerciale du Nord-Kivu.",
+  },
+  {
+    name: "Durba",
+    coordinates: [28.0333, 3.4833],
+    color: "#FFB300",
+    description: "Ville minière du Haut-Uele.",
+  },
+  {
+    name: "Geti",
+    coordinates: [29.3167, -1.9500],
+    color: "#FFB300",
+    description: "Localité du Sud-Kivu.",
+  },
+  {
+    name: "Kalemie",
+    coordinates: [29.1947, -5.9475],
+    color: "#FFB300",
+    description: "Ville portuaire du Tanganyika.",
+  },
+  {
+    name: "Kirumba",
+    coordinates: [29.1667, -0.5833],
+    color: "#FFB300",
+    description: "Ville du Nord-Kivu.",
+  },
+  {
+    name: "Kisangani",
+    coordinates: [25.2001, 0.5153],
+    color: "#FFB300",
+    description: "Grande ville de la Tshopo.",
+  },
+  {
+    name: "Kitshanga",
+    coordinates: [28.5667, -1.0500],
+    color: "#FFB300",
+    description: "Localité du Nord-Kivu.",
+  },
+  {
+    name: "Komanda",
+    coordinates: [29.6167, 1.1833],
+    color: "#FFB300",
+    description: "Localité de l'Ituri.",
+  },
+  {
+    name: "Mahagi",
+    coordinates: [31.1500, 2.2833],
+    color: "#FFB300",
+    description: "Ville frontalière de l'Ituri.",
+  },
+  {
+    name: "Minova",
+    coordinates: [28.9667, -3.4000],
+    color: "#FFB300",
+    description: "Ville du Sud-Kivu.",
+  },
+  {
+    name: "Niangara",
+    coordinates: [27.7333, 3.3500],
+    color: "#FFB300",
+    description: "Ville du Haut-Uele.",
+  },
+  {
+    name: "Nyunzu",
+    coordinates: [27.2500, -6.1500],
+    color: "#FFB300",
+    description: "Ville du Tanganyika.",
+  },
+  {
+    name: "Ramogi",
+    coordinates: [28.0000, 2.8000],
+    color: "#FFB300",
+    description: "Localité du Haut-Uele.",
+  },
+  {
+    name: "Uvira",
+    coordinates: [29.1386, -3.3958],
+    color: "#FFB300",
+    description: "Ville du Sud-Kivu, au bord du lac Tanganyika.",
+  },
+  {
+    name: "Walikale",
+    coordinates: [27.9833, -0.6833],
+    color: "#FFB300",
+    description: "Ville du Nord-Kivu.",
+  },
+  {
+    name: "Watsa",
+    coordinates: [28.0000, 3.0333],
+    color: "#FFB300",
+    description: "Ville du Haut-Uele.",
+  },
+  {
+    name: "Beni",
+    coordinates: [29.4731, 0.4911],
+    color: "#FFB300",
+    description: "Ville du Nord-Kivu.",
+  },
+];
+
 
   // Fonction pour créer un marqueur coloré
   function createColoredMarker(color) {

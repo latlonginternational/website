@@ -15,15 +15,17 @@
 							</div>
 
 							<div class="space-y-2">
-									<p class="text-conult-gray whitespace-nowrap">
-										<a href="mailto:info@latlongcongo.com" class="hover:text-conult-base transition-colors">info@latlongcongo.com</a>
-									</p>
-									<p class="text-conult-gray">325 Blvd Kanyamuhanga, Q. des Volcans, Goma</p>
-								</div>
+								<p class="text-conult-gray whitespace-nowrap">
+									<a href="mailto:info@latlongcongo.com" class="hover:text-conult-base transition-colors">info@latlongcongo.com</a>
+								</p>
+								<p class="text-conult-gray">{{ $i18n.__('contact.address') }}</p>
+							</div>
 
 							<!-- Social Links -->
 							<div class="site-footer__top-right-social">
-								<a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-whatsapp"></i></a><a href="#"><i class="fab fa-linkedin"></i></a>
+								<a href="#"><i class="fab fa-facebook"></i></a>
+								<a href="#"><i class="fab fa-whatsapp"></i></a>
+								<a href="#"><i class="fab fa-linkedin"></i></a>
 							</div>
 						</div>
 					</div>
@@ -33,53 +35,49 @@
 						<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
 							<!-- Explore -->
 							<div class="space-y-4">
-								<h3 class="text-lg font-conult font-bold text-conult-white whitespace-nowrap">Explore</h3>
+								<h3 class="text-lg font-conult font-bold text-conult-white whitespace-nowrap">{{ $i18n.__('navigation.explore') }}</h3>
 								<ul class="space-y-2">
-
 									<li>
-										<a href="/" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">Accueil</a>
+										<a href="/" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">{{ $i18n.__('navigation.home') }}</a>
 									</li>
 									<li>
-										<a href="/about" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">À propos</a>
+										<a href="/about" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">{{ $i18n.__('navigation.about') }}</a>
 									</li>
-
-										<li>
-										<a href="/ethique" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">Éthique</a>
-									</li>
-									
 									<li>
-										<a href="/contact" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">Contacts</a>
+										<a href="/ethique" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">{{ $i18n.__('navigation.ethics') }}</a>
+									</li>
+									<li>
+										<a href="/contact" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">{{ $i18n.__('navigation.contact') }}</a>
 									</li>
 								</ul>
 							</div>
 
 							<!-- Services -->
 							<div class="space-y-4">
-								<h3 class="text-lg font-conult font-bold text-conult-white whitespace-nowrap">Services</h3>
+								<h3 class="text-lg font-conult font-bold text-conult-white whitespace-nowrap">{{ $i18n.__('navigation.services') }}</h3>
 								<ul class="space-y-2">
 									<li>
-										<a href="/services/protection" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">Protection</a>
+										<a href="/services/protection" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">{{ $i18n.__('navigation.services.protection') }}</a>
 									</li>
 									<li>
-										<a href="/services/technology" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">Technologie</a>
+										<a href="/services/technology" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">{{ $i18n.__('navigation.services.technology') }}</a>
 									</li>
 									<li>
-										<a href="/services/consultancy" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">Consultance</a>
+										<a href="/services/consultancy" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">{{ $i18n.__('navigation.services.consultancy') }}</a>
 									</li>
 									<li>
-										<a href="/services/trainings" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">Formations</a>
+										<a href="/services/trainings" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">{{ $i18n.__('navigation.services.trainings') }}</a>
 									</li>
 									<li>
-										<a href="/services/others-security-services" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">Autres Services</a>
+										<a href="/services/others-security-services" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">{{ $i18n.__('navigation.services.others') }}</a>
 									</li>
 								</ul>
 							</div>
 
 							<!-- Contact -->
 							<div class="space-y-4">
-								<h3 class="text-lg font-conult font-bold text-conult-white whitespace-nowrap">Contact</h3>
+								<h3 class="text-lg font-conult font-bold text-conult-white whitespace-nowrap">{{ $i18n.__('navigation.contact') }}</h3>
 								<ul class="space-y-2">
-									
 									<li class="flex items-start space-x-2">
 										<div class="text-conult-base mt-1">
 											<span class="icon-email"></span>
@@ -106,8 +104,6 @@
 									</li>
 								</ul>
 							</div>
-
-							
 						</div>
 					</div>
 				</div>
@@ -115,14 +111,16 @@
 
 			<!-- Footer Bottom -->
 			<div class="pt-8 border-t border-conult-gray/20">
-				<p class="text-center text-conult-gray text-sm whitespace-nowrap">© <span id="current-year"></span> 2024 - LatLong International. Tous droits réservés. Par <a href="www.witoxr.studio" class="hover:underline text-conult-base transition-colors">Wito XR Studio</a></p>
+				<p class="text-center text-conult-gray text-sm whitespace-nowrap">{{ $i18n.__('footer.copyright', { year: new Date().getFullYear().toString() }) }} <a href="www.witoxr.studio" class="hover:underline text-conult-base transition-colors">Wito XR Studio</a></p>
 			</div>
 		</div>
 	</footer>
 </template>
 
-<script setup>
-	// Le script reste inchangé si nécessaire
+<script setup lang="ts">
+import { useNuxtApp } from '#app'
+
+const { $i18n } = useNuxtApp()
 </script>
 
 <style scoped>

@@ -1,5 +1,7 @@
 <template>
 	<div class="index-page">
+
+
 		<!--Main Slider Start-->
 		<section class="main-slider">
 			<div
@@ -35,6 +37,8 @@
 							<div class="row">
 								<div class="col-xl-7">
 									<div class="main-slider__content">
+
+					
 										<h2>Des solutions adaptées</h2>
 										<p>LatLong, votre partenaire pour des solutions de sécurité fiables.</p>
 										<a href="/about" class="thm-btn">En savoir plus</a>
@@ -109,6 +113,8 @@
 		<!--Main Slider End-->
 
 		<!--Feature One Start-->
+
+							
 		<section class="feature-one">
 			<div class="container">
 				<div class="row flex flex-wrap">
@@ -598,8 +604,8 @@
 			<div class="container mx-auto">
 				<!-- Section Title -->
 				<div class="text-center mb-12">
-					<span class="text-conult-base font-conult text-sm uppercase tracking-wider mb-2 block">Actualités récentes</span>
-					<h2 class="text-3xl md:text-4xl font-conult font-bold text-conult-black">Articles</h2>
+					<span class="text-conult-base font-conult text-sm uppercase tracking-wider mb-2 block">Éthiques</span>
+					<h2 class="text-3xl md:text-4xl font-conult font-bold text-conult-black">Nos principes éthiques</h2>
 				</div>
 
 				<!-- News Carousel -->
@@ -608,9 +614,9 @@
 					<div class="overflow-hidden">
 						<div class="flex transition-transform duration-500 ease-in-out space-x-4" 
 							 :style="{ transform: `translateX(-${currentSlide * slideWidth}%)` }">
-							<div v-for="actualite in actualites" :key="actualite.id" 
+							<div v-for="ethique in ethiques" :key="ethique.id" 
 								 class="w-full sm:w-full md:w-1/2 lg:w-1/3 flex-shrink-0">
-								<DefaultCard :data="actualite" />
+								<DefaultCard :data="ethique" />
 							</div>
 						</div>
 					</div>
@@ -723,48 +729,58 @@
 <script setup>
 import { ref, onMounted, onUnmounted, computed, watch } from 'vue'
 
-const actualites = [
+const ethiques = [
 	{
 		id: 1,
-		image: '/assets/images/blog/art1.jpg',
-		date: '15 Jan 2025',
+		image: '/assets/images/blog/ethique-conseils.jpg',
+		date: '15 Mars 2024',
 		auteur: 'LatLong',
-		commentaires: 3,
-		titre: 'Nouvelles stratégies de sécurité',
-		description: 'Découvrez nos approches innovantes pour sécuriser vos opérations.',
-		lien: '/blog/details-id'
+		commentaires: 0,
+		titre: 'Conseils',
+		description: 'Nos principes directeurs et conseils pour maintenir les plus hauts standards éthiques dans nos opérations quotidiennes.',
+		lien: '/ethique/conseils'
 	},
 	{
 		id: 2,
-		image: '/assets/images/blog/art2.jpg',
-		date: '20 Fév 2025',
+		image: '/assets/images/blog/ethique-rse.jpg',
+		date: '20 Mars 2024',
 		auteur: 'LatLong',
-		commentaires: 5,
-		titre: 'Protection des zones sensibles',
-		description: 'Nos services protègent les infrastructures critiques efficacement.',
-		lien: '/blog/details-id'
+		commentaires: 0,
+		titre: 'Responsabilité sociétale de l\'Entreprise',
+		description: 'Notre engagement envers le développement durable, l\'impact social positif et la protection de l\'environnement.',
+		lien: '/ethique/rse'
 	},
 	{
 		id: 3,
-		image: '/assets/images/blog/art3.jpg',
-		date: '10 Mar 2025',
+		image: '/assets/images/blog/ethique-termes.jpg',
+		date: '25 Mars 2024',
 		auteur: 'LatLong',
-		commentaires: 2,
-		titre: 'Renforcement des capacités',
-		description: 'Des formations spécialisées pour un personnel hautement qualifié.',
-		lien: '/blog/details-id'
+		commentaires: 0,
+		titre: 'Termes et conditions',
+		description: 'Les conditions générales qui régissent nos services et notre relation avec nos clients et partenaires.',
+		lien: '/ethique/termes-conditions'
 	},
 	{
 		id: 4,
-		image: '/assets/images/blog/art4.jpg',
-		date: '25 Mar 2025',
-		auteur: 'Latlong',
-		commentaires: 1,
-		titre: 'Surveillance avancée',
-		description: 'Les nouvelles technologies révolutionnent nos systèmes de surveillance.',
-		lien: '/blog/details-id'
+		image: '/assets/images/blog/ethique-code.jpg',
+		date: '30 Mars 2024',
+		auteur: 'LatLong',
+		commentaires: 0,
+		titre: 'Code de conduite',
+		description: 'Notre Code de conduite professionnel qui guide le comportement de nos employés et partenaires.',
+		lien: '/ethique/code-conduite'
+	},
+	{
+		id: 5,
+		image: '/assets/images/blog/ethique-icoca.jpg',
+		date: '5 Avril 2024',
+		auteur: 'LatLong',
+		commentaires: 0,
+		titre: 'ICoCA - International Code of Conduct Association',
+		description: 'Notre adhésion et conformité aux standards internationaux de l\'ICoCA pour les services de sécurité privée.',
+		lien: '/ethique/icoca'
 	}
-]
+];
 
 const currentSlide = ref(0)
 const autoplayInterval = ref(null)
@@ -779,7 +795,7 @@ const itemsPerSlide = computed(() => {
 
 // Calcul du nombre total de slides
 const totalSlides = computed(() => {
-	return Math.ceil(actualites.length / itemsPerSlide.value)
+	return Math.ceil(ethiques.length / itemsPerSlide.value)
 })
 
 // Calcul de la largeur de déplacement pour chaque slide

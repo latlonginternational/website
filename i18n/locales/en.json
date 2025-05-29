@@ -1,0 +1,59 @@
+{
+	"meta": {
+		"title": "LatLong International",
+		"description": "LatLong International - Your Gateway to Secure Business in Africa"
+	},
+	"navigation": {
+		"home": "Home",
+		"about": "About",
+		"services": {
+			"title": "Services",
+			"protection": "Protection",
+			"technology": "Technology",
+			"consultancy": "Consultancy",
+			"trainings": "Trainings",
+			"others": "Other Services"
+		},
+		"ethics": {
+			"title": "Ethics",
+			"councils": "Councils",
+			"csr": "CSR",
+			"terms": "Terms & Conditions",
+			"code": "Code of Conduct",
+			"icoca": "ICOCA"
+		},
+		"contact": "Contact",
+		"explore": "Explore"
+	},
+	"common": {
+		"readMore": "Read More",
+		"learnMore": "Learn More",
+		"contact": "Contact Us",
+		"contactUs": "Contact Us",
+		"getStarted": "Get Started",
+		"loading": "Loading...",
+		"callUs": "Call Us",
+		"contacts": "+243 810 041 500",
+		"language": {
+			"title": "Language",
+			"fr": "French",
+			"en": "English"
+		}
+	},
+	"contact": {
+		"address": "325 Blvd Kanyamuhanga, Q. des Volcans, Goma",
+		"callUs": "Call Us",
+		"email": "info@latlongcongo.com",
+		"phone": "+243 810 041 500"
+	},
+	"footer": {
+		"description": "LatLong International is your trusted partner for security and protection in DR Congo.",
+		"quickLinks": "Quick Links",
+		"contact": "Contact",
+		"newsletter": "Newsletter",
+		"newsletterDescription": "Subscribe to our newsletter to receive our latest news and offers.",
+		"emailPlaceholder": "Your email address",
+		"subscribe": "Subscribe",
+		"copyright": "© %s LatLong International. All rights reserved."
+	}
+}

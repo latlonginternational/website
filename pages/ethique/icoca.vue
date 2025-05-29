@@ -31,7 +31,7 @@
               <div class="news-details__content">
                 <ul class="list-unstyled news-details__meta">
                   <li>
-                    <a href="#"><i class="far fa-user-circle"></i> Admin</a>
+                    <a href="#"><i class="far fa-user-circle"></i> LatLong</a>
                   </li>
                   <li>
                     <a href="#"><i class="far fa-comments"></i> 0 Comments</a>
@@ -88,12 +88,7 @@
 
           <div class="col-xl-4 col-lg-5">
             <div class="sidebar">
-              <div class="sidebar__single sidebar__search">
-                <form action="#" class="sidebar__search-form">
-                  <input type="search" placeholder="Faire une recherche" />
-                  <button type="submit"><i class="icon-magnifying-glass"></i></button>
-                </form>
-              </div>
+             
               <div class="sidebar__single sidebar__post">
                 <h3 class="sidebar__title">Pages connexes</h3>
                 <ul class="sidebar__post-list list-unstyled">
@@ -103,7 +98,7 @@
                     </div>
                     <div class="sidebar__post-content">
                       <h3>
-                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>Admin</span>
+                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>LatLong</span>
                         <a href="/ethique/conseils">Conseils</a>
                       </h3>
                     </div>
@@ -114,7 +109,7 @@
                     </div>
                     <div class="sidebar__post-content">
                       <h3>
-                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>Admin</span>
+                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>LatLong</span>
                         <a href="/ethique/rse">Responsabilité sociétale</a>
                       </h3>
                     </div>
@@ -125,7 +120,7 @@
                     </div>
                     <div class="sidebar__post-content">
                       <h3>
-                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>Admin</span>
+                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>LatLong</span>
                         <a href="/ethique/code-conduite">Code de conduite</a>
                       </h3>
                     </div>
@@ -136,7 +131,7 @@
                     </div>
                     <div class="sidebar__post-content">
                       <h3>
-                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>Admin</span>
+                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>LatLong</span>
                         <a href="/ethique/termes-conditions">Termes et conditions</a>
                       </h3>
                     </div>

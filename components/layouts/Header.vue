@@ -10,7 +10,7 @@
                   <span class="icon-pin"></span>
                 </div>
                 <div class="text">
-                  <p>325 Blvd Kanyamuhanga, Q. des Volcans, Goma</p>
+                  <p>{{ $i18n.__('contact.address') }}</p>
                 </div>
               </li>
               <li>
@@ -18,7 +18,7 @@
                   <span class="icon-email"></span>
                 </div>
                 <div class="text">
-                  <p><a href="mailto:info@latlongcongo.com">info@latlongcongo.com</a></p>
+                  <p><a :href="'mailto:' + $i18n.__('contact.email')">{{ $i18n.__('contact.email') }}</a></p>
                 </div>
               </li>
               <li>
@@ -26,7 +26,7 @@
                   <span class="icon-phone"></span>
                 </div>
                 <div class="text">
-                  <p><a href="tel:+243810041500">+243 810 041 500</a></p>
+                  <p><a :href="'tel:' + $i18n.__('contact.phone').replace(/\s+/g, '')">{{ $i18n.__('contact.phone') }}</a></p>
                 </div>
               </li>
               <li>
@@ -54,46 +54,56 @@
         <div class="main-menu-wrapper clearfix">
           <div class="main-menu-wrapper__left">
             <div class="main-menu-wrapper__logo">
-              <a href="/"
-                ><img src="/assets/images/resources/logo-1.png" width="160px" alt=""
-              /></a>
+              <a href="/"><img src="/assets/images/resources/logo-1.png" width="160px" alt="" /></a>
+
+                             
+
             </div>
+
+            
             <div class="main-menu-wrapper__main-menu">
               <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
               <ul class="main-menu__list mt-1">
+
+                <!-- Sélecteur de langue -->
+                <li class="language-menu-item  hidden lg:block">
+                  <LanguageSelector />
+                </li>
+
                 <!-- Home -->
                 <li>
-                  <a href="/">Accueil</a>
+                  <a href="/">{{ $i18n.__('navigation.home') }}</a>
                 </li>
                 <!-- À propos -->
                 <li class="dropdown">
-                  <a href="/about">À propos</a>
+                  <a href="/about">{{ $i18n.__('navigation.about') }}</a>
                 </li>
 
                 <!-- Services -->
                 <li>
-                  <a href="/services">Services</a>
+                  <a href="/services">{{ $i18n.__('navigation.services.title') }}</a>
                   <ul>
-                    <li><a href="/services/protection">Protection</a></li>
-                    <li><a href="/services/technology">Technologie</a></li>
-                    <li><a href="/services/consultancy">Consultance</a></li>
-                    <li><a href="/services/trainings">Formations</a></li>
+                    <li><a href="/services/protection">{{ $i18n.__('navigation.services.protection') }}</a></li>
+                    <li><a href="/services/technology">{{ $i18n.__('navigation.services.technology') }}</a></li>
+                    <li><a href="/services/consultancy">{{ $i18n.__('navigation.services.consultancy') }}</a></li>
+                    <li><a href="/services/trainings">{{ $i18n.__('navigation.services.trainings') }}</a></li>
                     <li>
-                      <a href="/services/others-security-services">Autres services</a>
+                      <a href="/services/others-security-services">{{ $i18n.__('navigation.services.others') }}</a>
                     </li>
                   </ul>
                 </li>
                 <!-- Éthique -->
                 <li class="dropdown">
-                  <a href="/ethique">Éthique</a>
+                  <a href="/ethique">{{ $i18n.__('navigation.ethics.title') }}</a>
                   <ul style="width: 240px !important;">
-                    <li><a href="/ethique/conseils">Conseils</a></li>
-                    <li><a href="/ethique/rse">Responsabilité sociétale</a></li>
-                    <li><a href="/ethique/termes-conditions">Termes et conditions</a></li>
-                    <li><a href="/ethique/code-conduite">Code de conduite</a></li>
-                    <li><a href="/ethique/icoca">ICoCA</a></li>
+                    <li><a href="/ethique/conseils">{{ $i18n.__('navigation.ethics.councils') }}</a></li>
+                    <li><a href="/ethique/rse">{{ $i18n.__('navigation.ethics.csr') }}</a></li>
+                    <li><a href="/ethique/termes-conditions">{{ $i18n.__('navigation.ethics.terms') }}</a></li>
+                    <li><a href="/ethique/code-conduite">{{ $i18n.__('navigation.ethics.code') }}</a></li>
+                    <li><a href="/ethique/icoca">{{ $i18n.__('navigation.ethics.icoca') }}</a></li>
                   </ul>
                 </li>
+                
               </ul>
             </div>
           </div>
@@ -103,9 +113,9 @@
                 <span class="icon-phone"></span>
               </div>
               <div class="main-menu-wrapper__call-number">
-                <p>Appelez-nous</p>
+                <p>{{ $i18n.__('common.callUs') }}</p>
                 <h5>
-                  <a class="text-white hover:underline" href="tel:+243810041500">Contacts</a>
+                  <a class="text-white hover:underline" :href="'tel:' + $i18n.__('contact.phone').replace(/\s+/g, '')">{{ $i18n.__('contact.phone') }}</a>
                 </h5>
               </div>
             </div>
@@ -120,45 +130,43 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script setup lang="ts">
+import { ref, onMounted, onUnmounted } from 'vue'
+import { useNuxtApp } from '#app'
 
-export default defineComponent({
-  data() {
-    return {
-      lastScrollY: 0,
-      isTopHidden: false,
-      isTopVisible: false,
-      isScrolled: false
-    }
-  },
-  mounted() {
-    window.addEventListener('scroll', this.handleScroll)
-  },
-  beforeDestroy() {
-    window.removeEventListener('scroll', this.handleScroll)
-  },
-  methods: {
-    handleScroll() {
-      const currentScrollY = window.scrollY
-      
-      // Gérer l'état du scroll pour le fond du menu
-      this.isScrolled = currentScrollY > 50
-      
-      // Masquer le header top lors du scroll vers le bas
-      if (currentScrollY > this.lastScrollY && currentScrollY > 100) {
-        this.isTopHidden = true
-        this.isTopVisible = false
-      }
-      // Afficher le header top lors du scroll vers le haut
-      else if (currentScrollY < this.lastScrollY) {
-        this.isTopHidden = false
-        this.isTopVisible = true
-      }
-      
-      this.lastScrollY = currentScrollY
-    }
+const { $i18n } = useNuxtApp()
+
+const lastScrollY = ref(0)
+const isTopHidden = ref(false)
+const isTopVisible = ref(false)
+const isScrolled = ref(false)
+
+const handleScroll = () => {
+  const currentScrollY = window.scrollY
+  
+  // Gérer l'état du scroll pour le fond du menu
+  isScrolled.value = currentScrollY > 50
+  
+  // Masquer le header top lors du scroll vers le bas
+  if (currentScrollY > lastScrollY.value && currentScrollY > 100) {
+    isTopHidden.value = true
+    isTopVisible.value = false
   }
+  // Afficher le header top lors du scroll vers le haut
+  else if (currentScrollY < lastScrollY.value) {
+    isTopHidden.value = false
+    isTopVisible.value = true
+  }
+  
+  lastScrollY.value = currentScrollY
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
 })
 </script>
 
@@ -238,5 +246,31 @@ export default defineComponent({
   :deep(body) {
     padding-top: var(--header-height-mobile, 80px);
   }
+}
+
+.language-menu-item {
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.language-menu-item :deep(.language-selector) {
+  margin: 0;
+}
+
+.language-menu-item :deep(.language-button) {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.25rem 2rem 0.25rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+
+.language-menu-item :deep(.language-options) {
+  margin-top: 0.5rem;
+}
+
+.language-menu-item :deep(.language-option) {
+  padding: 0.375rem 2rem 0.375rem 0.75rem;
+  font-size: 0.875rem;
 }
 </style>

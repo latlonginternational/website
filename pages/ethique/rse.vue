@@ -29,30 +29,22 @@
                 </div>
               </div>
               <div class="news-details__content">
-                <ul class="list-unstyled news-details__meta">
-                  <li>
-                    <a href="#"><i class="far fa-user-circle"></i> Admin</a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="far fa-comments"></i> 0 Comments</a>
-                  </li>
-                </ul>
-                <h3 class="news-details__title">Notre Engagement RSE</h3>
+                <h3 class="news-details__title">Notre engagement RSE</h3>
                 <p class="news-details__text-1">
                   La Responsabilité sociétale de l'Entreprise (RSE) est au cœur de notre stratégie chez LatLong. Nous nous engageons à contribuer positivement au développement durable de notre communauté tout en maintenant des standards élevés de performance professionnelle.
                 </p>
                 <p class="news-details__text-2">
-                  <strong>Impact Social</strong><br>
+                  <strong>Impact social</strong><br>
                   Notre engagement social se manifeste à travers plusieurs initiatives : formation et emploi local (95% de nos effectifs sont recrutés localement), programmes de formation professionnelle pour les jeunes, partenariats avec des institutions éducatives locales, et support aux initiatives communautaires.
                 </p>
                 <p class="news-details__text-3">
                   <strong>Environnement</strong><br>
                   Notre engagement environnemental comprend la réduction de notre empreinte carbone, la gestion responsable des déchets, l'utilisation de technologies éco-responsables, et la sensibilisation de nos équipes aux pratiques durables.
-                </p>
+                </p><br>
                 <p class="news-details__text-3">
                   <strong>Gouvernance</strong><br>
                   Notre approche de gouvernance responsable inclut la transparence dans nos opérations, des pratiques commerciales éthiques, le respect des droits des employés, et l'engagement envers la diversité et l'inclusion.
-                </p>
+                </p><br>
                 <p class="news-details__text-3">
                   <strong>Objectifs 2024-2025</strong><br>
                   Nous visons à augmenter de 20% notre recrutement local, réduire de 15% notre consommation énergétique, former 100 jeunes aux métiers de la sécurité, et lancer 3 nouveaux projets communautaires.
@@ -88,12 +80,7 @@
 
           <div class="col-xl-4 col-lg-5">
             <div class="sidebar">
-              <div class="sidebar__single sidebar__search">
-                <form action="#" class="sidebar__search-form">
-                  <input type="search" placeholder="Faire une recherche" />
-                  <button type="submit"><i class="icon-magnifying-glass"></i></button>
-                </form>
-              </div>
+             
               <div class="sidebar__single sidebar__post">
                 <h3 class="sidebar__title">Pages connexes</h3>
                 <ul class="sidebar__post-list list-unstyled">
@@ -103,7 +90,7 @@
                     </div>
                     <div class="sidebar__post-content">
                       <h3>
-                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>Admin</span>
+                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>LatLong</span>
                         <a href="/ethique/conseils">Conseils</a>
                       </h3>
                     </div>
@@ -114,7 +101,7 @@
                     </div>
                     <div class="sidebar__post-content">
                       <h3>
-                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>Admin</span>
+                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>LatLong</span>
                         <a href="/ethique/code-conduite">Code de conduite</a>
                       </h3>
                     </div>
@@ -125,7 +112,7 @@
                     </div>
                     <div class="sidebar__post-content">
                       <h3>
-                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>Admin</span>
+                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>LatLong</span>
                         <a href="/ethique/termes-conditions">Termes et conditions</a>
                       </h3>
                     </div>
@@ -136,7 +123,7 @@
                     </div>
                     <div class="sidebar__post-content">
                       <h3>
-                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>Admin</span>
+                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>LatLong</span>
                         <a href="/ethique/icoca">ICoCA</a>
                       </h3>
                     </div>

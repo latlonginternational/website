@@ -34,6 +34,31 @@
       </div>
     </section>
     <!--Section Content End-->
+
+    <!--CTA One Start-->
+    <section class="cta-one">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="cta-one__inner">
+              <h2 class="cta-one__title">
+                Des solutions de Sécurité <br />
+                de Classe mondiale
+              </h2>
+              <a href="/about" class="thm-btn cta-one__btn">Nous contacter</a>
+              <div
+                class="cta-one__shape wow slideInLeft"
+                data-wow-delay="100ms"
+                data-wow-duration="2500ms"
+              >
+                <img src="/assets/images/shapes/cta-one-shape.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--CTA One End-->
   </div>
 </template>
 

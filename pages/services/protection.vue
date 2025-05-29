@@ -23,7 +23,7 @@
     <section class="service-details" ref="serviceSection">
       <div class="container">
         <div class="row">
-          <ServiceSidebar :serviceSection="serviceSection">
+          <div ref="sidebarElement" class="service-details__sidebar">
             <div class="service-details__sidebar-service">
               <ul class="service-details__sidebar-service-list list-unstyled">
                 <li class="current">
@@ -68,7 +68,7 @@
                 <a href="tel:243810041500">+243810041500</a>
               </div>
             </div>
-          </ServiceSidebar>
+          </div>
           <div class="col-xl-8 col-lg-7">
             <div class="service-details__right">
               <div class="service-details__img">
@@ -177,6 +177,7 @@ const sidebarWidth = ref(0)
 const sidebarLeft = ref(0)
 const originalStyles = ref(null)
 const isMobile = ref(false)
+const sidebarElement = ref(null)
 
 const sidebarStyle = computed(() => {
   if (isSidebarFixed.value) {

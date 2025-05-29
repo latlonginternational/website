@@ -305,9 +305,67 @@ const service_info = [
   color: #031430 !important;
 }
 
+.service-details__sidebar {
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.service-details__sidebar.fixed {
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+  z-index: 100;
+  transition: margin-top 0.3s ease;
+}
+
+.service-details__sidebar.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  right: 20px;
+}
+
+/* Style pour le défilement fluide */
+.service-details__sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.service-details__sidebar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.service-details__sidebar::-webkit-scrollbar-thumb {
+  background: var(--conult-base);
+  border-radius: 3px;
+}
+
+.service-details__sidebar::-webkit-scrollbar-thumb:hover {
+  background: var(--conult-black);
+}
+
 /* Assurez-vous que le contenu principal ne chevauche pas la sidebar */
 .service-details__right {
   position: relative;
   z-index: 1;
 }
+
+/* Conteneur de la sidebar */
+.col-xl-4.col-lg-5 {
+  position: relative;
+}
+
+@media (max-width: 1100px) {
+  .service-details__sidebar {
+    position: static !important;
+    margin-top: 0 !important;
+    width: 100% !important;
+    left: 0 !important;
+  }
+  
+  .service-details__sidebar.fixed {
+    position: static !important;
+    max-height: none;
+    overflow-y: visible;
+  }
+}
 </style>
+

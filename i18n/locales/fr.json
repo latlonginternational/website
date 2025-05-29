@@ -1,0 +1,59 @@
+{
+	"meta": {
+		"title": "LatLong International",
+		"description": "LatLong International - Votre Porte d'Entrée pour des Affaires Sécurisées en Afrique"
+	},
+	"navigation": {
+		"home": "Accueil",
+		"about": "À propos",
+		"services": {
+			"title": "Services",
+			"protection": "Protection",
+			"technology": "Technologie",
+			"consultancy": "Consultance",
+			"trainings": "Formations",
+			"others": "Autres Services"
+		},
+		"ethics": {
+			"title": "Éthique",
+			"councils": "Conseils",
+			"csr": "RSE",
+			"terms": "Termes & Conditions",
+			"code": "Code de Conduite",
+			"icoca": "ICOCA"
+		},
+		"contact": "Contact",
+		"explore": "Explorer"
+	},
+	"common": {
+		"readMore": "Lire plus",
+		"learnMore": "En Savoir Plus",
+		"contact": "Contactez-nous",
+		"contactUs": "Contactez-nous",
+		"getStarted": "Commencer",
+		"loading": "Chargement...",
+		"callUs": "Appelez-nous",
+		"contacts": "+243 810 041 500",
+		"language": {
+			"title": "Langue",
+			"fr": "Français",
+			"en": "Anglais"
+		}
+	},
+	"contact": {
+		"address": "123 Avenue de la République, Kinshasa, RD Congo",
+		"callUs": "Appelez-nous",
+		"email": "info@latlongcongo.com",
+		"phone": "+243 810 041 500"
+	},
+	"footer": {
+		"description": "LatLong International est votre partenaire de confiance pour la sécurité et la protection en RD Congo.",
+		"quickLinks": "Liens Rapides",
+		"contact": "Contact",
+		"newsletter": "Newsletter",
+		"newsletterDescription": "Inscrivez-vous à notre newsletter pour recevoir nos dernières actualités et offres.",
+		"emailPlaceholder": "Votre adresse email",
+		"subscribe": "S'abonner",
+		"copyright": "© %{year} LatLong International. Tous droits réservés."
+	}
+}

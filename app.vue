@@ -75,4 +75,6 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup lang="ts">
+// Le script reste vide car nous utilisons uniquement le template
+</script>

@@ -29,32 +29,24 @@
                 </div>
               </div>
               <div class="news-details__content">
-                <ul class="list-unstyled news-details__meta">
-                  <li>
-                    <a href="#"><i class="far fa-user-circle"></i> Admin</a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="far fa-comments"></i> 0 Comments</a>
-                  </li>
-                </ul>
-                <h3 class="news-details__title">Notre Code de conduite Professionnel</h3>
+                <h3 class="news-details__title">Notre code de conduite professionnel</h3>
                 <p class="news-details__text-1">
                   Le Code de conduite de LatLong définit les standards éthiques et professionnels que tous nos employés et partenaires doivent respecter. Ce code reflète nos valeurs fondamentales et notre engagement envers l'excellence.
                 </p>
                 <p class="news-details__text-2">
-                  <strong>1. Conduite Professionnelle</strong><br>
+                  <strong>1. Conduite professionnelle</strong><br>
                   Tous les membres de notre équipe s'engagent à maintenir une apparence professionnelle en toutes circonstances, respecter la hiérarchie et la chaîne de commandement, exercer leurs fonctions avec diligence et compétence, et respecter les horaires et les procédures établies.
                 </p>
                 <p class="news-details__text-3">
-                  <strong>2. Éthique et Intégrité</strong><br>
+                  <strong>2. Éthique et intégrité</strong><br>
                   Nos employés doivent agir avec honnêteté et transparence, éviter tout conflit d'intérêt, refuser les cadeaux et avantages inappropriés, et signaler toute situation contraire à l'éthique.
-                </p>
+                </p><br>
                 <p class="news-details__text-3">
-                  <strong>3. Relations avec les Clients</strong><br>
+                  <strong>3. Relations avec les clients</strong><br>
                   Dans leurs interactions avec les clients, nos employés doivent faire preuve de courtoisie et de respect, maintenir la confidentialité des informations, répondre promptement aux demandes, et respecter les protocoles de sécurité établis.
-                </p>
+                </p><br>
                 <p class="news-details__text-3">
-                  <strong>4. Conformité Légale</strong><br>
+                  <strong>4. Conformité légale</strong><br>
                   Nous exigeons le respect strict des lois et réglementations en vigueur, des droits de l'homme fondamentaux, des normes de sécurité internationales, et des procédures de reporting établies.
                 </p>
               </div>
@@ -88,12 +80,7 @@
 
           <div class="col-xl-4 col-lg-5">
             <div class="sidebar">
-              <div class="sidebar__single sidebar__search">
-                <form action="#" class="sidebar__search-form">
-                  <input type="search" placeholder="Faire une recherche" />
-                  <button type="submit"><i class="icon-magnifying-glass"></i></button>
-                </form>
-              </div>
+             
               <div class="sidebar__single sidebar__post">
                 <h3 class="sidebar__title">Pages connexes</h3>
                 <ul class="sidebar__post-list list-unstyled">
@@ -103,7 +90,7 @@
                     </div>
                     <div class="sidebar__post-content">
                       <h3>
-                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>Admin</span>
+                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>LatLong</span>
                         <a href="/ethique/conseils">Conseils</a>
                       </h3>
                     </div>
@@ -114,7 +101,7 @@
                     </div>
                     <div class="sidebar__post-content">
                       <h3>
-                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>Admin</span>
+                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>LatLong</span>
                         <a href="/ethique/rse">Responsabilité sociétale</a>
                       </h3>
                     </div>
@@ -125,7 +112,7 @@
                     </div>
                     <div class="sidebar__post-content">
                       <h3>
-                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>Admin</span>
+                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>LatLong</span>
                         <a href="/ethique/termes-conditions">Termes et conditions</a>
                       </h3>
                     </div>
@@ -136,7 +123,7 @@
                     </div>
                     <div class="sidebar__post-content">
                       <h3>
-                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>Admin</span>
+                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>LatLong</span>
                         <a href="/ethique/icoca">ICoCA</a>
                       </h3>
                     </div>

@@ -29,28 +29,20 @@
                 </div>
               </div>
               <div class="news-details__content">
-                <ul class="list-unstyled news-details__meta">
-                  <li>
-                    <a href="#"><i class="far fa-user-circle"></i> Admin</a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="far fa-comments"></i> 0 Comments</a>
-                  </li>
-                </ul>
-                <h3 class="news-details__title">Nos Principes Directeurs</h3>
+                <h3 class="news-details__title">Nos principes directeurs</h3>
                 <p class="news-details__text-1">
                   Chez LatLong, nous nous engageons à maintenir les plus hauts standards éthiques dans toutes nos opérations. Nos principes directeurs constituent le fondement de notre approche professionnelle et de notre engagement envers l'excellence.
                 </p>
                 <p class="news-details__text-2">
-                  <strong>Intégrité et Transparence</strong><br>
+                  <strong>Intégrité et transparence</strong><br>
                   Nous opérons avec une transparence totale dans toutes nos interactions. Chaque décision est prise dans le respect des lois en vigueur et des principes éthiques fondamentaux. Notre engagement envers l'intégrité se reflète dans la communication claire et honnête avec nos clients, la gestion transparente des ressources, le respect strict des procédures établies, et la déclaration immédiate de tout conflit d'intérêt.
                 </p>
                 <p class="news-details__text-3">
-                  <strong>Respect des Droits Humains</strong><br>
+                  <strong>Respect des droits humains</strong><br>
                   La protection et le respect des droits humains sont au cœur de nos opérations. Nous nous engageons à former nos équipes sur les droits humains fondamentaux, assurer une intervention proportionnée et respectueuse, protéger la dignité de toutes les personnes concernées, et signaler et traiter toute violation des droits humains.
-                </p>
+                </p><br>
                 <p class="news-details__text-3">
-                  <strong>Excellence Professionnelle</strong><br>
+                  <strong>Excellence professionnelle</strong><br>
                   Notre engagement envers l'excellence se manifeste à travers une formation continue de nos équipes, l'utilisation des meilleures pratiques du secteur, l'innovation dans nos méthodes d'intervention, et l'évaluation régulière de nos performances.
                 </p>
               </div>
@@ -84,12 +76,7 @@
 
           <div class="col-xl-4 col-lg-5">
             <div class="sidebar">
-              <div class="sidebar__single sidebar__search">
-                <form action="#" class="sidebar__search-form">
-                  <input type="search" placeholder="Faire une recherche" />
-                  <button type="submit"><i class="icon-magnifying-glass"></i></button>
-                </form>
-              </div>
+             
               <div class="sidebar__single sidebar__post">
                 <h3 class="sidebar__title">Pages connexes</h3>
                 <ul class="sidebar__post-list list-unstyled">
@@ -99,7 +86,7 @@
                     </div>
                     <div class="sidebar__post-content">
                       <h3>
-                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>Admin</span>
+                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>LatLong</span>
                         <a href="/ethique/rse">Responsabilité sociétale</a>
                       </h3>
                     </div>
@@ -110,7 +97,7 @@
                     </div>
                     <div class="sidebar__post-content">
                       <h3>
-                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>Admin</span>
+                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>LatLong</span>
                         <a href="/ethique/code-conduite">Code de conduite</a>
                       </h3>
                     </div>
@@ -121,7 +108,7 @@
                     </div>
                     <div class="sidebar__post-content">
                       <h3>
-                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>Admin</span>
+                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>LatLong</span>
                         <a href="/ethique/termes-conditions">Termes et conditions</a>
                       </h3>
                     </div>
@@ -132,7 +119,7 @@
                     </div>
                     <div class="sidebar__post-content">
                       <h3>
-                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>Admin</span>
+                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>LatLong</span>
                         <a href="/ethique/icoca">ICoCA</a>
                       </h3>
                     </div>
