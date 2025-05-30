@@ -23,6 +23,7 @@
           leave-to-class="transform scale-95 opacity-0"
         >
           <ListboxOptions
+          as="div"
             class="language-options w-full"
           >
             <div class="language-list flex flex-col justify-center items-center w-full">
@@ -33,14 +34,14 @@
                 v-slot="{ selected, active }"
                 as="template"
               >
-                <li
+                <div
                   :class="[
                     active ? 'bg-conult-base text-white' : 'text-gray-900',
-                    'language-option'
+                    'language-option w-full'
                   ]"
                 >
                   {{ $i18n.__(`common.language.${locale}`) }}
-                </li>
+                </div>
               </ListboxOption>
             </div>
           </ListboxOptions>
@@ -90,6 +91,7 @@ onMounted(() => {
 .language-selector {
   position: relative;
   display: inline-block;
+  z-index: 9999;
 }
 
 .language-button {

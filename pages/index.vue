@@ -39,9 +39,9 @@
 									<div class="main-slider__content">
 
 					
-										<h2>Des solutions adaptées</h2>
-										<p>LatLong, votre partenaire pour des solutions de sécurité fiables.</p>
-										<a href="/about" class="thm-btn">En savoir plus</a>
+										<h2>{{ $i18n.__('home.slider.slide1.title') }}</h2>
+										<p>{{ $i18n.__('home.slider.slide1.description') }}</p>
+										<a href="/about" class="thm-btn">{{ $i18n.__('home.slider.slide1.button') }}</a>
 									</div>
 								</div>
 							</div>
@@ -63,9 +63,9 @@
 							<div class="row">
 								<div class="col-xl-7">
 									<div class="main-slider__content">
-										<h2>Des technologies modernes</h2>
-										<p>Protégez vos actifs avec des solutions avancées.</p>
-										<a href="/services" class="thm-btn">Découvrez nos services</a>
+										<h2>{{ $i18n.__('home.slider.slide2.title') }}</h2>
+										<p>{{ $i18n.__('home.slider.slide2.description') }}</p>
+										<a href="/services" class="thm-btn">{{ $i18n.__('home.slider.slide2.button') }}</a>
 									</div>
 								</div>
 							</div>
@@ -87,12 +87,9 @@
 							<div class="row">
 								<div class="col-xl-7">
 									<div class="main-slider__content">
-										<h2>
-											Une équipe <br />
-											de confiance
-										</h2>
-										<p>Des experts locaux au service de votre sécurité.</p>
-										<a href="/contact" class="thm-btn">Contactez-nous</a>
+										<h2>{{ $i18n.__('home.slider.slide3.title') }}</h2>
+										<p>{{ $i18n.__('home.slider.slide3.description') }}</p>
+										<a href="/contact" class="thm-btn">{{ $i18n.__('home.slider.slide3.button') }}</a>
 									</div>
 								</div>
 							</div>
@@ -128,7 +125,7 @@
 								<div class="feature-one__icon-box">
 									<div class="feature-one__icon-title-box">
 										<h3 class="feature-one__icon-title">
-											<a href="#">Sécurité</a>
+											<a href="#">{{ $i18n.__('home.features.security.title') }}</a>
 										</h3>
 									</div>
 									<div class="feature-one__icon">
@@ -141,9 +138,9 @@
 										<span class="icon-strategy"></span>
 									</div>
 									<h4 class="feature-one__hover-title">
-										<a href="#">Sécurité</a>
+										<a href="#">{{ $i18n.__('home.features.security.title') }}</a>
 									</h4>
-									<p class="feature-one__hover-text">Transport de fonds, évacuations d'urgence, lutte contre l'incendie, assistance médicale, rapports de sécurité, alertes.</p>
+									<p class="feature-one__hover-text">{{ $i18n.__('home.features.security.description') }}</p>
 								</div>
 							</div>
 						</div>
@@ -158,7 +155,7 @@
 								<div class="feature-one__icon-box">
 									<div class="feature-one__icon-title-box">
 										<h3 class="feature-one__icon-title">
-											<a href="/services/protection">Protection</a>
+											<a href="/services/protection">{{ $i18n.__('home.features.protection.title') }}</a>
 										</h3>
 									</div>
 									<div class="feature-one__icon">
@@ -171,9 +168,9 @@
 										<span class="icon-point-of-sale"></span>
 									</div>
 									<h4 class="feature-one__hover-title">
-										<a href="/services/protection">Protection</a>
+										<a href="/services/protection">{{ $i18n.__('home.features.protection.title') }}</a>
 									</h4>
-									<p class="feature-one__hover-text">Surveillance humaine, intervention, salle de contrôle, escortes, protection VIP, sécurité événementielle, ...</p>
+									<p class="feature-one__hover-text">{{ $i18n.__('home.features.protection.description') }}</p>
 								</div>
 							</div>
 						</div>
@@ -188,7 +185,7 @@
 								<div class="feature-one__icon-box">
 									<div class="feature-one__icon-title-box">
 										<h3 class="feature-one__icon-title">
-											<a href="/services/consultancy">Consultance</a>
+											<a href="/services/consultancy">{{ $i18n.__('home.features.consultancy.title') }}</a>
 										</h3>
 									</div>
 									<div class="feature-one__icon">
@@ -201,9 +198,9 @@
 										<span class="icon-consumer-behavior"></span>
 									</div>
 									<h4 class="feature-one__hover-title">
-										<a href="/services/consultancy/">Consultance</a>
+										<a href="/services/consultancy/">{{ $i18n.__('home.features.consultancy.title') }}</a>
 									</h4>
-									<p class="feature-one__hover-text">Évaluations de sécurité, gestion des missions, stratégie, plans d'évacuation et gestion de crise.</p>
+									<p class="feature-one__hover-text">{{ $i18n.__('home.features.consultancy.description') }}</p>
 								</div>
 							</div>
 						</div>
@@ -233,10 +230,10 @@
 					<div class="col-xl-6">
 						<div class="about-one__right">
 							<div class="section-title text-left">
-								<span class="section-title__tagline">Notre offre</span>
-								<h2 class="section-title__title">Votre partenaire en gestion de sécurité</h2>
+								<span class="section-title__tagline">{{ $i18n.__('home.about.tagline') }}</span>
+								<h2 class="section-title__title">{{ $i18n.__('home.about.title') }}</h2>
 							</div>
-							<p class="about-one__business-start-text">LatLong vous offre des outils modernes pour une sécurité renforcée et une gestion optimisée de vos opérations.</p>
+							<p class="about-one__business-start-text">{{ $i18n.__('home.about.description') }}</p>
 
 							<div class="about-one__points-box">
 								<!-- First Column -->
@@ -309,8 +306,8 @@
 				<div class="row">
 					<div class="col-xl-12">
 						<div class="our-mission__inner">
-							<h2 class="our-mission__title">Garantir votre <br /><span>sécurité</span> est notre mission.</h2>
-							<a href="/contact" class="thm-btn our-mission__btn">Nous contacter</a>
+							<h2 class="our-mission__title">{{ $i18n.__('home.mission.title') }}</h2>
+							<a href="/contact" class="thm-btn our-mission__btn">{{ $i18n.__('home.mission.button') }}</a>
 						</div>
 					</div>
 				</div>
@@ -326,17 +323,14 @@
 						<div class="col-xl-7">
 							<div class="building-experience__top-left">
 								<div class="section-title text-left">
-									<span class="section-title__tagline">Avantages & Solutions</span>
-									<h2 class="section-title__title">
-										Expertise & <br />
-										Haute Satisfaction
-									</h2>
+									<span class="section-title__tagline">{{ $i18n.__('home.experience.tagline') }}</span>
+									<h2 class="section-title__title">{{ $i18n.__('home.experience.title') }}</h2>
 								</div>
 							</div>
 						</div>
 						<div class="col-xl-5">
 							<div class="building-experience__top-right">
-								<p class="building-experience__top-right-text">LatLong offre des solutions de sécurité fiables, combinant expertise locale et technologies avancées.</p>
+								<p class="building-experience__top-right-text">{{ $i18n.__('home.experience.description') }}</p>
 							</div>
 						</div>
 					</div>
@@ -432,11 +426,8 @@
 				<div class="row">
 					<div class="col-xl-12">
 						<div class="cta-one__inner">
-							<h2 class="cta-one__title">
-								Des solutions de Sécurité <br />
-								de Classe mondiale
-							</h2>
-							<a href="/about" class="thm-btn cta-one__btn">Nous contacter</a>
+							<h2 class="cta-one__title">{{ $i18n.__('home.cta.title') }}</h2>
+							<a href="/about" class="thm-btn cta-one__btn">{{ $i18n.__('home.cta.button') }}</a>
 							<div class="cta-one__shape wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
 								<img src="/assets/images/shapes/cta-one-shape.png" alt="" />
 							</div>
@@ -452,8 +443,8 @@
 			<div class="testimonial-one-map" style="background-image: url(/assets/images/shapes/testimonial-one-map.png)"></div>
 			<div class="container">
 				<div class="section-title text-center">
-					<span class="section-title__tagline">Nos témoignages</span>
-					<h2 class="section-title__title">Ce qu'ils disent</h2>
+					<span class="section-title__tagline">{{ $i18n.__('home.testimonials.tagline') }}</span>
+					<h2 class="section-title__title">{{ $i18n.__('home.testimonials.title') }}</h2>
 				</div>
 				<div class="row">
 					<div class="col-xl-12">
@@ -552,7 +543,7 @@
 					<div class="counter-one__top">
 						<div class="row">
 							<div class="col-xl-5 col-lg-6">
-								<h2 class="counter-one__top-title">Votre référence en matière de sécurité.</h2>
+								<h2 class="counter-one__top-title">{{ $i18n.__('home.counter.title') }}</h2>
 							</div>
 						</div>
 					</div>

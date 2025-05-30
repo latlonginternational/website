@@ -54,6 +54,67 @@
 		"newsletterDescription": "Inscrivez-vous à notre newsletter pour recevoir nos dernières actualités et offres.",
 		"emailPlaceholder": "Votre adresse email",
 		"subscribe": "S'abonner",
-		"copyright": "© %{year} LatLong International. Tous droits réservés."
+		"copyright": "© 2025 LatLong International. Tous droits réservés.",
+		"explore": "Explorer",
+		"services": "Services",
+		"developedBy": "Développé par"
+	},
+	"home": {
+		"slider": {
+			"slide1": {
+				"title": "Des solutions adaptées",
+				"description": "LatLong, votre partenaire pour des solutions de sécurité fiables.",
+				"button": "En savoir plus"
+			},
+			"slide2": {
+				"title": "Des technologies modernes",
+				"description": "Protégez vos actifs avec des solutions avancées.",
+				"button": "Découvrez nos services"
+			},
+			"slide3": {
+				"title": "Une équipe de confiance",
+				"description": "Des experts locaux au service de votre sécurité.",
+				"button": "Contactez-nous"
+			}
+		},
+		"features": {
+			"security": {
+				"title": "Sécurité",
+				"description": "Transport de fonds, évacuations d'urgence, lutte contre l'incendie, assistance médicale, rapports de sécurité, alertes."
+			},
+			"protection": {
+				"title": "Protection",
+				"description": "Surveillance humaine, intervention, salle de contrôle, escortes, protection VIP, sécurité événementielle, ..."
+			},
+			"consultancy": {
+				"title": "Consultance",
+				"description": "Évaluations de sécurité, gestion des missions, stratégie, plans d'évacuation et gestion de crise."
+			}
+		},
+		"about": {
+			"tagline": "Notre offre",
+			"title": "Votre partenaire en gestion de sécurité",
+			"description": "LatLong vous offre des outils modernes pour une sécurité renforcée et une gestion optimisée de vos opérations."
+		},
+		"mission": {
+			"title": "Garantir votre sécurité est notre mission.",
+			"button": "Nous contacter"
+		},
+		"experience": {
+			"tagline": "Avantages & Solutions",
+			"title": "Expertise & Haute Satisfaction",
+			"description": "LatLong offre des solutions de sécurité fiables, combinant expertise locale et technologies avancées."
+		},
+		"cta": {
+			"title": "Des solutions de Sécurité de Classe mondiale",
+			"button": "Nous contacter"
+		},
+		"testimonials": {
+			"tagline": "Nos témoignages",
+			"title": "Ce qu'ils disent"
+		},
+		"counter": {
+			"title": "Votre référence en matière de sécurité."
+		}
 	}
 }

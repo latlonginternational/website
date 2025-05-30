@@ -54,6 +54,67 @@
 		"newsletterDescription": "Subscribe to our newsletter to receive our latest news and offers.",
 		"emailPlaceholder": "Your email address",
 		"subscribe": "Subscribe",
-		"copyright": "© %s LatLong International. All rights reserved."
+		"copyright": "© %{year} LatLong International. All rights reserved.",
+		"explore": "Explore",
+		"services": "Services",
+		"developedBy": "Developed by"
+	},
+	"home": {
+		"slider": {
+			"slide1": {
+				"title": "Tailored Solutions",
+				"description": "LatLong, your partner for reliable security solutions.",
+				"button": "Learn More"
+			},
+			"slide2": {
+				"title": "Modern Technologies",
+				"description": "Protect your assets with advanced solutions.",
+				"button": "Discover our services"
+			},
+			"slide3": {
+				"title": "A Trusted Team",
+				"description": "Local experts at your service for security.",
+				"button": "Contact Us"
+			}
+		},
+		"features": {
+			"security": {
+				"title": "Security",
+				"description": "Cash transport, emergency evacuations, firefighting, medical assistance, security reports, alerts."
+			},
+			"protection": {
+				"title": "Protection",
+				"description": "Human surveillance, intervention, control room, escorts, VIP protection, event security, ..."
+			},
+			"consultancy": {
+				"title": "Consultancy",
+				"description": "Security assessments, mission management, strategy, evacuation plans and crisis management."
+			}
+		},
+		"about": {
+			"tagline": "Our Offer",
+			"title": "Your Security Management Partner",
+			"description": "LatLong provides you with modern tools for enhanced security and optimized operations management."
+		},
+		"mission": {
+			"title": "Ensuring your security is our mission.",
+			"button": "Contact Us"
+		},
+		"experience": {
+			"tagline": "Benefits & Solutions",
+			"title": "Expertise & High Satisfaction",
+			"description": "LatLong offers reliable security solutions, combining local expertise and advanced technologies."
+		},
+		"cta": {
+			"title": "World-Class Security Solutions",
+			"button": "Contact Us"
+		},
+		"testimonials": {
+			"tagline": "Our Testimonials",
+			"title": "What They Say"
+		},
+		"counter": {
+			"title": "Your reference in security matters."
+		}
 	}
 }
