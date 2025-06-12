@@ -5,7 +5,64 @@ export default defineNuxtConfig({
 	devtools: { enabled: true },
 	css: ["~/public/assets/css/main.css"],
 
-	modules: ["nuxt-mail"],
+	modules: ["nuxt-mail", "@nuxtjs/i18n"],
+
+	i18n: {
+		strategy: "no_prefix",
+		detectBrowserLanguage: {
+			useCookie: true,
+			cookieKey: "i18n_redirected",
+			redirectOn: "root",
+			alwaysRedirect: true,
+			fallbackLocale: "en"
+		},
+		locales: [
+			{
+				code: "en",
+				file: "en.json",
+				name: "English",
+				iso: "en-US"
+			},
+			{
+				code: "fr",
+				file: "fr.json",
+				name: "Français",
+				iso: "fr-FR"
+			}
+		],
+		defaultLocale: "fr",
+		lazy: true,
+		langDir: "locales/",
+		vueI18n: "./i18n.config.ts"
+	},
+
+	// Configuration pour éviter la sérialisation des fonctions
+	experimental: {
+		payloadExtraction: false
+	},
+
+	// Configuration Vite
+	vite: {
+		define: {
+			"process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV)
+		},
+		optimizeDeps: {
+			exclude: ["vue-i18n"]
+		}
+	},
+
+	// Configuration Nitro
+	nitro: {
+		routeRules: {
+			"/**": { cors: true }
+		},
+		devProxy: {
+			"/api": {
+				target: "http://localhost:3000",
+				changeOrigin: true
+			}
+		}
+	},
 
 	runtimeConfig: {
 		mail: {

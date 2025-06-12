@@ -15,11 +15,13 @@
 							</div>
 
 							<div class="space-y-2">
-								<p class="text-conult-gray whitespace-nowrap">
-									<a :href="'mailto:' + $i18n.__('contact.email')" class="hover:text-conult-base transition-colors">{{ $i18n.__('contact.email') }}</a>
-								</p>
-								<p class="text-conult-gray">{{ $i18n.__('contact.address') }}</p>
-							</div>
+									<p class="text-conult-gray whitespace-nowrap">
+									<a href="mailto:info@latlongcongo.com" class="hover:text-conult-base transition-colors">
+										info@latlongcongo.com
+									</a>
+									</p>
+								<p class="text-conult-gray">123 Avenue de la République, Kinshasa, RD Congo</p>
+								</div>
 
 							<!-- Social Links -->
 							<div class="site-footer__top-right-social">
@@ -35,55 +37,57 @@
 						<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
 							<!-- Explore -->
 							<div class="space-y-4">
-								<h3 class="text-lg font-conult font-bold text-conult-white whitespace-nowrap">{{ $i18n.__('footer.explore') }}</h3>
+								<h3 class="text-lg font-conult font-bold text-conult-white whitespace-nowrap">Explorer</h3>
 								<ul class="space-y-2">
 									<li>
-										<a href="/" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">{{ $i18n.__('navigation.home') }}</a>
+										<a href="/" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">Accueil</a>
 									</li>
 									<li>
-										<a href="/about" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">{{ $i18n.__('navigation.about') }}</a>
+										<a href="/about" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">À propos</a>
+									</li>
+										<li>
+										<a href="/ethique" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">Éthique</a>
 									</li>
 									<li>
-										<a href="/ethique" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">{{ $i18n.__('navigation.ethics.title') }}</a>
-									</li>
-									<li>
-										<a href="/contact" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">{{ $i18n.__('navigation.contact') }}</a>
+										<a href="/contact" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">Contact</a>
 									</li>
 								</ul>
 							</div>
 
 							<!-- Services -->
 							<div class="space-y-4">
-								<h3 class="text-lg font-conult font-bold text-conult-white whitespace-nowrap">{{ $i18n.__('footer.services') }}</h3>
+								<h3 class="text-lg font-conult font-bold text-conult-white whitespace-nowrap">Services</h3>
 								<ul class="space-y-2">
 									<li>
-										<a href="/services/protection" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">{{ $i18n.__('navigation.services.protection') }}</a>
+										<a href="/services/protection" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">Protection</a>
 									</li>
 									<li>
-										<a href="/services/technology" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">{{ $i18n.__('navigation.services.technology') }}</a>
+										<a href="/services/technology" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">Technologie</a>
 									</li>
 									<li>
-										<a href="/services/consultancy" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">{{ $i18n.__('navigation.services.consultancy') }}</a>
+										<a href="/services/consultancy" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">Consultance</a>
 									</li>
 									<li>
-										<a href="/services/trainings" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">{{ $i18n.__('navigation.services.trainings') }}</a>
+										<a href="/services/trainings" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">Formations</a>
 									</li>
 									<li>
-										<a href="/services/others-security-services" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">{{ $i18n.__('navigation.services.others') }}</a>
+										<a href="/services/others-security-services" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">Autres Services</a>
 									</li>
 								</ul>
 							</div>
 
 							<!-- Contact -->
 							<div class="space-y-4">
-								<h3 class="text-lg font-conult font-bold text-conult-white whitespace-nowrap">{{ $i18n.__('footer.contact') }}</h3>
+								<h3 class="text-lg font-conult font-bold text-conult-white whitespace-nowrap">Contact</h3>
 								<ul class="space-y-2">
 									<li class="flex items-start space-x-2">
 										<div class="text-conult-base mt-1">
 											<span class="icon-email"></span>
 										</div>
 										<p class="text-conult-gray">
-											<a :href="'mailto:' + $i18n.__('contact.email')" class="hover:text-conult-base transition-colors">{{ $i18n.__('contact.email') }}</a>
+											<a href="mailto:info@latlongcongo.com" class="hover:text-conult-base transition-colors">
+												info@latlongcongo.com
+											</a>
 										</p>
 									</li>
 									<li class="flex items-start space-x-2">
@@ -91,7 +95,7 @@
 											<span class="icon-phone"></span>
 										</div>
 										<p class="text-conult-gray">
-											<a :href="'tel:' + $i18n.__('contact.phone').replace(/\s+/g, '')" class="hover:text-conult-base transition-colors">{{ $i18n.__('contact.phone') }}</a>
+											<a href="tel:+243810041500" class="hover:text-conult-base transition-colors">+243 810 041 500</a>
 										</p>
 									</li>
 									<li class="flex items-start space-x-2">
@@ -112,8 +116,8 @@
 			<!-- Footer Bottom -->
 			<div class="pt-8 border-t border-conult-gray/20">
 				<p class="text-center text-conult-gray text-sm whitespace-nowrap">
-					{{ $i18n.__('footer.copyright', { year: new Date().getFullYear().toString() }) }}
-					<span class="mx-1">{{ $i18n.__('footer.developedBy') }}</span>
+					© {{ new Date().getFullYear() }} LatLong International. Tous droits réservés.
+					<span class="mx-1">Développé par</span>
 					<a href="https://www.witoxr.studio" target="_blank" rel="noopener noreferrer" class="hover:underline text-conult-base transition-colors">Wito XR Studio</a>
 				</p>
 			</div>
@@ -122,9 +126,7 @@
 </template>
 
 <script setup lang="ts">
-import { useNuxtApp } from '#app'
-
-const { $i18n } = useNuxtApp()
+// Le script est vide pour l'instant car nous n'utilisons pas encore les traductions
 </script>
 
 <style scoped>

@@ -1,0 +1,24 @@
+{
+	"experience": {
+		"tagline": "Benefits & solutions",
+		"title": "Expertise & high satisfaction",
+		"description": "LatLong offers reliable security solutions, combining local expertise and advanced technologies.",
+		"progress": {
+			"affordable": {
+				"title": "Affordable pricing",
+				"description": "Security solutions that are accessible and tailored to your budget.",
+				"value": "100%"
+			},
+			"quality": {
+				"title": "Guaranteed quality",
+				"description": "High-quality services that meet international standards.",
+				"value": "100%"
+			},
+			"support": {
+				"title": "24/7 Support",
+				"description": "A team available around the clock to meet your needs.",
+				"value": "100%"
+			}
+		}
+	}
+}

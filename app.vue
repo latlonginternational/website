@@ -76,5 +76,18 @@
 </template>
 
 <script setup lang="ts">
-// Le script reste vide car nous utilisons uniquement le template
+const cookie = useCookie<'fr' | 'en'>('i18n_redirected', {
+	maxAge: 365 * 24 * 60 * 60,
+	path: '/',
+	sameSite: 'lax'
+})
+
+const { locale } = useI18n()
+
+// Initialiser la locale depuis le cookie au chargement
+onMounted(() => {
+	if (cookie.value) {
+		locale.value = cookie.value
+	}
+})
 </script>

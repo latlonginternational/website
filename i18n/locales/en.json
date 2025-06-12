@@ -5,35 +5,35 @@
 	},
 	"navigation": {
 		"home": "Home",
-		"about": "About",
+		"about": "About Us",
 		"services": {
-			"title": "Services",
-			"protection": "Protection",
-			"technology": "Technology",
-			"consultancy": "Consultancy",
-			"trainings": "Trainings",
-			"others": "Other Services"
+			"title": "Our Services",
+			"protection": "Protection Services",
+			"technology": "Security Technology",
+			"consultancy": "Security Consulting",
+			"trainings": "Professional Training",
+			"others": "Additional Services"
 		},
 		"ethics": {
-			"title": "Ethics",
-			"councils": "Councils",
-			"csr": "CSR",
+			"title": "Ethics & Compliance",
+			"councils": "Ethical Guidelines",
+			"csr": "Corporate Responsibility",
 			"terms": "Terms & Conditions",
 			"code": "Code of Conduct",
-			"icoca": "ICOCA"
+			"icoca": "ICoCA Standards"
 		},
-		"contact": "Contact",
-		"explore": "Explore"
+		"contact": "Get in Touch",
+		"explore": "Discover More"
 	},
 	"common": {
 		"readMore": "Read More",
 		"learnMore": "Learn More",
 		"contact": "Contact Us",
-		"contactUs": "Contact Us",
+		"contactUs": "Get in Touch",
 		"getStarted": "Get Started",
 		"loading": "Loading...",
-		"callUs": "Call Us",
-		"contacts": "+243 810 041 500",
+		"callUs": "Call Us Now",
+		"contacts": "Contact Information",
 		"language": {
 			"title": "Language",
 			"fr": "French",
@@ -43,7 +43,7 @@
 	"contact": {
 		"address": "325 Blvd Kanyamuhanga, Q. des Volcans, Goma",
 		"callUs": "Call Us",
-		"email": "info@latlongcongo.com",
+		"email": "{email}",
 		"phone": "+243 810 041 500"
 	},
 	"footer": {
@@ -54,7 +54,7 @@
 		"newsletterDescription": "Subscribe to our newsletter to receive our latest news and offers.",
 		"emailPlaceholder": "Your email address",
 		"subscribe": "Subscribe",
-		"copyright": "© %{year} LatLong International. All rights reserved.",
+		"copyright": "© {year} LatLong International. All rights reserved.",
 		"explore": "Explore",
 		"services": "Services",
 		"developedBy": "Developed by"
@@ -62,48 +62,99 @@
 	"home": {
 		"slider": {
 			"slide1": {
-				"title": "Tailored Solutions",
-				"description": "LatLong, your partner for reliable security solutions.",
-				"button": "Learn More"
+				"title": "Tailored Security Solutions for Your Peace of Mind",
+				"description": "Innovative security solutions tailored to your specific needs, ensuring optimal protection for your assets and teams in the DRC.",
+				"button": "Discover Our Solutions"
 			},
 			"slide2": {
-				"title": "Modern Technologies",
-				"description": "Protect your assets with advanced solutions.",
-				"button": "Discover our services"
+				"title": "Local Expertise, International Standards",
+				"description": "Our team of security experts combines global best practices with deep local knowledge, delivering cutting-edge protection solutions across the DRC.",
+				"button": "Explore Our Services"
 			},
 			"slide3": {
-				"title": "A Trusted Team",
-				"description": "Local experts at your service for security.",
-				"button": "Contact Us"
+				"title": "Your Trusted Partner in the DRC",
+				"description": "With over a decade of experience in securing operations across the Democratic Republic of Congo, we provide nationwide coverage with exceptional response times.",
+				"button": "Contact Our Team"
 			}
 		},
 		"features": {
 			"security": {
 				"title": "Security",
-				"description": "Cash transport, emergency evacuations, firefighting, medical assistance, security reports, alerts."
+				"description": "Cash transport, emergency evacuations, fire safety, medical assistance, security reports, alerts.",
+				"hover": {
+					"title": "Security",
+					"description": "Cash transport, emergency evacuations, fire safety, medical assistance, security reports, alerts."
+				}
 			},
 			"protection": {
 				"title": "Protection",
-				"description": "Human surveillance, intervention, control room, escorts, VIP protection, event security, ..."
+				"description": "Human surveillance, intervention, control room, escorts, VIP protection, event security, ...",
+				"hover": {
+					"title": "Protection",
+					"description": "Human surveillance, intervention, control room, escorts, VIP protection, event security, ..."
+				}
 			},
 			"consultancy": {
 				"title": "Consultancy",
-				"description": "Security assessments, mission management, strategy, evacuation plans and crisis management."
+				"description": "Security assessments, mission management, strategy, evacuation plans and crisis management.",
+				"hover": {
+					"title": "Consultancy",
+					"description": "Security assessments, mission management, strategy, evacuation plans and crisis management."
+				}
 			}
 		},
 		"about": {
 			"tagline": "Our Offer",
 			"title": "Your Security Management Partner",
-			"description": "LatLong provides you with modern tools for enhanced security and optimized operations management."
+			"description": "LatLong provides you with modern tools for enhanced security and optimized operations management.",
+			"points": {
+				"realtime": "Real-time monitoring",
+				"protection": "Protection of assets and people",
+				"technology": "Advanced tracking technologies",
+				"solutions": "Customized solutions"
+			},
+			"contact": {
+				"text": "Contact Us",
+				"phone": "+243 820 123 456"
+			},
+			"button": "Learn More"
 		},
 		"mission": {
 			"title": "Ensuring your security is our mission.",
 			"button": "Contact Us"
 		},
 		"experience": {
-			"tagline": "Benefits & Solutions",
-			"title": "Expertise & High Satisfaction",
-			"description": "LatLong offers reliable security solutions, combining local expertise and advanced technologies."
+			"tagline": "Benefits & solutions",
+			"title": "Expertise & high satisfaction",
+			"description": "LatLong offers reliable security solutions, combining local expertise and advanced technologies.",
+			"progress": {
+				"affordable": {
+					"title": "Affordable pricing",
+					"description": "Security solutions that are accessible and tailored to your budget."
+				},
+				"quality": {
+					"title": "Guaranteed quality",
+					"description": "High-quality services that meet international standards."
+				},
+				"support": {
+					"title": "24/7 Support",
+					"description": "A team available around the clock to meet your needs."
+				}
+			},
+			"faq": {
+				"services": {
+					"question": "What types of services does LatLong offer?",
+					"answer": "LatLong provides physical security services, electronic surveillance, risk management, and event protection, tailored to the specific needs of our clients."
+				},
+				"remote": {
+					"question": "Can LatLong operate in remote areas?",
+					"answer": "Yes, LatLong is equipped to provide services in remote or hard-to-reach areas thanks to an experienced team and tools adapted to these environments."
+				},
+				"quality": {
+					"question": "How does LatLong ensure service quality?",
+					"answer": "Quality is ensured through continuous staff training, the use of cutting-edge technologies, and regular monitoring to ensure client needs are always met."
+				}
+			}
 		},
 		"cta": {
 			"title": "World-Class Security Solutions",
@@ -111,10 +162,72 @@
 		},
 		"testimonials": {
 			"tagline": "Our Testimonials",
-			"title": "What They Say"
+			"title": "What They Say",
+			"items": {
+				"1": {
+					"text": "LatLong has transformed our security management. The team is proactive and always available to meet our specific needs.",
+					"author": "Christine Muhindo",
+					"position": "CEO - Amaliza Store"
+				},
+				"2": {
+					"text": "We have been working with LatLong for several years. Their professionalism and commitment are exceptional.",
+					"author": "Kevin Banza",
+					"position": "Client"
+				},
+				"3": {
+					"text": "LatLong has helped us secure our operations. We recommend their services to any organization seeking reliable security.",
+					"author": "Jessica Byamungu",
+					"position": "Director Habana Habi"
+				}
+			}
 		},
 		"counter": {
-			"title": "Your reference in security matters."
+			"title": "Your reference in security matters.",
+			"stats": {
+				"partners": {
+					"value": "42",
+					"label": "Partners"
+				},
+				"clients": {
+					"value": "1500",
+					"label": "Satisfied Clients"
+				},
+				"experts": {
+					"value": "300",
+					"label": "Security Experts"
+				}
+			}
+		},
+		"ethics": {
+			"tagline": "Ethics",
+			"title": "Our Ethical Principles",
+			"items": {
+				"councils": {
+					"title": "Councils",
+					"description": "Our guiding principles and advice for maintaining the highest ethical standards in our daily operations.",
+					"date": "March 15, 2024"
+				},
+				"csr": {
+					"title": "Corporate Social Responsibility",
+					"description": "Our commitment to sustainable development, positive social impact, and environmental protection.",
+					"date": "March 20, 2024"
+				},
+				"terms": {
+					"title": "Terms and Conditions",
+					"description": "The general terms and conditions governing our services and our relationship with clients and partners.",
+					"date": "March 25, 2024"
+				},
+				"code": {
+					"title": "Code of Conduct",
+					"description": "Our professional Code of Conduct that guides the behavior of our employees and partners.",
+					"date": "March 30, 2024"
+				},
+				"icoca": {
+					"title": "ICoCA - International Code of Conduct Association",
+					"description": "Our membership and compliance with ICoCA international standards for private security services.",
+					"date": "April 5, 2024"
+				}
+			}
 		}
 	}
 }

@@ -18,8 +18,8 @@
 			"title": "Éthique",
 			"councils": "Conseils",
 			"csr": "RSE",
-			"terms": "Termes & Conditions",
-			"code": "Code de Conduite",
+			"terms": "Termes & conditions",
+			"code": "Code de conduite",
 			"icoca": "ICOCA"
 		},
 		"contact": "Contact",
@@ -33,7 +33,7 @@
 		"getStarted": "Commencer",
 		"loading": "Chargement...",
 		"callUs": "Appelez-nous",
-		"contacts": "+243 810 041 500",
+		"contacts": "Informations de contact",
 		"language": {
 			"title": "Langue",
 			"fr": "Français",
@@ -41,9 +41,9 @@
 		}
 	},
 	"contact": {
-		"address": "123 Avenue de la République, Kinshasa, RD Congo",
+		"address": "325 Blvd Kanyamuhanga, Q. des Volcans, Goma",
 		"callUs": "Appelez-nous",
-		"email": "info@latlongcongo.com",
+		"email": "{email}",
 		"phone": "+243 810 041 500"
 	},
 	"footer": {
@@ -54,7 +54,7 @@
 		"newsletterDescription": "Inscrivez-vous à notre newsletter pour recevoir nos dernières actualités et offres.",
 		"emailPlaceholder": "Votre adresse email",
 		"subscribe": "S'abonner",
-		"copyright": "© 2025 LatLong International. Tous droits réservés.",
+		"copyright": "© {year} LatLong International. Tous droits réservés.",
 		"explore": "Explorer",
 		"services": "Services",
 		"developedBy": "Développé par"
@@ -62,48 +62,99 @@
 	"home": {
 		"slider": {
 			"slide1": {
-				"title": "Des solutions adaptées",
-				"description": "LatLong, votre partenaire pour des solutions de sécurité fiables.",
-				"button": "En savoir plus"
+				"title": "Solutions de sécurité sur mesure pour votre tranquillité d'esprit",
+				"description": "Des solutions de sécurité innovantes et adaptées à vos besoins spécifiques, garantissant une protection optimale de vos actifs et de vos équipes en RDC.",
+				"button": "Découvrir nos solutions"
 			},
 			"slide2": {
-				"title": "Des technologies modernes",
-				"description": "Protégez vos actifs avec des solutions avancées.",
-				"button": "Découvrez nos services"
+				"title": "Expertise locale, standards internationaux",
+				"description": "Notre équipe d'experts en sécurité combine les meilleures pratiques mondiales avec une connaissance approfondie du terrain, offrant des solutions de protection de pointe à travers la RDC.",
+				"button": "Explorer nos services"
 			},
 			"slide3": {
-				"title": "Une équipe de confiance",
-				"description": "Des experts locaux au service de votre sécurité.",
-				"button": "Contactez-nous"
+				"title": "Votre partenaire de confiance en RDC",
+				"description": "Avec plus de dix ans d'expérience dans la sécurisation des opérations en République Démocratique du Congo, nous assurons une couverture nationale avec des temps de réponse exceptionnels.",
+				"button": "Contactez notre équipe"
 			}
 		},
 		"features": {
 			"security": {
 				"title": "Sécurité",
-				"description": "Transport de fonds, évacuations d'urgence, lutte contre l'incendie, assistance médicale, rapports de sécurité, alertes."
+				"description": "Transport de fonds, évacuations d'urgence, lutte contre l'incendie, assistance médicale, rapports de sécurité, alertes.",
+				"hover": {
+					"title": "Sécurité",
+					"description": "Transport de fonds, évacuations d'urgence, lutte contre l'incendie, assistance médicale, rapports de sécurité, alertes."
+				}
 			},
 			"protection": {
 				"title": "Protection",
-				"description": "Surveillance humaine, intervention, salle de contrôle, escortes, protection VIP, sécurité événementielle, ..."
+				"description": "Surveillance humaine, intervention, salle de contrôle, escortes, protection VIP, sécurité événementielle, ...",
+				"hover": {
+					"title": "Protection",
+					"description": "Surveillance humaine, intervention, salle de contrôle, escortes, protection VIP, sécurité événementielle, ..."
+				}
 			},
 			"consultancy": {
 				"title": "Consultance",
-				"description": "Évaluations de sécurité, gestion des missions, stratégie, plans d'évacuation et gestion de crise."
+				"description": "Évaluations de sécurité, gestion des missions, stratégie, plans d'évacuation et gestion de crise.",
+				"hover": {
+					"title": "Consultance",
+					"description": "Évaluations de sécurité, gestion des missions, stratégie, plans d'évacuation et gestion de crise."
+				}
 			}
 		},
 		"about": {
 			"tagline": "Notre offre",
 			"title": "Votre partenaire en gestion de sécurité",
-			"description": "LatLong vous offre des outils modernes pour une sécurité renforcée et une gestion optimisée de vos opérations."
+			"description": "LatLong vous offre des outils modernes pour une sécurité renforcée et une gestion optimisée de vos opérations.",
+			"points": {
+				"realtime": "Surveillance en temps réel",
+				"protection": "Protection des biens et des personnes",
+				"technology": "Technologies avancées de suivi",
+				"solutions": "Solutions personnalisées"
+			},
+			"contact": {
+				"text": "Contactez-nous",
+				"phone": "+243 820 123 456"
+			},
+			"button": "En savoir plus"
 		},
 		"mission": {
 			"title": "Garantir votre sécurité est notre mission.",
 			"button": "Nous contacter"
 		},
 		"experience": {
-			"tagline": "Avantages & Solutions",
-			"title": "Expertise & Haute Satisfaction",
-			"description": "LatLong offre des solutions de sécurité fiables, combinant expertise locale et technologies avancées."
+			"tagline": "Avantages & solutions",
+			"title": "Expertise & satisfaction élevée",
+			"description": "LatLong propose des solutions de sécurité fiables, combinant expertise locale et technologies avancées.",
+			"progress": {
+				"affordable": {
+					"title": "Prix abordable",
+					"description": "Des solutions de sécurité accessibles et adaptées à votre budget."
+				},
+				"quality": {
+					"title": "Qualité garantie",
+					"description": "Des services de haute qualité conformes aux normes internationales."
+				},
+				"support": {
+					"title": "Support 24/7",
+					"description": "Une équipe disponible en permanence pour répondre à vos besoins."
+				}
+			},
+			"faq": {
+				"services": {
+					"question": "Quels types de services offre LatLong ?",
+					"answer": "LatLong propose des services de sécurité physique, de surveillance électronique, de gestion des risques et de protection d'événements, adaptés aux besoins spécifiques de ses clients."
+				},
+				"remote": {
+					"question": "LatLong peut-il intervenir dans des zones éloignées ?",
+					"answer": "Oui, LatLong est équipé pour fournir des services dans des zones éloignées ou difficiles d'accès grâce à une équipe expérimentée et des outils adaptés à ces environnements."
+				},
+				"quality": {
+					"question": "Comment LatLong garantit-il la qualité de ses services ?",
+					"answer": "La qualité est assurée grâce à une formation continue du personnel, l'utilisation de technologies de pointe, et un suivi régulier pour s'assurer que les besoins des clients sont toujours satisfaits."
+				}
+			}
 		},
 		"cta": {
 			"title": "Des solutions de Sécurité de Classe mondiale",
@@ -111,10 +162,72 @@
 		},
 		"testimonials": {
 			"tagline": "Nos témoignages",
-			"title": "Ce qu'ils disent"
+			"title": "Ce qu'ils disent",
+			"items": {
+				"1": {
+					"text": "LatLong a transformé notre gestion de sécurité. L'équipe est proactive et toujours disponible pour répondre à nos besoins spécifiques.",
+					"author": "Christine Muhindo",
+					"position": "CEO - Amaliza Store"
+				},
+				"2": {
+					"text": "Nous travaillons avec LatLong depuis plusieurs années. Leur professionnalisme et leur engagement sont exceptionnels.",
+					"author": "Kevin Banza",
+					"position": "Client"
+				},
+				"3": {
+					"text": "LatLong nous a aidés à sécuriser nos opérations. Nous recommandons leurs services à toute organisation recherchant une sécurité fiable.",
+					"author": "Jessica Byamungu",
+					"position": "Directrice Habana Habi"
+				}
+			}
 		},
 		"counter": {
-			"title": "Votre référence en matière de sécurité."
+			"title": "Votre référence en matière de sécurité.",
+			"stats": {
+				"partners": {
+					"value": "42",
+					"label": "Partenaires"
+				},
+				"clients": {
+					"value": "1500",
+					"label": "Clients satisfaits"
+				},
+				"experts": {
+					"value": "300",
+					"label": "Experts en sécurité"
+				}
+			}
+		},
+		"ethics": {
+			"tagline": "Éthiques",
+			"title": "Nos principes éthiques",
+			"items": {
+				"councils": {
+					"title": "Conseils",
+					"description": "Nos principes directeurs et conseils pour maintenir les plus hauts standards éthiques dans nos opérations quotidiennes.",
+					"date": "15 Mars 2024"
+				},
+				"csr": {
+					"title": "Responsabilité sociétale de l'Entreprise",
+					"description": "Notre engagement envers le développement durable, l'impact social positif et la protection de l'environnement.",
+					"date": "20 Mars 2024"
+				},
+				"terms": {
+					"title": "Termes et conditions",
+					"description": "Les conditions générales qui régissent nos services et notre relation avec nos clients et partenaires.",
+					"date": "25 Mars 2024"
+				},
+				"code": {
+					"title": "Code de conduite",
+					"description": "Notre Code de conduite professionnel qui guide le comportement de nos employés et partenaires.",
+					"date": "30 Mars 2024"
+				},
+				"icoca": {
+					"title": "ICoCA - International Code of Conduct Association",
+					"description": "Notre adhésion et conformité aux standards internationaux de l'ICoCA pour les services de sécurité privée.",
+					"date": "5 Avril 2024"
+				}
+			}
 		}
 	}
 }
