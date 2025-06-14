@@ -15,13 +15,13 @@
 							</div>
 
 							<div class="space-y-2">
-									<p class="text-conult-gray whitespace-nowrap">
-									<a href="mailto:info@latlongcongo.com" class="hover:text-conult-base transition-colors">
+								<p class="text-conult-gray whitespace-nowrap">
+									<a :href="'mailto:info@latlongcongo.com'" class="hover:text-conult-base transition-colors">
 										info@latlongcongo.com
 									</a>
-									</p>
-								<p class="text-conult-gray">123 Avenue de la République, Kinshasa, RD Congo</p>
-								</div>
+								</p>
+								<p class="text-conult-gray">{{ t('footer.contact.address') }}</p>
+							</div>
 
 							<!-- Social Links -->
 							<div class="site-footer__top-right-social">
@@ -37,55 +37,55 @@
 						<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
 							<!-- Explore -->
 							<div class="space-y-4">
-								<h3 class="text-lg font-conult font-bold text-conult-white whitespace-nowrap">Explorer</h3>
+								<h3 class="text-lg font-conult font-bold text-conult-white whitespace-nowrap">{{ t('footer.explore.title') }}</h3>
 								<ul class="space-y-2">
 									<li>
-										<a href="/" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">Accueil</a>
+										<a href="/" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">{{ t('footer.explore.home') }}</a>
 									</li>
 									<li>
-										<a href="/about" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">À propos</a>
-									</li>
-										<li>
-										<a href="/ethique" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">Éthique</a>
+										<a href="/about" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">{{ t('footer.explore.about') }}</a>
 									</li>
 									<li>
-										<a href="/contact" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">Contact</a>
+										<a href="/ethique" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">{{ t('footer.explore.ethics') }}</a>
+									</li>
+									<li>
+										<a href="/contact" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">{{ t('footer.explore.contact') }}</a>
 									</li>
 								</ul>
 							</div>
 
 							<!-- Services -->
 							<div class="space-y-4">
-								<h3 class="text-lg font-conult font-bold text-conult-white whitespace-nowrap">Services</h3>
+								<h3 class="text-lg font-conult font-bold text-conult-white whitespace-nowrap">{{ t('footer.services.title') }}</h3>
 								<ul class="space-y-2">
 									<li>
-										<a href="/services/protection" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">Protection</a>
+										<a href="/services/protection" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">{{ t('footer.services.protection') }}</a>
 									</li>
 									<li>
-										<a href="/services/technology" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">Technologie</a>
+										<a href="/services/technology" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">{{ t('footer.services.technology') }}</a>
 									</li>
 									<li>
-										<a href="/services/consultancy" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">Consultance</a>
+										<a href="/services/consultancy" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">{{ t('footer.services.consultancy') }}</a>
 									</li>
 									<li>
-										<a href="/services/trainings" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">Formations</a>
+										<a href="/services/trainings" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">{{ t('footer.services.trainings') }}</a>
 									</li>
 									<li>
-										<a href="/services/others-security-services" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">Autres Services</a>
+										<a href="/services/others-security-services" class="text-conult-gray hover:text-conult-base transition-colors whitespace-nowrap block">{{ t('footer.services.others') }}</a>
 									</li>
 								</ul>
 							</div>
 
 							<!-- Contact -->
 							<div class="space-y-4">
-								<h3 class="text-lg font-conult font-bold text-conult-white whitespace-nowrap">Contact</h3>
+								<h3 class="text-lg font-conult font-bold text-conult-white whitespace-nowrap">{{ t('footer.contact.title') }}</h3>
 								<ul class="space-y-2">
 									<li class="flex items-start space-x-2">
 										<div class="text-conult-base mt-1">
 											<span class="icon-email"></span>
 										</div>
 										<p class="text-conult-gray">
-											<a href="mailto:info@latlongcongo.com" class="hover:text-conult-base transition-colors">
+											<a :href="'mailto:info@latlongcongo.com'" class="hover:text-conult-base transition-colors">
 												info@latlongcongo.com
 											</a>
 										</p>
@@ -95,7 +95,7 @@
 											<span class="icon-phone"></span>
 										</div>
 										<p class="text-conult-gray">
-											<a href="tel:+243810041500" class="hover:text-conult-base transition-colors">+243 810 041 500</a>
+											<a :href="'tel:' + t('footer.contact.phone.primary')" class="hover:text-conult-base transition-colors">{{ t('footer.contact.phone.primary') }}</a>
 										</p>
 									</li>
 									<li class="flex items-start space-x-2">
@@ -103,7 +103,7 @@
 											<span class="icon-phone"></span>
 										</div>
 										<p class="text-conult-gray whitespace-nowrap">
-											<a href="tel:+243993400082" class="hover:text-conult-base transition-colors">+243 993 400 082</a>
+											<a :href="'tel:' + t('footer.contact.phone.secondary')" class="hover:text-conult-base transition-colors">{{ t('footer.contact.phone.secondary') }}</a>
 										</p>
 									</li>
 								</ul>
@@ -116,9 +116,9 @@
 			<!-- Footer Bottom -->
 			<div class="pt-8 border-t border-conult-gray/20">
 				<p class="text-center text-conult-gray text-sm whitespace-nowrap">
-					© {{ new Date().getFullYear() }} LatLong International. Tous droits réservés.
-					<span class="mx-1">Développé par</span>
-					<a href="https://www.witoxr.studio" target="_blank" rel="noopener noreferrer" class="hover:underline text-conult-base transition-colors">Wito XR Studio</a>
+					{{ t('footer.copyright.text', { year: new Date().getFullYear() }) }}
+					<span class="mx-1">{{ t('footer.copyright.developedBy') }}</span>
+					<a href="https://www.witoxr.studio" target="_blank" rel="noopener noreferrer" class="hover:underline text-conult-base transition-colors">{{ t('footer.copyright.developer') }}</a>
 				</p>
 			</div>
 		</div>
@@ -126,7 +126,9 @@
 </template>
 
 <script setup lang="ts">
-// Le script est vide pour l'instant car nous n'utilisons pas encore les traductions
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 </script>
 
 <style scoped>

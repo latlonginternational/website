@@ -8,10 +8,10 @@
       ></div>
       <div class="container">
         <div class="page-header__inner">
-          <h2>Éthique et Responsabilité</h2>
+          <h2>{{ t('ethics.pageHeader.title') }}</h2>
           <ul class="thm-breadcrumb list-unstyled">
-            <li><a href="/">Accueil</a></li>
-            <li class="active">Éthique</li>
+            <li><a href="/">{{ t('ethics.pageHeader.breadcrumb.home') }}</a></li>
+            <li class="active">{{ t('ethics.pageHeader.breadcrumb.current') }}</li>
           </ul>
         </div>
       </div>
@@ -23,8 +23,8 @@
       <div class="container mx-auto">
         <!-- Section Title -->
         <div class="text-center mb-12">
-          <span class="text-conult-base font-conult text-sm uppercase tracking-wider mb-2 block">Notre engagement</span>
-          <h2 class="text-3xl md:text-4xl font-conult font-bold text-conult-black">Nos Principes Éthiques</h2>
+          <span class="text-conult-base font-conult text-sm uppercase tracking-wider mb-2 block">{{ t('ethics.content.commitment.subtitle') }}</span>
+          <h2 class="text-3xl md:text-4xl font-conult font-bold text-conult-black">{{ t('ethics.content.commitment.title') }}</h2>
         </div>
 
         <!-- Grid des articles -->
@@ -41,11 +41,8 @@
         <div class="row">
           <div class="col-xl-12">
             <div class="cta-one__inner">
-              <h2 class="cta-one__title">
-                Des solutions de Sécurité <br />
-                de Classe mondiale
-              </h2>
-              <a href="/about" class="thm-btn cta-one__btn">Nous contacter</a>
+              <h2 class="cta-one__title" v-html="t('ethics.cta.title').replace('\n', '<br />')"></h2>
+              <a href="/about" class="thm-btn cta-one__btn">{{ t('ethics.cta.button') }}</a>
               <div
                 class="cta-one__shape wow slideInLeft"
                 data-wow-delay="100ms"
@@ -63,57 +60,60 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import DefaultCard from '~/components/DefaultCard.vue'
+
+const { t } = useI18n()
 
 const articles = [
   {
     id: 1,
     image: '/assets/images/blog/ethique-conseils.jpg',
-    date: '15 Mars 2024',
-    auteur: 'LatLong',
+    date: t('ethics.content.articles.advice.date'),
+    auteur: t('ethics.content.articles.advice.author'),
     commentaires: 0,
-    titre: 'Conseils',
-    description: 'Nos principes directeurs et conseils pour maintenir les plus hauts standards éthiques dans nos opérations quotidiennes.',
+    titre: t('ethics.content.articles.advice.title'),
+    description: t('ethics.content.articles.advice.description'),
     lien: '/ethique/conseils'
   },
   {
     id: 2,
     image: '/assets/images/blog/ethique-rse.jpg',
-    date: '20 Mars 2024',
-    auteur: 'LatLong',
+    date: t('ethics.content.articles.csr.date'),
+    auteur: t('ethics.content.articles.csr.author'),
     commentaires: 0,
-    titre: 'Responsabilité sociétale de l\'Entreprise',
-    description: 'Notre engagement envers le développement durable, l\'impact social positif et la protection de l\'environnement.',
+    titre: t('ethics.content.articles.csr.title'),
+    description: t('ethics.content.articles.csr.description'),
     lien: '/ethique/rse'
   },
   {
     id: 3,
     image: '/assets/images/blog/ethique-termes.jpg',
-    date: '25 Mars 2024',
-    auteur: 'LatLong',
+    date: t('ethics.content.articles.terms.date'),
+    auteur: t('ethics.content.articles.terms.author'),
     commentaires: 0,
-    titre: 'Termes et conditions',
-    description: 'Les conditions générales qui régissent nos services et notre relation avec nos clients et partenaires.',
+    titre: t('ethics.content.articles.terms.title'),
+    description: t('ethics.content.articles.terms.description'),
     lien: '/ethique/termes-conditions'
   },
   {
     id: 4,
     image: '/assets/images/blog/ethique-code.jpg',
-    date: '30 Mars 2024',
-    auteur: 'LatLong',
+    date: t('ethics.content.articles.code.date'),
+    auteur: t('ethics.content.articles.code.author'),
     commentaires: 0,
-    titre: 'Code de conduite',
-    description: 'Notre Code de conduite professionnel qui guide le comportement de nos employés et partenaires.',
+    titre: t('ethics.content.articles.code.title'),
+    description: t('ethics.content.articles.code.description'),
     lien: '/ethique/code-conduite'
   },
   {
     id: 5,
     image: '/assets/images/blog/ethique-icoca.jpg',
-    date: '5 Avril 2024',
-    auteur: 'LatLong',
+    date: t('ethics.content.articles.icoca.date'),
+    auteur: t('ethics.content.articles.icoca.author'),
     commentaires: 0,
-    titre: 'ICoCA - International Code of Conduct Association',
-    description: 'Notre adhésion et conformité aux standards internationaux de l\'ICoCA pour les services de sécurité privée.',
+    titre: t('ethics.content.articles.icoca.title'),
+    description: t('ethics.content.articles.icoca.description'),
     lien: '/ethique/icoca'
   }
 ]

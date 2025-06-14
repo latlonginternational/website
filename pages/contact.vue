@@ -8,10 +8,10 @@
       ></div>
       <div class="container">
         <div class="page-header__inner">
-          <h2>Contactez-nous</h2>
+          <h2>{{ t('contact.pageHeader.title') }}</h2>
           <ul class="thm-breadcrumb list-unstyled">
-            <li><a href="/">Accueil</a></li>
-            <li class="active">Contact</li>
+            <li><a href="/">{{ t('contact.pageHeader.breadcrumb.home') }}</a></li>
+            <li class="active">{{ t('contact.pageHeader.breadcrumb.current') }}</li>
           </ul>
         </div>
       </div>
@@ -37,29 +37,23 @@
           <div class="col-xl-8 col-lg-7">
             <div class="contact-page-details__left">
               <h3 class="contact-page-details__title">
-                À propos de LatLong International
+                {{ t('contact.about.title') }}
               </h3>
               <div class="contact-page-details__content">
                 <div class="contact-page-details__content-img">
                   <img
                     src="/assets/images/resources/co.jpg"
-                    alt="LatLong International"
+                    :alt="t('contact.about.title')"
                   />
                 </div>
                 <div class="contact-page-details__content-text-box">
                   <p class="contact-page-details__content-text-1">
-                    LatLong International est une entreprise de sécurité opérant
-                    dans l'est de la RDC depuis 2012, avec une expertise dans la
-                    protection, la technologie et les solutions de sécurité
-                    avancées.
+                    {{ t('contact.about.content.text1') }}
                   </p>
                   <p class="contact-page-details__content-text-2">
-                    Notre mission est de fournir des solutions de sécurité
-                    intégrées de classe mondiale en dépassant constamment les
-                    attentes grâce à l'innovation et l'excellence
-                    opérationnelle.
+                    {{ t('contact.about.content.text2') }}
                   </p>
-                  <h2 class="contact-page-details__sign">Équipe LatLong</h2>
+                  <h2 class="contact-page-details__sign">{{ t('contact.about.content.signature') }}</h2>
                 </div>
               </div>
             </div>
@@ -68,23 +62,20 @@
             <div class="contact-page-details__right">
               <ul class="list-unstyled contact-page-details__list">
                 <li>
-                  <span>Appelez-nous</span>
-                  <p><a href="tel:+243810041500">+243 810 041 500</a></p>
+                  <span>{{ t('contact.details.callUs.label') }}</span>
+                  <p><a href="tel:+243810041500">{{ t('contact.details.callUs.phone') }}</a></p>
                 </li>
                 <li>
-                  <span>Envoyez un email</span>
+                  <span>{{ t('contact.details.email.label') }}</span>
                   <p>
-                    <a href="mailto:info@latlongcongo.com"
-                      >info@latlongcongo.com</a
-                    >
+                    <a :href="'mailto:info@latlongcongo.com'">
+                      info@latlongcongo.com 
+                    </a>
                   </p>
                 </li>
                 <li>
-                  <span>Visitez nos bureaux</span>
-                  <p>
-                    325 Blvd Kanyamuhanga <br />
-                    Q. des Volcans, Goma, Nord-Kivu
-                  </p>
+                  <span>{{ t('contact.details.visit.label') }}</span>
+                  <p v-html="t('contact.details.visit.address').replace('\n', '<br />')"></p>
                 </li>
               </ul>
               <div class="contact-page-details__social">
@@ -104,8 +95,8 @@
     <section class="contact-page">
       <div class="container">
         <div class="section-title text-center">
-          <span class="section-title__tagline">Contactez-nous</span>
-          <h2 class="section-title__title">Envoyez-nous un message</h2>
+          <span class="section-title__tagline">{{ t('contact.form.title') }}</span>
+          <h2 class="section-title__title">{{ t('contact.form.subtitle') }}</h2>
         </div>
         <div class="row">
           <div class="col-xl-12">
@@ -120,16 +111,11 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import ContactForm from '~/components/ContactForm.vue'
 
-export default defineComponent({
-  name: 'ContactPage',
-  components: {
-    ContactForm
-  }
-})
+const { t } = useI18n()
 </script>
 
 <style scoped>

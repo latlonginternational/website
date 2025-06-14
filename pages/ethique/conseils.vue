@@ -5,11 +5,11 @@
       <div class="page-header-bg" style="background-image: url(/assets/images/backgrounds/page-header-bg.jpg)"></div>
       <div class="container">
         <div class="page-header__inner">
-          <h2>Conseils</h2>
+          <h2>{{ t('ethics.advice.pageHeader.title') }}</h2>
           <ul class="thm-breadcrumb list-unstyled">
-            <li><a href="/">Accueil</a></li>
-            <li><a href="/ethique">Éthique</a></li>
-            <li class="active">Conseils</li>
+            <li><a href="/">{{ t('ethics.advice.pageHeader.breadcrumb.home') }}</a></li>
+            <li><a href="/ethique">{{ t('ethics.advice.pageHeader.breadcrumb.ethics') }}</a></li>
+            <li class="active">{{ t('ethics.advice.pageHeader.breadcrumb.current') }}</li>
           </ul>
         </div>
       </div>
@@ -23,35 +23,35 @@
           <div class="col-xl-8 col-lg-7">
             <div class="news-details__left">
               <div class="news-details__img">
-                <img src="/assets/images/blog/news-details-img-1.jpg" alt="" />
+                <img src="/assets/images/blog/news-details-img-1.jpg" :alt="t('ethics.advice.content.title')" />
                 <div class="news-details__date-box">
-                  <p>Mars</p>
+                  <p>{{ t('ethics.advice.content.date') }}</p>
                 </div>
               </div>
               <div class="news-details__content">
-                <h3 class="news-details__title">Nos principes directeurs</h3>
+                <h3 class="news-details__title">{{ t('ethics.advice.content.title') }}</h3>
                 <p class="news-details__text-1">
-                  Chez LatLong, nous nous engageons à maintenir les plus hauts standards éthiques dans toutes nos opérations. Nos principes directeurs constituent le fondement de notre approche professionnelle et de notre engagement envers l'excellence.
+                  {{ t('ethics.advice.content.intro') }}
                 </p>
                 <p class="news-details__text-2">
-                  <strong>Intégrité et transparence</strong><br>
-                  Nous opérons avec une transparence totale dans toutes nos interactions. Chaque décision est prise dans le respect des lois en vigueur et des principes éthiques fondamentaux. Notre engagement envers l'intégrité se reflète dans la communication claire et honnête avec nos clients, la gestion transparente des ressources, le respect strict des procédures établies, et la déclaration immédiate de tout conflit d'intérêt.
+                  <strong>{{ t('ethics.advice.content.principles.integrity.title') }}</strong><br>
+                  {{ t('ethics.advice.content.principles.integrity.description') }}
                 </p>
                 <p class="news-details__text-3">
-                  <strong>Respect des droits humains</strong><br>
-                  La protection et le respect des droits humains sont au cœur de nos opérations. Nous nous engageons à former nos équipes sur les droits humains fondamentaux, assurer une intervention proportionnée et respectueuse, protéger la dignité de toutes les personnes concernées, et signaler et traiter toute violation des droits humains.
+                  <strong>{{ t('ethics.advice.content.principles.humanRights.title') }}</strong><br>
+                  {{ t('ethics.advice.content.principles.humanRights.description') }}
                 </p><br>
                 <p class="news-details__text-3">
-                  <strong>Excellence professionnelle</strong><br>
-                  Notre engagement envers l'excellence se manifeste à travers une formation continue de nos équipes, l'utilisation des meilleures pratiques du secteur, l'innovation dans nos méthodes d'intervention, et l'évaluation régulière de nos performances.
+                  <strong>{{ t('ethics.advice.content.principles.excellence.title') }}</strong><br>
+                  {{ t('ethics.advice.content.principles.excellence.description') }}
                 </p>
               </div>
               <div class="news-details__bottom">
                 <p class="news-details__tags">
-                  <span>Tags</span>
-                  <a href="#">éthique</a>
-                  <a href="#">conseils</a>
-                  <a href="#">principes</a>
+                  <span>{{ t('ethics.advice.meta.tags.title') }}</span>
+                  <template v-for="i in 3" :key="i">
+                    <a v-if="t(`ethics.advice.meta.tags.items.${i}`)" href="#">{{ t(`ethics.advice.meta.tags.items.${i}`) }}</a>
+                  </template>
                 </p>
                 <div class="news-details__social-list">
                   <a href="#"><i class="fab fa-twitter"></i></a>
@@ -62,12 +62,12 @@
               </div>
               <div class="author-one">
                 <div class="author-one__image">
-                  <img src="/assets/images/blog/author-1-1.jpg" alt="" />
+                  <img src="/assets/images/blog/author-1-1.jpg" :alt="t('ethics.advice.content.author.name')" />
                 </div>
                 <div class="author-one__content">
-                  <h3>LatLong International</h3>
+                  <h3>{{ t('ethics.advice.content.author.name') }}</h3>
                   <p>
-                    Ces principes ne sont pas de simples déclarations, mais des engagements concrets que nous mettons en œuvre quotidiennement. Chaque membre de notre équipe est formé et encouragé à adhérer à ces valeurs, assurant ainsi une cohérence dans toutes nos opérations.
+                    {{ t('ethics.advice.content.author.description') }}
                   </p>
                 </div>
               </div>
@@ -76,65 +76,38 @@
 
           <div class="col-xl-4 col-lg-5">
             <div class="sidebar">
-             
               <div class="sidebar__single sidebar__post">
-                <h3 class="sidebar__title">Pages connexes</h3>
+                <h3 class="sidebar__title">{{ t('ethics.advice.sidebar.relatedPages.title') }}</h3>
                 <ul class="sidebar__post-list list-unstyled">
-                  <li>
-                    <div class="sidebar__post-image">
-                      <img src="/assets/images/blog/lp-1-1.jpg" alt="" />
-                    </div>
-                    <div class="sidebar__post-content">
-                      <h3>
-                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>LatLong</span>
-                        <a href="/ethique/rse">Responsabilité sociétale</a>
-                      </h3>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="sidebar__post-image">
-                      <img src="/assets/images/blog/lp-1-2.jpg" alt="" />
-                    </div>
-                    <div class="sidebar__post-content">
-                      <h3>
-                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>LatLong</span>
-                        <a href="/ethique/code-conduite">Code de conduite</a>
-                      </h3>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="sidebar__post-image">
-                      <img src="/assets/images/blog/lp-1-3.jpg" alt="" />
-                    </div>
-                    <div class="sidebar__post-content">
-                      <h3>
-                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>LatLong</span>
-                        <a href="/ethique/termes-conditions">Termes et conditions</a>
-                      </h3>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="sidebar__post-image">
-                      <img src="/assets/images/blog/lp-1-3.jpg" alt="" />
-                    </div>
-                    <div class="sidebar__post-content">
-                      <h3>
-                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>LatLong</span>
-                        <a href="/ethique/icoca">ICoCA</a>
-                      </h3>
-                    </div>
-                  </li>
+                  <template v-for="i in 4" :key="i">
+                    <li v-if="t(`ethics.advice.sidebar.relatedPages.items.${i}.title`)">
+                      <div class="sidebar__post-image">
+                        <img :src="`/assets/images/blog/lp-1-${getImageIndex(t(`ethics.advice.sidebar.relatedPages.items.${i}.key`))}.jpg`" 
+                             :alt="t(`ethics.advice.sidebar.relatedPages.items.${i}.title`)" />
+                      </div>
+                      <div class="sidebar__post-content">
+                        <h3>
+                          <span class="sidebar__post-content-meta">
+                            <i class="far fa-user-circle"></i>{{ t(`ethics.advice.sidebar.relatedPages.items.${i}.author`) }}
+                          </span>
+                          <a :href="getPageUrl(t(`ethics.advice.sidebar.relatedPages.items.${i}.key`))">
+                            {{ t(`ethics.advice.sidebar.relatedPages.items.${i}.title`) }}
+                          </a>
+                        </h3>
+                      </div>
+                    </li>
+                  </template>
                 </ul>
               </div>
 
               <div class="sidebar__single sidebar__tags">
-                <h3 class="sidebar__title">Étiquettes</h3>
+                <h3 class="sidebar__title">{{ t('ethics.advice.sidebar.tags.title') }}</h3>
                 <div class="sidebar__tags-list">
-                  <a href="#">Éthique</a>
-                  <a href="#">Conseils</a>
-                  <a href="#">Principes</a>
-                  <a href="#">Intégrité</a>
-                  <a href="#">Droits Humains</a>
+                  <template v-for="i in 5" :key="i">
+                    <a v-if="t(`ethics.advice.sidebar.tags.items.${i}`)" href="#">
+                      {{ t(`ethics.advice.sidebar.tags.items.${i}`) }}
+                    </a>
+                  </template>
                 </div>
               </div>
             </div>
@@ -147,6 +120,37 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
+const getImageIndex = (key: string): string => {
+  switch (key) {
+    case 'icoca':
+    case 'terms':
+      return '3'
+    case 'code':
+      return '2'
+    default:
+      return '1'
+  }
+}
+
+const getPageUrl = (key: string): string => {
+  switch (key) {
+    case 'csr':
+      return '/ethique/rse'
+    case 'code':
+      return '/ethique/code-conduite'
+    case 'terms':
+      return '/ethique/termes-conditions'
+    case 'icoca':
+      return '/ethique/icoca'
+    default:
+      return '/ethique'
+  }
+}
+
 definePageMeta({
   title: 'Conseils - LatLong',
   description: 'Découvrez les principes éthiques et les conseils qui guident nos opérations quotidiennes chez LatLong.'

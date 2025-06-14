@@ -5,11 +5,11 @@
       <div class="page-header-bg" style="background-image: url(/assets/images/backgrounds/page-header-bg.jpg)"></div>
       <div class="container">
         <div class="page-header__inner">
-          <h2>Responsabilité sociétale de l'Entreprise</h2>
+          <h2>{{ t('ethics.csr.pageHeader.title') }}</h2>
           <ul class="thm-breadcrumb list-unstyled">
-            <li><a href="/">Accueil</a></li>
-            <li><a href="/ethique">Éthique</a></li>
-            <li class="active">RSE</li>
+            <li><a href="/">{{ t('ethics.csr.pageHeader.breadcrumb.home') }}</a></li>
+            <li><a href="/ethique">{{ t('ethics.csr.pageHeader.breadcrumb.ethics') }}</a></li>
+            <li class="active">{{ t('ethics.csr.pageHeader.breadcrumb.current') }}</li>
           </ul>
         </div>
       </div>
@@ -23,39 +23,31 @@
           <div class="col-xl-8 col-lg-7">
             <div class="news-details__left">
               <div class="news-details__img">
-                <img src="/assets/images/blog/news-details-img-1.jpg" alt="" />
+                <img src="/assets/images/blog/news-details-img-1.jpg" :alt="t('ethics.csr.content.title')" />
                 <div class="news-details__date-box">
-                  <p>Mars</p>
+                  <p>{{ t('ethics.csr.content.date') }}</p>
                 </div>
               </div>
               <div class="news-details__content">
-                <h3 class="news-details__title">Notre engagement RSE</h3>
+                <h3 class="news-details__title">{{ t('ethics.csr.content.title') }}</h3>
                 <p class="news-details__text-1">
-                  La Responsabilité sociétale de l'Entreprise (RSE) est au cœur de notre stratégie chez LatLong. Nous nous engageons à contribuer positivement au développement durable de notre communauté tout en maintenant des standards élevés de performance professionnelle.
+                  {{ t('ethics.csr.content.intro') }}
                 </p>
-                <p class="news-details__text-2">
-                  <strong>Impact social</strong><br>
-                  Notre engagement social se manifeste à travers plusieurs initiatives : formation et emploi local (95% de nos effectifs sont recrutés localement), programmes de formation professionnelle pour les jeunes, partenariats avec des institutions éducatives locales, et support aux initiatives communautaires.
-                </p>
-                <p class="news-details__text-3">
-                  <strong>Environnement</strong><br>
-                  Notre engagement environnemental comprend la réduction de notre empreinte carbone, la gestion responsable des déchets, l'utilisation de technologies éco-responsables, et la sensibilisation de nos équipes aux pratiques durables.
-                </p><br>
-                <p class="news-details__text-3">
-                  <strong>Gouvernance</strong><br>
-                  Notre approche de gouvernance responsable inclut la transparence dans nos opérations, des pratiques commerciales éthiques, le respect des droits des employés, et l'engagement envers la diversité et l'inclusion.
-                </p><br>
-                <p class="news-details__text-3">
-                  <strong>Objectifs 2024-2025</strong><br>
-                  Nous visons à augmenter de 20% notre recrutement local, réduire de 15% notre consommation énergétique, former 100 jeunes aux métiers de la sécurité, et lancer 3 nouveaux projets communautaires.
-                </p>
+<div class="space-y-6 mt-6">
+  <template v-for="i in 4" :key="i">
+                  <p class="news-details__text-3" v-if="t(`ethics.csr.content.sections.${i}.title`)">
+                    <strong>{{ t(`ethics.csr.content.sections.${i}.title`) }}</strong><br>
+                    {{ t(`ethics.csr.content.sections.${i}.description`) }}
+                  </p>
+                </template>
+</div>
               </div>
               <div class="news-details__bottom">
                 <p class="news-details__tags">
-                  <span>Tags</span>
-                  <a href="#">rse</a>
-                  <a href="#">développement durable</a>
-                  <a href="#">impact social</a>
+                  <span>{{ t('ethics.csr.meta.tags.title') }}</span>
+                  <template v-for="i in 3" :key="i">
+                    <a v-if="t(`ethics.csr.meta.tags.items.${i}`)" href="#">{{ t(`ethics.csr.meta.tags.items.${i}`) }}</a>
+                  </template>
                 </p>
                 <div class="news-details__social-list">
                   <a href="#"><i class="fab fa-twitter"></i></a>
@@ -66,12 +58,12 @@
               </div>
               <div class="author-one">
                 <div class="author-one__image">
-                  <img src="/assets/images/blog/author-1-1.jpg" alt="" />
+                  <img src="/assets/images/blog/author-1-1.jpg" :alt="t('ethics.csr.content.author.name')" />
                 </div>
                 <div class="author-one__content">
-                  <h3>LatLong International</h3>
+                  <h3>{{ t('ethics.csr.content.author.name') }}</h3>
                   <p>
-                    Notre engagement RSE est une partie intégrante de notre identité d'entreprise. Nous croyons fermement que notre succès est lié à notre capacité à créer un impact positif sur la société et l'environnement.
+                    {{ t('ethics.csr.content.author.description') }}
                   </p>
                 </div>
               </div>
@@ -80,65 +72,38 @@
 
           <div class="col-xl-4 col-lg-5">
             <div class="sidebar">
-             
               <div class="sidebar__single sidebar__post">
-                <h3 class="sidebar__title">Pages connexes</h3>
+                <h3 class="sidebar__title">{{ t('ethics.csr.sidebar.relatedPages.title') }}</h3>
                 <ul class="sidebar__post-list list-unstyled">
-                  <li>
-                    <div class="sidebar__post-image">
-                      <img src="/assets/images/blog/lp-1-1.jpg" alt="" />
-                    </div>
-                    <div class="sidebar__post-content">
-                      <h3>
-                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>LatLong</span>
-                        <a href="/ethique/conseils">Conseils</a>
-                      </h3>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="sidebar__post-image">
-                      <img src="/assets/images/blog/lp-1-2.jpg" alt="" />
-                    </div>
-                    <div class="sidebar__post-content">
-                      <h3>
-                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>LatLong</span>
-                        <a href="/ethique/code-conduite">Code de conduite</a>
-                      </h3>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="sidebar__post-image">
-                      <img src="/assets/images/blog/lp-1-3.jpg" alt="" />
-                    </div>
-                    <div class="sidebar__post-content">
-                      <h3>
-                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>LatLong</span>
-                        <a href="/ethique/termes-conditions">Termes et conditions</a>
-                      </h3>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="sidebar__post-image">
-                      <img src="/assets/images/blog/lp-1-3.jpg" alt="" />
-                    </div>
-                    <div class="sidebar__post-content">
-                      <h3>
-                        <span class="sidebar__post-content-meta"><i class="far fa-user-circle"></i>LatLong</span>
-                        <a href="/ethique/icoca">ICoCA</a>
-                      </h3>
-                    </div>
-                  </li>
+                  <template v-for="i in 4" :key="i">
+                    <li v-if="t(`ethics.csr.sidebar.relatedPages.items.${i}.title`)">
+                      <div class="sidebar__post-image">
+                        <img :src="`/assets/images/blog/lp-1-${getImageIndex(t(`ethics.csr.sidebar.relatedPages.items.${i}.key`))}.jpg`" 
+                             :alt="t(`ethics.csr.sidebar.relatedPages.items.${i}.title`)" />
+                      </div>
+                      <div class="sidebar__post-content">
+                        <h3>
+                          <span class="sidebar__post-content-meta">
+                            <i class="far fa-user-circle"></i>{{ t(`ethics.csr.sidebar.relatedPages.items.${i}.author`) }}
+                          </span>
+                          <a :href="getPageUrl(t(`ethics.csr.sidebar.relatedPages.items.${i}.key`))">
+                            {{ t(`ethics.csr.sidebar.relatedPages.items.${i}.title`) }}
+                          </a>
+                        </h3>
+                      </div>
+                    </li>
+                  </template>
                 </ul>
               </div>
 
               <div class="sidebar__single sidebar__tags">
-                <h3 class="sidebar__title">Étiquettes</h3>
+                <h3 class="sidebar__title">{{ t('ethics.csr.sidebar.tags.title') }}</h3>
                 <div class="sidebar__tags-list">
-                  <a href="#">RSE</a>
-                  <a href="#">Développement Durable</a>
-                  <a href="#">Impact Social</a>
-                  <a href="#">Environnement</a>
-                  <a href="#">Gouvernance</a>
+                  <template v-for="i in 5" :key="i">
+                    <a v-if="t(`ethics.csr.sidebar.tags.items.${i}`)" href="#">
+                      {{ t(`ethics.csr.sidebar.tags.items.${i}`) }}
+                    </a>
+                  </template>
                 </div>
               </div>
             </div>
@@ -151,6 +116,37 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
+const getImageIndex = (key: string): string => {
+  switch (key) {
+    case 'icoca':
+    case 'terms':
+      return '3'
+    case 'code':
+      return '2'
+    default:
+      return '1'
+  }
+}
+
+const getPageUrl = (key: string): string => {
+  switch (key) {
+    case 'conseils':
+      return '/ethique/conseils'
+    case 'code':
+      return '/ethique/code-conduite'
+    case 'terms':
+      return '/ethique/termes-conditions'
+    case 'icoca':
+      return '/ethique/icoca'
+    default:
+      return '/ethique'
+  }
+}
+
 definePageMeta({
   title: 'RSE - LatLong',
   description: 'Découvrez notre engagement en matière de Responsabilité sociétale de l\'Entreprise et nos initiatives pour un impact positif.'

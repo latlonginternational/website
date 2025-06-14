@@ -1,39 +1,39 @@
 {
 	"meta": {
 		"title": "LatLong International",
-		"description": "LatLong International - Your Gateway to Secure Business in Africa"
+		"description": "LatLong International - your gateway to secure business in Africa"
 	},
 	"navigation": {
 		"home": "Home",
-		"about": "About Us",
+		"about": "About us",
 		"services": {
-			"title": "Our Services",
-			"protection": "Protection Services",
-			"technology": "Security Technology",
-			"consultancy": "Security Consulting",
-			"trainings": "Professional Training",
-			"others": "Additional Services"
+			"title": "Our services",
+			"protection": "Protection",
+			"technology": "Technology",
+			"consultancy": "Consulting",
+			"trainings": "Training",
+			"others": "Additional services"
 		},
 		"ethics": {
-			"title": "Ethics & Compliance",
-			"councils": "Ethical Guidelines",
-			"csr": "Corporate Responsibility",
-			"terms": "Terms & Conditions",
-			"code": "Code of Conduct",
-			"icoca": "ICoCA Standards"
+			"title": "Ethics & compliance",
+			"councils": "Ethical guidelines",
+			"csr": "Corporate responsibility",
+			"terms": "Terms & conditions",
+			"code": "Code of conduct",
+			"icoca": "ICoCA standards"
 		},
-		"contact": "Get in Touch",
-		"explore": "Discover More"
+		"contact": "Get in touch",
+		"explore": "Discover more"
 	},
 	"common": {
-		"readMore": "Read More",
-		"learnMore": "Learn More",
-		"contact": "Contact Us",
-		"contactUs": "Get in Touch",
-		"getStarted": "Get Started",
+		"readMore": "Read more",
+		"learnMore": "Learn more",
+		"contact": "Contact us",
+		"contactUs": "Get in touch",
+		"getStarted": "Get started",
 		"loading": "Loading...",
-		"callUs": "Call Us Now",
-		"contacts": "Contact Information",
+		"callUs": "Call us now",
+		"contacts": "Contact information",
 		"language": {
 			"title": "Language",
 			"fr": "French",
@@ -41,40 +41,97 @@
 		}
 	},
 	"contact": {
-		"address": "325 Blvd Kanyamuhanga, Q. des Volcans, Goma",
-		"callUs": "Call Us",
-		"email": "{email}",
-		"phone": "+243 810 041 500"
+		"pageHeader": {
+			"title": "Contact Us",
+			"breadcrumb": {
+				"home": "Home",
+				"current": "Contact"
+			}
+		},
+		"about": {
+			"title": "About LatLong International",
+			"content": {
+				"text1": "LatLong International is a security company operating in eastern DRC since 2012, with expertise in protection, technology, and advanced security solutions.",
+				"text2": "Our mission is to provide world-class integrated security solutions by consistently exceeding expectations through innovation and operational excellence.",
+				"signature": "LatLong Team"
+			}
+		},
+		"details": {
+			"callUs": {
+				"label": "Call Us",
+				"phone": "+243 810 041 500"
+			},
+			"email": {
+				"label": "Send Email",
+				"username": "info",
+				"domain": "latlongcongo.com"
+			},
+			"visit": {
+				"label": "Visit Our Office",
+				"address": "325 Blvd Kanyamuhanga\nQ. des Volcans, Goma, North Kivu"
+			}
+		},
+		"form": {
+			"title": "Contact us",
+			"subtitle": "Send us a message"
+		}
 	},
 	"footer": {
 		"description": "LatLong International is your trusted partner for security and protection in DR Congo.",
 		"quickLinks": "Quick Links",
-		"contact": "Contact",
+		"contact": {
+			"title": "Contact",
+			"email": {
+				"label": "Email"
+			},
+			"phone": {
+				"label": "Phone",
+				"primary": "+243 810 041 500",
+				"secondary": "+243 993 400 082"
+			},
+			"address": "123 Avenue de la République, Kinshasa, DR Congo"
+		},
 		"newsletter": "Newsletter",
 		"newsletterDescription": "Subscribe to our newsletter to receive our latest news and offers.",
 		"emailPlaceholder": "Your email address",
 		"subscribe": "Subscribe",
-		"copyright": "© {year} LatLong International. All rights reserved.",
-		"explore": "Explore",
-		"services": "Services",
-		"developedBy": "Developed by"
+		"copyright": {
+			"text": "© {year} LatLong International. All rights reserved.",
+			"developedBy": "Developed by",
+			"developer": "Wito XR Studio"
+		},
+		"explore": {
+			"title": "Explore",
+			"home": "Home",
+			"about": "About",
+			"ethics": "Ethics",
+			"contact": "Contact"
+		},
+		"services": {
+			"title": "Services",
+			"protection": "Protection",
+			"technology": "Technology",
+			"consultancy": "Consultancy",
+			"trainings": "Trainings",
+			"others": "Other Services"
+		}
 	},
 	"home": {
 		"slider": {
 			"slide1": {
-				"title": "Tailored Security Solutions for Your Peace of Mind",
+				"title": "Tailored security solutions for your peace of mind",
 				"description": "Innovative security solutions tailored to your specific needs, ensuring optimal protection for your assets and teams in the DRC.",
-				"button": "Discover Our Solutions"
+				"button": "Discover our solutions"
 			},
 			"slide2": {
-				"title": "Local Expertise, International Standards",
+				"title": "Local expertise, international standards",
 				"description": "Our team of security experts combines global best practices with deep local knowledge, delivering cutting-edge protection solutions across the DRC.",
-				"button": "Explore Our Services"
+				"button": "Explore our services"
 			},
 			"slide3": {
-				"title": "Your Trusted Partner in the DRC",
+				"title": "Your trusted partner in the DRC",
 				"description": "With over a decade of experience in securing operations across the Democratic Republic of Congo, we provide nationwide coverage with exceptional response times.",
-				"button": "Contact Our Team"
+				"button": "Contact our team"
 			}
 		},
 		"features": {
@@ -104,8 +161,8 @@
 			}
 		},
 		"about": {
-			"tagline": "Our Offer",
-			"title": "Your Security Management Partner",
+			"tagline": "Our offer",
+			"title": "Your security management partner",
 			"description": "LatLong provides you with modern tools for enhanced security and optimized operations management.",
 			"points": {
 				"realtime": "Real-time monitoring",
@@ -114,14 +171,14 @@
 				"solutions": "Customized solutions"
 			},
 			"contact": {
-				"text": "Contact Us",
+				"text": "Contact us",
 				"phone": "+243 820 123 456"
 			},
-			"button": "Learn More"
+			"button": "Learn more"
 		},
 		"mission": {
 			"title": "Ensuring your security is our mission.",
-			"button": "Contact Us"
+			"button": "Contact us"
 		},
 		"experience": {
 			"tagline": "Benefits & solutions",
@@ -137,7 +194,7 @@
 					"description": "High-quality services that meet international standards."
 				},
 				"support": {
-					"title": "24/7 Support",
+					"title": "24/7 support",
 					"description": "A team available around the clock to meet your needs."
 				}
 			},
@@ -157,12 +214,12 @@
 			}
 		},
 		"cta": {
-			"title": "World-Class Security Solutions",
-			"button": "Contact Us"
+			"title": "World-class\nsecurity solutions",
+			"button": "Contact us"
 		},
 		"testimonials": {
-			"tagline": "Our Testimonials",
-			"title": "What They Say",
+			"tagline": "Our testimonials",
+			"title": "What they say",
 			"items": {
 				"1": {
 					"text": "LatLong has transformed our security management. The team is proactive and always available to meet our specific needs.",
@@ -190,17 +247,17 @@
 				},
 				"clients": {
 					"value": "1500",
-					"label": "Satisfied Clients"
+					"label": "Satisfied clients"
 				},
 				"experts": {
 					"value": "300",
-					"label": "Security Experts"
+					"label": "Security experts"
 				}
 			}
 		},
 		"ethics": {
 			"tagline": "Ethics",
-			"title": "Our Ethical Principles",
+			"title": "Our ethical principles",
 			"items": {
 				"councils": {
 					"title": "Councils",
@@ -208,18 +265,18 @@
 					"date": "March 15, 2024"
 				},
 				"csr": {
-					"title": "Corporate Social Responsibility",
+					"title": "Corporate social responsibility",
 					"description": "Our commitment to sustainable development, positive social impact, and environmental protection.",
 					"date": "March 20, 2024"
 				},
 				"terms": {
-					"title": "Terms and Conditions",
+					"title": "Terms and conditions",
 					"description": "The general terms and conditions governing our services and our relationship with clients and partners.",
 					"date": "March 25, 2024"
 				},
 				"code": {
-					"title": "Code of Conduct",
-					"description": "Our professional Code of Conduct that guides the behavior of our employees and partners.",
+					"title": "Code of conduct",
+					"description": "Our professional code of conduct that guides the behavior of our employees and partners.",
 					"date": "March 30, 2024"
 				},
 				"icoca": {
@@ -232,15 +289,15 @@
 	},
 	"about": {
 		"pageHeader": {
-			"title": "About Us",
+			"title": "About us",
 			"breadcrumb": {
 				"home": "Home",
-				"current": "About Us"
+				"current": "About us"
 			}
 		},
 		"getToKnow": {
-			"tagline": "Get to Know Us",
-			"title": "Your Partner for Reliable Security",
+			"tagline": "Get to know us",
+			"title": "Your partner for reliable security",
 			"description": "LatLong Congo, founded in 2012, is a leader in security solutions in eastern DRC. We combine local expertise and modern technology to protect your assets and interests.",
 			"points": {
 				"qualified": "Qualified and experienced personnel.",
@@ -250,8 +307,8 @@
 			}
 		},
 		"visionMission": {
-			"tagline": "Our Commitment",
-			"title": "Vision, Mission & Objectives",
+			"tagline": "Our commitment",
+			"title": "Vision, mission & objectives",
 			"vision": {
 				"title": "Vision",
 				"description": "To be the leading security company in Africa."
@@ -270,21 +327,21 @@
 			}
 		},
 		"operationalZone": {
-			"title": "Operational Zone",
+			"title": "Operational zone",
 			"description": "We primarily operate in eastern Democratic Republic of Congo, with a strategic presence in North and South Kivu provinces. Our national expansion allows us to effectively serve a diverse clientele."
 		},
 		"team": {
-			"tagline": "Management Team",
-			"title": "Meet Our Experts"
+			"tagline": "Management team",
+			"title": "Meet our experts"
 		},
 		"cta": {
-			"title": "World-Class Security Solutions",
-			"button": "Contact Us"
+			"title": "World-class\nsecurity solutions",
+			"button": "Contact us"
 		}
 	},
 	"services": {
 		"pageHeader": {
-			"title": "Our Services",
+			"title": "Our services",
 			"breadcrumb": {
 				"home": "Home",
 				"current": "Services"
@@ -316,7 +373,7 @@
 				"button": "Learn more"
 			},
 			"others": {
-				"title": "Other Services",
+				"title": "Other services",
 				"description": "Comprehensive security with complementary solutions adapted to your specific needs.",
 				"link": "/services/others-security-services",
 				"button": "Learn more"
@@ -616,6 +673,473 @@
 							"question": "Can you manage surveillance of remote sites?",
 							"answer": "Yes, our solutions are designed to work even in remote or challenging environments, with autonomous systems and mobile teams."
 						}
+					}
+				}
+			}
+		}
+	},
+	"ethics": {
+		"pageHeader": {
+			"title": "Ethics and responsibility",
+			"breadcrumb": {
+				"home": "Home",
+				"current": "Ethics"
+			}
+		},
+		"content": {
+			"commitment": {
+				"subtitle": "Our commitment",
+				"title": "Our ethical principles"
+			},
+			"articles": {
+				"advice": {
+					"title": "Advice",
+					"description": "Our guiding principles and advice for maintaining the highest ethical standards in our daily operations.",
+					"date": "March 15, 2024",
+					"author": "LatLong"
+				},
+				"csr": {
+					"title": "Corporate social responsibility",
+					"description": "Our commitment to sustainable development, positive social impact, and environmental protection.",
+					"date": "March 20, 2024",
+					"author": "LatLong"
+				},
+				"terms": {
+					"title": "Terms and conditions",
+					"description": "The general terms and conditions governing our services and our relationship with clients and partners.",
+					"date": "March 25, 2024",
+					"author": "LatLong"
+				},
+				"code": {
+					"title": "Code of conduct",
+					"description": "Our professional code of conduct that guides the behavior of our employees and partners.",
+					"date": "March 30, 2024",
+					"author": "LatLong"
+				},
+				"icoca": {
+					"title": "ICoCA - International Code of Conduct Association",
+					"description": "Our membership and compliance with ICoCA international standards for private security services.",
+					"date": "April 5, 2024",
+					"author": "LatLong"
+				}
+			}
+		},
+		"cta": {
+			"title": "World-class\nsecurity solutions",
+			"button": "Contact us"
+		},
+		"advice": {
+			"pageHeader": {
+				"title": "Advice",
+				"breadcrumb": {
+					"home": "Home",
+					"ethics": "Ethics",
+					"current": "Advice"
+				}
+			},
+			"content": {
+				"date": "March",
+				"title": "Our guiding principles",
+				"intro": "At LatLong, we are committed to maintaining the highest ethical standards in all our operations. Our guiding principles form the foundation of our professional approach and our commitment to excellence.",
+				"principles": {
+					"integrity": {
+						"title": "Integrity and transparency",
+						"description": "We operate with complete transparency in all our interactions. Every decision is made in compliance with applicable laws and fundamental ethical principles. Our commitment to integrity is reflected in clear and honest communication with our clients, transparent resource management, strict adherence to established procedures, and immediate disclosure of any conflict of interest."
+					},
+					"humanRights": {
+						"title": "Respect for human rights",
+						"description": "The protection and respect of human rights are at the heart of our operations. We are committed to training our teams on fundamental human rights, ensuring proportionate and respectful intervention, protecting the dignity of all concerned persons, and reporting and addressing any human rights violations."
+					},
+					"excellence": {
+						"title": "Professional excellence",
+						"description": "Our commitment to excellence is demonstrated through continuous training of our teams, the use of industry best practices, innovation in our intervention methods, and regular evaluation of our performance."
+					}
+				},
+				"author": {
+					"name": "LatLong International",
+					"description": "These principles are not mere statements, but concrete commitments that we implement daily. Every member of our team is trained and encouraged to adhere to these values, ensuring consistency across all our operations."
+				}
+			},
+			"sidebar": {
+				"relatedPages": {
+					"title": "Related pages",
+					"items": {
+						"1": {
+							"title": "Corporate responsibility",
+							"author": "LatLong",
+							"key": "csr"
+						},
+						"2": {
+							"title": "Code of conduct",
+							"author": "LatLong",
+							"key": "code"
+						},
+						"3": {
+							"title": "Terms and conditions",
+							"author": "LatLong",
+							"key": "terms"
+						},
+						"4": {
+							"title": "ICoCA",
+							"author": "LatLong",
+							"key": "icoca"
+						}
+					}
+				},
+				"tags": {
+					"title": "Tags",
+					"items": {
+						"1": "Ethics",
+						"2": "Advice",
+						"3": "Principles",
+						"4": "Integrity",
+						"5": "Human rights"
+					}
+				}
+			},
+			"meta": {
+				"tags": {
+					"title": "Tags",
+					"items": {
+						"1": "ethics",
+						"2": "advice",
+						"3": "principles"
+					}
+				}
+			}
+		},
+		"csr": {
+			"pageHeader": {
+				"title": "Corporate social responsibility",
+				"breadcrumb": {
+					"home": "Home",
+					"ethics": "Ethics",
+					"current": "CSR"
+				}
+			},
+			"content": {
+				"date": "March",
+				"title": "Our CSR commitment",
+				"intro": "Corporate Social Responsibility (CSR) is at the heart of our strategy at LatLong. We are committed to positively contributing to the sustainable development of our community while maintaining high standards of professional performance.",
+				"sections": {
+					"1": {
+						"title": "Social impact",
+						"description": "Our social commitment is demonstrated through several initiatives: local training and employment (95% of our workforce is recruited locally), professional training programs for youth, partnerships with local educational institutions, and support for community initiatives."
+					},
+					"2": {
+						"title": "Environment",
+						"description": "Our environmental commitment includes reducing our carbon footprint, responsible waste management, using eco-friendly technologies, and raising awareness among our teams about sustainable practices."
+					},
+					"3": {
+						"title": "Governance",
+						"description": "Our responsible governance approach includes transparency in our operations, ethical business practices, respect for employee rights, and commitment to diversity and inclusion."
+					},
+					"4": {
+						"title": "2024-2025 objectives",
+						"description": "We aim to increase local recruitment by 20%, reduce energy consumption by 15%, train 100 young people in security professions, and launch 3 new community projects."
+					}
+				},
+				"author": {
+					"name": "LatLong International",
+					"description": "Our CSR commitment is an integral part of our corporate identity. We firmly believe that our success is linked to our ability to create a positive impact on society and the environment."
+				}
+			},
+			"meta": {
+				"tags": {
+					"title": "Tags",
+					"items": {
+						"1": "csr",
+						"2": "sustainable development",
+						"3": "social impact"
+					}
+				}
+			},
+			"sidebar": {
+				"relatedPages": {
+					"title": "Related pages",
+					"items": {
+						"1": {
+							"title": "Advice",
+							"author": "LatLong",
+							"key": "conseils"
+						},
+						"2": {
+							"title": "Code of conduct",
+							"author": "LatLong",
+							"key": "code"
+						},
+						"3": {
+							"title": "Terms and conditions",
+							"author": "LatLong",
+							"key": "terms"
+						},
+						"4": {
+							"title": "ICoCA",
+							"author": "LatLong",
+							"key": "icoca"
+						}
+					}
+				},
+				"tags": {
+					"title": "Tags",
+					"items": {
+						"1": "CSR",
+						"2": "Sustainable development",
+						"3": "Social impact",
+						"4": "Environment",
+						"5": "Governance"
+					}
+				}
+			}
+		},
+		"terms": {
+			"pageHeader": {
+				"title": "Terms and conditions",
+				"breadcrumb": {
+					"home": "Home",
+					"ethics": "Ethics",
+					"current": "Terms and conditions"
+				}
+			},
+			"content": {
+				"date": "March",
+				"title": "General terms of use",
+				"intro": "These general terms govern the use of LatLong International SARL services. By using our services, you accept these terms in full.",
+				"sections": {
+					"1": {
+						"title": "Services and commitments",
+						"description": "LatLong commits to providing professional security services in compliance with international standards, respecting agreed deadlines in contracts, maintaining client information confidentiality, and ensuring continuous staff training."
+					},
+					"2": {
+						"title": "Client obligations",
+						"description": "Clients commit to providing accurate and complete information, respecting established payment terms, cooperating with our security personnel, and reporting any incidents or concerns."
+					},
+					"3": {
+						"title": "Confidentiality and data protection",
+						"description": "We commit to protecting personal data in accordance with the law, limiting access to sensitive information, informing clients of their rights, and implementing appropriate security measures."
+					},
+					"4": {
+						"title": "Responsibilities and limitations",
+						"description": "Our liability is limited to cases of proven professional misconduct, non-compliance with established procedures, and breach of contractual obligations."
+					}
+				},
+				"author": {
+					"name": "LatLong International",
+					"description": "LatLong reserves the right to modify these terms at any time. Changes take effect upon publication on our website. We encourage our clients to regularly consult this page to stay informed of changes."
+				}
+			},
+			"meta": {
+				"tags": {
+					"title": "Tags",
+					"items": {
+						"1": "terms",
+						"2": "usage",
+						"3": "legal"
+					}
+				}
+			},
+			"sidebar": {
+				"relatedPages": {
+					"title": "Related pages",
+					"items": {
+						"1": {
+							"title": "Advice",
+							"author": "LatLong",
+							"key": "conseils"
+						},
+						"2": {
+							"title": "Corporate responsibility",
+							"author": "LatLong",
+							"key": "csr"
+						},
+						"3": {
+							"title": "Code of conduct",
+							"author": "LatLong",
+							"key": "code"
+						},
+						"4": {
+							"title": "ICoCA",
+							"author": "LatLong",
+							"key": "icoca"
+						}
+					}
+				},
+				"tags": {
+					"title": "Tags",
+					"items": {
+						"1": "Terms",
+						"2": "Usage",
+						"3": "Legal",
+						"4": "Contract",
+						"5": "Confidentiality"
+					}
+				}
+			}
+		},
+		"code": {
+			"pageHeader": {
+				"title": "Code of conduct",
+				"breadcrumb": {
+					"home": "Home",
+					"ethics": "Ethics",
+					"current": "Code of conduct"
+				}
+			},
+			"content": {
+				"date": "March",
+				"title": "Our professional code of conduct",
+				"intro": "LatLong's Code of Conduct defines the ethical and professional standards that all our employees and partners must adhere to. This code reflects our core values and our commitment to excellence.",
+				"sections": {
+					"1": {
+						"title": "Professional conduct",
+						"description": "All team members commit to maintaining a professional appearance at all times, respecting hierarchy and chain of command, performing their duties with diligence and competence, and adhering to established schedules and procedures."
+					},
+					"2": {
+						"title": "Ethics and integrity",
+						"description": "Our employees must act with honesty and transparency, avoid any conflict of interest, refuse inappropriate gifts and benefits, and report any unethical situations."
+					},
+					"3": {
+						"title": "Client relationships",
+						"description": "In their interactions with clients, our employees must demonstrate courtesy and respect, maintain information confidentiality, respond promptly to requests, and follow established security protocols."
+					},
+					"4": {
+						"title": "Legal compliance",
+						"description": "We require strict adherence to applicable laws and regulations, fundamental human rights, international security standards, and established reporting procedures."
+					}
+				},
+				"author": {
+					"name": "LatLong International",
+					"description": "Non-compliance with this Code of Conduct may result in disciplinary measures, up to and including contract termination. Each employee receives training on this code and must sign it upon joining."
+				}
+			},
+			"meta": {
+				"tags": {
+					"title": "Tags",
+					"items": {
+						"1": "ethics",
+						"2": "conduct",
+						"3": "professional"
+					}
+				}
+			},
+			"sidebar": {
+				"relatedPages": {
+					"title": "Related pages",
+					"items": {
+						"1": {
+							"title": "Advice",
+							"author": "LatLong",
+							"key": "conseils"
+						},
+						"2": {
+							"title": "Corporate responsibility",
+							"author": "LatLong",
+							"key": "csr"
+						},
+						"3": {
+							"title": "Terms and conditions",
+							"author": "LatLong",
+							"key": "terms"
+						},
+						"4": {
+							"title": "ICoCA",
+							"author": "LatLong",
+							"key": "icoca"
+						}
+					}
+				},
+				"tags": {
+					"title": "Tags",
+					"items": {
+						"1": "Ethics",
+						"2": "Conduct",
+						"3": "Professional",
+						"4": "CSR",
+						"5": "Governance"
+					}
+				}
+			}
+		},
+		"icoca": {
+			"pageHeader": {
+				"title": "ICoCA",
+				"breadcrumb": {
+					"home": "Home",
+					"ethics": "Ethics",
+					"current": "ICoCA"
+				}
+			},
+			"content": {
+				"date": "March",
+				"title": "Our ICoCA Commitment",
+				"intro": "LatLong International is proud to be a member of the International Code of Conduct Association (ICoCA), a multi-stakeholder initiative that promotes, governs, and oversees the implementation of the International Code of Conduct for Private Security Service Providers.",
+				"sections": {
+					"1": {
+						"title": "Our Membership",
+						"description": "As an ICoCA member, we commit to respecting and promoting the fundamental principles of the International Code, including respect for human rights and international humanitarian law, continuous training of our teams, transparency in our operations, and accountability in the delivery of our services."
+					},
+					"2": {
+						"title": "Specific Commitments",
+						"description": "Our ICoCA membership involves several concrete commitments: implementation of due diligence procedures, mandatory human rights training for all our agents, accessible complaint mechanisms, and regular audits of our operations. We also commit to reporting and addressing any incident that may constitute a violation of the Code's principles."
+					},
+					"3": {
+						"title": "Benefits for our Clients",
+						"description": "Our ICoCA certification guarantees our clients that our services are provided according to the highest international standards. This includes better risk management, greater transparency, increased accountability, and a firm commitment to human rights and international law."
+					},
+					"4": {
+						"title": "2024 Objectives",
+						"description": "We aim to strengthen our ICoCA compliance by training 100% of our agents to international standards, implementing an improved reporting system, developing new due diligence protocols, and actively participating in ICoCA initiatives for sector standards improvement."
+					}
+				},
+				"author": {
+					"name": "LatLong International",
+					"description": "Our ICoCA membership reflects our commitment to excellence and ethics in the private security sector. We are determined to maintain and continuously improve our standards to meet the most stringent international requirements."
+				}
+			},
+			"meta": {
+				"tags": {
+					"title": "Tags",
+					"items": {
+						"1": "icoca",
+						"2": "international standards",
+						"3": "human rights"
+					}
+				}
+			},
+			"sidebar": {
+				"relatedPages": {
+					"title": "Related Pages",
+					"items": {
+						"1": {
+							"title": "Advice",
+							"author": "LatLong",
+							"key": "conseils"
+						},
+						"2": {
+							"title": "Corporate responsibility",
+							"author": "LatLong",
+							"key": "csr"
+						},
+						"3": {
+							"title": "Code of conduct",
+							"author": "LatLong",
+							"key": "code"
+						},
+						"4": {
+							"title": "Terms and conditions",
+							"author": "LatLong",
+							"key": "terms"
+						}
+					}
+				},
+				"tags": {
+					"title": "Tags",
+					"items": {
+						"1": "ICoCA",
+						"2": "International standards",
+						"3": "Human rights",
+						"4": "Certification",
+						"5": "Private security"
 					}
 				}
 			}
