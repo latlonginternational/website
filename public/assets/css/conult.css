@@ -2984,7 +2984,7 @@ ul {
 	background-color: var(--conult-black);
 }
 
-.case-one__carousel.owl-carousel .owl-dots {
+.case-one__carousel.swiper-carousel .owl-dots {
 	position: absolute;
 	bottom: -71px;
 	right: 0px;
@@ -2992,7 +2992,7 @@ ul {
 	margin: 0 !important;
 }
 
-.case-one__carousel.owl-carousel .owl-dots .owl-dot {
+.case-one__carousel.swiper-carousel .owl-dots .owl-dot {
 	position: relative;
 	display: inline-block;
 	width: 3px;
@@ -3005,17 +3005,17 @@ ul {
 	transition-delay: 0.1s;
 }
 
-.case-one__carousel.owl-carousel .owl-dot.active {
+.case-one__carousel.swiper-carousel .owl-dot.active {
 	background: var(--conult-base);
 	opacity: 1;
 	height: 20px;
 }
 
-.case-one__carousel.owl-carousel .owl-dot:focus {
+.case-one__carousel.swiper-carousel .owl-dot:focus {
 	outline: none;
 }
 
-.case-one__carousel.owl-carousel .owl-dots .owl-dot span {
+.case-one__carousel.swiper-carousel .owl-dots .owl-dot span {
 	display: none;
 }
 
@@ -3071,15 +3071,15 @@ ul {
 /*--------------------------------------------------------------
 # Testimonial One
 --------------------------------------------------------------*/
-.testimonial-one {
+.testimonial-onee {
 	position: relative;
 	display: block;
 	background-color: #edf3f6;
-	padding: 120px 0 494px;
+	padding: 90px 0 394px;
 	z-index: 1;
 }
 
-.testimonial-one-map {
+.testimonial-onee-map {
 	position: absolute;
 	top: 0;
 	left: 50%;
@@ -3091,31 +3091,31 @@ ul {
 	z-index: -1;
 }
 
-.testimonial-one .section-title__tagline:before {
+.testimonial-onee .section-title__tagline:before {
 	left: 52%;
 	transform: translateX(-50%);
 }
 
-.testimonial-one .section-title__tagline:after {
+.testimonial-onee .section-title__tagline:after {
 	right: 52%;
 	left: inherit;
 	transform: translateX(-50%);
 }
 
-.testimonial-one__carousel {
+.testimonial-onee__carousel {
 	position: relative;
 	display: block;
 }
 
-.testimonial-one__single {
+.testimonial-onee__single {
 	position: relative;
 	display: block;
 	background-color: rgb(255, 255, 255);
 	box-shadow: 0px 10px 60px 0px rgb(0, 0, 0, 0.05);
-	padding: 60px 60px 68px;
+	padding: 40px 24px 80px;
 }
 
-.testimonial-one__single:before {
+.testimonial-onee__single:before {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -3128,12 +3128,12 @@ ul {
 	transform-origin: left center;
 }
 
-.testimonial-one__single:hover:before {
+.testimonial-onee__single:hover:before {
 	transform: scale(1, 1);
 	transform-origin: right center;
 }
 
-.testimonial-one__rating {
+.testimonial-onee__rating {
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -3141,77 +3141,70 @@ ul {
 	padding-bottom: 18px;
 }
 
-.testimonial-one__rating i {
+.testimonial-onee__rating i {
 	font-size: 15px;
 	color: var(--conult-base);
 }
 
-.testimonial-one__rating i + i {
+.testimonial-onee__rating i + i {
 	margin-left: 5px;
 }
 
-.testimonial-one__text {
+.testimonial-onee__text {
 	font-size: 20px;
 	margin: 0;
 	font-style: italic;
-	line-height: 38px;
 }
 
-.testimonial-one__author {
-	position: absolute;
-	bottom: -100px;
-	left: 60px;
-}
 
-.testimonial-one__author-img {
+.testimonial-onee__author-img {
 	position: relative;
 	display: block;
 	border-radius: 50%;
 }
 
-.testimonial-one__author-img img {
+.testimonial-onee__author-img img {
 	border-radius: 50%;
 	border: 2px solid transparent;
 	-webkit-transition: all 500ms ease;
 	transition: all 500ms ease;
-	width: 80px !important;
+	width: 40px !important;
 }
 
-.testimonial-one__single:hover .testimonial-one__author-img img {
+.testimonial-onee__single:hover .testimonial-onee__author-img img {
 	border: 2px solid var(--conult-base);
 }
 
-.testimonial-one__author-name {
+.testimonial-onee__author-name {
 	font-size: 18px;
 	font-weight: 500;
 	line-height: 28px;
-	margin-top: 12px;
 }
 
-.testimonial-one__author-title {
+.testimonial-onee__author-title {
 	font-size: 16px;
 	margin: 0;
 	line-height: 24px;
 }
 
-.testimonial-one__quote-icon {
+.testimonial-onee__quote-icon {
 	position: absolute;
 	bottom: 30px;
 	right: 30px;
 }
 
-.testimonial-one__carousel.owl-carousel .owl-stage-outer {
+.testimonial-onee__carousel.swiper-carousel .owl-stage-outer {
 	overflow: visible;
 	padding: 0 0 0;
 }
 
-.testimonial-one__carousel .owl-stage-outer .owl-item {
+.testimonial-onee__carousel .owl-stage-outer .owl-item {
 	opacity: 0;
 	transition: all 500ms linear;
 	transition-delay: 0.1s;
 }
 
-.testimonial-one__carousel .owl-stage-outer .owl-item.active {
+.testimonial-onee__carousel .owl-stage-outer .owl-item.active {
 	opacity: 1;
 	transition: all 200ms linear;
 }
@@ -3635,7 +3628,7 @@ ul {
 	color: var(--conult-base);
 }
 
-.news-one__carousel.owl-carousel .owl-dots {
+.news-one__carousel.swiper-carousel .owl-dots {
 	position: absolute;
 	bottom: -71px;
 	right: 0px;
@@ -3643,7 +3636,7 @@ ul {
 	margin: 0 !important;
 }
 
-.news-one__carousel.owl-carousel .owl-dots .owl-dot {
+.news-one__carousel.swiper-carousel .owl-dots .owl-dot {
 	position: relative;
 	display: inline-block;
 	width: 3px;
@@ -3656,17 +3649,17 @@ ul {
 	transition-delay: 0.1s;
 }
 
-.news-one__carousel.owl-carousel .owl-dot.active {
+.news-one__carousel.swiper-carousel .owl-dot.active {
 	background: var(--conult-base);
 	opacity: 1;
 	height: 20px;
 }
 
-.news-one__carousel.owl-carousel .owl-dot:focus {
+.news-one__carousel.swiper-carousel .owl-dot:focus {
 	outline: none;
 }
 
-.news-one__carousel.owl-carousel .owl-dots .owl-dot span {
+.news-one__carousel.swiper-carousel .owl-dots .owl-dot span {
 	display: none;
 }
 
@@ -3676,7 +3669,7 @@ ul {
 .brand-one {
 	position: relative;
 	display: block;
-	padding: 118px 0 119px;
+	padding: 0px 0 0px;
 	border-top: 1px solid #c9d5db;
 }
 
@@ -4770,7 +4763,7 @@ ul {
 	padding-bottom: 2px;
 }
 
-.case-two__carousel.owl-carousel .owl-dots {
+.case-two__carousel.swiper-carousel .owl-dots {
 	position: absolute;
 	bottom: -71px;
 	right: 0px;
@@ -4778,7 +4771,7 @@ ul {
 	margin: 0 !important;
 }
 
-.case-two__carousel.owl-carousel .owl-dots .owl-dot {
+.case-two__carousel.swiper-carousel .owl-dots .owl-dot {
 	position: relative;
 	display: inline-block;
 	width: 3px;
@@ -4791,17 +4784,17 @@ ul {
 	transition-delay: 0.1s;
 }
 
-.case-two__carousel.owl-carousel .owl-dot.active {
+.case-two__carousel.swiper-carousel .owl-dot.active {
 	background: var(--conult-base);
 	opacity: 1;
 	height: 20px;
 }
 
-.case-two__carousel.owl-carousel .owl-dot:focus {
+.case-two__carousel.swiper-carousel .owl-dot:focus {
 	outline: none;
 }
 
-.case-two__carousel.owl-carousel .owl-dots .owl-dot span {
+.case-two__carousel.swiper-carousel .owl-dots .owl-dot span {
 	display: none;
 }
 

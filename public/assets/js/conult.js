@@ -249,8 +249,10 @@
     
     
   // Testimonial One Carousel
-  if ($(".testimonial-one__carousel").length) {
-    $(".testimonial-one__carousel").owlCarousel({
+  /**
+   * 
+   if ($(".testimonial-onee__carousel").length) {
+    $(".testimonial-onee__carousel").owlCarousel({
       loop: true,
       margin: 30,
       nav: false,
@@ -282,6 +284,7 @@
       }
     });
   }
+   */
 
   if ($(".scroll-to-target").length) {
     $(".scroll-to-target").on("click", function () {

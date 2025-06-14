@@ -8,10 +8,10 @@
       ></div>
       <div class="container">
         <div class="page-header__inner">
-          <h2>A propos de nous</h2>
+          <h2>{{ t('about.pageHeader.title') }}</h2>
           <ul class="thm-breadcrumb list-unstyled">
-            <li><a href="/">Accueil</a></li>
-            <li class="active">A propos de nous</li>
+            <li><a href="/">{{ t('about.pageHeader.breadcrumb.home') }}</a></li>
+            <li class="active">{{ t('about.pageHeader.breadcrumb.current') }}</li>
           </ul>
         </div>
       </div>
@@ -25,25 +25,17 @@
           <div class="col-xl-5">
             <div class="get-to-know__left">
               <div class="section-title text-left">
-                <span class="section-title__tagline"
-                  >Faites connaissance avec nous</span
-                >
-                <h2 class="section-title__title">
-                  Votre partenaire pour une sécurité fiable
-                </h2>
+                <span class="section-title__tagline">{{ t('about.getToKnow.tagline') }}</span>
+                <h2 class="section-title__title">{{ t('about.getToKnow.title') }}</h2>
               </div>
-              <p class="get-to-know__text">
-                LatLong Congo, fondée en 2012, est un leader en solutions de
-                sécurité dans l'est de la RDC. Nous combinons expertise locale
-                et technologie moderne pour protéger vos biens et vos intérêts.
-              </p>
+              <p class="get-to-know__text">{{ t('about.getToKnow.description') }}</p>
               <ul class="list-unstyled get-to-know__points">
                 <li>
                   <div class="icon">
                     <i class="fa fa-check"></i>
                   </div>
                   <div class="text">
-                    <p>Personnel qualifié et expérimenté.</p>
+                    <p>{{ t('about.getToKnow.points.qualified') }}</p>
                   </div>
                 </li>
                 <li>
@@ -51,7 +43,7 @@
                     <i class="fa fa-check"></i>
                   </div>
                   <div class="text">
-                    <p>Technologies modernes de surveillance.</p>
+                    <p>{{ t('about.getToKnow.points.technology') }}</p>
                   </div>
                 </li>
                 <li>
@@ -59,7 +51,7 @@
                     <i class="fa fa-check"></i>
                   </div>
                   <div class="text">
-                    <p>Approche adaptée à chaque client.</p>
+                    <p>{{ t('about.getToKnow.points.approach') }}</p>
                   </div>
                 </li>
                 <li>
@@ -67,7 +59,7 @@
                     <i class="fa fa-check"></i>
                   </div>
                   <div class="text">
-                    <p>Engagement envers la responsabilité sociale.</p>
+                    <p>{{ t('about.getToKnow.points.commitment') }}</p>
                   </div>
                 </li>
               </ul>
@@ -104,39 +96,34 @@
     <section class="vision-mission-objective">
       <div class="container">
         <div class="section-title text-center">
-          <span class="section-title__tagline">Notre Engagement</span>
-          <h2 class="section-title__title">Vision, Mission & Objectifs</h2>
+          <span class="section-title__tagline">{{ t('about.visionMission.tagline') }}</span>
+          <h2 class="section-title__title text-3xl sm:text-5xl font-medium">{{ t('about.visionMission.title') }}</h2>
         </div>
-        <div class="row">
+        <div class="row space-y-4 md:space-y-0">
           <div class="col-xl-4 col-lg-4">
             <div class="vision-box">
-              <h3 class="vision-title">Vision</h3>
-              <p>Être l'entreprise de sécurité de référence en Afrique.</p>
+              <h3 class="vision-title text-xl sm:text-2xl font-medium">{{ t('about.visionMission.vision.title') }}</h3>
+              <p class="mt-2">{{ t('about.visionMission.vision.description') }}</p>
             </div>
           </div>
           <div class="col-xl-4 col-lg-4">
             <div class="mission-box">
-              <h3 class="mission-title">Mission</h3>
-              <p>
-                Offrir des solutions de sécurité innovantes et performantes.
-              </p>
+              <h3 class="mission-title text-xl sm:text-2xl font-medium">{{ t('about.visionMission.mission.title') }}</h3>
+              <p class="mt-2">{{ t('about.visionMission.mission.description') }}</p>
             </div>
           </div>
           <div class="col-xl-4 col-lg-4">
             <div class="objective-box">
-              <h3 class="objective-title">Objectifs</h3>
-              <ul class="list-unstyled">
+              <h3 class="objective-title text-xl sm:text-2xl font-medium">{{ t('about.visionMission.objectives.title') }}</h3>
+              <ul class="list-unstyled mt-2">
                 <li>
-                  <i class="fa fa-check-circle"></i> Garantir la sécurité de nos
-                  clients.
+                  <i class="fa fa-check-circle"></i> {{ t('about.visionMission.objectives.items.security') }}
                 </li>
                 <li>
-                  <i class="fa fa-check-circle"></i> Proposer des solutions
-                  adaptées.
+                  <i class="fa fa-check-circle"></i> {{ t('about.visionMission.objectives.items.solutions') }}
                 </li>
                 <li>
-                  <i class="fa fa-check-circle"></i> Innover avec des
-                  technologies avancées.
+                  <i class="fa fa-check-circle"></i> {{ t('about.visionMission.objectives.items.innovation') }}
                 </li>
               </ul>
             </div>
@@ -153,17 +140,12 @@
       <div class="container">
         <div class="section-title text-center">
           <span class="section-title__tagline"></span>
-          <h2 class="section-title__title">Zone d'Opération</h2>
+          <h2 class="section-title__title">{{ t('about.operationalZone.title') }}</h2>
         </div>
         <div class="row">
           <div class="col-xl-12">
             <div class="operational-zone-map">
-              <p class="text-center">
-                Nous opérons principalement dans l'Est de la République
-                Démocratique du Congo, avec une présence stratégique dans les
-                provinces du Nord et du Sud-Kivu. Notre expansion nationale nous
-                permet de répondre efficacement à une clientèle diversifiée.
-              </p>
+              <p class="text-center">{{ t('about.operationalZone.description') }}</p>
               <div
                 id="map"
                 style="height: 500px; width: 100%; margin-top: 20px"
@@ -176,191 +158,61 @@
     <!-- Operational Zone Section End -->
 
     <br />
-
-    <!--Brand One Start-->
-    <section class="brand-one">
-      <div class="container">
-        <div
-          class="thm-swiper__slider swiper-container"
-          data-swiper-options='{"spaceBetween": 100, "slidesPerView": 5, "autoplay": { "delay": 5000 }, "breakpoints": {
-                    "0": {
-                        "spaceBetween": 30,
-                        "slidesPerView": 2
-                    },
-                    "375": {
-                        "spaceBetween": 30,
-                        "slidesPerView": 2
-                    },
-                    "575": {
-                        "spaceBetween": 30,
-                        "slidesPerView": 3
-                    },
-                    "767": {
-                        "spaceBetween": 50,
-                        "slidesPerView": 4
-                    },
-                    "991": {
-                        "spaceBetween": 50,
-                        "slidesPerView": 5
-                    },
-                    "1199": {
-                        "spaceBetween": 100,
-                        "slidesPerView": 5
-                    }
-                }}'
-        >
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="/assets/images/brand/brasimba.png" alt="" />
-            </div>
-            <!-- /.swiper-slide -->
-            <div class="swiper-slide">
-              <img src="/assets/images/brand/easter.png" alt="" />
-            </div>
-            <!-- /.swiper-slide -->
-            <div class="swiper-slide">
-              <img src="/assets/images/brand/europeanunion.png" alt="" />
-            </div>
-            <!-- /.swiper-slide -->
-            <div class="swiper-slide">
-              <img src="/assets/images/brand/instituufrancais.png" alt="" />
-            </div>
-            <!-- /.swiper-slide -->
-            <div class="swiper-slide">
-              <img src="/assets/images/brand/janegoodall.png" alt="" />
-            </div>
-            <!-- /.swiper-slide -->
-            <div class="swiper-slide">
-              <img src="/assets/images/brand/oim.png" alt="" />
-            </div>
-            <!-- /.swiper-slide -->
-            <div class="swiper-slide">
-              <img src="/assets/images/brand/sgml.png" alt="" />
-            </div>
-            <!-- /.swiper-slide -->
-            <div class="swiper-slide">
-              <img src="/assets/images/brand/skyborn.png" alt="" />
-            </div>
-            <!-- /.swiper-slide -->
-            <div class="swiper-slide">
-              <img src="/assets/images/brand/tearfund.png" alt="" />
-            </div>
-            <!-- /.swiper-slide -->
-            <div class="swiper-slide">
-              <img src="/assets/images/brand/tmk.png" alt="" />
-            </div>
-            <!-- /.swiper-slide -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--Brand One End-->
+    <br />
+    <br />
 
     <!--Testimonial One Start-->
-    <section class="testimonial-one">
-      <div
-        class="testimonial-one-map"
-        style="
-          background-image: url(/assets/images/shapes/testimonial-one-map.png);
-        "
-      ></div>
+    <section class="testimonial-onee">
+      <div class="testimonial-onee-map" style="background-image: url(/assets/images/shapes/testimonial-onee-map.png)"></div>
       <div class="container">
         <div class="section-title text-center">
-          <span class="section-title__tagline">Nos témoignages</span>
-          <h2 class="section-title__title">Ce qu'ils disent</h2>
+          <span class="section-title__tagline">{{ t('home.testimonials.tagline') }}</span>
+          <h2 class="section-title__title">{{ t('home.testimonials.title') }}</h2>
         </div>
         <div class="row">
           <div class="col-xl-12">
-            <div class="testimonial-one__carousel owl-theme owl-carousel">
-              <!--Testimonial One Single-->
-              <div class="testimonial-one__single">
-                <p class="testimonial-one__rating">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                </p>
-                <p class="testimonial-one__text">
-                  LatLong a transformé notre gestion de sécurité. L'équipe est
-                  proactive et toujours disponible pour répondre à nos besoins
-                  spécifiques.
-                </p>
-                <div class="testimonial-one__author">
-                  <div class="testimonial-one__author-img">
-                    <img src="/assets/images/testimonial/avatar3.jpg" alt="" />
+            <Swiper
+              :slides-per-view="3"
+              :loop="true"
+              :autoplay="{ delay: 5000 }"
+              :pagination="{ clickable: true }"
+              :breakpoints="{
+                0: { slidesPerView: 1 },
+                640: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 }
+              }"
+              class="testimonial-onee__carousel"
+            >
+              <SwiperSlide v-for="(testimonial, index) in testimonials" :key="index">
+                <div class="testimonial-onee__single position: relative; display: flex; flex-direction: column; justify-content: flex-start; min-height: 380px; padding: 60px 60px 100px; background: #fff; box-shadow: 0px 10px 60px 0px rgb(0 0 0 / 5%);">
+                  <div class="testimonial-onee__rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
                   </div>
-                  <div class="testimonial-one__author-details">
-                    <h4 class="testimonial-one__author-name">
-                      Christine Muhindo
-                    </h4>
-                    <p class="testimonial-one__author-title">
-                      CEO - Amaliza Store
-                    </p>
+                  <p class="testimonial-onee__text">
+                    <span class="leading-[1.5]">
+                      {{ t(`home.testimonials.items.${index + 1}.text`) }}
+                    </span>
+                  </p>
+                  <div class="testimonial-onee__author mt-8">
+                    <div class="testimonial-onee__author-img">
+                      <img :src="`/assets/images/testimonial/avatar${index + 3}.jpg`" alt="" />
+                    </div>
+                    <div class="testimonial-onee__author-details">
+                      <h4 class="testimonial-onee__author-name">{{ t(`home.testimonials.items.${index + 1}.author`) }}</h4>
+                      <p class="testimonial-onee__author-title">{{ t(`home.testimonials.items.${index + 1}.position`) }}</p>
+                    </div>
                   </div>
-                </div>
-                <div class="testimonial-one__quote-icon">
-                  <img src="/assets/images/icon/quote-icon.png" alt="" />
-                </div>
-              </div>
-              <!--Testimonial One Single-->
-              <div class="testimonial-one__single">
-                <p class="testimonial-one__rating">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                </p>
-                <p class="testimonial-one__text">
-                  Nous travaillons avec LatLong depuis plusieurs années. Leur
-                  professionnalisme et leur engagement sont exceptionnels.
-                </p>
-                <div class="testimonial-one__author">
-                  <div class="testimonial-one__author-img">
-                    <img src="/assets/images/testimonial/avatar6.jpg" alt="" />
-                  </div>
-                  <div class="testimonial-one__author-details">
-                    <h4 class="testimonial-one__author-name">Kevin Banza</h4>
-                    <p class="testimonial-one__author-title">Client</p>
+                  <div class="testimonial-onee__quote-icon">
+                    <img src="/assets/images/icon/quote-icon.png" alt="" />
                   </div>
                 </div>
-                <div class="testimonial-one__quote-icon">
-                  <img src="/assets/images/icon/quote-icon.png" alt="" />
-                </div>
-              </div>
-              <!--Testimonial One Single-->
-              <div class="testimonial-one__single">
-                <p class="testimonial-one__rating">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                </p>
-                <p class="testimonial-one__text">
-                  LatLong nous a aidés à sécuriser nos opérations. Nous
-                  recommandons leurs services à toute organisation recherchant
-                  une sécurité fiable.
-                </p>
-                <div class="testimonial-one__author">
-                  <div class="testimonial-one__author-img">
-                    <img src="/assets/images/testimonial/avatar5.jpg" alt="" />
-                  </div>
-                  <div class="testimonial-one__author-details">
-                    <h4 class="testimonial-one__author-name">
-                      Jessica Byamungu
-                    </h4>
-                    <p class="testimonial-one__author-title">
-                      Directrice Habana Habi
-                    </p>
-                  </div>
-                </div>
-                <div class="testimonial-one__quote-icon">
-                  <img src="/assets/images/icon/quote-icon.png" alt="" />
-                </div>
-              </div>
-            </div>
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
       </div>
@@ -435,8 +287,8 @@
     <section class="team-two">
       <div class="container">
         <div class="section-title text-center">
-          <span class="section-title__tagline">Equipe de Direction</span>
-          <h2 class="section-title__title">Rencontrez nos experts</h2>
+          <span class="section-title__tagline">{{ t('about.team.tagline') }}</span>
+          <h2 class="section-title__title">{{ t('about.team.title') }}</h2>
         </div>
         <div class="row">
           <!-- Katja Reith -->
@@ -499,7 +351,7 @@
                 <img src="/assets/images/team/1723267753376.jpeg" alt="Roger Nde, DO" />
                 <ul class="list-unstyled team-one__social">
                   <li>
-                    <a href="mailto:gilbert@latlongcongo.com"
+                    <a href="mailto:roger.nde@latlongcongo.com"
                       ><i class="fas fa-envelope"></i
                     ></a>
                   </li>
@@ -556,11 +408,8 @@
         <div class="row">
           <div class="col-xl-12">
             <div class="cta-one__inner">
-              <h2 class="cta-one__title">
-                Des solutions de Sécurité <br />
-                de Classe mondiale
-              </h2>
-              <a href="/about" class="thm-btn cta-one__btn">Nous contacter</a>
+              <h2 class="cta-one__title">{{ t('about.cta.title') }}</h2>
+              <a href="/about" class="thm-btn cta-one__btn">{{ t('about.cta.button') }}</a>
               <div
                 class="cta-one__shape wow slideInLeft"
                 data-wow-delay="100ms"
@@ -574,12 +423,129 @@
       </div>
     </section>
     <!--CTA One End-->
+
+
+    <!--Brand One Start-->
+<section class="brand-one">
+  <div class="container">
+    <Swiper
+      :modules="[Autoplay]"
+      :slides-per-view="5"
+      :space-between="100"
+      :loop="true"
+      :autoplay="{ delay: 5000 }"
+      :breakpoints="{
+        0: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        },
+        375: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        },
+        575: {
+          slidesPerView: 3,
+          spaceBetween: 30
+        },
+        767: {
+          slidesPerView: 4,
+          spaceBetween: 50
+        },
+        991: {
+          slidesPerView: 5,
+          spaceBetween: 50
+        },
+        1199: {
+          slidesPerView: 6,
+          spaceBetween: 100
+        }
+      }"
+      class="brand-one__carousel"
+    >
+      <SwiperSlide v-for="(brand, index) in brands" :key="index">
+        <div class="brand-one__single">
+          <img :src="brand.image" :alt="brand.name" />
+        </div>
+      </SwiperSlide>
+    </Swiper>
+  </div>
+</section>
+<!--Brand One End-->
   </div>
 </template>
 
 <script setup>
-import { onMounted } from "vue";
+import { onMounted, ref } from "vue";
 import mapboxgl from "mapbox-gl";
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Autoplay, Pagination } from 'swiper/modules'
+import { useI18n } from 'vue-i18n'
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/autoplay'
+
+const { t } = useI18n()
+
+const testimonials = ref([
+  {
+    text: 'home.testimonials.items.1.text',
+    author: 'home.testimonials.items.1.author',
+    position: 'home.testimonials.items.1.position'
+  },
+  {
+    text: 'home.testimonials.items.2.text',
+    author: 'home.testimonials.items.2.author',
+    position: 'home.testimonials.items.2.position'
+  },
+  {
+    text: 'home.testimonials.items.3.text',
+    author: 'home.testimonials.items.3.author',
+    position: 'home.testimonials.items.3.position'
+  }
+])
+
+const brands = ref([
+  {
+    name: 'Brasimba',
+    image: '/assets/images/brand/brasimba.png'
+  },
+  {
+    name: 'Easter',
+    image: '/assets/images/brand/easter.png'
+  },
+  {
+    name: 'European Union',
+    image: '/assets/images/brand/europeanunion.png'
+  },
+  {
+    name: 'Institut Français',
+    image: '/assets/images/brand/instituufrancais.png'
+  },
+  {
+    name: 'Jane Goodall',
+    image: '/assets/images/brand/janegoodall.png'
+  },
+  {
+    name: 'OIM',
+    image: '/assets/images/brand/oim.png'
+  },
+  {
+    name: 'SGML',
+    image: '/assets/images/brand/sgml.png'
+  },
+  {
+    name: 'Skyborn',
+    image: '/assets/images/brand/skyborn.png'
+  },
+  {
+    name: 'Tearfund',
+    image: '/assets/images/brand/tearfund.png'
+  },
+  {
+    name: 'TMK',
+    image: '/assets/images/brand/tmk.png'
+  }
+])
 
 useHead({
   link: [
@@ -788,5 +754,107 @@ onMounted(() => {
   display: block;
   border: none;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Styles pour le carousel des marques */
+.brand-one__carousel {
+  padding: 20px 0;
+}
+
+.brand-one__single {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  transition: all 0.3s ease;
+}
+
+.brand-one__single img {
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.brand-one__single:hover img {
+  opacity: 1;
+}
+
+/* Ajustements pour Swiper */
+.swiper-slide {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styles pour les témoignages */
+.testimonial-onee__single {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 380px;
+  padding: 60px 60px 60px;
+  background: #fff;
+  box-shadow: 0px 10px 60px 0px rgb(0 0 0 / 5%);
+}
+
+.testimonial-onee__author {
+  bottom: -50px;
+  left: 60px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.testimonial-onee__author-img img {
+  width: 50px !important;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+@media (max-width: 767px) {
+  .testimonial-onee__author {
+    left: 24px;
+    bottom: -40px;
+  }
+  .testimonial-onee__single {
+    padding: 32px 16px 80px;
+    min-height: 320px;
+  }
+}
+
+.testimonial-onee__carousel .swiper-wrapper {
+  overflow: visible !important;
+}
+
+@media (max-width: 1024px) {
+  .testimonial-onee__single {
+    padding: 32px 12px 64px;
+    min-height: 320px;
+  }
+  .testimonial-onee__author-img img {
+    width: 64px !important;
+    height: 64px;
+  }
+}
+
+@media (max-width: 640px) {
+  .testimonial-onee__single {
+    padding: 20px 20px 20px;
+    min-height: 220px;
+  }
+  .testimonial-onee__author-img img {
+    width: 48px !important;
+    height: 48px;
+  }
+  .testimonial-onee__text {
+    font-size: 16px;
+    line-height: 1.4;
+  }
 }
 </style>

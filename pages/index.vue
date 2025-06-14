@@ -175,7 +175,11 @@
 								<span class="section-title__tagline">{{ t('home.about.tagline') }}</span>
 								<h2 class="section-title__title">{{ t('home.about.title') }}</h2>
 							</div>
-							<p class="about-one__business-start-text">{{ t('home.about.description') }}</p>
+							<p class="-about-one__business-start-text">
+								<span class="text-lg leading-[1]">
+									{{ t('home.about.description') }}
+								</span>
+							</p>
 
 							<div class="about-one__points-box">
 								<!-- First Column -->
@@ -282,30 +286,68 @@
 						<div class="col-xl-6">
 							<div class="building-experience__bottom-content">
 								<div class="building-experience__bottom-img">
-									<img src="/assets/images/resources/exp.jpg" alt="" />
+									<img src="/assets/images/resources/pat.jpg" class="max-h-[400px] sm:w-[300px] object-cover" alt="" />
 								</div>
+								<!--
 								<div class="building-experience__progress">
-									<div class="building-experience__progress-wrap">
+									<div class="building-experience__progress-wrap"> 
 										<div class="building-experience__progress-single">
 											<div class="building-experience__progress-box">
 												<div class="circle-progress" data-options='{ "value": 1.0,"thickness": 4,"emptyFill": "#edf3f6","lineCap": "square", "size": 122, "fill": { "color": "#00AEEF" } }'></div>
-												<span>{{ t('home.experience.progress.affordable.value') }}</span>
+												<span>{{ t('home.experience.progress.affordable.title') }}</span>
 											</div>
 											<div class="building-experience__progress-content">
-												<h3>{{ t('home.experience.progress.affordable.title') }}</h3>
+												<h3>{{ t('home.experience.progress.affordable.description') }}</h3>
 											</div>
 										</div>
 										<div class="building-experience__progress-single building-experience__progress-single-last">
 											<div class="building-experience__progress-box">
 												<div class="circle-progress" data-options='{ "value": 1.0,"thickness": 4,"emptyFill": "#edf3f6","lineCap": "square", "size": 122, "fill": { "color": "#00AEEF" } }'></div>
-												<span>{{ t('home.experience.progress.quality.value') }}</span>
+												<span>{{ t('home.experience.progress.quality.title') }}</span>
 											</div>
 											<div class="building-experience__progress-content">
-												<h3>{{ t('home.experience.progress.quality.title') }}</h3>
+												<h3>{{ t('home.experience.progress.quality.description') }}</h3>
 											</div>
 										</div>
 									</div>
 								</div>
+								-->
+
+								<div class="building-experience__progress">
+								
+									<div class="building-experience__progress-wrap">
+										<div class="flex flex-col items-center justify-center building-experience__progress-single building-experience__progress-single-last">
+											<div class="border-conult-base border-2 w-[120px] h-[120px] flex items-center justify-center rounded-full ">
+												<div class="circle-progress " data-options='{ "value": 1.0,"thickness": 4,"emptyFill": "#edf3f6","lineCap": "square", "size": 122, "fill": { "color": "#00AEEF" } }'></div>
+												<!-- /.circle-progress -->
+												<span class="text-black text-2xl">100%</span>
+											</div>
+											<div class="building-experience__progress-content">
+												<h3>
+													{{ t('home.experience.progress.affordable.title') }}
+												</h3>
+											</div>
+										</div>
+										<div class=" my-8 h-[1px] bg-gray-300 w-full">
+											
+										</div>
+										<div class="flex flex-col items-center justify-center building-experience__progress-single building-experience__progress-single-last">
+											<div class="border-conult-base border-2 w-[120px] h-[120px] flex items-center justify-center rounded-full ">
+												<div class="circle-progress " data-options='{ "value": 1.0,"thickness": 4,"emptyFill": "#edf3f6","lineCap": "square", "size": 122, "fill": { "color": "#00AEEF" } }'></div>
+												<!-- /.circle-progress -->
+												<span class="text-black text-2xl">100%</span>
+											</div>
+											<!-- /.about-five__progress-box -->
+											<div class="building-experience__progress-content">
+												<h3>
+													{{ t('home.experience.progress.quality.title') }}
+												</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
 							</div>
 						</div>
 						<div class="col-xl-6">
@@ -369,8 +411,8 @@
 		<!--CTA One End-->
 
 		<!--Testimonial One Start-->
-		<section class="testimonial-one">
-			<div class="testimonial-one-map" style="background-image: url(/assets/images/shapes/testimonial-one-map.png)"></div>
+		<section class="testimonial-onee">
+			<div class="testimonial-onee-map" style="background-image: url(/assets/images/shapes/testimonial-onee-map.png)"></div>
 			<div class="container">
 				<div class="section-title text-center">
 					<span class="section-title__tagline">{{ t('home.testimonials.tagline') }}</span>
@@ -378,31 +420,48 @@
 				</div>
 				<div class="row">
 					<div class="col-xl-12">
-						<div class="testimonial-one__carousel owl-theme owl-carousel">
-							<!--Testimonial One Single-->
-							<div class="testimonial-one__single" v-for="(testimonial, index) in testimonials" :key="index">
-								<p class="testimonial-one__rating">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</p>
-								<p class="testimonial-one__text">{{ t(`home.testimonials.items.${index + 1}.text`) }}</p>
-								<div class="testimonial-one__author">
-									<div class="testimonial-one__author-img">
-										<img :src="`/assets/images/testimonial/avatar${index + 3}.jpg`" alt="" />
+						<Swiper
+							:slides-per-view="3"
+							:loop="true"
+							:autoplay="{ delay: 5000 }"
+							:pagination="{ clickable: true }"
+							:breakpoints="{
+								0: { slidesPerView: 1 },
+								640: { slidesPerView: 1 },
+								768: { slidesPerView: 2 },
+								1024: { slidesPerView: 3 }
+							}"
+							class="testimonial-onee__carousel"
+						>
+							<SwiperSlide v-for="(testimonial, index) in testimonials" :key="index">
+								<div class="testimonial-onee__single position: relative; display: flex; flex-direction: column; justify-content: flex-start; min-height: 380px; padding: 60px 60px 100px; background: #fff; box-shadow: 0px 10px 60px 0px rgb(0 0 0 / 5%);">
+									<div class="testimonial-onee__rating">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
 									</div>
-									<div class="testimonial-one__author-details">
-										<h4 class="testimonial-one__author-name">{{ t(`home.testimonials.items.${index + 1}.author`) }}</h4>
-										<p class="testimonial-one__author-title">{{ t(`home.testimonials.items.${index + 1}.position`) }}</p>
+									<p class="testimonial-onee__text">
+										<span class="leading-[1.5]">
+											{{ t(`home.testimonials.items.${index + 1}.text`) }}
+										</span>
+									</p>
+									<div class="testimonial-onee__author mt-8">
+										<div class="testimonial-onee__author-img">
+											<img :src="`/assets/images/testimonial/avatar${index + 3}.jpg`" alt="" />
+										</div>
+										<div class="testimonial-onee__author-details">
+											<h4 class="testimonial-onee__author-name">{{ t(`home.testimonials.items.${index + 1}.author`) }}</h4>
+											<p class="testimonial-onee__author-title">{{ t(`home.testimonials.items.${index + 1}.position`) }}</p>
+										</div>
+									</div>
+									<div class="testimonial-onee__quote-icon">
+										<img src="/assets/images/icon/quote-icon.png" alt="" />
 									</div>
 								</div>
-								<div class="testimonial-one__quote-icon">
-									<img src="/assets/images/icon/quote-icon.png" alt="" />
-								</div>
-							</div>
-						</div>
+							</SwiperSlide>
+						</Swiper>
 					</div>
 				</div>
 			</div>
@@ -510,59 +569,52 @@
 		</section>
 		<!--News One End-->
 
-		<!--Brand One Start-->
-		<section class="brand-one">
-			<div class="container">
-				<div
-					class="thm-swiper__slider swiper-container"
-					:data-swiper-options="brandSwiperOptions"
-				>
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<img src="/assets/images/brand/brasimba.png" alt="" />
-						</div>
-						<!-- /.swiper-slide -->
-						<div class="swiper-slide">
-							<img src="/assets/images/brand/easter.png" alt="" />
-						</div>
-						<!-- /.swiper-slide -->
-						<div class="swiper-slide">
-							<img src="/assets/images/brand/europeanunion.png" alt="" />
-						</div>
-						<!-- /.swiper-slide -->
-						<div class="swiper-slide">
-							<img src="/assets/images/brand/instituufrancais.png" alt="" />
-						</div>
-						<!-- /.swiper-slide -->
-						<div class="swiper-slide">
-							<img src="/assets/images/brand/janegoodall.png" alt="" />
-						</div>
-						<!-- /.swiper-slide -->
-						<div class="swiper-slide">
-							<img src="/assets/images/brand/oim.png" alt="" />
-						</div>
-						<!-- /.swiper-slide -->
-						<div class="swiper-slide">
-							<img src="/assets/images/brand/sgml.png" alt="" />
-						</div>
-						<!-- /.swiper-slide -->
-						<div class="swiper-slide">
-							<img src="/assets/images/brand/skyborn.png" alt="" />
-						</div>
-						<!-- /.swiper-slide -->
-						<div class="swiper-slide">
-							<img src="/assets/images/brand/tearfund.png" alt="" />
-						</div>
-						<!-- /.swiper-slide -->
-						<div class="swiper-slide">
-							<img src="/assets/images/brand/tmk.png" alt="" />
-						</div>
-						<!-- /.swiper-slide -->
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--Brand One End-->
+<!--Brand One Start-->
+<section class="brand-one">
+  <div class="container">
+    <Swiper
+      :modules="[Autoplay]"
+      :slides-per-view="5"
+      :space-between="100"
+      :loop="true"
+      :autoplay="{ delay: 5000 }"
+      :breakpoints="{
+        0: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        },
+        375: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        },
+        575: {
+          slidesPerView: 3,
+          spaceBetween: 30
+        },
+        767: {
+          slidesPerView: 4,
+          spaceBetween: 50
+        },
+        991: {
+          slidesPerView: 5,
+          spaceBetween: 50
+        },
+        1199: {
+          slidesPerView: 6,
+          spaceBetween: 100
+        }
+      }"
+      class="brand-one__carousel"
+    >
+      <SwiperSlide v-for="(brand, index) in brands" :key="index">
+        <div class="brand-one__single">
+          <img :src="brand.image" :alt="brand.name" />
+        </div>
+      </SwiperSlide>
+    </Swiper>
+  </div>
+</section>
+<!--Brand One End-->
 	</div>
 </template>
 
@@ -821,6 +873,50 @@ const brandSwiperOptions = {
 		}
 	}
 };
+
+// Ajout des marques
+const brands = ref([
+	{
+		name: 'Brasimba',
+		image: '/assets/images/brand/brasimba.png'
+	},
+	{
+		name: 'Easter',
+		image: '/assets/images/brand/easter.png'
+	},
+	{
+		name: 'European Union',
+		image: '/assets/images/brand/europeanunion.png'
+	},
+	{
+		name: 'Institut Français',
+		image: '/assets/images/brand/instituufrancais.png'
+	},
+	{
+		name: 'Jane Goodall',
+		image: '/assets/images/brand/janegoodall.png'
+	},
+	{
+		name: 'OIM',
+		image: '/assets/images/brand/oim.png'
+	},
+	{
+		name: 'SGML',
+		image: '/assets/images/brand/sgml.png'
+	},
+	{
+		name: 'Skyborn',
+		image: '/assets/images/brand/skyborn.png'
+	},
+	{
+		name: 'Tearfund',
+		image: '/assets/images/brand/tearfund.png'
+	},
+	{
+		name: 'TMK',
+		image: '/assets/images/brand/tmk.png'
+	}
+])
 </script>
 
 <style scoped>
@@ -1067,5 +1163,109 @@ const brandSwiperOptions = {
 			font-size: 16px;
 			line-height: 28px;
 		}
+	}
+
+	.testimonial-onee__single {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		min-height: 380px; /* Ajuste selon le contenu */
+		padding: 60px 60px 60px; /* padding-bottom augmenté */
+		background: #fff;
+		box-shadow: 0px 10px 60px 0px rgb(0 0 0 / 5%);
+	}
+
+	.testimonial-onee__author {
+		bottom: -50px; /* Ajuste selon la taille de l'avatar */
+		left: 60px;
+		display: flex;
+		align-items: center;
+		gap: 16px;
+	}
+
+	.testimonial-onee__author-img img {
+		width: 50px !important;
+		height: 50px;
+		object-fit: cover;
+		border-radius: 50%;
+		border: 2px solid #fff;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+	}
+
+	@media (max-width: 767px) {
+		.testimonial-onee__author {
+			left: 24px;
+			bottom: -40px;
+		}
+		.testimonial-onee__single {
+			padding: 32px 16px 80px;
+			min-height: 320px;
+		}
+	}
+
+	.testimonial-onee__carousel .swiper-wrapper {
+		overflow: visible !important;
+	}
+
+	@media (max-width: 1024px) {
+		.testimonial-onee__single {
+			padding: 32px 12px 64px;
+			min-height: 320px;
+		}
+		.testimonial-onee__author-img img {
+			width: 64px !important;
+			height: 64px;
+		}
+	}
+
+	@media (max-width: 640px) {
+		.testimonial-onee__single {
+			padding: 20px 20px 20px;
+			min-height: 220px;
+		}
+		.testimonial-onee__author-img img {
+			width: 48px !important;
+			height: 48px;
+		}
+		.testimonial-onee__text {
+			font-size: 16px;
+			line-height: 1.4;
+		}
+	}
+
+	/* Styles pour le carousel des marques */
+	.brand-one__carousel {
+		padding: 20px 0;
+	}
+
+	.brand-one__single {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100px;
+		transition: all 0.3s ease;
+	}
+
+	.brand-one__single img {
+		max-width: 100%;
+		max-height: 80px;
+		object-fit: contain;
+		opacity: 0.7;
+		filter: grayscale(0%);
+
+		transition: all 0.3s ease;
+	}
+
+	.brand-one__single:hover img {
+		opacity: 1;
+	}
+
+	/* Ajustements pour Swiper */
+	.swiper-slide {
+		height: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 </style>

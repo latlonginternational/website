@@ -8,11 +8,11 @@
       ></div>
       <div class="container">
         <div class="page-header__inner">
-          <h2>{{ service_info[0].title }}</h2>
+          <h2>{{ t('services.protection.pageHeader.title') }}</h2>
           <ul class="thm-breadcrumb list-unstyled">
-            <li><a href="/">Accueil</a></li>
-            <li><a href="/services">Services</a></li>
-            <li class="active">{{ service_info[0].title }}</li>
+            <li><a href="/">{{ t('services.protection.pageHeader.breadcrumb.home') }}</a></li>
+            <li><a href="/services">{{ t('services.protection.pageHeader.breadcrumb.services') }}</a></li>
+            <li class="active">{{ t('services.protection.pageHeader.breadcrumb.current') }}</li>
           </ul>
         </div>
       </div>
@@ -23,32 +23,32 @@
     <section class="service-details" ref="serviceSection">
       <div class="container">
         <div class="row">
-          <div ref="sidebarElement" class="service-details__sidebar">
+          <ServiceSidebar :serviceSection="serviceSection">
             <div class="service-details__sidebar-service">
               <ul class="service-details__sidebar-service-list list-unstyled">
                 <li class="current">
                   <a href="/services/protection"
-                    >Protection <span class="icon-right-arrow"></span
+                    >{{ t('services.protection.sidebar.menu.protection') }} <span class="icon-right-arrow"></span
                   ></a>
                 </li>
                 <li>
                   <a href="/services/technology"
-                    >Technologie <span class="icon-right-arrow"></span
+                    >{{ t('services.protection.sidebar.menu.technology') }} <span class="icon-right-arrow"></span
                   ></a>
                 </li>
                 <li>
                   <a href="/services/consultancy"
-                    >Consultance <span class="icon-right-arrow"></span
+                    >{{ t('services.protection.sidebar.menu.consultancy') }} <span class="icon-right-arrow"></span
                   ></a>
                 </li>
                 <li>
                   <a href="/services/trainings"
-                    >Formations <span class="icon-right-arrow"></span
+                    >{{ t('services.protection.sidebar.menu.training') }} <span class="icon-right-arrow"></span
                   ></a>
                 </li>
                 <li>
                   <a href="/services/others-security-services"
-                    >Autres services de sécurité
+                    >{{ t('services.protection.sidebar.menu.others') }}
                     <span class="icon-right-arrow"></span
                   ></a>
                 </li>
@@ -59,45 +59,47 @@
                 class="service-details__need-help-bg"
                 style="background-image: url(/assets/images/services/conta.jpg)"
               ></div>
-              <h2 class="service-details__need-help-title">Nous contacter</h2>
+              <h2 class="service-details__need-help-title">{{ t('services.protection.sidebar.contact.title') }}</h2>
               <div class="service-details__need-help-icon">
                 <span class="icon-phone"></span>
               </div>
               <div class="service-details__need-help-contact">
-                <p>À tout moment</p>
+                <p>{{ t('services.protection.sidebar.contact.anytime') }}</p>
                 <a href="tel:243810041500">+243810041500</a>
               </div>
             </div>
-          </div>
+          </ServiceSidebar>
           <div class="col-xl-8 col-lg-7">
             <div class="service-details__right">
               <div class="service-details__img">
-                <img src="/assets/images/services/prot2.jpg" alt="" />
+                <img src="/assets/images/services/prot2.jpg" class="w-full max-h-[400px] object-cover" :alt="t('services.protection.content.title')" />
                 <div class="service-details__img-icon">
                   <span :class="service_info[0].icon"></span>
                 </div>
               </div>
               <div class="service-details__content">
                 <h3 class="service-details__title">
-                  {{ service_info[0].title }}
+                  {{ t('services.protection.content.title') }}
                 </h3>
-                <p
-                  v-for="(p, index) in service_info[0].details"
-                  :class="[
-                    index == 0 ? 'text-blue-forced' : '',
-                    'service-details__text-' + index + 1,
-                  ]"
-                  :key="p"
-                >
-                  {{ p }}
-                </p>
+                <div class="space-y-6">
+                  <p
+                    v-for="i in 4"
+                    :key="i"
+                    :class="[
+                      i === 1 ? 'text-blue-forced' : '',
+                      'service-details__text-1',
+                    ]"
+                  >
+                    {{ t(`services.protection.content.details.detail${i}`) }}
+                  </p>
+                </div>
               </div>
               <div class="service-details__bottom">
                 <div class="service-details__bottom-icon">
                   <span :class="service_info[0].icon"></span>
                 </div>
                 <p class="service-details__bottom-text">
-                  {{ service_info[0].approach }}
+                  {{ t('services.protection.content.approach') }}
                 </p>
               </div>
               <div class="service-details__how-we-help">
@@ -110,18 +112,18 @@
                   <div class="col-xl-8">
                     <div class="service-details__how-we-help-content">
                       <h3 class="service-details__how-we-help-title">
-                        Comment proceder ?
+                        {{ t('services.protection.content.howToProceed.title') }}
                       </h3>
                       <br />
                       <ul
                         class="service-details__how-we-help-points list-unstyled"
                       >
-                        <li v-for="item in service_info[0].process" :key="item">
+                        <li v-for="i in 4" :key="i">
                           <div class="icon">
                             <i class="fa fa-arrow-right"></i>
                           </div>
                           <div class="text">
-                            <p>{{ item }}</p>
+                            <p>{{ t(`services.protection.content.howToProceed.steps.step${i}`) }}</p>
                           </div>
                         </li>
                       </ul>
@@ -132,21 +134,20 @@
               <div class="service-details__faq">
                 <div class="accrodion-grp" data-grp-name="faq-one-accrodion">
                   <div
-                    v-for="(item, index) in service_info[0].faq"
-                    :key="item"
+                    v-for="i in 3"
+                    :key="i"
                     class="accrodion"
-                    :class="[index == 0 ? 'active' : '']"
+                    :class="[i === 1 ? 'active' : '']"
                   >
                     <div class="accrodion-title">
-                      <h4>{{ item.question }}</h4>
+                      <h4>{{ t(`services.protection.content.faq.questions.question${i}.question`) }}</h4>
                     </div>
                     <div class="accrodion-content">
                       <div class="inner">
                         <p>
-                          {{ item.answer }}
+                          {{ t(`services.protection.content.faq.questions.question${i}.answer`) }}
                         </p>
                       </div>
-                      <!-- /.inner -->
                     </div>
                   </div>
                 </div>
@@ -162,8 +163,10 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted, computed, watch } from 'vue'
+import { useI18n } from 'vue-i18n'
 import ServiceSidebar from '~/components/ServiceSidebar.vue'
 
+const { t } = useI18n()
 const serviceSection = ref(null)
 const isSidebarFixed = ref(false)
 const isSidebarBottom = ref(false)
@@ -194,26 +197,34 @@ const sidebarStyle = computed(() => {
 })
 
 const captureOriginalStyles = () => {
-  if (sidebarElement.value) {
-    const computedStyle = window.getComputedStyle(sidebarElement.value)
-    originalStyles.value = {
-      padding: computedStyle.padding,
-      margin: computedStyle.margin,
-      border: computedStyle.border,
-      boxShadow: computedStyle.boxShadow,
-      backgroundColor: computedStyle.backgroundColor
+  if (serviceSection.value) {
+    const rect = serviceSection.value.getBoundingClientRect()
+    sidebarHeight.value = rect.height
+    sidebarWidth.value = rect.width
+    sidebarLeft.value = rect.left
+    sectionOffset.value = rect.top
+    sectionBottom.value = rect.top + rect.height
+
+    if (!originalStyles.value) {
+      originalStyles.value = {
+        padding: window.getComputedStyle(serviceSection.value).padding,
+        margin: window.getComputedStyle(serviceSection.value).margin,
+        border: window.getComputedStyle(serviceSection.value).border,
+        boxShadow: window.getComputedStyle(serviceSection.value).boxShadow,
+        backgroundColor: window.getComputedStyle(serviceSection.value).backgroundColor
+      }
     }
   }
 }
 
 const updateDimensions = () => {
-  if (sidebarElement.value && serviceSection.value && sidebarContainer.value) {
-    const rect = sidebarElement.value.getBoundingClientRect()
+  if (serviceSection.value && sidebarContainer.value) {
+    const rect = serviceSection.value.getBoundingClientRect()
     sidebarHeight.value = rect.height
     sidebarWidth.value = rect.width
-    sidebarLeft.value = sidebarContainer.value.getBoundingClientRect().left
-    sectionOffset.value = serviceSection.value.offsetTop
-    sectionBottom.value = serviceSection.value.offsetTop + serviceSection.value.offsetHeight
+    sidebarLeft.value = rect.left
+    sectionOffset.value = rect.top
+    sectionBottom.value = rect.top + rect.height
 
     if (!originalStyles.value) {
       captureOriginalStyles()
@@ -226,7 +237,7 @@ const checkScreenSize = () => {
 }
 
 const handleScroll = () => {
-  if (!sidebarElement.value || !serviceSection.value || isMobile.value) return
+  if (!serviceSection.value || isMobile.value) return
 
   const scrollPosition = window.scrollY
   const headerHeight = 100
@@ -279,45 +290,11 @@ onUnmounted(() => {
 
 const service_info = [
   {
-    title: "Protection",
-    icon: "icon-strategy",
-    approach:
-      "Assurez une sécurité optimale avec nos solutions de protection complètes adaptées à vos besoins.",
-
-    details: [
-      "Nous offrons des services de protection avancés incluant le contrôle d'accès, des patrouilles stratégiques, et des escortes pour garantir la sécurité de vos biens, personnes et événements.",
-      "Nos agents de sécurité assurent un contrôle rigoureux des accès et des sorties, incluant la gestion des clés, la vérification des identités, et la mise à disposition d'escortes pour vos besoins spécifiques.",
-      "Patrouilles adaptées à chaque environnement : qu'elles soient statiques, mobiles ou à pied, nos équipes s'assurent de détecter et réagir rapidement à toute anomalie.",
-      "La présence d'agents à chaque point stratégique (entreposage, inventaire, expédition) garantit un contrôle optimal des stocks.",
-    ],
-    process: [
-      "Contactez-nous via le formulaire en ligne ou par téléphone.",
-      "Décrivez vos besoins spécifiques (type de site, événement, etc.).",
-      "Recevez une proposition personnalisée.",
-      "Planifiez une visite préparatoire si nécessaire.",
-      "Lancez le service en toute sérénité.",
-    ],
-    faq: [
-      {
-        question: "Quels types d'événements couvrez-vous ?",
-        answer:
-          "Nous assurons la sécurité des événements publics, privés et professionnels.",
-      },
-      {
-        question: "Les escortes sont-elles disponibles 24/7 ?",
-        answer:
-          "Oui, nos escortes peuvent être programmées à tout moment selon vos besoins.",
-      },
-      {
-        question:
-          "Vos patrouilles s'adaptent-elles aux grands sites industriels ?",
-        answer:
-          "Absolument, nos patrouilles sont personnalisées pour couvrir de vastes installations industrielles.",
-      },
-    ],
-  },
+    icon: "icon-strategy"
+  }
 ];
 </script>
+
 <style scoped>
 .text-blue-forced {
   color: #031430 !important;

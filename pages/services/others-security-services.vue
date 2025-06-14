@@ -8,11 +8,11 @@
       ></div>
       <div class="container">
         <div class="page-header__inner">
-          <h2>{{ service_info[0].title }}</h2>
+          <h2>{{ t('services.others-security-services.pageHeader.title') }}</h2>
           <ul class="thm-breadcrumb list-unstyled">
-            <li><a href="/">Accueil</a></li>
-            <li><a href="/services">Services</a></li>
-            <li class="active">{{ service_info[0].title }}</li>
+            <li><a href="/">{{ t('services.others-security-services.pageHeader.breadcrumb.home') }}</a></li>
+            <li><a href="/services">{{ t('services.others-security-services.pageHeader.breadcrumb.services') }}</a></li>
+            <li class="active">{{ t('services.others-security-services.pageHeader.breadcrumb.current') }}</li>
           </ul>
         </div>
       </div>
@@ -28,27 +28,27 @@
               <ul class="service-details__sidebar-service-list list-unstyled">
                 <li>
                   <a href="/services/protection"
-                    >Protection <span class="icon-right-arrow"></span
+                    >{{ t('services.others-security-services.sidebar.menu.protection') }} <span class="icon-right-arrow"></span
                   ></a>
                 </li>
                 <li>
                   <a href="/services/technology"
-                    >Technologie <span class="icon-right-arrow"></span
+                    >{{ t('services.others-security-services.sidebar.menu.technology') }} <span class="icon-right-arrow"></span
                   ></a>
                 </li>
                 <li>
                   <a href="/services/consultancy"
-                    >Consultance <span class="icon-right-arrow"></span
+                    >{{ t('services.others-security-services.sidebar.menu.consultancy') }} <span class="icon-right-arrow"></span
                   ></a>
                 </li>
                 <li>
                   <a href="/services/trainings"
-                    >Formations <span class="icon-right-arrow"></span
+                    >{{ t('services.others-security-services.sidebar.menu.training') }} <span class="icon-right-arrow"></span
                   ></a>
                 </li>
                 <li class="current">
                   <a href="/services/others-security-services"
-                    >Autres services de sécurité
+                    >{{ t('services.others-security-services.sidebar.menu.others') }}
                     <span class="icon-right-arrow"></span
                   ></a>
                 </li>
@@ -59,12 +59,12 @@
                 class="service-details__need-help-bg"
                 style="background-image: url(/assets/images/services/conta.jpg)"
               ></div>
-              <h2 class="service-details__need-help-title">Nous contacter</h2>
+              <h2 class="service-details__need-help-title">{{ t('services.others-security-services.sidebar.contact.title') }}</h2>
               <div class="service-details__need-help-icon">
                 <span class="icon-phone"></span>
               </div>
               <div class="service-details__need-help-contact">
-                <p>À tout moment</p>
+                <p>{{ t('services.others-security-services.sidebar.contact.anytime') }}</p>
                 <a href="tel:243810041500">+243810041500</a>
               </div>
             </div>
@@ -72,32 +72,34 @@
           <div class="col-xl-8 col-lg-7">
             <div class="service-details__right">
               <div class="service-details__img">
-                <img src="/assets/images/services/as.png" alt="" />
+                <img src="/assets/images/services/as.png" class="w-full max-h-[400px] object-cover" :alt="t('services.others-security-services.content.title')" />
                 <div class="service-details__img-icon">
                   <span :class="service_info[0].icon"></span>
                 </div>
               </div>
               <div class="service-details__content">
                 <h3 class="service-details__title">
-                  {{ service_info[0].title }}
+                  {{ t('services.others-security-services.content.title') }}
                 </h3>
-                <p
-                  v-for="(p, index) in service_info[0].details"
-                  :class="[
-                    index == 0 ? 'text-blue-forced' : '',
-                    'service-details__text-' + index + 1,
-                  ]"
-                  :key="p"
-                >
-                  {{ p }}
-                </p>
+                <div class="space-y-6">
+                  <p
+                    v-for="i in 4"
+                    :key="i"
+                    :class="[
+                      i === 1 ? 'text-blue-forced' : '',
+                      'service-details__text-1',
+                    ]"
+                  >
+                    {{ t(`services.others-security-services.content.details.detail${i}`) }}
+                  </p>
+                </div>
               </div>
               <div class="service-details__bottom">
                 <div class="service-details__bottom-icon">
                   <span :class="service_info[0].icon"></span>
                 </div>
                 <p class="service-details__bottom-text">
-                  {{ service_info[0].approach }}
+                  {{ t('services.others-security-services.content.approach') }}
                 </p>
               </div>
               <div class="service-details__how-we-help">
@@ -110,18 +112,18 @@
                   <div class="col-xl-8">
                     <div class="service-details__how-we-help-content">
                       <h3 class="service-details__how-we-help-title">
-                        Comment proceder ?
+                        {{ t('services.others-security-services.content.howToProceed.title') }}
                       </h3>
                       <br />
                       <ul
                         class="service-details__how-we-help-points list-unstyled"
                       >
-                        <li v-for="item in service_info[0].process" :key="item">
+                        <li v-for="i in 5" :key="i">
                           <div class="icon">
                             <i class="fa fa-arrow-right"></i>
                           </div>
                           <div class="text">
-                            <p>{{ item }}</p>
+                            <p>{{ t(`services.others-security-services.content.howToProceed.steps.step${i}`) }}</p>
                           </div>
                         </li>
                       </ul>
@@ -132,21 +134,20 @@
               <div class="service-details__faq">
                 <div class="accrodion-grp" data-grp-name="faq-one-accrodion">
                   <div
-                    v-for="(item, index) in service_info[0].faq"
-                    :key="item"
+                    v-for="i in 3"
+                    :key="i"
                     class="accrodion"
-                    :class="[index == 0 ? 'active' : '']"
+                    :class="[i === 1 ? 'active' : '']"
                   >
                     <div class="accrodion-title">
-                      <h4>{{ item.question }}</h4>
+                      <h4>{{ t(`services.others-security-services.content.faq.questions.question${i}.question`) }}</h4>
                     </div>
                     <div class="accrodion-content">
                       <div class="inner">
                         <p>
-                          {{ item.answer }}
+                          {{ t(`services.others-security-services.content.faq.questions.question${i}.answer`) }}
                         </p>
                       </div>
-                      <!-- /.inner -->
                     </div>
                   </div>
                 </div>
@@ -162,8 +163,10 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted, computed, watch } from 'vue'
+import { useI18n } from 'vue-i18n'
 import ServiceSidebar from '~/components/ServiceSidebar.vue'
 
+const { t } = useI18n()
 const serviceSection = ref(null)
 const isSidebarFixed = ref(false)
 const isSidebarBottom = ref(false)
@@ -176,6 +179,7 @@ const sectionBottom = ref(0)
 const sidebarWidth = ref(0)
 const sidebarLeft = ref(0)
 const originalStyles = ref(null)
+const isMobile = ref(false)
 
 const sidebarStyle = computed(() => {
   if (isSidebarFixed.value) {
@@ -260,43 +264,8 @@ onUnmounted(() => {
 
 const service_info = [
   {
-    title: "Autres services de sécurité",
-    icon: "icon-analysis",
-    approach:
-      "Une sécurité globale avec des solutions complémentaires adaptées à vos besoins spécifiques.",
-
-    details: [
-      "LatLong International offre une gamme étendue de services, de la lutte contre l'incendie au transport sécurisé, pour compléter votre stratégie de sécurité.",
-      "Notre service de transport de fonds et d'évacuation d'urgence assure la sécurité de vos biens et personnels dans toutes les situations.",
-      "Nous proposons des solutions de surveillance avancée, incluant la gestion des ressources énergétiques avec des systèmes modernes.",
-      "Nos unités K-9 spécialement entraînées apportent une expertise supplémentaire pour la détection et la protection.",
-    ],
-    process: [
-      "Contactez-nous pour exprimer vos besoins spécifiques.",
-      "Recevez une évaluation complète de votre situation.",
-      "Planifiez la mise en œuvre des services.",
-      "Profitez d'un accompagnement personnalisé.",
-      "Bénéficiez d'un support continu pour garantir l'efficacité des solutions mises en place.",
-    ],
-    faq: [
-      {
-        question: "Proposez-vous un service de lutte contre l'incendie ?",
-        answer:
-          "Oui, nos équipes sont formées pour intervenir rapidement en cas d'incendie.",
-      },
-      {
-        question:
-          "Vos unités K-9 sont-elles disponibles pour des événements privés ?",
-        answer:
-          " Absolument, nos chiens peuvent être déployés pour des événements spécifiques.",
-      },
-      {
-        question: "Pouvez-vous gérer la surveillance de sites isolés ? ",
-        answer:
-          "Oui, nos solutions sont conçues pour fonctionner même dans des environnements éloignés ou difficiles.",
-      },
-    ],
-  },
+    icon: "icon-analysis"
+  }
 ];
 </script>
 

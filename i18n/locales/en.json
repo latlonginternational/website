@@ -229,5 +229,396 @@
 				}
 			}
 		}
+	},
+	"about": {
+		"pageHeader": {
+			"title": "About Us",
+			"breadcrumb": {
+				"home": "Home",
+				"current": "About Us"
+			}
+		},
+		"getToKnow": {
+			"tagline": "Get to Know Us",
+			"title": "Your Partner for Reliable Security",
+			"description": "LatLong Congo, founded in 2012, is a leader in security solutions in eastern DRC. We combine local expertise and modern technology to protect your assets and interests.",
+			"points": {
+				"qualified": "Qualified and experienced personnel.",
+				"technology": "Modern surveillance technologies.",
+				"approach": "Tailored approach for each client.",
+				"commitment": "Commitment to social responsibility."
+			}
+		},
+		"visionMission": {
+			"tagline": "Our Commitment",
+			"title": "Vision, Mission & Objectives",
+			"vision": {
+				"title": "Vision",
+				"description": "To be the leading security company in Africa."
+			},
+			"mission": {
+				"title": "Mission",
+				"description": "To provide innovative and effective security solutions."
+			},
+			"objectives": {
+				"title": "Objectives",
+				"items": {
+					"security": "Ensure our clients' security.",
+					"solutions": "Provide adapted solutions.",
+					"innovation": "Innovate with advanced technologies."
+				}
+			}
+		},
+		"operationalZone": {
+			"title": "Operational Zone",
+			"description": "We primarily operate in eastern Democratic Republic of Congo, with a strategic presence in North and South Kivu provinces. Our national expansion allows us to effectively serve a diverse clientele."
+		},
+		"team": {
+			"tagline": "Management Team",
+			"title": "Meet Our Experts"
+		},
+		"cta": {
+			"title": "World-Class Security Solutions",
+			"button": "Contact Us"
+		}
+	},
+	"services": {
+		"pageHeader": {
+			"title": "Our Services",
+			"breadcrumb": {
+				"home": "Home",
+				"current": "Services"
+			}
+		},
+		"items": {
+			"protection": {
+				"title": "Protection",
+				"description": "Ensure optimal security with our comprehensive protection solutions tailored to your needs.",
+				"link": "/services/protection",
+				"button": "Learn more"
+			},
+			"technology": {
+				"title": "Technology",
+				"description": "Transform your security with cutting-edge technological solutions backed by our proven expertise.",
+				"link": "/services/technology",
+				"button": "Learn more"
+			},
+			"consultancy": {
+				"title": "Consultancy",
+				"description": "A solid strategy is the key to successful security. We can guide you through it.",
+				"link": "/services/consultancy",
+				"button": "Learn more"
+			},
+			"training": {
+				"title": "Training",
+				"description": "Be prepared to face security challenges with our professional and practical training programs.",
+				"link": "/services/training",
+				"button": "Learn more"
+			},
+			"others": {
+				"title": "Other Services",
+				"description": "Comprehensive security with complementary solutions adapted to your specific needs.",
+				"link": "/services/others-security-services",
+				"button": "Learn more"
+			}
+		},
+		"protection": {
+			"pageHeader": {
+				"title": "Protection",
+				"breadcrumb": {
+					"home": "Home",
+					"services": "Services",
+					"current": "Protection"
+				}
+			},
+			"sidebar": {
+				"menu": {
+					"protection": "Protection",
+					"technology": "Technology",
+					"consultancy": "Consultancy",
+					"training": "Training",
+					"others": "Other Security Services"
+				},
+				"contact": {
+					"title": "Contact Us",
+					"anytime": "Anytime"
+				}
+			},
+			"content": {
+				"title": "Protection",
+				"details": {
+					"detail1": "We offer advanced protection services including access control, strategic patrols, and escorts to ensure the security of your assets, people, and events.",
+					"detail2": "Our security agents ensure rigorous control of access and exits, including key management, identity verification, and escorts for your specific needs.",
+					"detail3": "Patrols adapted to each environment: whether static, mobile, or on foot, our teams ensure quick detection and response to any anomaly.",
+					"detail4": "The presence of agents at each strategic point (storage, inventory, shipping) ensures optimal stock control."
+				},
+				"approach": "Ensure optimal security with our comprehensive protection solutions tailored to your needs.",
+				"howToProceed": {
+					"title": "How to proceed?",
+					"steps": {
+						"step1": "Contact us to discuss your specific protection needs",
+						"step2": "We assess your situation and propose a tailored solution",
+						"step3": "We deploy a qualified security team",
+						"step4": "We ensure continuous monitoring and adapt our services according to your needs"
+					}
+				},
+				"faq": {
+					"title": "Frequently Asked Questions",
+					"questions": {
+						"question1": {
+							"question": "What types of events do you cover?",
+							"answer": "We cover all types of events, from small gatherings to large international events. Our team adapts to each situation to ensure optimal security."
+						},
+						"question2": {
+							"question": "Do you offer escort services?",
+							"answer": "Yes, we provide escort services for personalities, VIPs, and valuable assets. Our agents are trained to ensure discreet and effective protection."
+						},
+						"question3": {
+							"question": "How do you adapt your patrols according to needs?",
+							"answer": "Our patrols are customized according to your specific needs. We analyze your site, identify sensitive points, and establish an adapted surveillance plan."
+						}
+					}
+				}
+			}
+		},
+		"technology": {
+			"pageHeader": {
+				"title": "Technology",
+				"breadcrumb": {
+					"home": "Home",
+					"services": "Services",
+					"current": "Technology"
+				}
+			},
+			"sidebar": {
+				"menu": {
+					"protection": "Protection",
+					"technology": "Technology",
+					"consultancy": "Consultancy",
+					"training": "Training",
+					"others": "Other Security Services"
+				},
+				"contact": {
+					"title": "Contact Us",
+					"anytime": "Anytime"
+				}
+			},
+			"content": {
+				"title": "Technology",
+				"details": {
+					"detail1": "LatLong International integrates the most modern technologies to enhance your security, including real-time tracking, alarm systems, and cybersecurity solutions.",
+					"detail2": "We select and train highly qualified security agents in the use of advanced technologies such as GPS tracking systems and emergency alarm buttons.",
+					"detail3": "Our technological infrastructure, such as smoke and intrusion detection systems, ensures permanent and reactive monitoring. Cybersecurity is at the heart of our priorities, with advanced solutions to protect your data and networks."
+				},
+				"approach": "Transform your security with cutting-edge technological solutions.",
+				"howToProceed": {
+					"title": "How to proceed?",
+					"steps": {
+						"step1": "Schedule a technical consultation",
+						"step2": "Identify your technological security needs",
+						"step3": "Receive a detailed installation plan",
+						"step4": "Attend equipment usage training",
+						"step5": "Benefit from 24/7 technical support"
+					}
+				},
+				"faq": {
+					"title": "Frequently Asked Questions",
+					"questions": {
+						"question1": {
+							"question": "Do your tracking systems work offline?",
+							"answer": "Yes, our equipment can operate in offline mode to ensure service continuity even in case of connection loss."
+						},
+						"question2": {
+							"question": "Do you offer computer security services?",
+							"answer": "Absolutely, our solutions cover cybersecurity and digital infrastructure protection, with a specialized IT security team."
+						},
+						"question3": {
+							"question": "Can you install systems in isolated areas?",
+							"answer": "Yes, we operate in various environments, including hard-to-reach sites, with solutions adapted to each situation."
+						}
+					}
+				}
+			}
+		},
+		"consultancy": {
+			"pageHeader": {
+				"title": "Consultancy",
+				"breadcrumb": {
+					"home": "Home",
+					"services": "Services",
+					"current": "Consultancy"
+				}
+			},
+			"sidebar": {
+				"menu": {
+					"protection": "Protection",
+					"technology": "Technology",
+					"consultancy": "Consultancy",
+					"training": "Training",
+					"others": "Other Security Services"
+				},
+				"contact": {
+					"title": "Contact Us",
+					"anytime": "Anytime"
+				}
+			},
+			"content": {
+				"title": "Consultancy",
+				"details": {
+					"detail1": "LatLong International offers tailored consulting services to analyze your needs, design security strategies, and effectively manage crises.",
+					"detail2": "Our comprehensive security assessments identify potential vulnerabilities to anticipate threats.",
+					"detail3": "Custom evacuation and crisis management strategies ensure a rapid and coordinated response.",
+					"detail4": "Our experts collaborate with your teams to ensure optimal preparation, including health and safety, investigations, and comprehensive audits."
+				},
+				"approach": "A solid strategy is the key to successful security. We can guide you through it.",
+				"howToProceed": {
+					"title": "How to proceed?",
+					"steps": {
+						"step1": "Request an initial consultation",
+						"step2": "Share your needs and concerns",
+						"step3": "Receive a personalized analysis report",
+						"step4": "Implement recommendations with our support",
+						"step5": "Benefit from post-implementation follow-up"
+					}
+				},
+				"faq": {
+					"title": "Frequently Asked Questions",
+					"questions": {
+						"question1": {
+							"question": "Do you offer comprehensive security audits?",
+							"answer": "Yes, we conduct on-site audits with concrete and detailed recommendations to improve your security."
+						},
+						"question2": {
+							"question": "Do your crisis management plans include practical exercises?",
+							"answer": "Absolutely, we organize regular simulations to test and improve your teams' responsiveness."
+						},
+						"question3": {
+							"question": "How long does a security assessment take?",
+							"answer": "It depends on the site size and complexity of needs, but generally, a complete assessment can be completed within 1 to 2 weeks."
+						}
+					}
+				}
+			}
+		},
+		"trainings": {
+			"pageHeader": {
+				"title": "Training",
+				"breadcrumb": {
+					"home": "Home",
+					"services": "Services",
+					"current": "Training"
+				}
+			},
+			"sidebar": {
+				"menu": {
+					"protection": "Protection",
+					"technology": "Technology",
+					"consultancy": "Consultancy",
+					"training": "Training",
+					"others": "Other Security Services"
+				},
+				"contact": {
+					"title": "Contact Us",
+					"anytime": "Anytime"
+				}
+			},
+			"content": {
+				"title": "Training",
+				"details": {
+					"detail1": "LatLong International offers specialized training to raise awareness, prepare, and strengthen your teams' skills in risk situations.",
+					"detail2": "We focus on prevention and intelligence gathering to anticipate threats before they materialize.",
+					"detail3": "Our training includes sessions on first aid, defensive driving, and crisis security management.",
+					"detail4": "Our programs are tailored to each client to meet the specific needs of their environment and sector."
+				},
+				"approach": "Be ready to face security challenges with our professional and practical training programs.",
+				"howToProceed": {
+					"title": "How to Proceed",
+					"steps": {
+						"step1": "Identify your training needs with our team",
+						"step2": "Choose from our training catalog or request a customized program",
+						"step3": "Schedule sessions according to your availability",
+						"step4": "Participate in on-site or online training",
+						"step5": "Receive post-training follow-up and advice"
+					}
+				},
+				"faq": {
+					"title": "Frequently Asked Questions",
+					"questions": {
+						"question1": {
+							"question": "Are your training programs certified?",
+							"answer": "Yes, all our training programs include certification recognized by competent authorities and professional organizations in the sector."
+						},
+						"question2": {
+							"question": "Can you train large teams?",
+							"answer": "Absolutely, we can adapt our training to groups of any size, with personalized programs to ensure optimal quality."
+						},
+						"question3": {
+							"question": "Do you offer on-site training?",
+							"answer": "Yes, our teams can travel to provide training directly at your location, allowing for better adaptation to your work environment."
+						}
+					}
+				}
+			}
+		},
+		"others-security-services": {
+			"pageHeader": {
+				"title": "Other Security Services",
+				"breadcrumb": {
+					"home": "Home",
+					"services": "Services",
+					"current": "Other Security Services"
+				}
+			},
+			"sidebar": {
+				"menu": {
+					"protection": "Protection",
+					"technology": "Technology",
+					"consultancy": "Consultancy",
+					"training": "Training",
+					"others": "Other Security Services"
+				},
+				"contact": {
+					"title": "Contact Us",
+					"anytime": "Anytime"
+				}
+			},
+			"content": {
+				"title": "Other Security Services",
+				"details": {
+					"detail1": "LatLong International offers a wide range of services, from firefighting to secure transportation, to complement your security strategy.",
+					"detail2": "Our cash transportation and emergency evacuation service ensures the security of your assets and personnel in all situations.",
+					"detail3": "We provide advanced surveillance solutions, including energy resource management with modern systems.",
+					"detail4": "Our specially trained K-9 units bring additional expertise for detection and protection."
+				},
+				"approach": "Comprehensive security with complementary solutions tailored to your specific needs.",
+				"howToProceed": {
+					"title": "How to Proceed",
+					"steps": {
+						"step1": "Contact us to express your specific needs",
+						"step2": "Receive a comprehensive assessment of your situation",
+						"step3": "Plan the implementation of services",
+						"step4": "Benefit from personalized support",
+						"step5": "Get continuous support to ensure the effectiveness of implemented solutions"
+					}
+				},
+				"faq": {
+					"title": "Frequently Asked Questions",
+					"questions": {
+						"question1": {
+							"question": "Do you offer firefighting services?",
+							"answer": "Yes, our teams are trained to respond quickly in case of fire, with appropriate equipment and proven procedures."
+						},
+						"question2": {
+							"question": "Are your K-9 units available for private events?",
+							"answer": "Absolutely, our specially trained dogs can be deployed for specific events, providing additional and deterrent security."
+						},
+						"question3": {
+							"question": "Can you manage surveillance of remote sites?",
+							"answer": "Yes, our solutions are designed to work even in remote or challenging environments, with autonomous systems and mobile teams."
+						}
+					}
+				}
+			}
+		}
 	}
 }

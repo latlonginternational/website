@@ -8,10 +8,10 @@
       ></div>
       <div class="container">
         <div class="page-header__inner">
-          <h2>Nos services</h2>
+          <h2>{{ t('services.pageHeader.title') }}</h2>
           <ul class="thm-breadcrumb list-unstyled">
-            <li><a href="/">Acceuil</a></li>
-            <li class="active">Services</li>
+            <li><a href="/">{{ t('services.pageHeader.breadcrumb.home') }}</a></li>
+            <li class="active">{{ t('services.pageHeader.breadcrumb.current') }}</li>
           </ul>
         </div>
       </div>
@@ -24,7 +24,7 @@
         <div class="row">
           <div
             v-for="(item, index) in services_data"
-            :key="item"
+            :key="item.id"
             class="col-xl-4 col-lg-4 wow fadeInUp"
             :data-wow-delay="100 * index + 'ms'"
           >
@@ -32,7 +32,7 @@
             <div class="services-one__single">
               <div class="services-one__img-box">
                 <div class="services-one__img">
-                  <img :src="item.image" alt="" />
+                  <img :src="item.image" :alt="t(`services.items.${item.id}.title`)" />
                 </div>
                 <div class="services-one__icon">
                   <span :class="item.icon"></span>
@@ -40,18 +40,18 @@
               </div>
               <div class="services-one__content">
                 <h3 class="services-one__title">
-                  <a :href="item.link">{{ item.name }}</a>
+                  <a :href="item.link">{{ t(`services.items.${item.id}.title`) }}</a>
                 </h3>
                 <p class="services-one__text">
-                  {{ item.description }}
+                  {{ t(`services.items.${item.id}.description`) }}
                 </p>
                 <div class="services-one__bottom">
-                  <a :href="item.link" class="services-one__btn"
-                    >En savoir plus</a
-                  >
-                  <a :href="item.link" class="services-one__arrow"
-                    ><span class="icon-right-arrow"></span
-                  ></a>
+                  <a :href="item.link" class="services-one__btn">
+                    {{ t(`services.items.${item.id}.button`) }}
+                  </a>
+                  <a :href="item.link" class="services-one__arrow">
+                    <span class="icon-right-arrow"></span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -64,47 +64,40 @@
 </template>
 
 <script setup>
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
 const services_data = [
   {
-    name: "Protection",
-    description:
-      "Assurez une sécurité optimale avec nos solutions de protection complètes adaptées à vos besoins.",
-    link: "/services/protection",
+    id: "protection",
     image: "/assets/images/services/serv.jpg",
     icon: "icon-strategy",
+    link: "/services/protection"
   },
   {
-    name: "Technologie",
-    description:
-      "Transformez votre sécurité avec des solutions technologiques de pointe avec notre expertise averée.",
-    link: "/services/technology",
+    id: "technology",
     image: "/assets/images/services/technologie.png",
-
     icon: "icon-mobile-analytics",
+    link: "/services/technology"
   },
   {
-    name: "Consultance",
-    description:
-      "Une stratégie solide est la clé d'une sécurité réussie. Nous pouvons vous accompagner.",
-    link: "/services/consultancy",
+    id: "consultancy",
     image: "/assets/images/services/consultance.png",
     icon: "icon-consultant",
+    link: "/services/consultancy"
   },
   {
-    name: "Formation",
-    description:
-      "Soyez prêt à faire face aux défis de sécurité grâce à nos formations professionnelles et pratiques.",
-    link: "/services/training",
+    id: "training",
     image: "/assets/images/services/form.jpg",
     icon: "icon-creative",
+    link: "/services/training"
   },
   {
-    name: "Autres services",
-    description:
-      "Une sécurité globale avec des solutions complémentaires adaptées à vos besoins spécifiques.",
-    link: "/services/others-security-services",
+    id: "others",
     image: "/assets/images/services/autres services.png",
     icon: "icon-analysis",
-  },
+    link: "/services/others-security-services"
+  }
 ];
 </script>
