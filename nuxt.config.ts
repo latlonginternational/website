@@ -4,7 +4,6 @@ export default defineNuxtConfig({
 	compatibilityDate: "2024-11-01",
 	devtools: { enabled: true },
 	css: ["~/public/assets/css/main.css"],
-
 	modules: ["nuxt-mail", "@nuxtjs/i18n"],
 
 	i18n: {

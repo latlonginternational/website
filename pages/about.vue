@@ -218,14 +218,12 @@
       </div>
     </section>
     <!--Testimonial One End-->
-   <!--Counter One Start-->
-		<section class="counter-one">
+  <!--Counter One Start-->
+  <section class="counter-one">
 			<div class="counter-one-wrap px-8 relative">
-				<div class="absolute top-0 z-10 opacity-40 left-0 right-0 bottom-0 bg-black" style="background-image: url(/assets/images/shapes/counter-one-shape.png)s"></div>
+				<div class="absolute top-0 z-10 opacity-40 left-0 right-0 bottom-0 bg-black" style="background-image: url(/assets/images/shapes/counter-one-shape.png) s"></div>
 				<div class="counter-one-shape z-0" style="background-image: url(/assets/images/shapes/counter-one-shape.png)"></div>
-				<div class="counter-one-img z-0" style="background-image: url(/assets/images/resources/ref.jpg)">
-					
-				</div>
+				<div class="counter-one-img z-0" style="background-image: url(/assets/images/resources/ref.jpg)"></div>
 				<div class="counter-one-shape-2 z-0">
 					<img src="/assets/images/shapes/counter-one-shape-2.png" alt="" />
 				</div>
@@ -236,7 +234,7 @@
 					<div class="counter-one__top">
 						<div class="row">
 							<div class="col-xl-5 col-lg-6">
-								<h2 class="counter-one__top-title">Votre référence en matière de sécurité.</h2>
+								<h2 class="counter-one__top-title">{{ t('home.counter.title') }}</h2>
 							</div>
 						</div>
 					</div>
@@ -244,37 +242,33 @@
 						<div class="row">
 							<div class="col-xl-12">
 								<ul class="counter-one__list list-unstyled">
-									<!-- Cas complétés -->
 									<li class="counter-one__single wow fadeInUp" data-wow-delay="100ms">
 										<div class="counter-one__icon">
 											<span class="icon-help"></span>
 										</div>
 										<div class="counter-one__content">
 											<h3 class="odometer" data-count="42">0</h3>
-											<p class="counter-one__text">Partenaires</p>
+											<p class="counter-one__text">{{ t('home.counter.stats.partners.label') }}</p>
 										</div>
 									</li>
-									<!-- Clients satisfaits -->
 									<li class="counter-one__single wow fadeInUp" data-wow-delay="200ms">
 										<div class="counter-one__icon">
 											<span class="icon-customer-review"></span>
 										</div>
 										<div class="counter-one__content">
 											<h3 class="odometer" data-count="1500">0</h3>
-											<p class="counter-one__text">Clients satisfaits</p>
+											<p class="counter-one__text">{{ t('home.counter.stats.clients.label') }}</p>
 										</div>
 									</li>
-									<!-- Experts en sécurité -->
 									<li class="counter-one__single wow fadeInUp" data-wow-delay="300ms">
 										<div class="counter-one__icon">
 											<span class="icon-consultant"></span>
 										</div>
 										<div class="counter-one__content">
 											<h3 class="odometer" data-count="300">00</h3>
-											<p class="counter-one__text">Experts en sécurité</p>
+											<p class="counter-one__text">{{ t('home.counter.stats.experts.label') }}</p>
 										</div>
 									</li>
-									<!-- Années d'expérience -->
 								</ul>
 							</div>
 						</div>
@@ -282,6 +276,7 @@
 				</div>
 			</div>
 		</section>
+		<!--Counter One End-->
 
     <!--Team Two Start-->
     <section class="team-two">
