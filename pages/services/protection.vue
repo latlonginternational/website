@@ -82,16 +82,16 @@
                   {{ t('services.protection.content.title') }}
                 </h3>
                 <div class="space-y-6">
-                  <p
+                <p
                     v-for="i in 4"
                     :key="i"
-                    :class="[
+                  :class="[
                       i === 1 ? 'text-blue-forced' : '',
                       'service-details__text-1',
-                    ]"
-                  >
+                  ]"
+                >
                     {{ t(`services.protection.content.details.detail${i}`) }}
-                  </p>
+                </p>
                 </div>
               </div>
               <div class="service-details__bottom">
@@ -206,7 +206,7 @@ const captureOriginalStyles = () => {
     sectionBottom.value = rect.top + rect.height
 
     if (!originalStyles.value) {
-      originalStyles.value = {
+    originalStyles.value = {
         padding: window.getComputedStyle(serviceSection.value).padding,
         margin: window.getComputedStyle(serviceSection.value).margin,
         border: window.getComputedStyle(serviceSection.value).border,

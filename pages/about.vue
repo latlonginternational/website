@@ -286,19 +286,25 @@
           <h2 class="section-title__title">{{ t('about.team.title') }}</h2>
         </div>
         <div class="row">
-          <!-- Katja Reith -->
-          <div class="col-xl-3 col-lg-3 wow fadeInUp" data-wow-delay="100ms">
+          <div 
+            v-for="(member, index) in teamMembers" 
+            :key="index"
+            class="col-xl-3 col-lg-3 wow fadeInUp" 
+            :data-wow-delay="`${(index + 1) * 100}ms`"
+          >
             <div class="team-one__single">
               <div class="team-one__img">
-                <img src="/assets/images/team/4.png" alt="Katja Reith, CEO" />
+                <img :src="member.image" :alt="`${member.name}, ${member.position}`" />
                 <ul class="list-unstyled team-one__social">
                   <li>
-                    <a href="mailto:katja@latlongcongo.com"
-                      ><i class="fas fa-envelope"></i
-                    ></a>
+                    <a :href="`mailto:${member.email}`">
+                      <i class="fas fa-envelope"></i>
+                    </a>
                   </li>
                   <li>
-                    <a href="tel:+243811442569"><i class="fas fa-phone"></i></a>
+                    <a :href="`tel:${member.tel}`">
+                      <i class="fas fa-phone"></i>
+                    </a>
                   </li>
                   <li>
                     <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -306,89 +312,8 @@
                 </ul>
               </div>
               <div class="team-one__content">
-                <h4 class="team-one__name">Katja Reith</h4>
-                <p class="team-one__title">CEO</p>
-              </div>
-            </div>
-          </div>
-          <!-- Marcellin Kabundi -->
-          <div class="col-xl-3 col-lg-3 wow fadeInUp" data-wow-delay="200ms">
-            <div class="team-one__single">
-              <div class="team-one__img">
-                <img
-                  src="/assets/images/team/2.png"
-                  alt="Marcellin Kabundi, DG"
-                />
-                <ul class="list-unstyled team-one__social">
-                  <li>
-                    <a href="mailto:admin@latlongcongo.com"
-                      ><i class="fas fa-envelope"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="tel:+243823916727"><i class="fas fa-phone"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="team-one__content">
-                <h4 class="team-one__name">Marcellin Kabundi</h4>
-                <p class="team-one__title">DG</p>
-              </div>
-            </div>
-          </div>
-          <!-- Gilbert Dilis -->
-          <div class="col-xl-3 col-lg-3 wow fadeInUp" data-wow-delay="300ms">
-            <div class="team-one__single">
-              <div class="team-one__img">
-                <img src="/assets/images/team/1723267753376.jpeg" alt="Roger Nde, DO" />
-                <ul class="list-unstyled team-one__social">
-                  <li>
-                    <a href="mailto:roger.nde@latlongcongo.com"
-                      ><i class="fas fa-envelope"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="tel:+243992971952"><i class="fas fa-phone"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="team-one__content">
-                <h4 class="team-one__name">Roger Nde</h4>
-                <p class="team-one__title">DO</p>
-              </div>
-            </div>
-          </div>
-          <!-- Mack Mupita Henry -->
-          <div class="col-xl-3 col-lg-3 wow fadeInUp" data-wow-delay="400ms">
-            <div class="team-one__single">
-              <div class="team-one__img">
-                <img
-                  src="/assets/images/team/1.png"
-                  alt="Mack Mupita Henry, BM"
-                />
-                <ul class="list-unstyled team-one__social">
-                  <li>
-                    <a href="mailto:henry@latlongcongo.com"
-                      ><i class="fas fa-envelope"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="tel:+243993400082"><i class="fas fa-phone"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="team-one__content">
-                <h4 class="team-one__name">Mack Mupita Henry</h4>
-                <p class="team-one__title">BM</p>
+                <h4 class="team-one__name">{{ member.name }}</h4>
+                <p class="team-one__title">{{ member.position }}</p>
               </div>
             </div>
           </div>
@@ -496,6 +421,37 @@ const testimonials = ref([
     text: 'home.testimonials.items.3.text',
     author: 'home.testimonials.items.3.author',
     position: 'home.testimonials.items.3.position'
+  }
+])
+
+const teamMembers = ref([
+  {
+    name: t('about.team.items.1.name'),
+    position: t('about.team.items.1.position'),
+    image: t('about.team.items.1.image'),
+    tel: t('about.team.items.1.tel'),
+    email: `${t('about.team.items.1.email.name')}@${t('about.team.items.1.email.domain')}`
+  },
+  {
+    name: t('about.team.items.2.name'),
+    position: t('about.team.items.2.position'),
+    image: t('about.team.items.2.image'),
+    tel: t('about.team.items.2.tel'),
+    email: `${t('about.team.items.2.email.name')}@${t('about.team.items.2.email.domain')}`
+  },
+  {
+    name: t('about.team.items.3.name'),
+    position: t('about.team.items.3.position'),
+    image: t('about.team.items.3.image'),
+    tel: t('about.team.items.3.tel'),
+    email: `${t('about.team.items.3.email.name')}@${t('about.team.items.3.email.domain')}`
+  },
+  {
+    name: t('about.team.items.4.name'),
+    position: t('about.team.items.4.position'),
+    image: t('about.team.items.4.image'),
+    tel: t('about.team.items.4.tel'),
+    email: `${t('about.team.items.4.email.name')}@${t('about.team.items.4.email.domain')}`
   }
 ])
 

@@ -58,17 +58,17 @@
 		},
 		"details": {
 			"callUs": {
-				"label": "Call Us",
+				"label": "Call us",
 				"phone": "+243 810 041 500"
 			},
 			"email": {
-				"label": "Send Email",
+				"label": "Send us an email",
 				"username": "info",
 				"domain": "latlongcongo.com"
 			},
 			"visit": {
-				"label": "Visit Our Office",
-				"address": "325 Blvd Kanyamuhanga\nQ. des Volcans, Goma, North Kivu"
+				"label": "Visit our office",
+				"address": "N° 325 Boulevard Kanyamuhanga, Goma, RDC​"
 			}
 		},
 		"form": {
@@ -332,7 +332,49 @@
 		},
 		"team": {
 			"tagline": "Management team",
-			"title": "Meet our experts"
+			"title": "Meet our experts",
+			"items": {
+				"1": {
+					"name": "Katja Reith",
+					"position": "Chief Executive Officer",
+					"image": "/assets/images/team/4.png",
+					"tel": "+243 811 442 569",
+					"email": {
+						"name": "katja",
+						"domain": "latlongcongo.com"
+					}
+				},
+				"2": {
+					"name": "Marcellin Kabundi",
+					"position": "General Manager",
+					"image": "/assets/images/team/2.png",
+					"tel": "+243 811 442 569",
+					"email": {
+						"name": "admin",
+						"domain": "latlongcongo.com"
+					}
+				},
+				"3": {
+					"name": "Roger Nde",
+					"position": "Chief Financial Officer",
+					"image": "/assets/images/team/1723267753376.jpeg",
+					"tel": "+243 992 971 952",
+					"email": {
+						"name": "roger.nde",
+						"domain": "latlongcongo.com"
+					}
+				},
+				"4": {
+					"name": "Mack Mupita Henry",
+					"position": "Business Manager",
+					"image": "/assets/images/team/1.png",
+					"tel": "+243 993 400 082",
+					"email": {
+						"name": "henry",
+						"domain": "latlongcongo.com"
+					}
+				}
+			}
 		},
 		"cta": {
 			"title": "World-class\nsecurity solutions",

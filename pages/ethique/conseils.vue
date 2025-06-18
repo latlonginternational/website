@@ -81,21 +81,21 @@
                 <ul class="sidebar__post-list list-unstyled">
                   <template v-for="i in 4" :key="i">
                     <li v-if="t(`ethics.advice.sidebar.relatedPages.items.${i}.title`)">
-                      <div class="sidebar__post-image">
+                    <div class="sidebar__post-image">
                         <img :src="`/assets/images/blog/lp-1-${getImageIndex(t(`ethics.advice.sidebar.relatedPages.items.${i}.key`))}.jpg`" 
                              :alt="t(`ethics.advice.sidebar.relatedPages.items.${i}.title`)" />
-                      </div>
-                      <div class="sidebar__post-content">
-                        <h3>
+                    </div>
+                    <div class="sidebar__post-content">
+                      <h3>
                           <span class="sidebar__post-content-meta">
                             <i class="far fa-user-circle"></i>{{ t(`ethics.advice.sidebar.relatedPages.items.${i}.author`) }}
                           </span>
                           <a :href="getPageUrl(t(`ethics.advice.sidebar.relatedPages.items.${i}.key`))">
                             {{ t(`ethics.advice.sidebar.relatedPages.items.${i}.title`) }}
                           </a>
-                        </h3>
-                      </div>
-                    </li>
+                      </h3>
+                    </div>
+                  </li>
                   </template>
                 </ul>
               </div>
