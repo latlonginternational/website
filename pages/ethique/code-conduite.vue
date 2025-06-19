@@ -148,7 +148,7 @@ const getPageUrl = (key: string): string => {
 }
 
 definePageMeta({
-  title: 'Code de conduite - LatLong',
+  title: 'Code de conduite - Latlong',
   description: 'Découvrez notre Code de conduite professionnel qui guide le comportement de nos employés et partenaires.'
 })
 </script> 

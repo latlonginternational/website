@@ -44,7 +44,7 @@ if (!preg_match('/^\+243[0-9]{9}$/', $phone)) {
 
 $mail_subject = 'Nouveau message de contact - ' . $subject;
 
-$body = "Nouveau message de contact depuis le site web LatLong International\n\n";
+$body = "Nouveau message de contact depuis le site web Latlong International\n\n";
 $body .= "Nom: " . $name . "\n";
 $body .= "Email: " . $email . "\n";
 $body .= "Téléphone: " . $phone . "\n";

@@ -267,7 +267,7 @@ const service_info = [
     icon: "icon-mobile-analytics",
 
     details: [
-      "LatLong International intègre les technologies les plus modernes pour renforcer votre sécurité, notamment le suivi en temps réel, les systèmes d'alarme et les solutions de cybersécurité.",
+      "Latlong International intègre les technologies les plus modernes pour renforcer votre sécurité, notamment le suivi en temps réel, les systèmes d'alarme et les solutions de cybersécurité.",
       "Nous sélectionnons et formons des agents de sécurité hautement qualifiés à l'utilisation de technologies avancées telles que les systèmes de suivi GPS et les boutons d'alarme d'urgence.",
 
       "Nos infrastructures technologiques, comme les systèmes de détection de fumée et d'intrusion, garantissent une surveillance permanente et réactive. La cybersécurité est au cœur de nos priorités, avec des solutions avancées pour protéger vos données et réseaux.",

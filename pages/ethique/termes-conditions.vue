@@ -148,7 +148,7 @@ const getPageUrl = (key: string): string => {
 }
 
 	definePageMeta({
-	title: 'Termes et conditions - LatLong',
+	title: 'Termes et conditions - Latlong',
 	description: 'Consultez nos conditions générales d\'utilisation et nos engagements envers nos clients.'
 })
 </script>

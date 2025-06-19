@@ -72,7 +72,7 @@
                   <div class="get-to-know__img-1">
                     <img
                       src="/assets/images/resources/blacks.jpg"
-                      alt="Équipe LatLong"
+                      alt="Équipe Latlong"
                     />
                   </div>
                 </li>
@@ -80,7 +80,7 @@
                   <div class="get-to-know__img-2">
                     <img
                       src="/assets/images/resources/a propos-partmatsec1.png"
-                      alt="Opérations LatLong"
+                      alt="Opérations Latlong"
                     />
                   </div>
                 </li>

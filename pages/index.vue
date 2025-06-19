@@ -160,7 +160,7 @@
 					<div class="col-xl-6">
 						<div class="about-one__left wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
 							<div class="about-one__img">
-								<img class="sm:h-[520px] object-cover" src="/assets/images/blog/art2.jpg" alt="Map showing LatLong" />
+								<img class="sm:h-[520px] object-cover" src="/assets/images/blog/art2.jpg" alt="Map showing Latlong" />
 							</div>
 							<div class="about-one__shape">
 								<img src="/assets/images/shapes/about-one-shape.png" alt="" />
@@ -704,7 +704,7 @@ const ethiques = ref<Ethique[]>([
 		id: 1,
 		image: "/assets/images/blog/ethique-conseils.jpg",
 		date: 'home.ethics.items.councils.date',
-		auteur: "LatLong",
+		auteur: "Latlong",
 		commentaires: 0,
 		titre: 'home.ethics.items.councils.title',
 		description: 'home.ethics.items.councils.description',
@@ -714,7 +714,7 @@ const ethiques = ref<Ethique[]>([
 		id: 2,
 		image: "/assets/images/blog/ethique-rse.jpg",
 		date: 'home.ethics.items.csr.date',
-		auteur: "LatLong",
+		auteur: "Latlong",
 		commentaires: 0,
 		titre: 'home.ethics.items.csr.title',
 		description: 'home.ethics.items.csr.description',
@@ -724,7 +724,7 @@ const ethiques = ref<Ethique[]>([
 		id: 3,
 		image: "/assets/images/blog/ethique-termes.jpg",
 		date: 'home.ethics.items.terms.date',
-		auteur: "LatLong",
+		auteur: "Latlong",
 		commentaires: 0,
 		titre: 'home.ethics.items.terms.title',
 		description: 'home.ethics.items.terms.description',
@@ -734,7 +734,7 @@ const ethiques = ref<Ethique[]>([
 		id: 4,
 		image: "/assets/images/blog/ethique-code.jpg",
 		date: 'home.ethics.items.code.date',
-		auteur: "LatLong",
+		auteur: "Latlong",
 		commentaires: 0,
 		titre: 'home.ethics.items.code.title',
 		description: 'home.ethics.items.code.description',
@@ -744,7 +744,7 @@ const ethiques = ref<Ethique[]>([
 		id: 5,
 		image: "/assets/images/blog/ethique-icoca.jpg",
 		date: 'home.ethics.items.icoca.date',
-		auteur: "LatLong",
+		auteur: "Latlong",
 		commentaires: 0,
 		titre: 'home.ethics.items.icoca.title',
 		description: 'home.ethics.items.icoca.description',

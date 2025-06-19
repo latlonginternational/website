@@ -148,7 +148,7 @@ const getPageUrl = (key: string): string => {
 }
 
 definePageMeta({
-  title: 'ICoCA - LatLong',
+  title: 'ICoCA - Latlong',
   description: 'Découvrez notre engagement en tant que membre de l\'International Code of Conduct Association (ICoCA) et nos standards internationaux.'
 })
 </script> 

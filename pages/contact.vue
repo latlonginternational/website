@@ -62,8 +62,12 @@
             <div class="contact-page-details__right">
               <ul class="list-unstyled contact-page-details__list">
                 <li>
-                  <span>{{ t('contact.details.callUs.label') }}</span>
-                  <p><a href="tel:+243810041500">{{ t('contact.details.callUs.phone') }}</a></p>
+                  <span>{{ t('common.callUs_control_room') }}</span>
+                  <p><a href="tel:+243810041500">+243 810 041 500</a></p>
+                </li>
+                <li>
+                  <span>{{ t('common.callUs_business_manager') }}</span>
+                  <p><a href="tel:+243993400082">+243 993 400 082</a></p>
                 </li>
                 <li>
                   <span>{{ t('contact.details.email.label') }}</span>
@@ -79,10 +83,9 @@
                 </li>
               </ul>
               <div class="contact-page-details__social">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/LatlongInternational/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/company/latlong-international/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://wa.me/243993400082"><i class="fab fa-whatsapp"></i></a>
               </div>
             </div>
           </div>

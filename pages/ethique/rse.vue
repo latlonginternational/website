@@ -210,7 +210,7 @@ const getPageUrl = (key: string): string => {
 };
 
 definePageMeta({
-  title: "RSE - LatLong",
+  title: "RSE - Latlong",
   description:
     "Découvrez notre engagement en matière de Responsabilité sociétale de l'Entreprise et nos initiatives pour un impact positif.",
 });

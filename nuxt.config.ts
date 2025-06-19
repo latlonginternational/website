@@ -89,27 +89,27 @@ export default defineNuxtConfig({
 
 	app: {
 		head: {
-			title: "LatLong International", // Autres méta-informations
+			title: "Latlong International", // Autres méta-informations
 
 			meta: [
 				{ charset: "utf-8" }, // Définir le charset
 				{ name: "viewport", content: "width=device-width, initial-scale=1.0" }, // Viewport responsive
-				{ name: "description", content: "LatLong International - Your Gateway to Secure Business in Africa" }, // Description
+				{ name: "description", content: "Latlong International - Your Gateway to Secure Business in Africa" }, // Description
 				{ name: "format-detection", content: "telephone=no" },
-				{ property: "og:title", content: "LatLong International" },
+				{ property: "og:title", content: "Latlong International" },
 				{
 					property: "og:description",
-					content: "LatLong International - Your Gateway to Secure Business in Africa"
+					content: "Latlong International - Your Gateway to Secure Business in Africa"
 				},
-				{ property: "og:url", content: "https://latlong.witoxr.app" },
+				{ property: "og:url", content: "https://Latlong.witoxr.app" },
 				{
 					property: "og:image",
 					content: "/cover.png"
 				},
-				{ name: "twitter:title", content: "LatLong International" },
+				{ name: "twitter:title", content: "Latlong International" },
 				{
 					name: "twitter:description",
-					content: "LatLong International - Your Gateway to Secure Business in Africa"
+					content: "Latlong International - Your Gateway to Secure Business in Africa"
 				},
 				{
 					name: "twitter:image",

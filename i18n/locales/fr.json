@@ -1,7 +1,7 @@
 {
 	"meta": {
-		"title": "LatLong International",
-		"description": "LatLong International - votre porte d'entrée pour des affaires sécurisées en Afrique"
+		"title": "Latlong International",
+		"description": "Latlong International - votre porte d'entrée pour des affaires sécurisées en Afrique"
 	},
 	"navigation": {
 		"home": "Accueil",
@@ -33,6 +33,8 @@
 		"getStarted": "Commencer",
 		"loading": "Chargement...",
 		"callUs": "Appelez-nous",
+		"callUs_control_room": "Notre salle de contrôle",
+		"callUs_business_manager": "Notre gestion commerciale",
 		"contacts": "Informations de contact",
 		"language": {
 			"title": "Langue",
@@ -49,11 +51,11 @@
 			}
 		},
 		"about": {
-			"title": "À propos de LatLong International",
+			"title": "À propos de Latlong International",
 			"content": {
-				"text1": "LatLong International est une entreprise de sécurité opérant dans l'est de la RDC depuis 2012, avec une expertise dans la protection, la technologie et les solutions de sécurité avancées.",
+				"text1": "Latlong International est une entreprise de sécurité opérant dans l'est de la RDC depuis 2012, avec une expertise dans la protection, la technologie et les solutions de sécurité avancées.",
 				"text2": "Notre mission est de fournir des solutions de sécurité intégrées de classe mondiale en dépassant constamment les attentes grâce à l'innovation et l'excellence opérationnelle.",
-				"signature": "Équipe LatLong"
+				"signature": "Équipe Latlong"
 			}
 		},
 		"details": {
@@ -77,7 +79,7 @@
 		}
 	},
 	"footer": {
-		"description": "LatLong International est votre partenaire de confiance pour la sécurité et la protection en RD Congo.",
+		"description": "Latlong International est votre partenaire de confiance pour la sécurité et la protection en RD Congo.",
 		"quickLinks": "Liens Rapides",
 		"contact": {
 			"title": "Contact",
@@ -96,7 +98,7 @@
 		"emailPlaceholder": "Votre adresse email",
 		"subscribe": "S'abonner",
 		"copyright": {
-			"text": "© {year} LatLong International. Tous droits réservés.",
+			"text": "© {year} Latlong International. Tous droits réservés.",
 			"developedBy": "Développé par",
 			"developer": "Wito XR Studio"
 		},
@@ -163,7 +165,7 @@
 		"about": {
 			"tagline": "Notre offre",
 			"title": "Votre partenaire en gestion de sécurité",
-			"description": "LatLong vous offre des outils modernes pour une sécurité renforcée et une gestion optimisée de vos opérations.",
+			"description": "Latlong vous offre des outils modernes pour une sécurité renforcée et une gestion optimisée de vos opérations.",
 			"points": {
 				"realtime": "Surveillance en temps réel",
 				"protection": "Protection des biens et des personnes",
@@ -183,7 +185,7 @@
 		"experience": {
 			"tagline": "Avantages & solutions",
 			"title": "Expertise & satisfaction élevée",
-			"description": "LatLong propose des solutions de sécurité fiables, combinant expertise locale et technologies avancées.",
+			"description": "Latlong propose des solutions de sécurité fiables, combinant expertise locale et technologies avancées.",
 			"progress": {
 				"affordable": {
 					"title": "Prix abordable",
@@ -200,15 +202,15 @@
 			},
 			"faq": {
 				"services": {
-					"question": "Quels types de services offre LatLong ?",
-					"answer": "LatLong propose des services de sécurité physique, de surveillance électronique, de gestion des risques et de protection d'événements, adaptés aux besoins spécifiques de ses clients."
+					"question": "Quels types de services offre Latlong ?",
+					"answer": "Latlong propose des services de sécurité physique, de surveillance électronique, de gestion des risques et de protection d'événements, adaptés aux besoins spécifiques de ses clients."
 				},
 				"remote": {
-					"question": "LatLong peut-il intervenir dans des zones éloignées ?",
-					"answer": "Oui, LatLong est équipé pour fournir des services dans des zones éloignées ou difficiles d'accès grâce à une équipe expérimentée et des outils adaptés à ces environnements."
+					"question": "Latlong peut-il intervenir dans des zones éloignées ?",
+					"answer": "Oui, Latlong est équipé pour fournir des services dans des zones éloignées ou difficiles d'accès grâce à une équipe expérimentée et des outils adaptés à ces environnements."
 				},
 				"quality": {
-					"question": "Comment LatLong garantit-il la qualité de ses services ?",
+					"question": "Comment Latlong garantit-il la qualité de ses services ?",
 					"answer": "La qualité est assurée grâce à une formation continue du personnel, l'utilisation de technologies de pointe, et un suivi régulier pour s'assurer que les besoins des clients sont toujours satisfaits."
 				}
 			}
@@ -222,17 +224,17 @@
 			"title": "Ce qu'ils disent",
 			"items": {
 				"1": {
-					"text": "LatLong a transformé notre gestion de sécurité. L'équipe est proactive et toujours disponible pour répondre à nos besoins spécifiques.",
+					"text": "Latlong a transformé notre gestion de sécurité. L'équipe est proactive et toujours disponible pour répondre à nos besoins spécifiques.",
 					"author": "Christine Muhindo",
 					"position": "CEO - Amaliza Store"
 				},
 				"2": {
-					"text": "Nous travaillons avec LatLong depuis plusieurs années. Leur professionnalisme et leur engagement sont exceptionnels.",
+					"text": "Nous travaillons avec Latlong depuis plusieurs années. Leur professionnalisme et leur engagement sont exceptionnels.",
 					"author": "Kevin Banza",
 					"position": "Client"
 				},
 				"3": {
-					"text": "LatLong nous a aidés à sécuriser nos opérations. Nous recommandons leurs services à toute organisation recherchant une sécurité fiable.",
+					"text": "Latlong nous a aidés à sécuriser nos opérations. Nous recommandons leurs services à toute organisation recherchant une sécurité fiable.",
 					"author": "Jessica Byamungu",
 					"position": "Directrice Habana Habi"
 				}
@@ -298,7 +300,7 @@
 		"getToKnow": {
 			"tagline": "Faites connaissance avec nous",
 			"title": "Votre partenaire pour une sécurité fiable",
-			"description": "LatLong Congo, fondée en 2012, est un leader en solutions de sécurité dans l'est de la RDC. Nous combinons expertise locale et technologie moderne pour protéger vos biens et vos intérêts.",
+			"description": "Latlong Congo, fondée en 2012, est un leader en solutions de sécurité dans l'est de la RDC. Nous combinons expertise locale et technologie moderne pour protéger vos biens et vos intérêts.",
 			"points": {
 				"qualified": "Personnel qualifié et expérimenté.",
 				"technology": "Technologies modernes de surveillance.",
@@ -339,10 +341,12 @@
 					"position": "Présidente Directrice Générale",
 					"image": "/assets/images/team/4.png",
 					"tel": "+243 811 442 569",
+					
 					"email": {
 						"name": "katja",
 						"domain": "latlongcongo.com"
-					}
+					},
+					"linkedin": "https://www.linkedin.com/in/katja-reith-1089337a/"
 				},
 				"2": {
 					"name": "Marcellin Kabundi",
@@ -350,9 +354,10 @@
 					"image": "/assets/images/team/2.png",
 					"tel": "+243 811 442 569",
 					"email": {
-						"name": "admin",
+						"name": "marcellin.kabundi",
 						"domain": "latlongcongo.com"
-					}
+					},
+					"linkedin": "#"
 				},
 				"3": {
 					"name": "Roger Nde",
@@ -362,7 +367,8 @@
 					"email": {
 						"name": "roger.nde",
 						"domain": "latlongcongo.com"
-					}
+					},
+					"linkedin": "https://www.linkedin.com/in/roger-nde-b-sc-fmva%C2%AE-fpwm%E2%84%A2-ftip%E2%84%A2-esg-mba-cand-434a70166/"
 				},
 				"4": {
 					"name": "Mack Mupita Henry",
@@ -372,7 +378,8 @@
 					"email": {
 						"name": "henry",
 						"domain": "latlongcongo.com"
-					}
+					},
+					"linkedin": "https://www.linkedin.com/in/henry-mack-2a9651298/"
 				}
 			}
 		},
@@ -505,7 +512,7 @@
 			"content": {
 				"title": "Technologie",
 				"details": {
-					"detail1": "LatLong International intègre les technologies les plus modernes pour renforcer votre sécurité, notamment le suivi en temps réel, les systèmes d'alarme et les solutions de cybersécurité.",
+					"detail1": "Latlong International intègre les technologies les plus modernes pour renforcer votre sécurité, notamment le suivi en temps réel, les systèmes d'alarme et les solutions de cybersécurité.",
 					"detail2": "Nous sélectionnons et formons des agents de sécurité hautement qualifiés à l'utilisation de technologies avancées telles que les systèmes de suivi GPS et les boutons d'alarme d'urgence.",
 					"detail3": "Nos infrastructures technologiques, comme les systèmes de détection de fumée et d'intrusion, garantissent une surveillance permanente et réactive. La cybersécurité est au cœur de nos priorités, avec des solutions avancées pour protéger vos données et réseaux."
 				},
@@ -564,7 +571,7 @@
 			"content": {
 				"title": "Consultance",
 				"details": {
-					"detail1": "LatLong International propose des services de conseil adaptés pour analyser vos besoins, concevoir des stratégies de sécurité, et gérer efficacement les crises.",
+					"detail1": "Latlong International propose des services de conseil adaptés pour analyser vos besoins, concevoir des stratégies de sécurité, et gérer efficacement les crises.",
 					"detail2": "Nos évaluations de sécurité approfondies identifient les vulnérabilités potentielles pour anticiper les menaces.",
 					"detail3": "Des stratégies d'évacuation et de gestion de crise sur mesure garantissent une réponse rapide et coordonnée.",
 					"detail4": "Nos experts collaborent avec vos équipes pour assurer une préparation optimale, incluant santé et sécurité, enquêtes et audits complets."
@@ -624,7 +631,7 @@
 			"content": {
 				"title": "Formations",
 				"details": {
-					"detail1": "LatLong International propose des formations spécialisées pour sensibiliser, préparer et renforcer les compétences de vos équipes face aux situations de risque.",
+					"detail1": "Latlong International propose des formations spécialisées pour sensibiliser, préparer et renforcer les compétences de vos équipes face aux situations de risque.",
 					"detail2": "Nous mettons l'accent sur la prévention et la collecte de renseignements pour anticiper les menaces avant qu'elles ne se manifestent.",
 					"detail3": "Nos formations incluent des sessions sur les premiers secours, la conduite défensive, et la gestion de la sécurité en cas de crise.",
 					"detail4": "Nos programmes sont adaptés à chaque client pour répondre aux besoins spécifiques de leur environnement et secteur."
@@ -684,7 +691,7 @@
 			"content": {
 				"title": "Autres services de sécurité",
 				"details": {
-					"detail1": "LatLong International offre une gamme étendue de services, de la lutte contre l'incendie au transport sécurisé, pour compléter votre stratégie de sécurité.",
+					"detail1": "Latlong International offre une gamme étendue de services, de la lutte contre l'incendie au transport sécurisé, pour compléter votre stratégie de sécurité.",
 					"detail2": "Notre service de transport de fonds et d'évacuation d'urgence assure la sécurité de vos biens et personnels dans toutes les situations.",
 					"detail3": "Nous proposons des solutions de surveillance avancée, incluant la gestion des ressources énergétiques avec des systèmes modernes.",
 					"detail4": "Nos unités K-9 spécialement entraînées apportent une expertise supplémentaire pour la détection et la protection."
@@ -738,31 +745,31 @@
 					"title": "Conseils",
 					"description": "Nos principes directeurs et conseils pour maintenir les plus hauts standards éthiques dans nos opérations quotidiennes.",
 					"date": "15 mars 2024",
-					"author": "LatLong"
+					"author": "Latlong"
 				},
 				"csr": {
 					"title": "Responsabilité sociétale de l'entreprise",
 					"description": "Notre engagement envers le développement durable, l'impact social positif et la protection de l'environnement.",
 					"date": "20 mars 2024",
-					"author": "LatLong"
+					"author": "Latlong"
 				},
 				"terms": {
 					"title": "Termes et conditions",
 					"description": "Les conditions générales qui régissent nos services et notre relation avec nos clients et partenaires.",
 					"date": "25 mars 2024",
-					"author": "LatLong"
+					"author": "Latlong"
 				},
 				"code": {
 					"title": "Code de conduite",
 					"description": "Notre code de conduite professionnel qui guide le comportement de nos employés et partenaires.",
 					"date": "30 mars 2024",
-					"author": "LatLong"
+					"author": "Latlong"
 				},
 				"icoca": {
 					"title": "ICoCA - International Code of Conduct Association",
 					"description": "Notre adhésion et conformité aux standards internationaux de l'ICoCA pour les services de sécurité privée.",
 					"date": "5 avril 2024",
-					"author": "LatLong"
+					"author": "Latlong"
 				}
 			}
 		},
@@ -782,7 +789,7 @@
 			"content": {
 				"date": "Mars",
 				"title": "Nos principes directeurs",
-				"intro": "Chez LatLong, nous nous engageons à maintenir les plus hauts standards éthiques dans toutes nos opérations. Nos principes directeurs constituent le fondement de notre approche professionnelle et de notre engagement envers l'excellence.",
+				"intro": "Chez Latlong, nous nous engageons à maintenir les plus hauts standards éthiques dans toutes nos opérations. Nos principes directeurs constituent le fondement de notre approche professionnelle et de notre engagement envers l'excellence.",
 				"principles": {
 					"integrity": {
 						"title": "Intégrité et transparence",
@@ -798,7 +805,7 @@
 					}
 				},
 				"author": {
-					"name": "LatLong International",
+					"name": "Latlong International",
 					"description": "Ces principes ne sont pas de simples déclarations, mais des engagements concrets que nous mettons en œuvre quotidiennement. Chaque membre de notre équipe est formé et encouragé à adhérer à ces valeurs, assurant ainsi une cohérence dans toutes nos opérations."
 				}
 			},
@@ -808,22 +815,22 @@
 					"items": {
 						"1": {
 							"title": "Responsabilité sociétale",
-							"author": "LatLong",
+							"author": "Latlong",
 							"key": "csr"
 						},
 						"2": {
 							"title": "Code de conduite",
-							"author": "LatLong",
+							"author": "Latlong",
 							"key": "code"
 						},
 						"3": {
 							"title": "Termes et conditions",
-							"author": "LatLong",
+							"author": "Latlong",
 							"key": "terms"
 						},
 						"4": {
 							"title": "ICoCA",
-							"author": "LatLong",
+							"author": "Latlong",
 							"key": "icoca"
 						}
 					}
@@ -862,7 +869,7 @@
 			"content": {
 				"date": "Mars",
 				"title": "Notre engagement RSE",
-				"intro": "La Responsabilité sociétale de l'Entreprise (RSE) est au cœur de notre stratégie chez LatLong. Nous nous engageons à contribuer positivement au développement durable de notre communauté tout en maintenant des standards élevés de performance professionnelle.",
+				"intro": "La Responsabilité sociétale de l'Entreprise (RSE) est au cœur de notre stratégie chez Latlong. Nous nous engageons à contribuer positivement au développement durable de notre communauté tout en maintenant des standards élevés de performance professionnelle.",
 				"sections": {
 					"1": {
 						"title": "Impact social",
@@ -882,7 +889,7 @@
 					}
 				},
 				"author": {
-					"name": "LatLong International",
+					"name": "Latlong International",
 					"description": "Notre engagement RSE est une partie intégrante de notre identité d'entreprise. Nous croyons fermement que notre succès est lié à notre capacité à créer un impact positif sur la société et l'environnement."
 				}
 			},
@@ -902,22 +909,22 @@
 					"items": {
 						"1": {
 							"title": "Conseils",
-							"author": "LatLong",
+							"author": "Latlong",
 							"key": "conseils"
 						},
 						"2": {
 							"title": "Code de conduite",
-							"author": "LatLong",
+							"author": "Latlong",
 							"key": "code"
 						},
 						"3": {
 							"title": "Termes et conditions",
-							"author": "LatLong",
+							"author": "Latlong",
 							"key": "terms"
 						},
 						"4": {
 							"title": "ICoCA",
-							"author": "LatLong",
+							"author": "Latlong",
 							"key": "icoca"
 						}
 					}
@@ -946,11 +953,11 @@
 			"content": {
 				"date": "Mars",
 				"title": "Conditions générales d'utilisation",
-				"intro": "Les présentes conditions générales régissent l'utilisation des services de LatLong International SARL. En utilisant nos services, vous acceptez ces conditions dans leur intégralité.",
+				"intro": "Les présentes conditions générales régissent l'utilisation des services de Latlong International SARL. En utilisant nos services, vous acceptez ces conditions dans leur intégralité.",
 				"sections": {
 					"1": {
 						"title": "Services et engagements",
-						"description": "LatLong s'engage à fournir des services de sécurité professionnels conformes aux normes internationales, respecter les délais convenus dans les contrats, maintenir la confidentialité des informations clients, et assurer la formation continue de son personnel."
+						"description": "Latlong s'engage à fournir des services de sécurité professionnels conformes aux normes internationales, respecter les délais convenus dans les contrats, maintenir la confidentialité des informations clients, et assurer la formation continue de son personnel."
 					},
 					"2": {
 						"title": "Obligations des clients",
@@ -966,8 +973,8 @@
 					}
 				},
 				"author": {
-					"name": "LatLong International",
-					"description": "LatLong se réserve le droit de modifier ces conditions à tout moment. Les modifications prennent effet dès leur publication sur notre site. Nous encourageons nos clients à consulter régulièrement cette page pour rester informés des changements."
+					"name": "Latlong International",
+					"description": "Latlong se réserve le droit de modifier ces conditions à tout moment. Les modifications prennent effet dès leur publication sur notre site. Nous encourageons nos clients à consulter régulièrement cette page pour rester informés des changements."
 				}
 			},
 			"meta": {
@@ -986,22 +993,22 @@
 					"items": {
 						"1": {
 							"title": "Conseils",
-							"author": "LatLong",
+							"author": "Latlong",
 							"key": "conseils"
 						},
 						"2": {
 							"title": "Responsabilité sociétale",
-							"author": "LatLong",
+							"author": "Latlong",
 							"key": "csr"
 						},
 						"3": {
 							"title": "Code de conduite",
-							"author": "LatLong",
+							"author": "Latlong",
 							"key": "code"
 						},
 						"4": {
 							"title": "ICoCA",
-							"author": "LatLong",
+							"author": "Latlong",
 							"key": "icoca"
 						}
 					}
@@ -1030,7 +1037,7 @@
 			"content": {
 				"date": "Mars",
 				"title": "Notre code de conduite professionnel",
-				"intro": "Le Code de conduite de LatLong définit les standards éthiques et professionnels que tous nos employés et partenaires doivent respecter. Ce code reflète nos valeurs fondamentales et notre engagement envers l'excellence.",
+				"intro": "Le Code de conduite de Latlong définit les standards éthiques et professionnels que tous nos employés et partenaires doivent respecter. Ce code reflète nos valeurs fondamentales et notre engagement envers l'excellence.",
 				"sections": {
 					"1": {
 						"title": "Conduite professionnelle",
@@ -1050,7 +1057,7 @@
 					}
 				},
 				"author": {
-					"name": "LatLong International",
+					"name": "Latlong International",
 					"description": "Le non-respect de ce Code de conduite peut entraîner des mesures disciplinaires, pouvant aller jusqu'à la résiliation du contrat. Chaque employé reçoit une formation sur ce code et doit le signer lors de son intégration."
 				}
 			},
@@ -1070,22 +1077,22 @@
 					"items": {
 						"1": {
 							"title": "Conseils",
-							"author": "LatLong",
+							"author": "Latlong",
 							"key": "conseils"
 						},
 						"2": {
 							"title": "Responsabilité sociétale",
-							"author": "LatLong",
+							"author": "Latlong",
 							"key": "csr"
 						},
 						"3": {
 							"title": "Termes et conditions",
-							"author": "LatLong",
+							"author": "Latlong",
 							"key": "terms"
 						},
 						"4": {
 							"title": "ICoCA",
-							"author": "LatLong",
+							"author": "Latlong",
 							"key": "icoca"
 						}
 					}
@@ -1114,7 +1121,7 @@
 			"content": {
 				"date": "Mars",
 				"title": "Notre engagement ICoCA",
-				"intro": "LatLong International est fière d'être membre de l'International Code of Conduct Association (ICoCA), une initiative multipartite qui promeut, gouverne et supervise la mise en œuvre du Code de conduite International pour les prestataires de services de sécurité privée.",
+				"intro": "Latlong International est fière d'être membre de l'International Code of Conduct Association (ICoCA), une initiative multipartite qui promeut, gouverne et supervise la mise en œuvre du Code de conduite International pour les prestataires de services de sécurité privée.",
 				"sections": {
 					"1": {
 						"title": "Notre adhésion",
@@ -1134,7 +1141,7 @@
 					}
 				},
 				"author": {
-					"name": "LatLong International",
+					"name": "Latlong International",
 					"description": "Notre adhésion à l'ICoCA reflète notre engagement envers l'excellence et l'éthique dans le secteur de la sécurité privée. Nous sommes déterminés à maintenir et à améliorer continuellement nos standards pour répondre aux exigences internationales les plus strictes."
 				}
 			},
@@ -1154,22 +1161,22 @@
 					"items": {
 						"1": {
 							"title": "Conseils",
-							"author": "LatLong",
+							"author": "Latlong",
 							"key": "conseils"
 						},
 						"2": {
 							"title": "Responsabilité sociétale",
-							"author": "LatLong",
+							"author": "Latlong",
 							"key": "csr"
 						},
 						"3": {
 							"title": "Code de conduite",
-							"author": "LatLong",
+							"author": "Latlong",
 							"key": "code"
 						},
 						"4": {
 							"title": "Termes et conditions",
-							"author": "LatLong",
+							"author": "Latlong",
 							"key": "terms"
 						}
 					}

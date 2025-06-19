@@ -269,7 +269,7 @@ const service_info = [
       "Une stratégie solide est la clé d'une sécurité réussie. Nous pouvons vous accompagner.",
 
     details: [
-      "LatLong International propose des services de conseil adaptés pour analyser vos besoins, concevoir des stratégies de sécurité, et gérer efficacement les crises.",
+      "Latlong International propose des services de conseil adaptés pour analyser vos besoins, concevoir des stratégies de sécurité, et gérer efficacement les crises.",
       "Nos évaluations de sécurité approfondies identifient les vulnérabilités potentielles pour anticiper les menaces.",
       "Des stratégies d'évacuation et de gestion de crise sur mesure garantissent une réponse rapide et coordonnée.",
       "Nos experts collaborent avec vos équipes pour assurer une préparation optimale, incluant santé et sécurité, enquêtes et audits complets.",

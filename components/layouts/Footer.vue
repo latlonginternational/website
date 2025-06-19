@@ -10,7 +10,7 @@
 							<!-- Logo -->
 							<div>
 								<a href="/" class="inline-block">
-									<img src="/assets/images/logo-light-1.png" width="146" alt="LatLong Logo" class="h-auto" />
+									<img src="/assets/images/logo-light-1.png" width="146" alt="Latlong Logo" class="h-auto" />
 								</a>
 							</div>
 

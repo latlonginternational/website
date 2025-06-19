@@ -152,7 +152,7 @@ const getPageUrl = (key: string): string => {
 }
 
 definePageMeta({
-  title: 'Conseils - LatLong',
-  description: 'Découvrez les principes éthiques et les conseils qui guident nos opérations quotidiennes chez LatLong.'
+  title: 'Conseils - Latlong',
+  description: 'Découvrez les principes éthiques et les conseils qui guident nos opérations quotidiennes chez Latlong.'
 })
 </script> 
