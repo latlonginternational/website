@@ -2,7 +2,7 @@
   <div>
     <!--Page Header Start-->
     <section class="page-header">
-      <div class="page-header-bg" style="background-image: url(/assets/images/backgrounds/page-header-bg.jpg)"></div>
+      <div class="page-header-bg" style="background-image: url(/assets/images/backgrounds/blo.jpg)"></div>
       <div class="container">
         <div class="page-header__inner">
           <h2>{{ t('ethics.advice.pageHeader.title') }}</h2>
@@ -23,7 +23,7 @@
           <div class="col-xl-8 col-lg-7">
             <div class="news-details__left">
               <div class="news-details__img">
-                <img src="/assets/images/blog/news-details-img-1.jpg" :alt="t('ethics.advice.content.title')" />
+                <img src="/assets/images/ethique/lp-1-1.jpg" class="max-h-[500px] object-cover" :alt="t('ethics.advice.content.title')" />
                 <div class="news-details__date-box">
                   <p>{{ t('ethics.advice.content.date') }}</p>
                 </div>
@@ -54,16 +54,14 @@
                   </template>
                 </p>
                 <div class="news-details__social-list">
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-facebook"></i></a>
-                  <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/LatlongInternational/"><i class="fab fa-facebook"></i></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/latlong-international/"><i class="fab fa-linkedin-in"></i></a>
+                <a  target="_blank" rel="noopener noreferrer" href="https://wa.me/243993400082"><i class="fab fa-whatsapp"></i></a>
+              
                 </div>
               </div>
               <div class="author-one">
-                <div class="author-one__image">
-                  <img src="/assets/images/blog/author-1-1.jpg" :alt="t('ethics.advice.content.author.name')" />
-                </div>
+                
                 <div class="author-one__content">
                   <h3>{{ t('ethics.advice.content.author.name') }}</h3>
                   <p>
@@ -82,7 +80,7 @@
                   <template v-for="i in 4" :key="i">
                     <li v-if="t(`ethics.advice.sidebar.relatedPages.items.${i}.title`)">
                     <div class="sidebar__post-image">
-                        <img :src="`/assets/images/blog/lp-1-${getImageIndex(t(`ethics.advice.sidebar.relatedPages.items.${i}.key`))}.jpg`" 
+                        <img :src="`/assets/images/ethique/lp-1-${getImageIndex(t(`ethics.advice.sidebar.relatedPages.items.${i}.key`))}.jpg`" 
                              :alt="t(`ethics.advice.sidebar.relatedPages.items.${i}.title`)" />
                     </div>
                     <div class="sidebar__post-content">

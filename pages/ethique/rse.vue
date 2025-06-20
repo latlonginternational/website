@@ -5,7 +5,7 @@
       <div
         class="page-header-bg"
         style="
-          background-image: url(/assets/images/backgrounds/page-header-bg.jpg);
+          background-image: url(/assets/images/backgrounds/blo.jpg);
         "
       ></div>
       <div class="container">
@@ -37,8 +37,9 @@
             <div class="news-details__left">
               <div class="news-details__img">
                 <img
-                  src="/assets/images/blog/news-details-img-1.jpg"
+                  src="/assets/images/ethique/lp-1-2.jpg"
                   :alt="t('ethics.csr.content.title')"
+                  class="max-h-[500px] object-cover"
                 />
                 <div class="news-details__date-box">
                   <p>{{ t("ethics.csr.content.date") }}</p>
@@ -76,20 +77,14 @@
                   </template>
                 </p>
                 <div class="news-details__social-list">
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-facebook"></i></a>
-                  <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/LatlongInternational/"><i class="fab fa-facebook"></i></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/latlong-international/"><i class="fab fa-linkedin-in"></i></a>
+                <a  target="_blank" rel="noopener noreferrer" href="https://wa.me/243993400082"><i class="fab fa-whatsapp"></i></a>
+              
                 </div>
               </div>
               <div class="author-one">
-                <div class="author-one__image">
-                  <img
-                    src="/assets/images/blog/author-1-1.jpg"
-                    :alt="t('ethics.csr.content.author.name')"
-                  />
-                </div>
-                <div class="author-one__content">
+                <div class="author-one__content w-full">
                   <h3>{{ t("ethics.csr.content.author.name") }}</h3>
                   <p>
                     {{ t("ethics.csr.content.author.description") }}
@@ -114,7 +109,7 @@
                     >
                       <div class="sidebar__post-image">
                         <img
-                          :src="`/assets/images/blog/lp-1-${getImageIndex(
+                          :src="`/assets/images/ethique/lp-1-${getImageIndex(
                             t(`ethics.csr.sidebar.relatedPages.items.${i}.key`)
                           )}.jpg`"
                           :alt="

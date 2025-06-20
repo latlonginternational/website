@@ -68,7 +68,7 @@ const { t } = useI18n()
 const articles = [
   {
     id: 1,
-    image: '/assets/images/blog/ethique-conseils.jpg',
+    image: '/assets/images/blog/renforcement des capacites370-307.jpg',
     date: t('ethics.content.articles.advice.date'),
     auteur: t('ethics.content.articles.advice.author'),
     commentaires: 0,
@@ -78,7 +78,7 @@ const articles = [
   },
   {
     id: 2,
-    image: '/assets/images/blog/ethique-rse.jpg',
+    image: '/assets/images/ethique/art2.jpg',
     date: t('ethics.content.articles.csr.date'),
     auteur: t('ethics.content.articles.csr.author'),
     commentaires: 0,
@@ -88,7 +88,7 @@ const articles = [
   },
   {
     id: 3,
-    image: '/assets/images/blog/ethique-termes.jpg',
+    image: '/assets/images/ethique/nouvellesst.png',
     date: t('ethics.content.articles.terms.date'),
     auteur: t('ethics.content.articles.terms.author'),
     commentaires: 0,
@@ -98,7 +98,7 @@ const articles = [
   },
   {
     id: 4,
-    image: '/assets/images/blog/ethique-code.jpg',
+    image: '/assets/images/ethique/cont.jpg',
     date: t('ethics.content.articles.code.date'),
     auteur: t('ethics.content.articles.code.author'),
     commentaires: 0,
@@ -108,7 +108,7 @@ const articles = [
   },
   {
     id: 5,
-    image: '/assets/images/blog/ethique-icoca.jpg',
+    image: '/assets/images/ethique/homepage-background-1.jpg',
     date: t('ethics.content.articles.icoca.date'),
     auteur: t('ethics.content.articles.icoca.author'),
     commentaires: 0,
