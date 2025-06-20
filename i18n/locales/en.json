@@ -320,17 +320,16 @@
 				"description": "To provide innovative and effective security solutions."
 			},
 			"objectives": {
-				"title": "Objectives",
+				"title": "Our Values",
 				"items": {
-					"security": "Ensure our clients' security.",
-					"solutions": "Provide adapted solutions.",
-					"innovation": "Innovate with advanced technologies."
+					"integrity": "Integrity and transparency in all our actions.",
+					"excellence": "Operational and professional excellence."
 				}
 			}
 		},
 		"operationalZone": {
 			"title": "Operational zone",
-			"description": "We primarily operate in eastern Democratic Republic of Congo, with a strategic presence in North and South Kivu provinces. Our national expansion allows us to effectively serve a diverse clientele."
+			"description": "We primarily operate in the Democratic Republic of Congo, with a strategic presence. Our national expansion allows us to effectively serve a diverse clientele."
 		},
 		"team": {
 			"tagline": "Management team",

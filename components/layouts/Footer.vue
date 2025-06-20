@@ -25,9 +25,10 @@
 
 							<!-- Social Links -->
 							<div class="site-footer__top-right-social">
-								<a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-								<a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-								<a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+							<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/LatlongInternational/" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+								<a target="_blank" rel="noopener noreferrer" href="https://wa.me/243993400082" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+								<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/latlong-international/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+							    
 							</div>
 						</div>
 					</div>

@@ -116,15 +116,19 @@
             <div class="objective-box">
               <h3 class="objective-title text-xl sm:text-2xl font-medium">{{ t('about.visionMission.objectives.title') }}</h3>
               <ul class="list-unstyled mt-2">
-                <li>
-                  <i class="fa fa-check-circle"></i> {{ t('about.visionMission.objectives.items.security') }}
+                <li class="flex items-start gap-2">
+                  <i class="fa fa-check-circle"></i> 
+                  <span class="-mt-1">{{ t('about.visionMission.objectives.items.integrity') }}</span>
                 </li>
-                <li>
-                  <i class="fa fa-check-circle"></i> {{ t('about.visionMission.objectives.items.solutions') }}
-                </li>
-                <li>
-                  <i class="fa fa-check-circle"></i> {{ t('about.visionMission.objectives.items.innovation') }}
-                </li>
+
+                <li class="flex items-start gap-2 mt-2">
+                  <i class="fa fa-check-circle"></i> 
+                  <span class="-mt-1">{{ t('about.visionMission.objectives.items.excellence') }}</span>
+                  </li>
+                  
+               
+
+               
               </ul>
             </div>
           </div>
@@ -247,7 +251,7 @@
 											<span class="icon-help"></span>
 										</div>
 										<div class="counter-one__content">
-											<h3 class="odometer" data-count="42">0</h3>
+											<h3 class="odometer" data-count="52">0</h3>
 											<p class="counter-one__text">{{ t('home.counter.stats.partners.label') }}</p>
 										</div>
 									</li>
@@ -256,7 +260,7 @@
 											<span class="icon-customer-review"></span>
 										</div>
 										<div class="counter-one__content">
-											<h3 class="odometer" data-count="1500">0</h3>
+											<h3 class="odometer" data-count="304">0</h3>
 											<p class="counter-one__text">{{ t('home.counter.stats.clients.label') }}</p>
 										</div>
 									</li>
@@ -265,7 +269,7 @@
 											<span class="icon-consultant"></span>
 										</div>
 										<div class="counter-one__content">
-											<h3 class="odometer" data-count="300">00</h3>
+											<h3 class="odometer" data-count="1517">00</h3>
 											<p class="counter-one__text">{{ t('home.counter.stats.experts.label') }}</p>
 										</div>
 									</li>

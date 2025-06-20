@@ -83,9 +83,9 @@
                 </li>
               </ul>
               <div class="contact-page-details__social">
-                <a href="https://www.facebook.com/LatlongInternational/"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.linkedin.com/company/latlong-international/"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://wa.me/243993400082"><i class="fab fa-whatsapp"></i></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/LatlongInternational/"><i class="fab fa-facebook"></i></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/latlong-international/"><i class="fab fa-linkedin-in"></i></a>
+                <a  target="_blank" rel="noopener noreferrer" href="https://wa.me/243993400082"><i class="fab fa-whatsapp"></i></a>
               </div>
             </div>
           </div>

@@ -497,7 +497,7 @@
 											<span class="icon-help"></span>
 										</div>
 										<div class="counter-one__content">
-											<h3 class="odometer" data-count="42">0</h3>
+											<h3 class="odometer" data-count="52">0</h3>
 											<p class="counter-one__text">{{ t('home.counter.stats.partners.label') }}</p>
 										</div>
 									</li>
@@ -506,7 +506,7 @@
 											<span class="icon-customer-review"></span>
 										</div>
 										<div class="counter-one__content">
-											<h3 class="odometer" data-count="1500">0</h3>
+											<h3 class="odometer" data-count="304">0</h3>
 											<p class="counter-one__text">{{ t('home.counter.stats.clients.label') }}</p>
 										</div>
 									</li>
@@ -515,7 +515,7 @@
 											<span class="icon-consultant"></span>
 										</div>
 										<div class="counter-one__content">
-											<h3 class="odometer" data-count="300">00</h3>
+											<h3 class="odometer" data-count="1517">00</h3>
 											<p class="counter-one__text">{{ t('home.counter.stats.experts.label') }}</p>
 										</div>
 									</li>
