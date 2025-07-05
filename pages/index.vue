@@ -528,8 +528,8 @@
 		</section>
 		<!--Counter One End-->
 		<!--News One Start-->
-		<section class="py-20">
-			<div class="container mx-auto">
+		<section class="py-20 w-full">
+			<div class="container mx-auto w-full md:px-4">
 				<!-- Section Title -->
 				<div class="text-center mb-12">
 					<span class="text-conult-base font-conult text-sm uppercase tracking-wider mb-2 block">{{ t('home.ethics.tagline') }}</span>
@@ -537,33 +537,70 @@
 				</div>
 
 				<!-- News Carousel -->
-				<div class="relative">
-					<!-- Carousel Container -->
-					<div class="overflow-hidden">
-						<div class="flex transition-transform duration-500 ease-in-out space-x-4" :style="{ transform: `translateX(-${currentSlide * slideWidth}%)` }">
-							<div v-for="(ethique, index) in ethiques" :key="ethique.id" class="w-full sm:w-full md:w-1/2 lg:w-1/3 flex-shrink-0">
-								<DefaultCard :data="{
-									...ethique,
-									titre: t(ethique.titre),
-									description: t(ethique.description),
-									date: t(ethique.date)
-								}" />
-							</div>
+				<div class="relative w-full">
+					<Swiper
+						:modules="[Navigation, Autoplay, Pagination]"
+						:slides-per-view="3"
+						:space-between="30"
+						:loop="true"
+						:slides-per-group="1"
+						:autoplay="{ delay: 5000, disableOnInteraction: false }"
+						:pagination="{ clickable: true, el: '.swiper-pagination' }"
+						:navigation="{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }"
+						:breakpoints="{
+							320: {
+								slidesPerView: 1,
+								spaceBetween: 0,
+								slidesPerGroup: 1
+							},
+							480: {
+								slidesPerView: 1,
+								spaceBetween: 0,
+								slidesPerGroup: 1
+							},
+							640: {
+								slidesPerView: 1,
+								spaceBetween: 0,
+								slidesPerGroup: 1
+							},
+							768: {
+								slidesPerView: 2,
+								spaceBetween: 25,
+								slidesPerGroup: 1
+							},
+							1024: {
+								slidesPerView: 3,
+								spaceBetween: 30,
+								slidesPerGroup: 1
+							},
+							1200: {
+								slidesPerView: 3,
+								spaceBetween: 30,
+								slidesPerGroup: 1
+							}
+						}"
+						class="ethics-swiper w-full"
+					>
+						<SwiperSlide v-for="(ethique, index) in ethiques" :key="ethique.id">
+							<DefaultCard :data="{
+								...ethique,
+								titre: t(ethique.titre),
+								description: t(ethique.description),
+								date: t(ethique.date)
+							}" />
+						</SwiperSlide>
+						
+						<!-- Navigation Buttons -->
+						<div class="swiper-button-prev absolute left-0 top-1/2 -translate-y-1/2 -translate-x-6 w-12 h-12 rounded-full bg-white border border-white flex items-center justify-center text-conult-base hover:bg-conult-base hover:text-white transition-colors z-10">
+							<i class="fas fa-arrow-left"></i>
 						</div>
-					</div>
-
-					<!-- Navigation Buttons -->
-					<button @click="prevSlide" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-6 w-12 h-12 rounded-full bg-white border border-white flex items-center justify-center text-conult-base hover:bg-conult-base hover:text-white transition-colors z-10">
-						<i class="fas fa-arrow-left"></i>
-					</button>
-					<button @click="nextSlide" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-6 w-12 h-12 rounded-full bg-white border border-white flex items-center justify-center text-conult-base hover:bg-conult-base hover:text-white transition-colors z-10">
-						<i class="fas fa-arrow-right"></i>
-					</button>
-
-					<!-- Dots Navigation -->
-					<div class="flex justify-center mt-8 gap-2">
-						<button v-for="(_, index) in totalSlides" :key="index" @click="currentSlide = index" class="w-3 h-3 rounded-full transition-colors" :class="currentSlide === index ? 'bg-conult-base' : 'bg-gray-300 hover:bg-conult-base/50'"></button>
-					</div>
+						<div class="swiper-button-next absolute right-0 top-1/2 -translate-y-1/2 translate-x-6 w-12 h-12 rounded-full bg-white border border-white flex items-center justify-center text-conult-base hover:bg-conult-base hover:text-white transition-colors z-10">
+							<i class="fas fa-arrow-right"></i>
+						</div>
+						
+						<!-- Pagination -->
+						<div class="swiper-pagination flex justify-center mt-8 gap-2"></div>
+					</Swiper>
 				</div>
 			</div>
 		</section>
@@ -621,14 +658,15 @@
 <script setup lang="ts">
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import type { Swiper as SwiperType } from 'swiper'
-import type { NavigationOptions, AutoplayOptions } from 'swiper/types'
-import { Navigation, Autoplay, EffectFade } from 'swiper/modules'
+import type { NavigationOptions, AutoplayOptions, PaginationOptions } from 'swiper/types'
+import { Navigation, Autoplay, EffectFade, Pagination } from 'swiper/modules'
 import { useI18n } from 'vue-i18n'
-import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
+import { ref } from 'vue'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/autoplay'
 import 'swiper/css/effect-fade'
+import 'swiper/css/pagination'
 
 const { t } = useI18n()
 
@@ -699,126 +737,62 @@ const testimonials = ref<Testimonial[]>([
 	}
 ])
 
+
+
 const ethiques = ref<Ethique[]>([
 	{
-		id: 1,
-		image: "/assets/images/blog/ethique-conseils.jpg",
-		date: 'home.ethics.items.councils.date',
-		auteur: "Latlong",
-		commentaires: 0,
-		titre: 'home.ethics.items.councils.title',
-		description: 'home.ethics.items.councils.description',
-		lien: "/ethique/conseils"
-	},
-	{
-		id: 2,
-		image: "/assets/images/blog/ethique-rse.jpg",
-		date: 'home.ethics.items.csr.date',
-		auteur: "Latlong",
-		commentaires: 0,
-		titre: 'home.ethics.items.csr.title',
-		description: 'home.ethics.items.csr.description',
-		lien: "/ethique/rse"
-	},
-	{
-		id: 3,
-		image: "/assets/images/blog/ethique-termes.jpg",
-		date: 'home.ethics.items.terms.date',
-		auteur: "Latlong",
-		commentaires: 0,
-		titre: 'home.ethics.items.terms.title',
-		description: 'home.ethics.items.terms.description',
-		lien: "/ethique/termes-conditions"
-	},
-	{
-		id: 4,
-		image: "/assets/images/blog/ethique-code.jpg",
-		date: 'home.ethics.items.code.date',
-		auteur: "Latlong",
-		commentaires: 0,
-		titre: 'home.ethics.items.code.title',
-		description: 'home.ethics.items.code.description',
-		lien: "/ethique/code-conduite"
-	},
-	{
-		id: 5,
-		image: "/assets/images/blog/ethique-icoca.jpg",
-		date: 'home.ethics.items.icoca.date',
-		auteur: "Latlong",
-		commentaires: 0,
-		titre: 'home.ethics.items.icoca.title',
-		description: 'home.ethics.items.icoca.description',
-		lien: "/ethique/icoca"
-	}
+    id: 1,
+    image: '/assets/images/blog/renforcement des capacites370-307.jpg',
+    date: t('ethics.content.articles.advice.date'),
+    auteur: t('ethics.content.articles.advice.author'),
+    commentaires: 0,
+    titre: t('ethics.content.articles.advice.title'),
+    description: t('ethics.content.articles.advice.description'),
+    lien: '/ethique/conseils'
+  },
+  {
+    id: 2,
+    image: '/assets/images/ethique/art2.jpg',
+    date: t('ethics.content.articles.csr.date'),
+    auteur: t('ethics.content.articles.csr.author'),
+    commentaires: 0,
+    titre: t('ethics.content.articles.csr.title'),
+    description: t('ethics.content.articles.csr.description'),
+    lien: '/ethique/rse'
+  },
+  {
+    id: 3,
+    image: '/assets/images/ethique/nouvellesst.png',
+    date: t('ethics.content.articles.terms.date'),
+    auteur: t('ethics.content.articles.terms.author'),
+    commentaires: 0,
+    titre: t('ethics.content.articles.terms.title'),
+    description: t('ethics.content.articles.terms.description'),
+    lien: '/ethique/termes-conditions'
+  },
+  {
+    id: 4,
+    image: '/assets/images/ethique/cont.jpg',
+    date: t('ethics.content.articles.code.date'),
+    auteur: t('ethics.content.articles.code.author'),
+    commentaires: 0,
+    titre: t('ethics.content.articles.code.title'),
+    description: t('ethics.content.articles.code.description'),
+    lien: '/ethique/code-conduite'
+  },
+  {
+    id: 5,
+    image: '/assets/images/ethique/lp-1-400.jpeg',
+    date: t('ethics.content.articles.icoca.date'),
+    auteur: t('ethics.content.articles.icoca.author'),
+    commentaires: 0,
+    titre: t('ethics.content.articles.icoca.title'),
+    description: t('ethics.content.articles.icoca.description'),
+    lien: '/ethique/icoca'
+  }
 ]);
 
-const currentSlide = ref(0)
-const autoplayInterval = ref<number | null>(null)
-const windowWidth = ref(typeof window !== "undefined" ? window.innerWidth : 0)
 
-// Calcul du nombre d'éléments par slide selon la largeur de l'écran
-const itemsPerSlide = computed(() => {
-	if (windowWidth.value >= 1024) return 3; // lg
-	if (windowWidth.value >= 768) return 2; // md
-	return 1; // sm et en dessous
-});
-
-// Calcul du nombre total de slides
-const totalSlides = computed(() => {
-	return Math.ceil(ethiques.value.length / itemsPerSlide.value);
-});
-
-// Calcul de la largeur de déplacement pour chaque slide
-const slideWidth = computed(() => {
-	return 100 / itemsPerSlide.value;
-});
-
-// Mise à jour de la largeur de la fenêtre
-const updateWindowWidth = () => {
-	windowWidth.value = window.innerWidth;
-	// Réinitialiser le slide courant si nécessaire
-	if (currentSlide.value >= totalSlides.value) {
-		currentSlide.value = 0;
-	}
-};
-
-const nextSlide = () => {
-	currentSlide.value = (currentSlide.value + 1) % totalSlides.value;
-};
-
-const prevSlide = () => {
-	currentSlide.value = (currentSlide.value - 1 + totalSlides.value) % totalSlides.value;
-};
-
-const startAutoplay = () => {
-	if (autoplayInterval.value) {
-		clearInterval(autoplayInterval.value)
-	}
-	autoplayInterval.value = window.setInterval(() => {
-		nextSlide()
-	}, 5000)
-}
-
-// Surveiller les changements de taille d'écran
-onMounted(() => {
-	window.addEventListener("resize", updateWindowWidth);
-	startAutoplay();
-});
-
-onUnmounted(() => {
-	window.removeEventListener("resize", updateWindowWidth);
-	if (autoplayInterval.value) {
-		clearInterval(autoplayInterval.value)
-	}
-});
-
-// Réinitialiser l'autoplay quand on change manuellement de slide
-watch(currentSlide, () => {
-	if (autoplayInterval.value) {
-		clearInterval(autoplayInterval.value)
-	}
-	startAutoplay();
-});
 
 // Définition des options Swiper
 const swiperModules = [Navigation, Autoplay, EffectFade]
@@ -1058,6 +1032,22 @@ const brands = ref([
 		max-width: 100%;
 	}
 
+	.swiper-button-next::after, .swiper-button-prev::after {
+		display: none !important;
+	}
+
+	.swiper-button-next:hover, .swiper-button-prev:hover {
+		color: #00aeef !important;
+	}
+
+	.swiper-button-next:hover i, .swiper-button-prev:hover i {
+		color: #00aeef !important;
+	}
+
+	.swiper-button-next i, .swiper-button-prev i {
+		color: #00aeef !important;
+	}
+
 	.main-slider__nav :deep(.swiper-button-next),
 	.main-slider__nav :deep(.swiper-button-prev) {
 		position: relative;
@@ -1074,20 +1064,10 @@ const brands = ref([
 		flex: 0 0 auto;
 	}
 
-	.main-slider__nav :deep(.swiper-button-next:hover),
-	.main-slider__nav :deep(.swiper-button-prev:hover) {
-		background-color: var(--conult-base);
-	}
-
-	.main-slider__nav :deep(.swiper-button-next:hover i),
-	.main-slider__nav :deep(.swiper-button-prev:hover i) {
-		color: #ffffff;
-	}
-
 	.main-slider__nav :deep(.swiper-button-next i),
 	.main-slider__nav :deep(.swiper-button-prev i) {
 		font-size: 16px;
-		color: var(--conult-base);
+		color: #00aeef !important;
 		transition: all 0.3s ease;
 	}
 
@@ -1267,5 +1247,272 @@ const brands = ref([
 		display: flex;
 		align-items: center;
 		justify-content: center;
+	}
+
+	/* Styles pour le carrousel des éthiques */
+	.ethics-swiper {
+		position: relative;
+		padding: 0;
+		width: 100%;
+		max-width: 100%;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
+	.ethics-swiper :deep(.swiper-button-next),
+	.ethics-swiper :deep(.swiper-button-prev) {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 48px;
+		height: 48px;
+		border-radius: 50%;
+		background-color: #ffffff;
+		border: 1px solid #ffffff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		z-index: 10;
+	}
+
+	.ethics-swiper :deep(.swiper-button-next:hover),
+	.ethics-swiper :deep(.swiper-button-prev:hover) {
+		background-color: var(--conult-base);
+		border-color: var(--conult-base);
+	}
+
+	.ethics-swiper :deep(.swiper-button-next:hover i),
+	.ethics-swiper :deep(.swiper-button-prev:hover i) {
+		color: #00aeef !important;
+	}
+
+	.ethics-swiper :deep(.swiper-button-next i),
+	.ethics-swiper :deep(.swiper-button-prev i) {
+		font-size: 16px;
+		color: #00aeef !important;
+		transition: all 0.3s ease;
+	}
+
+	.ethics-swiper :deep(.swiper-button-next) {
+		right: 10px;
+	}
+
+	.ethics-swiper :deep(.swiper-button-prev) {
+		left: 10px;
+	}
+
+	.ethics-swiper :deep(.swiper-slide) {
+		display: flex;
+		justify-content: center;
+		align-items: stretch;
+		height: auto;
+	}
+
+	.ethics-swiper :deep(.swiper-wrapper) {
+		align-items: stretch;
+	}
+
+	.ethics-swiper :deep(.swiper-pagination) {
+		position: relative;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		display: flex;
+		justify-content: center;
+		gap: 8px;
+		margin-top: 32px;
+	}
+
+	.ethics-swiper :deep(.swiper-pagination-bullet) {
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		background-color: #d1d5db;
+		opacity: 1;
+		transition: all 0.3s ease;
+		cursor: pointer;
+	}
+
+	.ethics-swiper :deep(.swiper-pagination-bullet-active) {
+		background-color: var(--conult-base);
+		transform: scale(1.2);
+	}
+
+	.ethics-swiper :deep(.swiper-pagination-bullet:hover) {
+		background-color: var(--conult-base);
+		opacity: 0.7;
+	}
+
+	/* Extra small devices (phones, 320px and up) */
+	@media (max-width: 480px) {
+		.ethics-swiper {
+			padding: 0 20px;
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		.container {
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+			max-width: 100vw !important;
+		}
+
+		.ethics-swiper :deep(.swiper-slide) {
+			width: calc(100vw - 40px) !important;
+			max-width: calc(100vw - 40px);
+		}
+
+		.ethics-swiper :deep(.swiper-button-next) {
+			right: 5px;
+		}
+
+		.ethics-swiper :deep(.swiper-button-prev) {
+			left: 5px;
+		}
+
+		.ethics-swiper :deep(.swiper-button-next),
+		.ethics-swiper :deep(.swiper-button-prev) {
+			width: 32px;
+			height: 32px;
+		}
+
+		.ethics-swiper :deep(.swiper-button-next i),
+		.ethics-swiper :deep(.swiper-button-prev i) {
+			font-size: 12px;
+		}
+
+		.ethics-swiper :deep(.swiper-pagination) {
+			margin-top: 20px;
+		}
+
+		.ethics-swiper :deep(.swiper-pagination-bullet) {
+			width: 8px;
+			height: 8px;
+		}
+	}
+
+	/* Small devices (landscape phones, 576px and up) */
+	@media (min-width: 481px) and (max-width: 640px) {
+		.ethics-swiper {
+			padding: 0 20px;
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		.container {
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+			max-width: 100vw !important;
+		}
+
+		.ethics-swiper :deep(.swiper-slide) {
+			width: calc(100vw - 40px) !important;
+			max-width: calc(100vw - 40px);
+		}
+
+		.ethics-swiper :deep(.swiper-button-next) {
+			right: 5px;
+		}
+
+		.ethics-swiper :deep(.swiper-button-prev) {
+			left: 5px;
+		}
+
+		.ethics-swiper :deep(.swiper-button-next),
+		.ethics-swiper :deep(.swiper-button-prev) {
+			width: 36px;
+			height: 36px;
+		}
+
+		.ethics-swiper :deep(.swiper-button-next i),
+		.ethics-swiper :deep(.swiper-button-prev i) {
+			font-size: 13px;
+		}
+	}
+
+	/* Medium devices (tablets, 768px and up) */
+	@media (min-width: 641px) and (max-width: 768px) {
+		.ethics-swiper {
+			padding: 0;
+			margin-left: -12.5px;
+			margin-right: -12.5px;
+		}
+
+		.ethics-swiper :deep(.swiper-button-next) {
+			right: 5px;
+		}
+
+		.ethics-swiper :deep(.swiper-button-prev) {
+			left: 5px;
+		}
+
+		.ethics-swiper :deep(.swiper-button-next),
+		.ethics-swiper :deep(.swiper-button-prev) {
+			width: 40px;
+			height: 40px;
+		}
+
+		.ethics-swiper :deep(.swiper-button-next i),
+		.ethics-swiper :deep(.swiper-button-prev i) {
+			font-size: 14px;
+		}
+	}
+
+	/* Large devices (desktops, 1024px and up) */
+	@media (min-width: 769px) and (max-width: 1024px) {
+		.ethics-swiper {
+			padding: 0;
+			margin-left: -15px;
+			margin-right: -15px;
+		}
+
+		.ethics-swiper :deep(.swiper-button-next) {
+			right: 10px;
+		}
+
+		.ethics-swiper :deep(.swiper-button-prev) {
+			left: 10px;
+		}
+
+		.ethics-swiper :deep(.swiper-button-next),
+		.ethics-swiper :deep(.swiper-button-prev) {
+			width: 44px;
+			height: 44px;
+		}
+
+		.ethics-swiper :deep(.swiper-button-next i),
+		.ethics-swiper :deep(.swiper-button-prev i) {
+			font-size: 15px;
+		}
+	}
+
+	/* Extra large devices (large desktops, 1200px and up) */
+	@media (min-width: 1025px) {
+		.ethics-swiper {
+			padding: 0;
+			margin-left: -15px;
+			margin-right: -15px;
+		}
+
+		.ethics-swiper :deep(.swiper-button-next) {
+			right: 10px;
+		}
+
+		.ethics-swiper :deep(.swiper-button-prev) {
+			left: 10px;
+		}
+
+		.ethics-swiper :deep(.swiper-button-next),
+		.ethics-swiper :deep(.swiper-button-prev) {
+			width: 48px;
+			height: 48px;
+		}
+
+		.ethics-swiper :deep(.swiper-button-next i),
+		.ethics-swiper :deep(.swiper-button-prev i) {
+			font-size: 16px;
+		}
 	}
 </style>

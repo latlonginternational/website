@@ -125,10 +125,6 @@
                   <i class="fa fa-check-circle"></i> 
                   <span class="-mt-1">{{ t('about.visionMission.objectives.items.excellence') }}</span>
                   </li>
-                  
-               
-
-               
               </ul>
             </div>
           </div>
@@ -311,7 +307,7 @@
                     </a>
                   </li>
                   <li>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a :href="member.linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
                   </li>
                 </ul>
               </div>
@@ -434,28 +430,32 @@ const teamMembers = ref([
     position: t('about.team.items.1.position'),
     image: t('about.team.items.1.image'),
     tel: t('about.team.items.1.tel'),
-    email: `${t('about.team.items.1.email.name')}@${t('about.team.items.1.email.domain')}`
+    email: `${t('about.team.items.1.email.name')}@${t('about.team.items.1.email.domain')}`,
+    linkedin: t('about.team.items.1.linkedin')
   },
   {
     name: t('about.team.items.2.name'),
     position: t('about.team.items.2.position'),
     image: t('about.team.items.2.image'),
     tel: t('about.team.items.2.tel'),
-    email: `${t('about.team.items.2.email.name')}@${t('about.team.items.2.email.domain')}`
+    email: `${t('about.team.items.2.email.name')}@${t('about.team.items.2.email.domain')}`,
+    linkedin: t('about.team.items.2.linkedin')
   },
   {
     name: t('about.team.items.3.name'),
     position: t('about.team.items.3.position'),
     image: t('about.team.items.3.image'),
     tel: t('about.team.items.3.tel'),
-    email: `${t('about.team.items.3.email.name')}@${t('about.team.items.3.email.domain')}`
+    email: `${t('about.team.items.3.email.name')}@${t('about.team.items.3.email.domain')}`,
+    linkedin: t('about.team.items.3.linkedin')
   },
   {
     name: t('about.team.items.4.name'),
     position: t('about.team.items.4.position'),
     image: t('about.team.items.4.image'),
     tel: t('about.team.items.4.tel'),
-    email: `${t('about.team.items.4.email.name')}@${t('about.team.items.4.email.domain')}`
+    email: `${t('about.team.items.4.email.name')}@${t('about.team.items.4.email.domain')}`,
+    linkedin: t('about.team.items.4.linkedin')
   }
 ])
 

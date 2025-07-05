@@ -96,7 +96,7 @@
 											<span class="icon-phone"></span>
 										</div>
 										<p class="text-conult-gray">
-											<a :href="'tel:' + t('footer.contact.phone.primary')" class="hover:text-conult-base transition-colors">{{ t('footer.contact.phone.primary') }}</a>
+											<a :href="'tel:' + t('footer.contact.phone.primary')" class="hover:text-conult-base transition-colors  whitespace-nowrap ">{{ t('footer.contact.phone.primary') }}</a>
 										</p>
 									</li>
 									<li class="flex items-start space-x-2">
@@ -104,7 +104,7 @@
 											<span class="icon-phone"></span>
 										</div>
 										<p class="text-conult-gray whitespace-nowrap">
-											<a :href="'tel:' + t('footer.contact.phone.secondary')" class="hover:text-conult-base transition-colors">{{ t('footer.contact.phone.secondary') }}</a>
+											<a :href="'tel:' + t('footer.contact.phone.secondary')" class="hover:text-conult-base transition-colors  whitespace-nowrap ">{{ t('footer.contact.phone.secondary') }}</a>
 										</p>
 									</li>
 								</ul>

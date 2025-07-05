@@ -32,16 +32,20 @@
             </li>
             <li>
               <i class="fa fa-phone-alt"></i>
-              <a href="tel:+243810041500">+243810041500</a>
+              <a href="tel:+243 810 041 500">+243 810 041 500</a>
+            </li>
+            <li>
+              <i class="fa fa-phone-alt"></i>
+              <a href="tel:+243 993 400 082">+243 993 400 082</a>
             </li>
           </ul>
           <!-- /.mobile-nav__contact -->
-          <div class="mobile-nav__top">
+          <div class="mobile-nav__top mt-2">
             <div class="mobile-nav__social">
-              <a href="#" class="fab fa-twitter"></a>
-              <a href="#" class="fab fa-facebook-square"></a>
-              <a href="#" class="fab fa-pinterest-p"></a>
-              <a href="#" class="fab fa-instagram"></a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/LatlongInternational/" aria-label="Facebook" class="fab fa-facebook-square"></a>
+              <a target="_blank" rel="noopener noreferrer" href="https://wa.me/243993400082" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+								<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/latlong-international/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+							    
             </div>
             <!-- /.mobile-nav__social -->
           </div>

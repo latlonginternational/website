@@ -38,12 +38,11 @@
 
 			<div>
 				<!-- Title -->
-				<h3 class="text-xl font-conult font-bold text-conult-black mb-3 hover:text-conult-base transition-colors">
+				<h3 class="sm:text-xl font-conult font-bold text-conult-black mb-3 hover:text-conult-base transition-colors">
 					<a :href="data.lien">{{ data.titre }}</a>
 				</h3>
 				<p class="text-conult-gray mb-6 line-clamp-2">{{ data.description }}</p>
 			</div>
-
 			<div>
 				<!-- Description -->
 

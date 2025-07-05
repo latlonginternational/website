@@ -3,14 +3,14 @@
 		<header class="main-header clearfix">
 			<div class="main-header__top clearfix" :class="{ 'header-hidden': isTopHidden, 'header-visible': isTopVisible }">
 				<div class="main-header__top-inner clearfix">
-					<div class="main-header__top-left">
+					<div class="main-header__top-left -mx-4">
 						<ul class="list-unstyled main-header__top-address">
 							<li>
 								<div class="icon">
 									<span class="icon-pin"></span>
 								</div>
 								<div class="text">
-									<p>{{ t("contact.address") }}</p>
+									<p>N° 325 Boulevard Kanyamuhanga, Goma, RDC</p>
 								</div>
 							</li>
 							<li>
@@ -41,11 +41,10 @@
 					</div>
 					<div class="main-header__top-right">
 						<div class="main-header__top-right-social">
-							<a href="#"><i class="fab fa-twitter"></i></a>
-							<a href="#"><i class="fab fa-facebook"></i></a>
-							<a href="#"><i class="fab fa-whatsapp"></i></a>
-							<a href="#"><i class="fab fa-instagram"></i></a>
-							<a href="#"><i class="fab fa-linkedin"></i></a>
+							<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/LatlongInternational/" aria-label="Facebook" class="fab fa-facebook-square"></a>
+              <a target="_blank" rel="noopener noreferrer" href="https://wa.me/243993400082" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+								<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/latlong-international/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+							  
 						</div>
 					</div>
 				</div>

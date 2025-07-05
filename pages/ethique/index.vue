@@ -108,7 +108,7 @@ const articles = [
   },
   {
     id: 5,
-    image: '/assets/images/ethique/homepage-background-1.jpg',
+    image: '/assets/images/ethique/lp-1-400.jpeg',
     date: t('ethics.content.articles.icoca.date'),
     auteur: t('ethics.content.articles.icoca.author'),
     commentaires: 0,

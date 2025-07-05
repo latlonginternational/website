@@ -23,7 +23,7 @@
           <div class="col-xl-8 col-lg-7">
             <div class="news-details__left">
               <div class="news-details__img">
-                <img src="/assets/images/ethique/lp-1-4.jpg" :alt="t('ethics.icoca.content.title')" />
+                <img src="/assets/images/ethique/lp-1-400.jpeg" :alt="t('ethics.icoca.content.title')" />
                 <div class="news-details__date-box">
                   <p>{{ t('ethics.icoca.content.date') }}</p>
                 </div>
