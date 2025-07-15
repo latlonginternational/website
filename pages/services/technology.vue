@@ -4,7 +4,7 @@
     <section class="page-header">
       <div
         class="page-header-bg"
-        style="background-image: url(/assets/images/services/tech.jpg)"
+        style="background-image: url(/assets/images/services/tech.png)"
       ></div>
       <div class="container">
         <div class="page-header__inner">
@@ -65,14 +65,15 @@
               </div>
               <div class="service-details__need-help-contact">
                 <p>{{ t('services.technology.sidebar.contact.anytime') }}</p>
-                <a href="tel:243810041500">+243810041500</a>
+                <a href="tel:243810041500">+243810041500</a> <br>
+                <a href="tel:243993400082">+243993400082</a>
               </div>
             </div>
           </ServiceSidebar>
           <div class="col-xl-8 col-lg-7">
             <div class="service-details__right">
               <div class="service-details__img">
-                <img src="/assets/images/services/te.png" :alt="t('services.technology.content.title')" class="w-full max-h-[400px] object-cover"/>
+                <img src="/assets/images/services/tech.png" :alt="t('services.technology.content.title')" class="w-full max-h-[400px] object-cover"/>
                 <div class="service-details__img-icon">
                   <span :class="service_info[0].icon"></span>
                 </div>

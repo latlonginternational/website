@@ -338,9 +338,8 @@
 				"1": {
 					"name": "Katja Reith",
 					"position": "Présidente Directrice Générale",
-					"image": "/assets/images/team/4.png",
+					"image": "/assets/images/team/katja.png",
 					"tel": "+243 811 442 569",
-					
 					"email": {
 						"name": "katja",
 						"domain": "latlongcongo.com"
@@ -350,8 +349,8 @@
 				"2": {
 					"name": "Marcellin Kabundi",
 					"position": "Directeur Général",
-					"image": "/assets/images/team/2.png",
-					"tel": "+243 970 305 430",
+					"image": "/assets/images/team/marcelin.png",
+					"tel": "'+243 970 305 430",
 					"email": {
 						"name": "marcellin.kabundi",
 						"domain": "latlongcongo.com"
@@ -361,7 +360,7 @@
 				"3": {
 					"name": "Roger Nde",
 					"position": "Directeur Administratif et Financier",
-					"image": "/assets/images/team/1723267753376.jpeg",
+					"image": "/assets/images/team/roger.png",
 					"tel": "+243 984 525 255",
 					"email": {
 						"name": "roger.nde",
@@ -372,7 +371,7 @@
 				"4": {
 					"name": "Mack Mupita Henry",
 					"position": "Directeur Commercial",
-					"image": "/assets/images/team/1.png",
+					"image": "/assets/images/team/henry.png",
 					"tel": "+243 993 400 082",
 					"email": {
 						"name": "henry",
@@ -1121,24 +1120,22 @@
 				"date": "Mars",
 				"title": "Notre engagement ICoCA",
 				"intro": "Latlong International est fière d'être membre de l'International Code of Conduct Association (ICoCA), une initiative multipartite qui promeut, gouverne et supervise la mise en œuvre du Code de conduite International pour les prestataires de services de sécurité privée.",
+				"button": "Télécharger",
 				"sections": {
 					"1": {
-						"title": "Notre adhésion",
-						"description": "En tant que membre de l'ICoCA, nous nous engageons à respecter et promouvoir les principes fondamentaux du Code International, notamment le respect des droits de l'homme et du droit international humanitaire, la formation continue de nos équipes, la transparence dans nos opérations, et la responsabilité dans la prestation de nos services."
-					},
-					"2": {
-						"title": "Engagements spécifiques",
-						"description": "Notre adhésion à l'ICoCA implique plusieurs engagements concrets : mise en œuvre de procédures de diligence raisonnable, formation obligatoire sur les droits de l'homme pour tous nos agents, mécanismes de plainte accessibles, et audits réguliers de nos opérations. Nous nous engageons également à signaler et traiter tout incident pouvant constituer une violation des principes du Code."
-					},
-					"3": {
-						"title": "Bénéfices pour nos clients",
-						"description": "Notre certification ICoCA garantit à nos clients que nos services sont fournis selon les plus hauts standards internationaux. Cela inclut une meilleure gestion des risques, une plus grande transparence, une responsabilité accrue, et un engagement ferme envers les droits de l'homme et le droit international."
-					},
-					"4": {
-						"title": "Objectifs 2024",
-						"description": "Nous visons à renforcer notre conformité ICoCA en formant 100% de nos agents aux standards internationaux, en mettant en place un système de reporting amélioré, en développant de nouveaux protocoles de diligence raisonnable, et en participant activement aux initiatives de l'ICoCA pour l'amélioration des standards du secteur."
-					}
-				},
+          "title": "Nos engagements",
+          "description": "Nous assurons la formation continue de nos agents aux standards ICoCA, mettons en œuvre des procédures de diligence raisonnable, garantissons des mécanismes de plaintes accessibles et sécurisés, réalisons des audits réguliers, et signalons activement toute violation du Code."
+        },
+        "2": {
+          "title": "Pour nos clients",
+          "description": "Choisir un prestataire affilié à l’ICoCA, c’est bénéficier d’un haut niveau de conformité internationale, d’une gestion éthique des opérations, et d’une transparence accrue accompagnée d’un reporting rigoureux."
+        },
+        "3": {
+          "title": "Notre certificat ICoCA",
+          "description": "Télécharger le certificat (PDF). Émis le 24 janvier 2025 – Valide jusqu’au 31 janvier 2026."
+        }
+				  },
+				
 				"author": {
 					"name": "Latlong International",
 					"description": "Notre adhésion à l'ICoCA reflète notre engagement envers l'excellence et l'éthique dans le secteur de la sécurité privée. Nous sommes déterminés à maintenir et à améliorer continuellement nos standards pour répondre aux exigences internationales les plus strictes."

@@ -72,7 +72,7 @@
           <div class="col-xl-8 col-lg-7">
             <div class="service-details__right">
               <div class="service-details__img">
-                <img src="/assets/images/services/as.png" class="w-full max-h-[400px] object-cover" :alt="t('services.others-security-services.content.title')" />
+                <img src="/assets/images/services/other.jpg" class="w-full max-h-[400px] object-cover" :alt="t('services.others-security-services.content.title')" />
                 <div class="service-details__img-icon">
                   <span :class="service_info[0].icon"></span>
                 </div>

@@ -338,7 +338,7 @@
 				"1": {
 					"name": "Katja Reith",
 					"position": "Chief Executive Officer",
-					"image": "/assets/images/team/4.png",
+					"image": "/assets/images/team/katja.png",
 					"tel": "+243 811 442 569",
 					"email": {
 						"name": "katja",
@@ -349,18 +349,18 @@
 				"2": {
 					"name": "Marcellin Kabundi",
 					"position": "General Manager",
-					"image": "/assets/images/team/2.png",
+					"image": "/assets/images/team/marcelin.png",
 					"tel": "'+243 970 305 430",
 					"email": {
 						"name": "marcellin.kabundi",
 						"domain": "latlongcongo.com"
 					},
-					"linkedin": "#"
+					"linkedin": "https://www.linkedin.com/posts/latlong-international_quotes-rdcongo-rdc-activity-7015588023513821185-kbb8/?originalSubdomain=cd"
 				},
 				"3": {
 					"name": "Roger Nde",
 					"position": "Chief Financial Officer",
-					"image": "/assets/images/team/1723267753376.jpeg",
+					"image": "/assets/images/team/roger.png",
 					"tel": "+243 984 525 255",
 					"email": {
 						"name": "roger.nde",
@@ -371,7 +371,7 @@
 				"4": {
 					"name": "Mack Mupita Henry",
 					"position": "Business Manager",
-					"image": "/assets/images/team/1.png",
+					"image": "/assets/images/team/henry.png",
 					"tel": "+243 993 400 082",
 					"email": {
 						"name": "henry",
@@ -1120,24 +1120,21 @@
 				"date": "March",
 				"title": "Our ICoCA Commitment",
 				"intro": "Latlong International is proud to be a member of the International Code of Conduct Association (ICoCA), a multi-stakeholder initiative that promotes, governs, and oversees the implementation of the International Code of Conduct for Private Security Service Providers.",
-				"sections": {
-					"1": {
-						"title": "Our Membership",
-						"description": "As an ICoCA member, we commit to respecting and promoting the fundamental principles of the International Code, including respect for human rights and international humanitarian law, continuous training of our teams, transparency in our operations, and accountability in the delivery of our services."
-					},
-					"2": {
-						"title": "Specific Commitments",
-						"description": "Our ICoCA membership involves several concrete commitments: implementation of due diligence procedures, mandatory human rights training for all our agents, accessible complaint mechanisms, and regular audits of our operations. We also commit to reporting and addressing any incident that may constitute a violation of the Code's principles."
-					},
-					"3": {
-						"title": "Benefits for our Clients",
-						"description": "Our ICoCA certification guarantees our clients that our services are provided according to the highest international standards. This includes better risk management, greater transparency, increased accountability, and a firm commitment to human rights and international law."
-					},
-					"4": {
-						"title": "2024 Objectives",
-						"description": "We aim to strengthen our ICoCA compliance by training 100% of our agents to international standards, implementing an improved reporting system, developing new due diligence protocols, and actively participating in ICoCA initiatives for sector standards improvement."
-					}
-				},
+				"button": "Download",
+				 "sections": {
+        "1": {
+          "title": "Our commitments",
+          "description": "We provide continuous training for our agents on ICoCA standards, implement integrated due diligence procedures, ensure accessible and secure complaint mechanisms, conduct regular audits of our operations, and actively report any potential Code violations."
+        },
+        "2": {
+          "title": "For our clients",
+          "description": "Choosing an ICoCA-affiliated provider means benefiting from a high level of international compliance, ethical operational management, and enhanced transparency through robust reporting."
+        },
+        "3": {
+          "title": "Our ICoCA certificate",
+          "description": "Download the certificate (PDF). Issued on January 24, 2025 – Valid until January 31, 2026."
+        }
+      },
 				"author": {
 					"name": "Latlong International",
 					"description": "Our ICoCA membership reflects our commitment to excellence and ethics in the private security sector. We are determined to maintain and continuously improve our standards to meet the most stringent international requirements."

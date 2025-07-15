@@ -34,12 +34,24 @@
                   {{ t('ethics.icoca.content.intro') }}
                 </p>
                 <div class="space-y-6 mt-6">
-                  <template v-for="i in 4" :key="i">
+                  <template v-for="i in 3" :key="i">
                     <p class="news-details__text-3" v-if="t(`ethics.icoca.content.sections.${i}.title`)">
-                      <strong>{{ t(`ethics.icoca.content.sections.${i}.title`) }}</strong><br>
+                      <strong>
+
+                        <span class="text-xl">
+                          {{ t(`ethics.icoca.content.sections.${i}.title`) }}
+                        </span>
+                      </strong><br>
                       {{ t(`ethics.icoca.content.sections.${i}.description`) }}
                     </p>
                   </template>
+
+                  <div>
+							       <a  target="_blank" rel="noopener noreferrer" href="/docs/doc-2025_LLI ICoCAAffiliateCertificate.pdf" class="thm-btn flex max-w-[250px] items-center gap-2">
+                      <span><img class="w-6 h-6" src="/docs/pdf-101.svg" alt=""></span>
+                      <span>{{ t('ethics.icoca.content.button') }}</span>
+                    </a>
+                  </div>
                 </div>
               </div>
               <div class="news-details__bottom">
@@ -76,7 +88,7 @@
                   <template v-for="i in 4" :key="i">
                     <li v-if="t(`ethics.icoca.sidebar.relatedPages.items.${i}.title`)">
                     <div class="sidebar__post-image">
-                        <img :src="`/assets/images/ethique/lp-1-${getImageIndex(t(`ethics.icoca.sidebar.relatedPages.items.${i}.key`))}.jpg`" 
+                        <img :src="getImageSrc(t(`ethics.icoca.sidebar.relatedPages.items.${i}.key`))" 
                              :alt="t(`ethics.icoca.sidebar.relatedPages.items.${i}.title`)" />
                     </div>
                     <div class="sidebar__post-content">
@@ -118,15 +130,20 @@ import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
 
-const getImageIndex = (key: string): string => {
+const getImageSrc = (key: string): string => {
   switch (key) {
-    case 'icoca':
-    case 'terms':
-      return '3'
+    case 'conseils':
+      return '/assets/images/ethique/consultance.jpeg'
+    case 'csr':
+      return '/assets/images/ethique/lp-1-2.jpg'
     case 'code':
-      return '2'
+      return '/assets/images/ethique/lp-1-3.jpg'
+    case 'icoca':
+      return '/assets/images/ethique/lp-1-400.jpeg'
+    case 'terms':
+      return '/assets/images/ethique/nouvellesst.png'
     default:
-      return '1'
+      return '/assets/images/ethique/consultance.jpeg'
   }
 }
 

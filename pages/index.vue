@@ -232,7 +232,8 @@
 									</div>
 									<div class="about-one__contact-phone">
 										<p class="about-one__contact-text">{{ t('home.about.contact.text') }}</p>
-										<a href="tel:+243820123456">{{ t('home.about.contact.phone') }}</a>
+										<a href="tel:+243810041500" class=" whitespace-normal">{{ t('home.about.contact.phone') }}</a><br>
+										<a href="tel:+243993400082" class=" whitespace-normal">{{ t('home.about.contact.phone') }}</a>
 									</div>
 								</div>
 							</div>
@@ -742,7 +743,7 @@ const testimonials = ref<Testimonial[]>([
 const ethiques = ref<Ethique[]>([
 	{
     id: 1,
-    image: '/assets/images/blog/renforcement des capacites370-307.jpg',
+    image: '/assets/images/ethique/consultance.jpeg',
     date: t('ethics.content.articles.advice.date'),
     auteur: t('ethics.content.articles.advice.author'),
     commentaires: 0,
@@ -752,7 +753,7 @@ const ethiques = ref<Ethique[]>([
   },
   {
     id: 2,
-    image: '/assets/images/ethique/art2.jpg',
+    image: '/assets/images/ethique/lp-1-2.jpg',
     date: t('ethics.content.articles.csr.date'),
     auteur: t('ethics.content.articles.csr.author'),
     commentaires: 0,
@@ -772,7 +773,7 @@ const ethiques = ref<Ethique[]>([
   },
   {
     id: 4,
-    image: '/assets/images/ethique/cont.jpg',
+    image: '/assets/images/ethique/lp-1-3.jpg',
     date: t('ethics.content.articles.code.date'),
     auteur: t('ethics.content.articles.code.author'),
     commentaires: 0,

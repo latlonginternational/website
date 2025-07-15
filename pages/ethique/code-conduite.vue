@@ -76,7 +76,7 @@
                   <template v-for="i in 4" :key="i">
                     <li v-if="t(`ethics.code.sidebar.relatedPages.items.${i}.title`)">
                     <div class="sidebar__post-image">
-                        <img :src="`/assets/images/ethique/lp-1-${getImageIndex(t(`ethics.code.sidebar.relatedPages.items.${i}.key`))}.jpg`" 
+                        <img :src="getImageSrc(t(`ethics.code.sidebar.relatedPages.items.${i}.key`))" 
                              :alt="t(`ethics.code.sidebar.relatedPages.items.${i}.title`)" />
                     </div>
                     <div class="sidebar__post-content">
@@ -118,15 +118,20 @@ import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
 
-const getImageIndex = (key: string): string => {
+const getImageSrc = (key: string): string => {
   switch (key) {
-    case 'icoca':
-    case 'terms':
-      return '3'
+    case 'conseils':
+      return '/assets/images/ethique/consultance.jpeg'
+    case 'csr':
+      return '/assets/images/ethique/lp-1-2.jpg'
     case 'code':
-      return '2'
+      return '/assets/images/ethique/lp-1-3.jpg'
+    case 'icoca':
+      return '/assets/images/ethique/lp-1-400.jpeg'
+    case 'terms':
+      return '/assets/images/ethique/nouvellesst.png'
     default:
-      return '1'
+      return '/assets/images/ethique/consultance.jpeg'
   }
 }
 
