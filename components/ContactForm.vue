@@ -443,12 +443,7 @@ const clearError = (field: keyof FormData) => {
 const showStatusMessage = (message: string, type: 'success' | 'error') => {
   statusMessage.value = message
   statusType.value = type
-  // Le message de succès ne disparaît plus automatiquement
-  if (type === 'error') {
-    setTimeout(() => {
-      statusMessage.value = ''
-    }, 5000)
-  }
+  // Les messages ne disparaissent plus automatiquement
 }
 
 const handleSubmit = async () => {
