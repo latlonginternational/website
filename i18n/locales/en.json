@@ -94,6 +94,8 @@
 			}
 		},
 		"details": {
+			"title": "Our contact details",
+			"subtitle": "All our contact information",
 			"callUs": {
 				"label": "Call us",
 				"phone": "+243 810 041 500"
@@ -110,7 +112,79 @@
 		},
 		"form": {
 			"title": "Contact us",
-			"subtitle": "Send us a message"
+			"subtitle": "Send a message",
+			"header": {
+				"title": "Contact us",
+				"subtitle": "Send us your message and we will respond to you as soon as possible"
+			},
+			"fields": {
+				"name": {
+					"label": "First and Last Name",
+					"placeholder": "Your full name"
+				},
+				"email": {
+					"label": "Email Address",
+					"placeholder": {
+						"user": "your.email",
+						"domain": "example.com"
+					}
+				},
+				"phone": {
+					"label": "Phone Number",
+					"placeholder": "Your phone number"
+				},
+				"subject": {
+					"label": "Subject",
+					"placeholder": "Subject of your message"
+				},
+				"message": {
+					"label": "Message",
+					"placeholder": "Describe your request or question..."
+				}
+			},
+			"checkbox": {
+				"text": "I confirm that my contact information (email and phone) is correct"
+			},
+			"button": {
+				"submit": "Send message",
+				"submitting": "Sending..."
+			},
+			"validation": {
+				"name": {
+					"required": "Name is required"
+				},
+				"email": {
+					"required": "Email is required",
+					"invalid": "Invalid email format"
+				},
+				"phone": {
+					"required": "Phone number is required",
+					"invalid": "Invalid phone format (6-15 digits, spaces, dashes, parentheses allowed)"
+				},
+				"subject": {
+					"required": "Subject is required"
+				},
+				"message": {
+					"required": "Message is required"
+				},
+				"checkbox": {
+					"required": "You must confirm that your contact information is correct"
+				}
+			},
+			"messages": {
+				"success": {
+					"title": "✅ Your message has been sent successfully to",
+					"email": { "user": "info", "domain": "latlongcongo.com" },
+					"subtitle": "We will contact you as soon as possible at your provided email address and phone number."
+				},
+				"error": {
+					"general": "An error occurred while sending the message. Please try again.",
+					"validation": "Please correct the errors in the form",
+					"missingCredentials": "Email configuration not available. Please contact us directly by phone or email.",
+					"greetingNeverReceived": "Email server connection problem. Please check your internet connection and try again.",
+					"smtp": "Email configuration error. Please contact us directly."
+				}
+			}
 		}
 	},
 	"footer": {

@@ -25,14 +25,14 @@ export default defineEventHandler(async (event) => {
       })
     }
 
-    // Validation du téléphone
-    const phoneRegex = /^\+243[0-9]{9}$/
-    if (!phoneRegex.test(phone)) {
-      throw createError({
-        statusCode: 400,
-        statusMessage: 'Format de téléphone invalide (ex: +243XXXXXXXXX)'
-      })
-    }
+               // Validation du téléphone (plus flexible pour les standards internationaux)
+           const phoneRegex = /^\+[0-9]{1,4}\s[0-9\s\-\(\)\.]{6,15}$/
+           if (!phoneRegex.test(phone)) {
+             throw createError({
+               statusCode: 400,
+               statusMessage: 'Format de téléphone invalide (ex: +243 123456789)'
+             })
+           }
 
     // Vérifier la configuration SMTP
     console.log('=== CONFIGURATION SMTP ===')
@@ -84,14 +84,14 @@ export default defineEventHandler(async (event) => {
     }
 
     // Envoyer l'email
-    console.log('=== ENVOI EMAIL ===')
-    console.log('De:', process.env.SMTP_USER)
-    console.log('À:', 'hello@vincentasani.me')
-    console.log('Sujet:', `Message de contact: ${subject}`)
+          console.log('=== ENVOI EMAIL ===')
+      console.log('De:', process.env.SMTP_USER)
+      console.log('À:', ['info@latlongcongo.com', 'vincent@wito-inc.com'])
+      console.log('Sujet:', `Message de contact: ${subject}`)
     
     await transporter.sendMail({
-      from: process.env.SMTP_USER,
-      to: 'hello@vincentasani.me',
+      from: `"Latlong International" <latlong@wito-inc.com>`,
+      to: ['info@latlongcongo.com', 'vincent@wito-inc.com'],
       replyTo: email, // Permet de répondre directement à l'expéditeur
       subject: `Message de contact: ${subject}`,
       html: `

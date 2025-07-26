@@ -75,13 +75,13 @@ export default defineEventHandler(async (event) => {
     })
     
     console.log('De:', process.env.SMTP_USER)
-    console.log('À:', 'hello@vincentasani.me')
+    console.log('À:', 'info@latlongcongo.com')
     console.log('Sujet:', `Message de contact: ${subject}`)
     console.log('Tentative d\'envoi d\'email...')
     
     await transporter.sendMail({
-      from: process.env.SMTP_USER,
-      to: 'hello@vincentasani.me',
+      from: `"Latlong International" <${process.env.SMTP_USER}>`,
+      to: 'info@latlongcongo.com',
       subject: `Message de contact: ${subject}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f9f9f9;">

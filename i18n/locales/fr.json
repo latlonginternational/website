@@ -94,6 +94,8 @@
 			}
 		},
 		"details": {
+			"title": "Nos coordonnées",
+			"subtitle": "Toutes nos informations de contact",
 			"callUs": {
 				"label": "Appelez-nous",
 		"phone": "+243 810 041 500",
@@ -112,7 +114,79 @@
 		},
 		"form": {
 			"title": "Contactez-nous",
-			"subtitle": "Envoyez-nous un message"
+			"subtitle": "Envoyez un message",
+			"header": {
+				"title": "Contactez-nous",
+				"subtitle": "Envoyez-nous votre message et nous vous répondrons dans les plus brefs délais"
+			},
+			"fields": {
+				"name": {
+					"label": "Prénom et Nom",
+					"placeholder": "Votre nom complet"
+				},
+				"email": {
+					"label": "Adresse Email",
+					"placeholder": {
+						"user": "votre.email",
+						"domain": "exemple.com"
+					}
+				},
+				"phone": {
+					"label": "Numéro de Téléphone",
+					"placeholder": "Votre numéro de téléphone"
+				},
+				"subject": {
+					"label": "Sujet",
+					"placeholder": "Sujet de votre message"
+				},
+				"message": {
+					"label": "Message",
+					"placeholder": "Décrivez votre demande ou question..."
+				}
+			},
+			"checkbox": {
+				"text": "Je confirme que mes informations de contact (email et téléphone) sont correctes"
+			},
+			"button": {
+				"submit": "Envoyer le message",
+				"submitting": "Envoi en cours..."
+			},
+			"validation": {
+				"name": {
+					"required": "Le nom est requis"
+				},
+				"email": {
+					"required": "L'email est requis",
+					"invalid": "Format d'email invalide"
+				},
+				"phone": {
+					"required": "Le numéro de téléphone est requis",
+					"invalid": "Format de téléphone invalide (6-15 chiffres, espaces, tirets, parenthèses autorisés)"
+				},
+				"subject": {
+					"required": "Le sujet est requis"
+				},
+				"message": {
+					"required": "Le message est requis"
+				},
+				"checkbox": {
+					"required": "Vous devez confirmer que vos informations de contact sont correctes"
+				}
+			},
+			"messages": {
+				"success": {
+					"title": "✅ Votre message a été envoyé avec succès à",
+					"email": { "user": "info", "domain": "latlongcongo.com" },
+					"subtitle": "Nous vous contacterons dans les plus brefs délais à votre adresse email et numéro de téléphone fournis."
+				},
+				"error": {
+					"general": "Une erreur est survenue lors de l'envoi du message. Veuillez réessayer.",
+					"validation": "Veuillez corriger les erreurs dans le formulaire",
+					"missingCredentials": "Configuration email non disponible. Veuillez nous contacter directement par téléphone ou email.",
+					"greetingNeverReceived": "Problème de connexion au serveur email. Veuillez vérifier votre connexion internet et réessayer.",
+					"smtp": "Erreur de configuration email. Veuillez nous contacter directement."
+				}
+			}
 		}
 	},
 	"footer": {
