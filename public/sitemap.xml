@@ -6,156 +6,156 @@
   
   <!-- Page d'accueil -->
   <url>
-    <loc>https://latlongcongo.com/</loc>
+    <loc>https://latlong.witoxr.app//</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://latlongcongo.com/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://latlongcongo.com/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://latlong.witoxr.app//" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://latlong.witoxr.app//?lang=en" />
   </url>
   
   <!-- Page À propos -->
   <url>
-    <loc>https://latlongcongo.com/about</loc>
+    <loc>https://latlong.witoxr.app//about</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://latlongcongo.com/about" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://latlongcongo.com/about?lang=en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://latlong.witoxr.app//about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://latlong.witoxr.app//about?lang=en" />
   </url>
   
   <!-- Page Contact -->
   <url>
-    <loc>https://latlongcongo.com/contact</loc>
+    <loc>https://latlong.witoxr.app//contact</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://latlongcongo.com/contact" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://latlongcongo.com/contact?lang=en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://latlong.witoxr.app//contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://latlong.witoxr.app//contact?lang=en" />
   </url>
   
   <!-- ===== SERVICES ===== -->
   
   <!-- Services - Page principale -->
   <url>
-    <loc>https://latlongcongo.com/services</loc>
+    <loc>https://latlong.witoxr.app//services</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://latlongcongo.com/services" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://latlongcongo.com/services?lang=en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://latlong.witoxr.app//services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://latlong.witoxr.app//services?lang=en" />
   </url>
   
   <!-- Protection -->
   <url>
-    <loc>https://latlongcongo.com/services/protection</loc>
+    <loc>https://latlong.witoxr.app//services/protection</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://latlongcongo.com/services/protection" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://latlongcongo.com/services/protection?lang=en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://latlong.witoxr.app//services/protection" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://latlong.witoxr.app//services/protection?lang=en" />
   </url>
   
   <!-- Technologie -->
   <url>
-    <loc>https://latlongcongo.com/services/technology</loc>
+    <loc>https://latlong.witoxr.app//services/technology</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://latlongcongo.com/services/technology" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://latlongcongo.com/services/technology?lang=en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://latlong.witoxr.app//services/technology" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://latlong.witoxr.app//services/technology?lang=en" />
   </url>
   
   <!-- Consultance -->
   <url>
-    <loc>https://latlongcongo.com/services/consultancy</loc>
+    <loc>https://latlong.witoxr.app//services/consultancy</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://latlongcongo.com/services/consultancy" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://latlongcongo.com/services/consultancy?lang=en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://latlong.witoxr.app//services/consultancy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://latlong.witoxr.app//services/consultancy?lang=en" />
   </url>
   
   <!-- Formations -->
   <url>
-    <loc>https://latlongcongo.com/services/trainings</loc>
+    <loc>https://latlong.witoxr.app//services/trainings</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://latlongcongo.com/services/trainings" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://latlongcongo.com/services/trainings?lang=en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://latlong.witoxr.app//services/trainings" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://latlong.witoxr.app//services/trainings?lang=en" />
   </url>
   
   <!-- Autres services de sécurité -->
   <url>
-    <loc>https://latlongcongo.com/services/others-security-services</loc>
+    <loc>https://latlong.witoxr.app//services/others-security-services</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://latlongcongo.com/services/others-security-services" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://latlongcongo.com/services/others-security-services?lang=en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://latlong.witoxr.app//services/others-security-services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://latlong.witoxr.app//services/others-security-services?lang=en" />
   </url>
   
   <!-- ===== ÉTHIQUE ===== -->
   
   <!-- Éthique - Page principale -->
   <url>
-    <loc>https://latlongcongo.com/ethique</loc>
+    <loc>https://latlong.witoxr.app//ethique</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://latlongcongo.com/ethique" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://latlongcongo.com/ethique?lang=en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://latlong.witoxr.app//ethique" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://latlong.witoxr.app//ethique?lang=en" />
   </url>
   
   <!-- Conseils -->
   <url>
-    <loc>https://latlongcongo.com/ethique/conseils</loc>
+    <loc>https://latlong.witoxr.app//ethique/conseils</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://latlongcongo.com/ethique/conseils" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://latlongcongo.com/ethique/conseils?lang=en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://latlong.witoxr.app//ethique/conseils" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://latlong.witoxr.app//ethique/conseils?lang=en" />
   </url>
   
   <!-- RSE -->
   <url>
-    <loc>https://latlongcongo.com/ethique/rse</loc>
+    <loc>https://latlong.witoxr.app//ethique/rse</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://latlongcongo.com/ethique/rse" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://latlongcongo.com/ethique/rse?lang=en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://latlong.witoxr.app//ethique/rse" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://latlong.witoxr.app//ethique/rse?lang=en" />
   </url>
   
   <!-- Termes et conditions -->
   <url>
-    <loc>https://latlongcongo.com/ethique/termes-conditions</loc>
+    <loc>https://latlong.witoxr.app//ethique/termes-conditions</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://latlongcongo.com/ethique/termes-conditions" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://latlongcongo.com/ethique/termes-conditions?lang=en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://latlong.witoxr.app//ethique/termes-conditions" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://latlong.witoxr.app//ethique/termes-conditions?lang=en" />
   </url>
   
   <!-- Code de conduite -->
   <url>
-    <loc>https://latlongcongo.com/ethique/code-conduite</loc>
+    <loc>https://latlong.witoxr.app//ethique/code-conduite</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://latlongcongo.com/ethique/code-conduite" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://latlongcongo.com/ethique/code-conduite?lang=en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://latlong.witoxr.app//ethique/code-conduite" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://latlong.witoxr.app//ethique/code-conduite?lang=en" />
   </url>
   
   <!-- ICoCA -->
   <url>
-    <loc>https://latlongcongo.com/ethique/icoca</loc>
+    <loc>https://latlong.witoxr.app//ethique/icoca</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://latlongcongo.com/ethique/icoca" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://latlongcongo.com/ethique/icoca?lang=en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://latlong.witoxr.app//ethique/icoca" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://latlong.witoxr.app//ethique/icoca?lang=en" />
   </url>
   
 </urlset> 

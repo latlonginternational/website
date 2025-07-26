@@ -79,7 +79,7 @@
       <nav class="main-menu clearfix -mx-4" :class="{ scrolled: isScrolled }">
         <div class="main-menu-wrapper clearfix">
           <div class="main-menu-wrapper__left items-center">
-            <div class="main-menu-wrapper__logo">
+            <div class="main-menu-wrapper__logo mr-8">
               <a href="/"
                 ><img
                   src="/assets/images/resources/logo-1.png"
@@ -88,7 +88,7 @@
               /></a>
             </div>
 
-            <div class="flex justify-between items-center pt-0.5 lg:pl-0 pl-4">
+            <div class="flex justify-between items-center pt-0.5 lg:pl-0 pl-0">
               <div class="language-menu-item hidden lg:block">
                 <LanguageSelector />
               </div>
@@ -173,7 +173,7 @@
                   </li>
 
                   <!-- Contacts -->
-                  <li>
+                  <li class="block lg:hidden">
                     <a href="/contact">Contacts</a>
                   </li>
                 </ul>

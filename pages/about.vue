@@ -69,7 +69,7 @@
             <div class="get-to-know__right">
               <ul class="get-to-know__images list-unstyled">
                 <li>
-                  <div class="get-to-know__img-1">
+                  <div class="get-to-know__img-1 sm:block hidden">
                     <img
                       src="/assets/images/resources/blacks.jpg"
                       alt="Équipe Latlong"
@@ -144,12 +144,25 @@
         </div>
         <div class="row">
           <div class="col-xl-12">
-            <div class="operational-zone-map">
+            <div class="operational-zone-map relative border border-gray-300 rounded-lg">
+              <div class="p-4">
               <p class="text-center">{{ t('about.operationalZone.description') }}</p>
+
+              </div>
               <div
                 id="map"
-                style="height: 500px; width: 100%; margin-top: 20px"
+                style="height: 500px; width: 100%; margin-top: 20px; overflow: hidden;"
               ></div>
+              
+              <!-- Div pour afficher les données de la ville -->
+              <div id="city-popup" class="city-popup" style="display: none;">
+                <div class="city-popup-content">
+                  <button class="city-popup-close" onclick="closeCityPopup()" :title="t('map.close')">×</button>
+                  <h4 id="city-name"></h4>
+                  <p id="city-province"></p>
+                  <p id="city-description"></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -425,6 +438,14 @@ useHead({
 });
 
 onMounted(() => {
+  // Fonction globale pour fermer le popup
+  window.closeCityPopup = function() {
+    const cityPopup = document.getElementById('city-popup');
+    if (cityPopup) {
+      cityPopup.style.display = 'none';
+    }
+  };
+
   // Initialiser le token d'accès Mapbox
   mapboxgl.accessToken =
     "pk.eyJ1IjoiY2FwdGFpbnZpbmNlIiwiYSI6ImNtZGs4NThqeDBuMzIyc3F5eHdwZmllamYifQ.tKseNa9WiD6oUe72PMDTNA";
@@ -447,144 +468,168 @@ onMounted(() => {
   const cities = [
   {
     name: "Kinshasa",
+    province: "Kinshasa",
     coordinates: [15.3136, -4.3276],
     color: "#00AEEF",
     description: "Capitale politique et économique de la RDC.",
   },
   {
     name: "Goma",
+    province: "Nord-Kivu",
     coordinates: [29.2333, -1.6833],
     color: "#00AEEF",
     description: "Base principale de nos opérations.",
   },
   {
     name: "Lubumbashi",
+    province: "Haut-Katanga",
     coordinates: [27.4794, -11.6609],
     color: "#00AEEF",
     description: "Hub minier et centre économique du Katanga.",
   },
   {
     name: "Bisie",
+    province: "Nord-Kivu",
     coordinates: [27.2500, -1.0000],
     color: "#00AEEF",
     description: "Site minier important.",
   },
   {
     name: "Bukavu",
+    province: "Sud-Kivu",
     coordinates: [28.8428, -2.4908],
     color: "#00AEEF",
     description: "Ville du Sud-Kivu.",
   },
   {
     name: "Bule",
+    province: "Ituri",
     coordinates: [30.6000, 1.9167],
     color: "#00AEEF",
     description: "Localité de l'Ituri.",
   },
   {
     name: "Bunia",
+    province: "Ituri",
     coordinates: [30.2522, 1.5594],
     color: "#00AEEF",
     description: "Chef-lieu de l'Ituri.",
   },
   {
     name: "Butembo",
+    province: "Nord-Kivu",
     coordinates: [29.2912, 0.1416],
     color: "#00AEEF",
     description: "Ville commerciale du Nord-Kivu.",
   },
   {
     name: "Durba",
+    province: "Haut-Uele",
     coordinates: [28.0333, 3.4833],
     color: "#00AEEF",
     description: "Ville minière du Haut-Uele.",
   },
   {
     name: "Geti",
-    coordinates: [29.3167, -1.9500],
+    province: "Ituri",
+    coordinates: [30.0900882, 1.1658949],
     color: "#00AEEF",
-    description: "Localité du Sud-Kivu.",
+    description: "Ville du territoire d'Irumu dans la province de l'Ituri.",
   },
   {
     name: "Kalemie",
+    province: "Tanganyika",
     coordinates: [29.1947, -5.9475],
     color: "#00AEEF",
     description: "Ville portuaire du Tanganyika.",
   },
   {
     name: "Kirumba",
+    province: "Nord-Kivu",
     coordinates: [29.1667, -0.5833],
     color: "#00AEEF",
     description: "Ville du Nord-Kivu.",
   },
   {
     name: "Kisangani",
+    province: "Tshopo",
     coordinates: [25.2001, 0.5153],
     color: "#00AEEF",
     description: "Grande ville de la Tshopo.",
   },
   {
     name: "Kitshanga",
+    province: "Nord-Kivu",
     coordinates: [28.5667, -1.0500],
     color: "#00AEEF",
     description: "Localité du Nord-Kivu.",
   },
   {
     name: "Komanda",
+    province: "Ituri",
     coordinates: [29.6167, 1.1833],
     color: "#00AEEF",
     description: "Localité de l'Ituri.",
   },
   {
     name: "Mahagi",
+    province: "Ituri",
     coordinates: [31.1500, 2.2833],
     color: "#00AEEF",
     description: "Ville frontalière de l'Ituri.",
   },
   {
     name: "Minova",
+    province: "Sud-Kivu",
     coordinates: [28.9667, -3.4000],
     color: "#00AEEF",
     description: "Ville du Sud-Kivu.",
   },
   {
     name: "Niangara",
+    province: "Haut-Uele",
     coordinates: [27.7333, 3.3500],
     color: "#00AEEF",
     description: "Ville du Haut-Uele.",
   },
   {
     name: "Nyunzu",
+    province: "Tanganyika",
     coordinates: [27.2500, -6.1500],
     color: "#00AEEF",
     description: "Ville du Tanganyika.",
   },
   {
     name: "Ramogi",
+    province: "Haut-Uele",
     coordinates: [28.0000, 2.8000],
     color: "#00AEEF",
     description: "Localité du Haut-Uele.",
   },
   {
     name: "Uvira",
+    province: "Sud-Kivu",
     coordinates: [29.1386, -3.3958],
     color: "#00AEEF",
     description: "Ville du Sud-Kivu, au bord du lac Tanganyika.",
   },
   {
     name: "Walikale",
+    province: "Nord-Kivu",
     coordinates: [27.9833, -0.6833],
     color: "#00AEEF",
     description: "Ville du Nord-Kivu.",
   },
   {
     name: "Watsa",
+    province: "Haut-Uele",
     coordinates: [28.0000, 3.0333],
     color: "#00AEEF",
     description: "Ville du Haut-Uele.",
   },
   {
     name: "Beni",
+    province: "Nord-Kivu",
     coordinates: [29.4731, 0.4911],
     color: "#00AEEF",
     description: "Ville du Nord-Kivu.",
@@ -640,6 +685,7 @@ onMounted(() => {
           },
           properties: {
             name: city.name,
+            province: city.province,
             description: city.description,
             color: city.color
           }
@@ -741,14 +787,44 @@ onMounted(() => {
 
     // Gestion des clics sur les marqueurs individuels
     map.on('click', 'unclustered-point', (e) => {
-      const coordinates = e.features[0].geometry.coordinates.slice();
+      console.log('Clic sur un point détecté:', e.features[0].properties.name);
+      
       const properties = e.features[0].properties;
 
-      // Créer la popup
-      const popup = new mapboxgl.Popup()
-        .setLngLat(coordinates)
-        .setHTML(`<h4>${properties.name}</h4><p>${properties.description}</p>`)
-        .addTo(map);
+      // Afficher les données dans notre div personnalisé
+      const cityPopup = document.getElementById('city-popup');
+      const cityName = document.getElementById('city-name');
+      const cityProvince = document.getElementById('city-province');
+      const cityDescription = document.getElementById('city-description');
+      
+      cityName.textContent = properties.name;
+      cityProvince.textContent = `${t('map.province')}: ${properties.province}`;
+      
+      // Utiliser la traduction pour la description
+      const cityKey = properties.name.toLowerCase();
+      const translatedDescription = t(`map.cities.${cityKey}`);
+      cityDescription.textContent = translatedDescription || properties.description;
+      
+      cityPopup.style.display = 'block';
+      
+      // Fonction pour fermer le popup
+      const closePopup = () => {
+        cityPopup.style.display = 'none';
+      };
+      
+      // Écouter les mouvements de la carte pour fermer le popup
+      const moveHandler = () => {
+        closePopup();
+        map.off('move', moveHandler);
+        map.off('zoom', moveHandler);
+        map.off('drag', moveHandler);
+      };
+      
+      map.on('move', moveHandler);
+      map.on('zoom', moveHandler);
+      map.on('drag', moveHandler);
+      
+      console.log('Données affichées pour:', properties.name);
     });
 
     // Changer le curseur au survol
@@ -764,6 +840,22 @@ onMounted(() => {
     map.on('mouseleave', 'unclustered-point', () => {
       map.getCanvas().style.cursor = '';
     });
+
+    // Fermer les popups quand on clique ailleurs sur la carte
+    map.on('click', (e) => {
+      const features = map.queryRenderedFeatures(e.point, {
+        layers: ['unclustered-point', 'clusters']
+      });
+      
+      if (features.length === 0) {
+        const existingPopups = document.querySelectorAll('.mapboxgl-popup');
+        existingPopups.forEach(popup => popup.remove());
+      }
+    });
+
+    // Test pour vérifier que la carte est bien chargée
+    console.log('Carte Mapbox chargée avec succès');
+    console.log('Nombre de villes:', cities.length);
   });
 });
 </script>
@@ -774,6 +866,212 @@ onMounted(() => {
   display: block;
   border: none;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Styles pour les popups personnalisées */
+.custom-popup .mapboxgl-popup-content {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: none;
+  padding: 0;
+}
+
+.custom-popup .mapboxgl-popup-tip {
+  border-top-color: #fff;
+}
+
+.custom-popup .mapboxgl-popup-close-button {
+  color: #666;
+  font-size: 18px;
+  padding: 8px;
+  right: 8px;
+  top: 8px;
+}
+
+.custom-popup .mapboxgl-popup-close-button:hover {
+  color: #00AEEF;
+  background-color: transparent;
+}
+
+/* Empêcher le scroll sur la carte */
+#map {
+  overflow: hidden !important;
+  position: relative;
+}
+
+#map canvas {
+  pointer-events: auto;
+}
+
+/* Empêcher le scroll de la page lors des clics sur la carte */
+.operational-zone-map {
+  overflow: hidden;
+}
+
+/* Styles pour les popups accessibles */
+.accessible-popup {
+  z-index: 50 !important;
+}
+
+.accessible-popup .mapboxgl-popup-content {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: none;
+  padding: 0;
+  background: white !important;
+  color: #333 !important;
+}
+
+.accessible-popup .mapboxgl-popup-tip {
+  border-top-color: #fff;
+}
+
+.accessible-popup .mapboxgl-popup-close-button {
+  color: #666;
+  font-size: 18px;
+  padding: 8px;
+  right: 8px;
+  top: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.accessible-popup .mapboxgl-popup-close-button:hover {
+  color: #00AEEF;
+  background-color: rgba(0, 174, 239, 0.1);
+  border-radius: 4px;
+}
+
+.accessible-popup .mapboxgl-popup-close-button:focus {
+  outline: 2px solid #00AEEF;
+  outline-offset: 2px;
+}
+
+/* Assurer que toutes les popups Mapbox sont visibles */
+.mapboxgl-popup {
+  z-index: 9999 !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: absolute !important;
+  pointer-events: auto !important;
+}
+
+.mapboxgl-popup-content {
+  background: white !important;
+  color: #333 !important;
+  border: 2px solid #00AEEF !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+  padding: 15px !important;
+  min-width: 250px !important;
+  min-height: 120px !important;
+  position: relative !important;
+}
+
+.mapboxgl-popup-tip {
+  border-top-color: #00AEEF !important;
+  border-bottom-color: transparent !important;
+}
+
+/* Styles améliorés pour le bouton de fermeture */
+.mapboxgl-popup-close-button {
+  position: absolute !important;
+  top: 8px !important;
+  right: 8px !important;
+  width: 30px !important;
+  height: 30px !important;
+  background: #00AEEF !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 50% !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 10000 !important;
+  transition: all 0.3s ease !important;
+}
+
+.mapboxgl-popup-close-button:hover {
+  background: #ff4444 !important;
+  transform: scale(1.1) !important;
+}
+
+.mapboxgl-popup-close-button:active {
+  transform: scale(0.95) !important;
+}
+
+/* Styles pour le popup personnalisé */
+.city-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background: white;
+  border: 2px solid #00AEEF;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  min-width: 250px;
+  max-width: 300px;
+}
+
+.city-popup-content {
+  padding: 20px;
+  position: relative;
+}
+
+.city-popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background: #00AEEF;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.city-popup-close:hover {
+  background: #ff4444;
+  transform: scale(1.1);
+}
+
+.city-popup-close:active {
+  transform: scale(0.95);
+}
+
+#city-name {
+  margin: 0 0 8px 0;
+  color: #00AEEF;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#city-province {
+  margin: 0 0 12px 0;
+  color: #666;
+  font-size: 14px;
+  font-style: italic;
+}
+
+#city-description {
+  margin: 0;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.4;
 }
 
 /* Styles pour le carousel des marques */

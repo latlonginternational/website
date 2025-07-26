@@ -47,6 +47,36 @@
 		"discoverIcoca": "Discover ICoCA",
 		"ourCertificate": "Our ICoCA certificate"
 	},
+	"map": {
+		"province": "Province",
+		"close": "Close",
+		"cities": {
+			"kinshasa": "Political and economic capital of the DRC.",
+			"goma": "Main base of our operations.",
+			"lubumbashi": "Mining hub and economic center of Katanga.",
+			"bisie": "Important mining site.",
+			"bukavu": "City of South Kivu.",
+			"bule": "Locality of Ituri.",
+			"bunia": "Capital of Ituri.",
+			"butembo": "Commercial city of North Kivu.",
+			"durba": "Mining city of Haut-Uele.",
+			"geti": "City of the Irumu territory in Ituri province.",
+			"kalemie": "Port city of Tanganyika.",
+			"kirumba": "City of North Kivu.",
+			"kisangani": "Major city of Tshopo.",
+			"kitshanga": "Locality of North Kivu.",
+			"komanda": "Locality of Ituri.",
+			"mahagi": "Border city of Ituri.",
+			"minova": "City of South Kivu.",
+			"niangara": "City of Haut-Uele.",
+			"nyunzu": "City of Tanganyika.",
+			"ramogi": "Locality of Haut-Uele.",
+			"uvira": "City of South Kivu, on the shores of Lake Tanganyika.",
+			"walikale": "City of North Kivu.",
+			"watsa": "City of Haut-Uele.",
+			"beni": "City of North Kivu."
+		}
+	},
 	"contact": {
 		"pageHeader": {
 			"title": "Contact Us",

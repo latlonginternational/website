@@ -71,6 +71,7 @@
             type="submit" 
             class="thm-btn comment-form__btn"
             :disabled="isSubmitting"
+            @click="console.log('Bouton cliqué!')"
           >
             <span v-if="isSubmitting">Envoi en cours...</span>
             <span v-else>Envoyer le message</span>
@@ -83,9 +84,6 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { useMail } from '#imports'
-
-const mail = useMail()
 
 interface FormData {
   name: string
@@ -169,6 +167,9 @@ const showStatusMessage = (message: string, type: 'success' | 'error') => {
 }
 
 const handleSubmit = async () => {
+  console.log('=== DÉBUT HANDLE SUBMIT ===')
+  console.log('Formulaire soumis avec les données:', formData.value)
+  
   clearError('name')
   clearError('email')
   clearError('phone')
@@ -176,28 +177,30 @@ const handleSubmit = async () => {
   clearError('message')
 
   if (!validateForm()) {
+    console.log('❌ Validation échouée')
     showStatusMessage('Veuillez corriger les erreurs dans le formulaire', 'error')
     return
   }
+  console.log('✅ Validation réussie')
 
   isSubmitting.value = true
   statusMessage.value = 'Envoi en cours...'
   statusType.value = ''
 
   try {
-    await mail.send({
-      from: 'test@wito-inc.com',
-      subject: `Nouveau message de contact: ${formData.value.subject}`,
-      html: `
-        <h2>Nouveau message de contact</h2>
-        <p><strong>Nom:</strong> ${formData.value.name}</p>
-        <p><strong>Email:</strong> ${formData.value.email}</p>
-        <p><strong>Téléphone:</strong> ${formData.value.phone}</p>
-        <p><strong>Sujet:</strong> ${formData.value.subject}</p>
-        <p><strong>Message:</strong></p>
-        <p>${formData.value.message.replace(/\n/g, '<br>')}</p>
-      `
+    console.log('🔄 Appel de l\'API /api/contact-simple...')
+    // Test avec l'API contact simple
+    const response = await $fetch('/api/contact-simple', {
+      method: 'POST',
+      body: {
+        name: formData.value.name,
+        email: formData.value.email,
+        phone: formData.value.phone,
+        subject: formData.value.subject,
+        message: formData.value.message
+      }
     })
+    console.log('✅ Réponse de l\'API:', response)
 
     showStatusMessage('Votre message a été envoyé avec succès !', 'success')
     formData.value = {
@@ -207,9 +210,24 @@ const handleSubmit = async () => {
       subject: '',
       message: ''
     }
-  } catch (error) {
+  } catch (error: any) {
+    console.log('❌ ERREUR DANS LE COMPOSANT:', error)
     console.error('Erreur lors de l\'envoi du message:', error)
-    showStatusMessage('Une erreur est survenue lors de l\'envoi du message. Veuillez réessayer.', 'error')
+    
+    // Message d'erreur plus spécifique selon le type d'erreur
+    let errorMessage = 'Une erreur est survenue lors de l\'envoi du message. Veuillez réessayer.'
+    
+    if (error?.data?.message) {
+      errorMessage = error.data.message
+    } else if (error?.message && error.message.includes('Missing credentials')) {
+      errorMessage = 'Configuration email non disponible. Veuillez nous contacter directement par téléphone ou email.'
+    } else if (error?.message && error.message.includes('Greeting never received')) {
+      errorMessage = 'Problème de connexion au serveur email. Veuillez vérifier votre connexion internet et réessayer.'
+    } else if (error?.message && error.message.includes('SMTP')) {
+      errorMessage = 'Erreur de configuration email. Veuillez nous contacter directement.'
+    }
+    
+    showStatusMessage(errorMessage, 'error')
   } finally {
     isSubmitting.value = false
   }

@@ -47,6 +47,36 @@
 		"discoverIcoca": "Découvrir ICoCA",
 		"ourCertificate": "Notre certificat ICoCA"
 	},
+	"map": {
+		"province": "Province",
+		"close": "Fermer",
+		"cities": {
+			"kinshasa": "Capitale politique et économique de la RDC.",
+			"goma": "Base principale de nos opérations.",
+			"lubumbashi": "Hub minier et centre économique du Katanga.",
+			"bisie": "Site minier important.",
+			"bukavu": "Ville du Sud-Kivu.",
+			"bule": "Localité de l'Ituri.",
+			"bunia": "Chef-lieu de l'Ituri.",
+			"butembo": "Ville commerciale du Nord-Kivu.",
+			"durba": "Ville minière du Haut-Uele.",
+			"geti": "Ville du territoire d'Irumu dans la province de l'Ituri.",
+			"kalemie": "Ville portuaire du Tanganyika.",
+			"kirumba": "Ville du Nord-Kivu.",
+			"kisangani": "Grande ville de la Tshopo.",
+			"kitshanga": "Localité du Nord-Kivu.",
+			"komanda": "Localité de l'Ituri.",
+			"mahagi": "Ville frontalière de l'Ituri.",
+			"minova": "Ville du Sud-Kivu.",
+			"niangara": "Ville du Haut-Uele.",
+			"nyunzu": "Ville du Tanganyika.",
+			"ramogi": "Localité du Haut-Uele.",
+			"uvira": "Ville du Sud-Kivu, au bord du lac Tanganyika.",
+			"walikale": "Ville du Nord-Kivu.",
+			"watsa": "Ville du Haut-Uele.",
+			"beni": "Ville du Nord-Kivu."
+		}
+	},
 	"contact": {
 		"pageHeader": {
 			"title": "Contactez-nous",

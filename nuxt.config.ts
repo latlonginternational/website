@@ -63,7 +63,7 @@ export default defineNuxtConfig({
 					"Permissions-Policy": "camera=(), microphone=(), geolocation=()",
 					"X-DNS-Prefetch-Control": "on",
 					"Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
-					"Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google-analytics.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://api.mapbox.com; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'"
+					"Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https://www.google-analytics.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https: blob:; connect-src 'self' https://api.mapbox.com https://*.mapbox.com; frame-src 'self' https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; worker-src 'self' blob:; child-src 'self' blob:"
 				}
 			},
 			"/sitemap.xml": { 
@@ -94,12 +94,7 @@ export default defineNuxtConfig({
 				}
 			}
 		},
-		devProxy: {
-			"/api": {
-				target: "http://localhost:3000",
-				changeOrigin: true
-			}
-		},
+
 		// Configuration pour la compression et les performances
 		compressPublicAssets: true,
 		minify: true
@@ -108,7 +103,7 @@ export default defineNuxtConfig({
 	runtimeConfig: {
 		mail: {
 			message: {
-				to: ["hello@vincentasani.me", "info@latlongcongo.com"]
+				to: ["info@latlongcongo.com", "vincent@wito-inc.com"]
 			},
 			smtp: {
 				host: process.env.SMTP_HOST || "smtp.titan.email",
@@ -152,9 +147,9 @@ export default defineNuxtConfig({
 				{ property: "og:type", content: "website" },
 				{ property: "og:title", content: "Latlong International - Sécurité et Protection en RDC" },
 				{ property: "og:description", content: "Votre partenaire de confiance pour la sécurité et la protection en République Démocratique du Congo. Services de protection, technologie, consultance et formation depuis 2012." },
-				{ property: "og:url", content: "https://latlongcongo.com" },
+				{ property: "og:url", content: "https://latlong.witoxr.app/" },
 				{ property: "og:site_name", content: "Latlong International" },
-				{ property: "og:image", content: "https://latlongcongo.com/cover.png" },
+				{ property: "og:image", content: "https://latlong.witoxr.app//cover.png" },
 				{ property: "og:image:width", content: "1200" },
 				{ property: "og:image:height", content: "630" },
 				{ property: "og:image:alt", content: "Latlong International - Services de sécurité en RDC" },
@@ -166,7 +161,7 @@ export default defineNuxtConfig({
 				{ name: "twitter:creator", content: "@latlongcongo" },
 				{ name: "twitter:title", content: "Latlong International - Sécurité et Protection en RDC" },
 				{ name: "twitter:description", content: "Votre partenaire de confiance pour la sécurité et la protection en République Démocratique du Congo." },
-				{ name: "twitter:image", content: "https://latlongcongo.com/cover.png" },
+				{ name: "twitter:image", content: "https://latlong.witoxr.app//cover.png" },
 				{ name: "twitter:image:alt", content: "Latlong International - Services de sécurité en RDC" },
 				
 				// Additional SEO meta tags
@@ -177,14 +172,11 @@ export default defineNuxtConfig({
 				{ name: "apple-mobile-web-app-title", content: "Latlong International" },
 				
 				// Security headers
-				{ "http-equiv": "X-UA-Compatible", content: "IE=edge" },
-				{ "http-equiv": "X-Content-Type-Options", content: "nosniff" },
-				{ "http-equiv": "X-Frame-Options", content: "SAMEORIGIN" },
-				{ "http-equiv": "X-XSS-Protection", content: "1; mode=block" }
+				{ "http-equiv": "X-UA-Compatible", content: "IE=edge" }
 			],
 			link: [
 				// Canonical URL
-				{ rel: "canonical", href: "https://latlongcongo.com" },
+				{ rel: "canonical", href: "https://latlong.witoxr.app/" },
 				// Favicon and manifest links
 				{
 					rel: "icon",
@@ -274,8 +266,8 @@ export default defineNuxtConfig({
 						"@context": "https://schema.org",
 						"@type": "Organization",
 						"name": "Latlong International",
-						"url": "https://latlongcongo.com",
-						"logo": "https://latlongcongo.com/logo-dark.png",
+						"url": "https://latlong.witoxr.app/",
+						"logo": "https://latlong.witoxr.app//logo-dark.png",
 						"description": "Services de sécurité et de protection en République Démocratique du Congo",
 						"foundingDate": "2012",
 						"address": {
