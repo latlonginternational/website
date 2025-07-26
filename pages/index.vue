@@ -1,295 +1,384 @@
 <template>
-	<div class="index-page">
-		<!--Main Slider Start
+  <div class="index-page">
+    <!--Main Slider Start
 		:autoplay="{
 					delay: 5000,
 					disableOnInteraction: false,
 					pauseOnMouseEnter: true
 				}"
 		-->
-		<section class="main-slider">
-			<swiper
-				:modules="[Navigation, Autoplay, EffectFade]"
-				:slides-per-view="1"
-				:loop="true"
-				:effect="'fade'"
-				:fadeEffect="{
-					crossFade: true
-				}"
-				
-				:navigation="{
-					nextEl: '.swiper-button-next',
-					prevEl: '.swiper-button-prev'
-				}"
-				class="thm-swiper__slider"
-			>
-				<swiper-slide v-for="(slide, index) in slides" :key="index">
-					<div class="image-layer" :style="{ backgroundImage: `url(${slide.image})` }"></div>
-					
-					<div class="container">
-						<div class="row">
-							<div class="col-xl-7 max-w-[600px] mx-auto text-center">
-								<div class="main-slider__content">
-									<h2> <span class="leading-[1.2]">{{ t(slide.title) }}</span> </h2>
-									<p>{{ t(slide.description) }}</p>
-									<a :href="slide.link" class="thm-btn">{{ t(slide.button) }}</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</swiper-slide>
+    <section class="main-slider">
+      <swiper
+        :modules="[Navigation, Autoplay, EffectFade]"
+        :slides-per-view="1"
+        :loop="true"
+        :effect="'fade'"
+        :fadeEffect="{
+          crossFade: true,
+        }"
+        :navigation="{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }"
+        class="thm-swiper__slider"
+      >
+        <swiper-slide v-for="(slide, index) in slides" :key="index">
+          <div
+            class="image-layer"
+            :style="{ backgroundImage: `url(${slide.image})` }"
+          ></div>
 
-				<!-- Navigation buttons -->
-				<div class="main-slider__nav">
-					<div class="swiper-button-prev">
-						<i class="icon-right-arrow icon-left-arrow"></i>
-					</div>
-					<div class="swiper-button-next">
-						<i class="icon-right-arrow"></i>
-					</div>
-				</div>
-			</swiper>
-		</section>
-		<!--Main Slider End-->
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-7 max-w-[600px] mx-auto text-center">
+                <div class="main-slider__content">
+                  <h2>
+                    <span class="leading-[1.2]">{{ t(slide.title) }}</span>
+                  </h2>
+                  <p>{{ t(slide.description) }}</p>
+                  <a :href="slide.link" class="thm-btn">{{
+                    t(slide.button)
+                  }}</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </swiper-slide>
 
-		<!--Feature One Start-->
+        <!-- Navigation buttons -->
+        <div class="main-slider__nav">
+          <div class="swiper-button-prev">
+            <i class="icon-right-arrow icon-left-arrow"></i>
+          </div>
+          <div class="swiper-button-next">
+            <i class="icon-right-arrow"></i>
+          </div>
+        </div>
+      </swiper>
+    </section>
+    <!--Main Slider End-->
 
-		<section class="feature-one -mt-4">
-			<div class="container">
-				<div class="row flex flex-wrap">
-					<div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
-						<!--Feature One Single-->
-						<div class="feature-one__single">
-							<div class="feature-one__img-box">
-								<div class="feature-one__img h-64">
-									<img src="/assets/images/resources/prot1.jpg" alt="" class="h-full w-full object-cover" />
-								</div>
-								<div class="feature-one__icon-box">
-									<div class="feature-one__icon-title-box">
-										<h3 class="feature-one__icon-title">
-											<a href="#">{{ t('home.features.security.title') }}</a>
-										</h3>
-									</div>
-									<div class="feature-one__icon">
-										<span class="icon-strategy"></span>
-									</div>
-								</div>
-								<div class="feature-one__hover">
-									<div class="feature-one__hover-bg" style="background-image: url(/assets/images/resources/consultances.jpg)"></div>
-									<div class="feature-one__hover-icon">
-										<span class="icon-strategy"></span>
-									</div>
-									<h4 class="feature-one__hover-title">
-										<a href="#">{{ t('home.features.security.hover.title') }}</a>
-									</h4>
-									<p class="feature-one__hover-text">{{ t('home.features.security.hover.description') }}</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
-						<!--Feature One Single-->
-						<div class="feature-one__single">
-							<div class="feature-one__img-box">
-								<div class="feature-one__img h-64">
-									<img src="/assets/images/resources/protection.jpg" alt="" class="h-full w-full object-cover" />
-								</div>
-								<div class="feature-one__icon-box">
-									<div class="feature-one__icon-title-box">
-										<h3 class="feature-one__icon-title">
-											<a href="/services/protection">{{ t('home.features.protection.title') }}</a>
-										</h3>
-									</div>
-									<div class="feature-one__icon">
-										<span class="icon-point-of-sale"></span>
-									</div>
-								</div>
-								<div class="feature-one__hover">
-									<div class="feature-one__hover-bg" style="background-image: url(/assets/images/resources/protections.jpg)"></div>
-									<div class="feature-one__hover-icon">
-										<span class="icon-point-of-sale"></span>
-									</div>
-									<h4 class="feature-one__hover-title">
-										<a href="/services/protection">{{ t('home.features.protection.hover.title') }}</a>
-									</h4>
-									<p class="feature-one__hover-text">{{ t('home.features.protection.hover.description') }}</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
-						<!--Feature One Single-->
-						<div class="feature-one__single">
-							<div class="feature-one__img-box">
-								<div class="feature-one__img h-64">
-									<img src="/assets/images/resources/lat1.jpg" alt="" class="h-full w-full object-cover" />
-								</div>
-								<div class="feature-one__icon-box">
-									<div class="feature-one__icon-title-box">
-										<h3 class="feature-one__icon-title">
-											<a href="/services/consultancy">{{ t('home.features.consultancy.title') }}</a>
-										</h3>
-									</div>
-									<div class="feature-one__icon">
-										<span class="icon-consumer-behavior"></span>
-									</div>
-								</div>
-								<div class="feature-one__hover">
-									<div class="feature-one__hover-bg" style="background-image: url(/assets/images/resources/consultances.jpg)"></div>
-									<div class="feature-one__hover-icon">
-										<span class="icon-consumer-behavior"></span>
-									</div>
-									<h4 class="feature-one__hover-title">
-										<a href="/services/consultancy/">{{ t('home.features.consultancy.hover.title') }}</a>
-									</h4>
-									<p class="feature-one__hover-text">{{ t('home.features.consultancy.hover.description') }}</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--Feature One End-->
+    <!--Feature One Start-->
 
-		<!--About One Start-->
-		<section class="about-one">
-			<div class="container">
-				<div class="row">
-					<!-- Image Section -->
-					<div class="col-xl-6">
-						<div class="about-one__left wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
-							<div class="about-one__img">
-								<img class="sm:h-[520px] object-cover" src="/assets/images/blog/art2.jpg" alt="Map showing Latlong" />
-							</div>
-							<div class="about-one__shape">
-								<img src="/assets/images/shapes/about-one-shape.png" alt="" />
-							</div>
-						</div>
-					</div>
+    <section class="feature-one -mt-4">
+      <div class="container">
+        <div class="row flex flex-wrap">
+          <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
+            <!--Feature One Single-->
+            <div class="feature-one__single">
+              <div class="feature-one__img-box">
+                <div class="feature-one__img h-64">
+                  <img
+                    src="/assets/images/resources/prot1.jpg"
+                    alt=""
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+                <div class="feature-one__icon-box">
+                  <div class="feature-one__icon-title-box">
+                    <h3 class="feature-one__icon-title">
+                      <a href="#">{{ t("home.features.security.title") }}</a>
+                    </h3>
+                  </div>
+                  <div class="feature-one__icon">
+                    <span class="icon-strategy"></span>
+                  </div>
+                </div>
+                <div class="feature-one__hover">
+                  <div
+                    class="feature-one__hover-bg"
+                    style="
+                      background-image: url(/assets/images/resources/consultances.jpg);
+                    "
+                  ></div>
+                  <div class="feature-one__hover-icon">
+                    <span class="icon-strategy"></span>
+                  </div>
+                  <h4 class="feature-one__hover-title">
+                    <a href="#">{{
+                      t("home.features.security.hover.title")
+                    }}</a>
+                  </h4>
+                  <p class="feature-one__hover-text">
+                    {{ t("home.features.security.hover.description") }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
+            <!--Feature One Single-->
+            <div class="feature-one__single">
+              <div class="feature-one__img-box">
+                <div class="feature-one__img h-64">
+                  <img
+                    src="/assets/images/resources/protection.jpg"
+                    alt=""
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+                <div class="feature-one__icon-box">
+                  <div class="feature-one__icon-title-box">
+                    <h3 class="feature-one__icon-title">
+                      <a href="/services/protection">{{
+                        t("home.features.protection.title")
+                      }}</a>
+                    </h3>
+                  </div>
+                  <div class="feature-one__icon">
+                    <span class="icon-point-of-sale"></span>
+                  </div>
+                </div>
+                <div class="feature-one__hover">
+                  <div
+                    class="feature-one__hover-bg"
+                    style="
+                      background-image: url(/assets/images/resources/protections.jpg);
+                    "
+                  ></div>
+                  <div class="feature-one__hover-icon">
+                    <span class="icon-point-of-sale"></span>
+                  </div>
+                  <h4 class="feature-one__hover-title">
+                    <a href="/services/protection">{{
+                      t("home.features.protection.hover.title")
+                    }}</a>
+                  </h4>
+                  <p class="feature-one__hover-text">
+                    {{ t("home.features.protection.hover.description") }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
+            <!--Feature One Single-->
+            <div class="feature-one__single">
+              <div class="feature-one__img-box">
+                <div class="feature-one__img h-64">
+                  <img
+                    src="/assets/images/resources/lat1.jpg"
+                    alt=""
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+                <div class="feature-one__icon-box">
+                  <div class="feature-one__icon-title-box">
+                    <h3 class="feature-one__icon-title">
+                      <a href="/services/consultancy">{{
+                        t("home.features.consultancy.title")
+                      }}</a>
+                    </h3>
+                  </div>
+                  <div class="feature-one__icon">
+                    <span class="icon-consumer-behavior"></span>
+                  </div>
+                </div>
+                <div class="feature-one__hover">
+                  <div
+                    class="feature-one__hover-bg"
+                    style="
+                      background-image: url(/assets/images/resources/consultances.jpg);
+                    "
+                  ></div>
+                  <div class="feature-one__hover-icon">
+                    <span class="icon-consumer-behavior"></span>
+                  </div>
+                  <h4 class="feature-one__hover-title">
+                    <a href="/services/consultancy/">{{
+                      t("home.features.consultancy.hover.title")
+                    }}</a>
+                  </h4>
+                  <p class="feature-one__hover-text">
+                    {{ t("home.features.consultancy.hover.description") }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Feature One End-->
 
-					<!-- Text Section -->
-					<div class="col-xl-6">
-						<div class="about-one__right">
-							<div class="section-title text-left">
-								<span class="section-title__tagline">{{ t('home.about.tagline') }}</span>
-								<h2 class="section-title__title">{{ t('home.about.title') }}</h2>
-							</div>
-							<p class="-about-one__business-start-text">
-								<span class="text-lg leading-[1]">
-									{{ t('home.about.description') }}
-								</span>
-							</p>
+    <!--About One Start-->
+    <section class="about-one">
+      <div class="container">
+        <div class="row">
+          <!-- Image Section -->
+          <div class="col-xl-6">
+            <div
+              class="about-one__left wow slideInLeft"
+              data-wow-delay="100ms"
+              data-wow-duration="2500ms"
+            >
+              <div class="about-one__img">
+                <img
+                  class="sm:h-[520px] object-cover"
+                  src="/assets/images/blog/art2.jpg"
+                  alt="Map showing Latlong"
+                />
+              </div>
+              <div class="about-one__shape">
+                <img src="/assets/images/shapes/about-one-shape.png" alt="" />
+              </div>
+            </div>
+          </div>
 
-							<div class="about-one__points-box">
-								<!-- First Column -->
-								<ul class="list-unstyled about-one__points">
-									<li>
-										<div class="icon w-4">
-											<i class="fa fa-check"></i>
-										</div>
-										<div class="text w-full">
-											<p>{{ t('home.about.points.realtime') }}</p>
-										</div>
-									</li>
-									<li>
-										<div class="icon w-4">
-											<i class="fa fa-check"></i>
-										</div>
-										<div class="text w-full">
-											<p>{{ t('home.about.points.protection') }}</p>
-										</div>
-									</li>
-								</ul>
-								<!-- Second Column -->
-								<ul class="list-unstyled about-one__points about-one__points-two">
-									<li>
-										<div class="icon w-4">
-											<i class="fa fa-check"></i>
-										</div>
-										<div class="text w-full">
-											<p>{{ t('home.about.points.technology') }}</p>
-										</div>
-									</li>
-									<li>
-										<div class="icon w-4">
-											<i class="fa fa-check"></i>
-										</div>
-										<div class="text w-full">
-											<p>{{ t('home.about.points.solutions') }}</p>
-										</div>
-									</li>
-								</ul>
-							</div>
+          <!-- Text Section -->
+          <div class="col-xl-6">
+            <div class="about-one__right">
+              <div class="section-title text-left">
+                <span class="section-title__tagline">{{
+                  t("home.about.tagline")
+                }}</span>
+                <h2 class="section-title__title">
+                  {{ t("home.about.title") }}
+                </h2>
+              </div>
+              <p class="-about-one__business-start-text">
+                <span class="text-lg leading-[1]">
+                  {{ t("home.about.description") }}
+                </span>
+              </p>
 
-							<div class="about-one__bottom">
-								<div class="about-one__btn-box">
-									<a href="/about" class="thm-btn about-one__btn">{{ t('home.about.button') }}</a>
-								</div>
-								<div class="about-one__contact">
-									<div class="about-one__contact-icon">
-										<span class="icon-phone"></span>
-									</div>
-									<div class="about-one__contact-phone">
-										<p class="about-one__contact-text">{{ t('home.about.contact.text') }}</p>
-										<a href="tel:+243810041500" class=" whitespace-normal">{{ t('home.about.contact.phone') }}</a><br>
-										<a href="tel:+243993400082" class=" whitespace-normal">{{ t('home.about.contact.phone') }}</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--About One End-->
+              <div class="about-one__points-box">
+                <!-- First Column -->
+                <ul class="list-unstyled about-one__points">
+                  <li>
+                    <div class="icon w-4">
+                      <i class="fa fa-check"></i>
+                    </div>
+                    <div class="text w-full">
+                      <p>{{ t("home.about.points.realtime") }}</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="icon w-4">
+                      <i class="fa fa-check"></i>
+                    </div>
+                    <div class="text w-full">
+                      <p>{{ t("home.about.points.protection") }}</p>
+                    </div>
+                  </li>
+                </ul>
+                <!-- Second Column -->
+                <ul
+                  class="list-unstyled about-one__points about-one__points-two"
+                >
+                  <li>
+                    <div class="icon w-4">
+                      <i class="fa fa-check"></i>
+                    </div>
+                    <div class="text w-full">
+                      <p>{{ t("home.about.points.technology") }}</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="icon w-4">
+                      <i class="fa fa-check"></i>
+                    </div>
+                    <div class="text w-full">
+                      <p>{{ t("home.about.points.solutions") }}</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
 
-		<!--Our Mission Start-->
-		<section class="our-mission">
-			<div class="our-mission-bg-box">
-				<div class="our-mission-bg jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%" style="background-image: url(/assets/images/backgrounds/nous_contacter.jpg)"></div>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-12">
-						<div class="our-mission__inner">
-							<h2 class="our-mission__title">{{ t('home.mission.title') }}</h2>
-							<a href="/contact" class="thm-btn our-mission__btn">{{ t('home.mission.button') }}</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--Our Mission End-->
+              <div class="about-one__bottom">
+                <div class="about-one__btn-box">
+                  <a href="/about" class="thm-btn about-one__btn">{{
+                    t("home.about.button")
+                  }}</a>
+                </div>
+                <div class="about-one__contact">
+                  <a href="/contact" class="about-one__contact-icon">
+                    <span class="icon-phone"></span>
+                  </a>
+                  <div class="about-one__contact-phone">
+                    <a href="tel:+243810041500" class="whitespace-normal">{{
+                      t("home.about.contact.phone")
+                    }}</a
+                    ><br />
+                    <a href="tel:+243993400082" class="whitespace-normal">{{
+                      t("home.about.contact.phone2")
+                    }}</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--About One End-->
 
-		<!--Building Experience Start-->
-		<section class="building-experience">
-			<div class="container">
-				<div class="building-experience__top">
-					<div class="row">
-						<div class="col-xl-7">
-							<div class="building-experience__top-left">
-								<div class="section-title text-left">
-									<span class="section-title__tagline">{{ t('home.experience.tagline') }}</span>
-									<h2 class="section-title__title">{{ t('home.experience.title') }}</h2>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-5">
-							<div class="building-experience__top-right">
-								<p class="building-experience__top-right-text">{{ t('home.experience.description') }}</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="building-experience__bottom">
-					<div class="row">
-						<div class="col-xl-6">
-							<div class="building-experience__bottom-content">
-								<div class="building-experience__bottom-img">
-									<img src="/assets/images/resources/pat.jpg" class="max-h-[400px] sm:w-[300px] object-cover" alt="" />
-								</div>
-								<!--
+    <!--Our Mission Start-->
+    <section class="our-mission">
+      <div class="our-mission-bg-box">
+        <div
+          class="our-mission-bg jarallax"
+          data-jarallax
+          data-speed="0.2"
+          data-imgPosition="50% 0%"
+          style="
+            background-image: url(/assets/images/backgrounds/nous_contacter.jpg);
+          "
+        ></div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="our-mission__inner">
+              <h2 class="our-mission__title">{{ t("home.mission.title") }}</h2>
+              <a href="/contact" class="thm-btn our-mission__btn">{{
+                t("home.mission.button")
+              }}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Our Mission End-->
+
+    <!--Building Experience Start-->
+    <section class="building-experience">
+      <div class="container">
+        <div class="building-experience__top">
+          <div class="row">
+            <div class="col-xl-7">
+              <div class="building-experience__top-left">
+                <div class="section-title text-left">
+                  <span class="section-title__tagline">{{
+                    t("home.experience.tagline")
+                  }}</span>
+                  <h2 class="section-title__title">
+                    {{ t("home.experience.title") }}
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-5">
+              <div class="building-experience__top-right">
+                <p class="building-experience__top-right-text">
+                  {{ t("home.experience.description") }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="building-experience__bottom">
+          <div class="row">
+            <div class="col-xl-6">
+              <div class="building-experience__bottom-content">
+                <div class="building-experience__bottom-img">
+                  <img
+                    src="/assets/images/resources/pat.jpg"
+                    class="max-h-[400px] sm:w-[300px] object-cover"
+                    alt=""
+                  />
+                </div>
+                <!--
 								<div class="building-experience__progress">
 									<div class="building-experience__progress-wrap"> 
 										<div class="building-experience__progress-single">
@@ -314,1206 +403,1294 @@
 								</div>
 								-->
 
-								<div class="building-experience__progress">
-								
-									<div class="building-experience__progress-wrap">
-										<div class="flex flex-col items-center justify-center building-experience__progress-single building-experience__progress-single-last">
-											<div class="border-conult-base border-2 w-[120px] h-[120px] flex items-center justify-center rounded-full ">
-												<div class="circle-progress " data-options='{ "value": 1.0,"thickness": 4,"emptyFill": "#edf3f6","lineCap": "square", "size": 122, "fill": { "color": "#00AEEF" } }'></div>
-												<!-- /.circle-progress -->
-												<span class="text-black text-2xl">100%</span>
-											</div>
-											<div class="building-experience__progress-content">
-												<h3>
-													{{ t('home.experience.progress.affordable.title') }}
-												</h3>
-											</div>
-										</div>
-										<div class=" my-8 h-[1px] bg-gray-300 w-full">
-											
-										</div>
-										<div class="flex flex-col items-center justify-center building-experience__progress-single building-experience__progress-single-last">
-											<div class="border-conult-base border-2 w-[120px] h-[120px] flex items-center justify-center rounded-full ">
-												<div class="circle-progress " data-options='{ "value": 1.0,"thickness": 4,"emptyFill": "#edf3f6","lineCap": "square", "size": 122, "fill": { "color": "#00AEEF" } }'></div>
-												<!-- /.circle-progress -->
-												<span class="text-black text-2xl">100%</span>
-											</div>
-											<!-- /.about-five__progress-box -->
-											<div class="building-experience__progress-content">
-												<h3>
-													{{ t('home.experience.progress.quality.title') }}
-												</h3>
-											</div>
-										</div>
-									</div>
-								</div>
-
-
-							</div>
-						</div>
-						<div class="col-xl-6">
-							<div class="building-experience__bottom-faq">
-								<div class="accrodion-grp" data-grp-name="faq-one-accrodion">
-									<div class="accrodion active">
-										<div class="accrodion-title">
-											<h4>{{ t('home.experience.faq.services.question') }}</h4>
-										</div>
-										<div class="accrodion-content">
-											<div class="inner">
-												<p>{{ t('home.experience.faq.services.answer') }}</p>
-											</div>
-										</div>
-									</div>
-									<div class="accrodion">
-										<div class="accrodion-title">
-											<h4>{{ t('home.experience.faq.remote.question') }}</h4>
-										</div>
-										<div class="accrodion-content">
-											<div class="inner">
-												<p>{{ t('home.experience.faq.remote.answer') }}</p>
-											</div>
-										</div>
-									</div>
-									<div class="accrodion last-chiled">
-										<div class="accrodion-title">
-											<h4>{{ t('home.experience.faq.quality.question') }}</h4>
-										</div>
-										<div class="accrodion-content">
-											<div class="inner">
-												<p>{{ t('home.experience.faq.quality.answer') }}</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--Building Experience End-->
-
-		<!--CTA One Start-->
-		<section class="cta-one">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-12">
-						<div class="cta-one__inner">
-							<h2 class="cta-one__title">{{ t('home.cta.title') }}</h2>
-							<a href="/about" class="thm-btn cta-one__btn">{{ t('home.cta.button') }}</a>
-							<div class="cta-one__shape wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
-								<img src="/assets/images/shapes/cta-one-shape.png" alt="" />
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--CTA One End-->
-
-		<!--Testimonial One Start-->
-		<section class="testimonial-onee">
-			<div class="testimonial-onee-map" style="background-image: url(/assets/images/shapes/testimonial-onee-map.png)"></div>
-			<div class="container">
-				<div class="section-title text-center">
-					<span class="section-title__tagline">{{ t('home.testimonials.tagline') }}</span>
-					<h2 class="section-title__title">{{ t('home.testimonials.title') }}</h2>
-				</div>
-				<div class="row">
-					<div class="col-xl-12">
-						<Swiper
-							:slides-per-view="3"
-							:loop="true"
-							:autoplay="{ delay: 5000 }"
-							:pagination="{ clickable: true }"
-							:breakpoints="{
-								0: { slidesPerView: 1 },
-								640: { slidesPerView: 1 },
-								768: { slidesPerView: 2 },
-								1024: { slidesPerView: 3 }
-							}"
-							class="testimonial-onee__carousel"
-						>
-							<SwiperSlide v-for="(testimonial, index) in testimonials" :key="index">
-								<div class="testimonial-onee__single position: relative; display: flex; flex-direction: column; justify-content: flex-start; min-height: 380px; padding: 60px 60px 100px; background: #fff; box-shadow: 0px 10px 60px 0px rgb(0 0 0 / 5%);">
-									<div class="testimonial-onee__rating">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-									</div>
-									<p class="testimonial-onee__text">
-										<span class="leading-[1.5]">
-											{{ t(`home.testimonials.items.${index + 1}.text`) }}
-										</span>
-									</p>
-									<div class="testimonial-onee__author mt-8">
-										<div class="testimonial-onee__author-img">
-											<img :src="`/assets/images/testimonial/avatar${index + 3}.jpg`" alt="" />
-										</div>
-										<div class="testimonial-onee__author-details">
-											<h4 class="testimonial-onee__author-name">{{ t(`home.testimonials.items.${index + 1}.author`) }}</h4>
-											<p class="testimonial-onee__author-title">{{ t(`home.testimonials.items.${index + 1}.position`) }}</p>
-										</div>
-									</div>
-									<div class="testimonial-onee__quote-icon">
-										<img src="/assets/images/icon/quote-icon.png" alt="" />
-									</div>
-								</div>
-							</SwiperSlide>
-						</Swiper>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--Testimonial One End-->
-
-		<!--Counter One Start-->
-		<section class="counter-one">
-			<div class="counter-one-wrap px-8 relative">
-				<div class="absolute top-0 z-10 opacity-40 left-0 right-0 bottom-0 bg-black" style="background-image: url(/assets/images/shapes/counter-one-shape.png) s"></div>
-				<div class="counter-one-shape z-0" style="background-image: url(/assets/images/shapes/counter-one-shape.png)"></div>
-				<div class="counter-one-img z-0" style="background-image: url(/assets/images/resources/ref.jpg)"></div>
-				<div class="counter-one-shape-2 z-0">
-					<img src="/assets/images/shapes/counter-one-shape-2.png" alt="" />
-				</div>
-				<div class="counter-one-shape-3 z-0">
-					<img src="/assets/images/shapes/counter-one-shape-3.png" alt="" />
-				</div>
-				<div class="container z-50 relative">
-					<div class="counter-one__top">
-						<div class="row">
-							<div class="col-xl-5 col-lg-6">
-								<h2 class="counter-one__top-title">{{ t('home.counter.title') }}</h2>
-							</div>
-						</div>
-					</div>
-					<div class="counter-one__bottom">
-						<div class="row">
-							<div class="col-xl-12">
-								<ul class="counter-one__list list-unstyled">
-									<li class="counter-one__single wow fadeInUp" data-wow-delay="100ms">
-										<div class="counter-one__icon">
-											<span class="icon-help"></span>
-										</div>
-										<div class="counter-one__content">
-											<h3 class="odometer" data-count="52">0</h3>
-											<p class="counter-one__text">{{ t('home.counter.stats.partners.label') }}</p>
-										</div>
-									</li>
-									<li class="counter-one__single wow fadeInUp" data-wow-delay="200ms">
-										<div class="counter-one__icon">
-											<span class="icon-customer-review"></span>
-										</div>
-										<div class="counter-one__content">
-											<h3 class="odometer" data-count="304">0</h3>
-											<p class="counter-one__text">{{ t('home.counter.stats.clients.label') }}</p>
-										</div>
-									</li>
-									<li class="counter-one__single wow fadeInUp" data-wow-delay="300ms">
-										<div class="counter-one__icon">
-											<span class="icon-consultant"></span>
-										</div>
-										<div class="counter-one__content">
-											<h3 class="odometer" data-count="1517">00</h3>
-											<p class="counter-one__text">{{ t('home.counter.stats.experts.label') }}</p>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--Counter One End-->
-		<!--News One Start-->
-		<section class="py-20 w-full">
-			<div class="container mx-auto w-full md:px-4">
-				<!-- Section Title -->
-				<div class="text-center mb-12">
-					<span class="text-conult-base font-conult text-sm uppercase tracking-wider mb-2 block">{{ t('home.ethics.tagline') }}</span>
-					<h2 class="text-3xl md:text-4xl font-conult font-bold text-conult-black">{{ t('home.ethics.title') }}</h2>
-				</div>
-
-				<!-- News Carousel -->
-				<div class="relative w-full">
-					<Swiper
-						:modules="[Navigation, Autoplay, Pagination]"
-						:slides-per-view="3"
-						:space-between="30"
-						:loop="true"
-						:slides-per-group="1"
-						:autoplay="{ delay: 5000, disableOnInteraction: false }"
-						:pagination="{ clickable: true, el: '.swiper-pagination' }"
-						:navigation="{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }"
-						:breakpoints="{
-							320: {
-								slidesPerView: 1,
-								spaceBetween: 0,
-								slidesPerGroup: 1
-							},
-							480: {
-								slidesPerView: 1,
-								spaceBetween: 0,
-								slidesPerGroup: 1
-							},
-							640: {
-								slidesPerView: 1,
-								spaceBetween: 0,
-								slidesPerGroup: 1
-							},
-							768: {
-								slidesPerView: 2,
-								spaceBetween: 25,
-								slidesPerGroup: 1
-							},
-							1024: {
-								slidesPerView: 3,
-								spaceBetween: 30,
-								slidesPerGroup: 1
-							},
-							1200: {
-								slidesPerView: 3,
-								spaceBetween: 30,
-								slidesPerGroup: 1
-							}
-						}"
-						class="ethics-swiper w-full"
-					>
-						<SwiperSlide v-for="(ethique, index) in ethiques" :key="ethique.id">
-							<DefaultCard :data="{
-								...ethique,
-								titre: t(ethique.titre),
-								description: t(ethique.description),
-								date: t(ethique.date)
-							}" />
-						</SwiperSlide>
-						
-						<!-- Navigation Buttons -->
-						<div class="swiper-button-prev absolute left-0 top-1/2 -translate-y-1/2 -translate-x-6 w-12 h-12 rounded-full bg-white border border-white flex items-center justify-center text-conult-base hover:bg-conult-base hover:text-white transition-colors z-10">
-							<i class="fas fa-arrow-left"></i>
-						</div>
-						<div class="swiper-button-next absolute right-0 top-1/2 -translate-y-1/2 translate-x-6 w-12 h-12 rounded-full bg-white border border-white flex items-center justify-center text-conult-base hover:bg-conult-base hover:text-white transition-colors z-10">
-							<i class="fas fa-arrow-right"></i>
-						</div>
-						
-						<!-- Pagination -->
-						<div class="swiper-pagination flex justify-center mt-8 gap-2"></div>
-					</Swiper>
-				</div>
-			</div>
-		</section>
-		<!--News One End-->
-
-<!--Brand One Start-->
-<section class="brand-one">
-  <div class="container">
-    <Swiper
-      :modules="[Autoplay]"
-      :slides-per-view="5"
-      :space-between="100"
-      :loop="true"
-      :autoplay="{ delay: 5000 }"
-      :breakpoints="{
-        0: {
-          slidesPerView: 2,
-          spaceBetween: 30
-        },
-        375: {
-          slidesPerView: 2,
-          spaceBetween: 30
-        },
-        575: {
-          slidesPerView: 3,
-          spaceBetween: 30
-        },
-        767: {
-          slidesPerView: 4,
-          spaceBetween: 50
-        },
-        991: {
-          slidesPerView: 5,
-          spaceBetween: 50
-        },
-        1199: {
-          slidesPerView: 6,
-          spaceBetween: 100
-        }
-      }"
-      class="brand-one__carousel"
-    >
-      <SwiperSlide v-for="(brand, index) in brands" :key="index">
-        <div class="brand-one__single">
-          <img :src="brand.image" :alt="brand.name" />
+                <div class="building-experience__progress">
+                  <div class="building-experience__progress-wrap">
+                    <div
+                      class="flex flex-col items-center justify-center building-experience__progress-single building-experience__progress-single-last"
+                    >
+                      <div
+                        class="border-conult-base border-2 w-[120px] h-[120px] flex items-center justify-center rounded-full"
+                      >
+                        <div
+                          class="circle-progress"
+                          data-options='{ "value": 1.0,"thickness": 4,"emptyFill": "#edf3f6","lineCap": "square", "size": 122, "fill": { "color": "#00AEEF" } }'
+                        ></div>
+                        <!-- /.circle-progress -->
+                        <span class="text-black text-2xl">100%</span>
+                      </div>
+                      <div class="building-experience__progress-content">
+                        <h3>
+                          {{ t("home.experience.progress.affordable.title") }}
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="my-8 h-[1px] bg-gray-300 w-full"></div>
+                    <div
+                      class="flex flex-col items-center justify-center building-experience__progress-single building-experience__progress-single-last"
+                    >
+                      <div
+                        class="border-conult-base border-2 w-[120px] h-[120px] flex items-center justify-center rounded-full"
+                      >
+                        <div
+                          class="circle-progress"
+                          data-options='{ "value": 1.0,"thickness": 4,"emptyFill": "#edf3f6","lineCap": "square", "size": 122, "fill": { "color": "#00AEEF" } }'
+                        ></div>
+                        <!-- /.circle-progress -->
+                        <span class="text-black text-2xl">100%</span>
+                      </div>
+                      <!-- /.about-five__progress-box -->
+                      <div class="building-experience__progress-content">
+                        <h3>
+                          {{ t("home.experience.progress.quality.title") }}
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <div class="building-experience__bottom-faq">
+                <div class="accrodion-grp" data-grp-name="faq-one-accrodion">
+                  <div class="accrodion active">
+                    <div class="accrodion-title">
+                      <h4>{{ t("home.experience.faq.services.question") }}</h4>
+                    </div>
+                    <div class="accrodion-content">
+                      <div class="inner">
+                        <p>{{ t("home.experience.faq.services.answer") }}</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accrodion">
+                    <div class="accrodion-title">
+                      <h4>{{ t("home.experience.faq.remote.question") }}</h4>
+                    </div>
+                    <div class="accrodion-content">
+                      <div class="inner">
+                        <p>{{ t("home.experience.faq.remote.answer") }}</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accrodion last-chiled">
+                    <div class="accrodion-title">
+                      <h4>{{ t("home.experience.faq.quality.question") }}</h4>
+                    </div>
+                    <div class="accrodion-content">
+                      <div class="inner">
+                        <p>{{ t("home.experience.faq.quality.answer") }}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </SwiperSlide>
-    </Swiper>
+      </div>
+    </section>
+    <!--Building Experience End-->
+
+    <!--CTA One Start-->
+    <section class="cta-one">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="cta-one__inner">
+              <h2 class="cta-one__title">{{ t("home.cta.title") }}</h2>
+              <a href="/contact" class="thm-btn cta-one__btn">{{
+                t("home.cta.button")
+              }}</a>
+              <div
+                class="cta-one__shape wow slideInLeft"
+                data-wow-delay="100ms"
+                data-wow-duration="2500ms"
+              >
+                <img src="/assets/images/shapes/cta-one-shape.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--CTA One End-->
+
+    <!--Testimonial One Start-->
+    <section class="testimonial-onee">
+      <div
+        class="testimonial-onee-map"
+        style="
+          background-image: url(/assets/images/shapes/testimonial-onee-map.png);
+        "
+      ></div>
+      <div class="container">
+        <div class="section-title text-center">
+          <span class="section-title__tagline">{{
+            t("home.testimonials.tagline")
+          }}</span>
+          <h2 class="section-title__title">
+            {{ t("home.testimonials.title") }}
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-xl-12">
+            <Swiper
+              :slides-per-view="3"
+              :loop="true"
+              :autoplay="{ delay: 5000 }"
+              :pagination="{ clickable: true }"
+              :breakpoints="{
+                0: { slidesPerView: 1 },
+                640: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+              }"
+              class="testimonial-onee__carousel"
+            >
+              <SwiperSlide
+                v-for="(testimonial, index) in testimonials"
+                :key="index"
+              >
+                <div
+                  class="testimonial-onee__single position: relative; display: flex; flex-direction: column; justify-content: flex-start; min-height: 380px; padding: 60px 60px 100px; background: #fff; box-shadow: 0px 10px 60px 0px rgb(0 0 0 / 5%);"
+                >
+                  <div class="testimonial-onee__rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <p class="testimonial-onee__text">
+                    <span class="leading-[1.5]">
+                      {{ t(`home.testimonials.items.${index + 1}.text`) }}
+                    </span>
+                  </p>
+                  <div class="testimonial-onee__author mt-8">
+                    <div class="testimonial-onee__author-img">
+                      <img
+                        :src="`/assets/images/testimonial/avatar${
+                          index + 3
+                        }.jpg`"
+                        alt=""
+                      />
+                    </div>
+                    <div class="testimonial-onee__author-details">
+                      <h4 class="testimonial-onee__author-name">
+                        {{ t(`home.testimonials.items.${index + 1}.author`) }}
+                      </h4>
+                      <p class="testimonial-onee__author-title">
+                        {{ t(`home.testimonials.items.${index + 1}.position`) }}
+                      </p>
+                    </div>
+                  </div>
+                  <div class="testimonial-onee__quote-icon">
+                    <img src="/assets/images/icon/quote-icon.png" alt="" />
+                  </div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Testimonial One End-->
+
+    <!--Counter One Start-->
+    <section class="counter-one">
+      <div class="counter-one-wrap px-8 relative">
+        <div
+          class="absolute top-0 z-10 opacity-40 left-0 right-0 bottom-0 bg-black"
+          style="
+            background-image: url(/assets/images/shapes/counter-one-shape.png) s;
+          "
+        ></div>
+        <div
+          class="counter-one-shape z-0"
+          style="
+            background-image: url(/assets/images/shapes/counter-one-shape.png);
+          "
+        ></div>
+        <div
+          class="counter-one-img z-0"
+          style="background-image: url(/assets/images/resources/ref.jpg)"
+        ></div>
+        <div class="counter-one-shape-2 z-0">
+          <img src="/assets/images/shapes/counter-one-shape-2.png" alt="" />
+        </div>
+        <div class="counter-one-shape-3 z-0">
+          <img src="/assets/images/shapes/counter-one-shape-3.png" alt="" />
+        </div>
+        <div class="container z-50 relative">
+          <div class="counter-one__top">
+            <div class="row">
+              <div class="col-xl-5 col-lg-6">
+                <h2 class="counter-one__top-title">
+                  {{ t("home.counter.title") }}
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="counter-one__bottom">
+            <div class="row">
+              <div class="col-xl-12">
+                <ul class="counter-one__list list-unstyled">
+                  <li
+                    class="counter-one__single wow fadeInUp"
+                    data-wow-delay="100ms"
+                  >
+                    <div class="counter-one__icon">
+                      <span class="icon-help"></span>
+                    </div>
+                    <div class="counter-one__content">
+                      <h3 class="odometer" data-count="52">0</h3>
+                      <p class="counter-one__text">
+                        {{ t("home.counter.stats.partners.label") }}
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="counter-one__single wow fadeInUp"
+                    data-wow-delay="200ms"
+                  >
+                    <div class="counter-one__icon">
+                      <span class="icon-customer-review"></span>
+                    </div>
+                    <div class="counter-one__content">
+                      <h3 class="odometer" data-count="304">0</h3>
+                      <p class="counter-one__text">
+                        {{ t("home.counter.stats.clients.label") }}
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="counter-one__single wow fadeInUp"
+                    data-wow-delay="300ms"
+                  >
+                    <div class="counter-one__icon">
+                      <span class="icon-consultant"></span>
+                    </div>
+                    <div class="counter-one__content">
+                      <h3 class="odometer" data-count="1517">00</h3>
+                      <p class="counter-one__text">
+                        {{ t("home.counter.stats.experts.label") }}
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Counter One End-->
+    <!--News One Start-->
+    <section class="py-20 w-full">
+      <div class="container mx-auto w-full md:px-4">
+        <!-- Section Title -->
+        <div class="text-center mb-12">
+          <span
+            class="text-conult-base font-conult text-sm uppercase tracking-wider mb-2 block"
+            >{{ t("home.ethics.tagline") }}</span
+          >
+          <h2
+            class="text-3xl md:text-4xl font-conult font-bold text-conult-black"
+          >
+            {{ t("home.ethics.title") }}
+          </h2>
+        </div>
+
+        <!-- News Carousel -->
+        <div class="relative w-full">
+          <Swiper
+            :modules="[Navigation, Autoplay, Pagination]"
+            :slides-per-view="3"
+            :space-between="30"
+            :loop="true"
+            :slides-per-group="1"
+            :autoplay="{ delay: 5000, disableOnInteraction: false }"
+            :pagination="{ clickable: true, el: '.swiper-pagination' }"
+            :navigation="{
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            }"
+            :breakpoints="{
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                slidesPerGroup: 1,
+              },
+              480: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                slidesPerGroup: 1,
+              },
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                slidesPerGroup: 1,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 25,
+                slidesPerGroup: 1,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                slidesPerGroup: 1,
+              },
+              1200: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                slidesPerGroup: 1,
+              },
+            }"
+            class="ethics-swiper w-full"
+          >
+            <SwiperSlide v-for="(ethique, index) in ethiques" :key="ethique.id">
+              <DefaultCard
+                :data="{
+                  ...ethique,
+                  titre: t(ethique.titre),
+                  description: t(ethique.description),
+                  date: t(ethique.date),
+                }"
+              />
+            </SwiperSlide>
+
+            <!-- Navigation Buttons -->
+            <div
+              class="swiper-button-prev absolute left-0 top-1/2 -translate-y-1/2 -translate-x-6 w-12 h-12 rounded-full bg-white border border-white flex items-center justify-center text-conult-base hover:bg-conult-base hover:text-white transition-colors z-10"
+            >
+              <i class="fas fa-arrow-left"></i>
+            </div>
+            <div
+              class="swiper-button-next absolute right-0 top-1/2 -translate-y-1/2 translate-x-6 w-12 h-12 rounded-full bg-white border border-white flex items-center justify-center text-conult-base hover:bg-conult-base hover:text-white transition-colors z-10"
+            >
+              <i class="fas fa-arrow-right"></i>
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination flex justify-center mt-8 gap-2"></div>
+          </Swiper>
+        </div>
+      </div>
+    </section>
+    <!--News One End-->
+
+    <!--Brand One Start-->
+    <section class="brand-one">
+      <div class="container">
+        <Swiper
+          :modules="[Autoplay]"
+          :slides-per-view="5"
+          :space-between="100"
+          :loop="true"
+          :autoplay="{ delay: 5000 }"
+          :breakpoints="{
+            0: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            375: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            575: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+            767: {
+              slidesPerView: 4,
+              spaceBetween: 50,
+            },
+            991: {
+              slidesPerView: 5,
+              spaceBetween: 50,
+            },
+            1199: {
+              slidesPerView: 6,
+              spaceBetween: 100,
+            },
+          }"
+          class="brand-one__carousel"
+        >
+          <SwiperSlide v-for="(brand, index) in brands" :key="index">
+            <div class="brand-one__single">
+              <img :src="brand.image" :alt="brand.name" />
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+    </section>
+    <!--Brand One End-->
   </div>
-</section>
-<!--Brand One End-->
-	</div>
 </template>
 
 <script setup lang="ts">
-import { Swiper, SwiperSlide } from 'swiper/vue'
-import type { Swiper as SwiperType } from 'swiper'
-import type { NavigationOptions, AutoplayOptions, PaginationOptions } from 'swiper/types'
-import { Navigation, Autoplay, EffectFade, Pagination } from 'swiper/modules'
-import { useI18n } from 'vue-i18n'
-import { ref } from 'vue'
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/autoplay'
-import 'swiper/css/effect-fade'
-import 'swiper/css/pagination'
+import { Swiper, SwiperSlide } from "swiper/vue";
+import type { Swiper as SwiperType } from "swiper";
+import type {
+  NavigationOptions,
+  AutoplayOptions,
+  PaginationOptions,
+} from "swiper/types";
+import { Navigation, Autoplay, EffectFade, Pagination } from "swiper/modules";
+import { useI18n } from "vue-i18n";
+import { ref } from "vue";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/autoplay";
+import "swiper/css/effect-fade";
+import "swiper/css/pagination";
 
-const { t } = useI18n()
+const { t } = useI18n();
 
 interface Slide {
-	image: string
-	title: string
-	description: string
-	button: string
-	link: string
+  image: string;
+  title: string;
+  description: string;
+  button: string;
+  link: string;
 }
 
 interface Testimonial {
-	text: string
-	author: string
-	position: string
+  text: string;
+  author: string;
+  position: string;
 }
 
 interface Ethique {
-	id: number
-	image: string
-	date: string
-	auteur: string
-	commentaires: number
-	titre: string
-	description: string
-	lien: string
+  id: number;
+  image: string;
+  date: string;
+  auteur: string;
+  commentaires: number;
+  titre: string;
+  description: string;
+  lien: string;
 }
 
 const slides = ref<Slide[]>([
-	{
-		image: '/assets/images/backgrounds/blo.jpg',
-		title: 'home.slider.slide1.title',
-		description: 'home.slider.slide1.description',
-		button: 'home.slider.slide1.button',
-		link: '/about'
-	},
-	{
-		image: '/assets/images/backgrounds/image2.jpg',
-		title: 'home.slider.slide2.title',
-		description: 'home.slider.slide2.description',
-		button: 'home.slider.slide2.button',
-		link: '/services'
-	},
-	{
-		image: '/assets/images/backgrounds/eq.jpg',
-		title: 'home.slider.slide3.title',
-		description: 'home.slider.slide3.description',
-		button: 'home.slider.slide3.button',
-		link: '/contact'
-	}
-])
+  {
+    image: "/assets/images/backgrounds/blo.jpg",
+    title: "home.slider.slide1.title",
+    description: "home.slider.slide1.description",
+    button: "home.slider.slide1.button",
+    link: "/about",
+  },
+  {
+    image: "/assets/images/backgrounds/image2.jpg",
+    title: "home.slider.slide2.title",
+    description: "home.slider.slide2.description",
+    button: "home.slider.slide2.button",
+    link: "/services",
+  },
+  {
+    image: "/assets/images/backgrounds/eq.jpg",
+    title: "home.slider.slide3.title",
+    description: "home.slider.slide3.description",
+    button: "home.slider.slide3.button",
+    link: "/contact",
+  },
+]);
 
 const testimonials = ref<Testimonial[]>([
-	{
-		text: 'home.testimonials.items.1.text',
-		author: 'home.testimonials.items.1.author',
-		position: 'home.testimonials.items.1.position'
-	},
-	{
-		text: 'home.testimonials.items.2.text',
-		author: 'home.testimonials.items.2.author',
-		position: 'home.testimonials.items.2.position'
-	},
-	{
-		text: 'home.testimonials.items.3.text',
-		author: 'home.testimonials.items.3.author',
-		position: 'home.testimonials.items.3.position'
-	}
-])
-
-
+  {
+    text: "home.testimonials.items.1.text",
+    author: "home.testimonials.items.1.author",
+    position: "home.testimonials.items.1.position",
+  },
+  {
+    text: "home.testimonials.items.2.text",
+    author: "home.testimonials.items.2.author",
+    position: "home.testimonials.items.2.position",
+  },
+  {
+    text: "home.testimonials.items.3.text",
+    author: "home.testimonials.items.3.author",
+    position: "home.testimonials.items.3.position",
+  },
+]);
 
 const ethiques = ref<Ethique[]>([
-	{
+  {
     id: 1,
-    image: '/assets/images/ethique/consultance.jpeg',
-    date: t('ethics.content.articles.advice.date'),
-    auteur: t('ethics.content.articles.advice.author'),
+    image: "/assets/images/ethique/consultance.png",
+    date: t("ethics.content.articles.advice.date"),
+    auteur: t("ethics.content.articles.advice.author"),
     commentaires: 0,
-    titre: t('ethics.content.articles.advice.title'),
-    description: t('ethics.content.articles.advice.description'),
-    lien: '/ethique/conseils'
+    titre: t("ethics.content.articles.advice.title"),
+    description: t("ethics.content.articles.advice.description"),
+    lien: "/ethique/conseils",
   },
   {
     id: 2,
-    image: '/assets/images/ethique/lp-1-2.jpg',
-    date: t('ethics.content.articles.csr.date'),
-    auteur: t('ethics.content.articles.csr.author'),
+    image: "/assets/images/ethique/lp-1-2.jpg",
+    date: t("ethics.content.articles.csr.date"),
+    auteur: t("ethics.content.articles.csr.author"),
     commentaires: 0,
-    titre: t('ethics.content.articles.csr.title'),
-    description: t('ethics.content.articles.csr.description'),
-    lien: '/ethique/rse'
+    titre: t("ethics.content.articles.csr.title"),
+    description: t("ethics.content.articles.csr.description"),
+    lien: "/ethique/rse",
   },
   {
     id: 3,
-    image: '/assets/images/ethique/nouvellesst.png',
-    date: t('ethics.content.articles.terms.date'),
-    auteur: t('ethics.content.articles.terms.author'),
+    image: "/assets/images/ethique/nouvellesst.png",
+    date: t("ethics.content.articles.terms.date"),
+    auteur: t("ethics.content.articles.terms.author"),
     commentaires: 0,
-    titre: t('ethics.content.articles.terms.title'),
-    description: t('ethics.content.articles.terms.description'),
-    lien: '/ethique/termes-conditions'
+    titre: t("ethics.content.articles.terms.title"),
+    description: t("ethics.content.articles.terms.description"),
+    lien: "/ethique/termes-conditions",
   },
   {
     id: 4,
-    image: '/assets/images/ethique/lp-1-3.jpg',
-    date: t('ethics.content.articles.code.date'),
-    auteur: t('ethics.content.articles.code.author'),
+    image: "/assets/images/ethique/lp-1-3.jpg",
+    date: t("ethics.content.articles.code.date"),
+    auteur: t("ethics.content.articles.code.author"),
     commentaires: 0,
-    titre: t('ethics.content.articles.code.title'),
-    description: t('ethics.content.articles.code.description'),
-    lien: '/ethique/code-conduite'
+    titre: t("ethics.content.articles.code.title"),
+    description: t("ethics.content.articles.code.description"),
+    lien: "/ethique/code-conduite",
   },
   {
     id: 5,
-    image: '/assets/images/ethique/lp-1-400.jpeg',
-    date: t('ethics.content.articles.icoca.date'),
-    auteur: t('ethics.content.articles.icoca.author'),
+    image: "/assets/images/ethique/lp-1-400.jpeg",
+    date: t("ethics.content.articles.icoca.date"),
+    auteur: t("ethics.content.articles.icoca.author"),
     commentaires: 0,
-    titre: t('ethics.content.articles.icoca.title'),
-    description: t('ethics.content.articles.icoca.description'),
-    lien: '/ethique/icoca'
-  }
+    titre: t("ethics.content.articles.icoca.title"),
+    description: t("ethics.content.articles.icoca.description"),
+    lien: "/ethique/icoca",
+  },
 ]);
 
-
-
 // Définition des options Swiper
-const swiperModules = [Navigation, Autoplay, EffectFade]
+const swiperModules = [Navigation, Autoplay, EffectFade];
 const swiperOptions = {
-	modules: swiperModules,
-	slidesPerView: 1,
-	loop: true,
-	effect: 'fade' as const,
-	fadeEffect: {
-		crossFade: true
-	},
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev'
-	} as NavigationOptions,
-	autoplay: {
-		delay: 5000,
-		disableOnInteraction: false,
-		pauseOnMouseEnter: true
-	} as AutoplayOptions
-}
+  modules: swiperModules,
+  slidesPerView: 1,
+  loop: true,
+  effect: "fade" as const,
+  fadeEffect: {
+    crossFade: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  } as NavigationOptions,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  } as AutoplayOptions,
+};
 
 // Options du slider des marques
 const brandSwiperOptions = {
-	spaceBetween: 100,
-	slidesPerView: 5,
-	autoplay: { delay: 5000 },
-	breakpoints: {
-		"0": {
-			spaceBetween: 30,
-			slidesPerView: 2
-		},
-		"375": {
-			spaceBetween: 30,
-			slidesPerView: 2
-		},
-		"575": {
-			spaceBetween: 30,
-			slidesPerView: 3
-		},
-		"767": {
-			spaceBetween: 50,
-			slidesPerView: 4
-		},
-		"991": {
-			spaceBetween: 50,
-			slidesPerView: 5
-		},
-		"1199": {
-			spaceBetween: 100,
-			slidesPerView: 5
-		}
-	}
+  spaceBetween: 100,
+  slidesPerView: 5,
+  autoplay: { delay: 5000 },
+  breakpoints: {
+    "0": {
+      spaceBetween: 30,
+      slidesPerView: 2,
+    },
+    "375": {
+      spaceBetween: 30,
+      slidesPerView: 2,
+    },
+    "575": {
+      spaceBetween: 30,
+      slidesPerView: 3,
+    },
+    "767": {
+      spaceBetween: 50,
+      slidesPerView: 4,
+    },
+    "991": {
+      spaceBetween: 50,
+      slidesPerView: 5,
+    },
+    "1199": {
+      spaceBetween: 100,
+      slidesPerView: 5,
+    },
+  },
 };
 
 // Ajout des marques
 const brands = ref([
-	{
-		name: 'Brasimba',
-		image: '/assets/images/brand/brasimba.png'
-	},
-	{
-		name: 'Easter',
-		image: '/assets/images/brand/easter.png'
-	},
-	{
-		name: 'European Union',
-		image: '/assets/images/brand/europeanunion.png'
-	},
-	{
-		name: 'Institut Français',
-		image: '/assets/images/brand/instituufrancais.png'
-	},
-	{
-		name: 'Jane Goodall',
-		image: '/assets/images/brand/janegoodall.png'
-	},
-	{
-		name: 'OIM',
-		image: '/assets/images/brand/oim.png'
-	},
-	{
-		name: 'SGML',
-		image: '/assets/images/brand/sgml.png'
-	},
-	{
-		name: 'Skyborn',
-		image: '/assets/images/brand/skyborn.png'
-	},
-	{
-		name: 'Tearfund',
-		image: '/assets/images/brand/tearfund.png'
-	},
-	{
-		name: 'TMK',
-		image: '/assets/images/brand/tmk.png'
-	}
-])
+  {
+    name: "Brasimba",
+    image: "/assets/images/brand/brasimba.png",
+  },
+  {
+    name: "Easter",
+    image: "/assets/images/brand/easter.png",
+  },
+  {
+    name: "European Union",
+    image: "/assets/images/brand/europeanunion.png",
+  },
+  {
+    name: "Institut Français",
+    image: "/assets/images/brand/instituufrancais.png",
+  },
+  {
+    name: "Jane Goodall",
+    image: "/assets/images/brand/janegoodall.png",
+  },
+  {
+    name: "OIM",
+    image: "/assets/images/brand/oim.png",
+  },
+  {
+    name: "SGML",
+    image: "/assets/images/brand/sgml.png",
+  },
+  {
+    name: "Skyborn",
+    image: "/assets/images/brand/skyborn.png",
+  },
+  {
+    name: "Tearfund",
+    image: "/assets/images/brand/tearfund.png",
+  },
+  {
+    name: "TMK",
+    image: "/assets/images/brand/tmk.png",
+  },
+]);
 </script>
 
 <style scoped>
-	/* Styles pour le carousel personnalisé */
-	.carousel-container {
-		@apply relative overflow-hidden;
-	}
-
-	.carousel-slide {
-		@apply transition-transform duration-500 ease-in-out;
-	}
-
-	/* Styles pour les boutons de navigation */
-	.carousel-button {
-		@apply absolute top-1/2 -translate-y-1/2 w-12 h-12 rounded-full  border border-gray-200 flex items-center justify-center text-conult-base hover:bg-conult-base hover:text-white transition-colors z-10;
-	}
-
-	.carousel-button-prev {
-		@apply -left-6;
-	}
-
-	.carousel-button-next {
-		@apply -right-6;
-	}
-
-	/* Styles pour les points de navigation */
-	.carousel-dots {
-		@apply flex justify-center mt-8 gap-2;
-	}
-
-	.carousel-dot {
-		@apply w-3 h-3 rounded-full transition-colors;
-	}
-
-	.carousel-dot-active {
-		@apply bg-conult-base;
-	}
-
-	/* Ajustements pour le responsive */
-	@media (max-width: 640px) {
-		.carousel-button {
-			@apply w-10 h-10;
-		}
-
-		.carousel-button-prev {
-			@apply -left-4;
-		}
-
-		.carousel-button-next {
-			@apply -right-4;
-		}
-	}
-
-	.main-slider {
-		position: relative;
-	}
-
-	.main-slider :deep(.swiper) {
-		width: 100%;
-		height: 100%;
-	}
-
-	.main-slider :deep(.swiper-slide) {
-		position: relative;
-		overflow: hidden;
-		opacity: 0;
-		transition: opacity 0.5s ease;
-	}
-
-	.main-slider :deep(.swiper-slide-active) {
-		opacity: 1;
-	}
-
-	.image-layer {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background-size: cover;
-		background-position: center;
-		transform: scale(1.1);
-		transition: transform 10000ms ease;
-	}
-
-	.main-slider__content {
-		position: relative;
-		z-index: 2;
-	}
-
-	.main-slider__content h2 {
-		font-size: 60px;
-		color: #ffffff;
-		font-weight: 700;
-		line-height: 1.2em;
-		margin-bottom: 20px;
-		opacity: 0;
-		transform: translateY(30px);
-		transition: transform 1000ms ease, opacity 1000ms ease;
-	}
-
-	.main-slider__content p {
-		font-size: 20px;
-		color: #ffffff;
-		line-height: 34px;
-		margin-bottom: 30px;
-		opacity: 0;
-		transform: translateY(30px);
-		transition: transform 1000ms ease, opacity 1000ms ease;
-		transition-delay: 100ms;
-	}
-
-	.main-slider__content .thm-btn {
-		opacity: 0;
-		transform: translateY(30px);
-		transition: transform 1000ms ease, opacity 1000ms ease;
-		transition-delay: 200ms;
-	}
-
-	.main-slider :deep(.swiper-slide-active) .main-slider__content h2,
-	.main-slider :deep(.swiper-slide-active) .main-slider__content p,
-	.main-slider :deep(.swiper-slide-active) .main-slider__content .thm-btn {
-		opacity: 1;
-		transform: translateY(0);
-	}
-
-	.main-slider__nav {
-		position: absolute;
-		top: 20px;
-		left: 0;
-		right: 0;
-		transform: none;
-		display: flex;
-		justify-content: center;
-		gap: 1rem;
-		z-index: 10;
-		padding: 0 1rem;
-		width: 100%;
-		max-width: 100%;
-	}
-
-	.swiper-button-next::after, .swiper-button-prev::after {
-		display: none !important;
-	}
-
-	.swiper-button-next:hover, .swiper-button-prev:hover {
-		color: #00aeef !important;
-	}
-
-	.swiper-button-next:hover i, .swiper-button-prev:hover i {
-		color: #00aeef !important;
-	}
-
-	.swiper-button-next i, .swiper-button-prev i {
-		color: #00aeef !important;
-	}
-
-	.main-slider__nav :deep(.swiper-button-next),
-	.main-slider__nav :deep(.swiper-button-prev) {
-		position: relative;
-		width: 40px;
-		height: 40px;
-		border-radius: 50%;
-		background-color: rgba(255, 255, 255, 1);
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		cursor: pointer;
-		transition: all 0.3s ease;
-		margin: 0;
-		flex: 0 0 auto;
-	}
-
-	.main-slider__nav :deep(.swiper-button-next i),
-	.main-slider__nav :deep(.swiper-button-prev i) {
-		font-size: 16px;
-		color: #00aeef !important;
-		transition: all 0.3s ease;
-	}
-
-	@media (min-width: 768px) {
-		.main-slider__nav {
-			top: 50%;
-			left: 0;
-			right: 0;
-			transform: none;
-			justify-content: space-between;
-			padding: 0 2rem;
-			max-width: 1320px; /* Largeur standard du container */
-			margin: 0 auto;
-		}
-
-		.main-slider__nav :deep(.swiper-button-next),
-		.main-slider__nav :deep(.swiper-button-prev) {
-			width: 50px;
-			height: 50px;
-		}
-
-		.main-slider__nav :deep(.swiper-button-next i),
-		.main-slider__nav :deep(.swiper-button-prev i) {
-			font-size: 18px;
-		}
-	}
-
-	.main-slider-shape-1,
-	.main-slider-shape-2,
-	.main-slider-shape-3 {
-		position: absolute;
-		z-index: 1;
-	}
-
-	.main-slider-shape-1 {
-		top: 0;
-		right: 0;
-	}
-
-	.main-slider-shape-2 {
-		bottom: 0;
-		left: 0;
-	}
-
-	.main-slider-shape-3 {
-		top: 50%;
-		right: 0;
-		transform: translateY(-50%);
-	}
-
-	@media (max-width: 991px) {
-		.main-slider__content {
-			padding-top: 0px;
-			padding-bottom: 0px;
-		}
-
-		.main-slider__content h2 {
-			font-size: 40px;
-		}
-	}
-
-	@media (max-width: 767px) {
-		.main-slider__content {
-			padding-top: 0px;
-			padding-bottom: 0px;
-		}
-
-		.main-slider__content h2 {
-			font-size: 30px;
-		}
-
-		.main-slider__content p {
-			font-size: 16px;
-			line-height: 28px;
-		}
-	}
-
-	.testimonial-onee__single {
-		position: relative;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		min-height: 380px; /* Ajuste selon le contenu */
-		padding: 60px 60px 60px; /* padding-bottom augmenté */
-		background: #fff;
-		box-shadow: 0px 10px 60px 0px rgb(0 0 0 / 5%);
-	}
-
-	.testimonial-onee__author {
-		bottom: -50px; /* Ajuste selon la taille de l'avatar */
-		left: 60px;
-		display: flex;
-		align-items: center;
-		gap: 16px;
-	}
-
-	.testimonial-onee__author-img img {
-		width: 50px !important;
-		height: 50px;
-		object-fit: cover;
-		border-radius: 50%;
-		border: 2px solid #fff;
-		box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-	}
-
-	@media (max-width: 767px) {
-		.testimonial-onee__author {
-			left: 24px;
-			bottom: -40px;
-		}
-		.testimonial-onee__single {
-			padding: 32px 16px 80px;
-			min-height: 320px;
-		}
-	}
-
-	.testimonial-onee__carousel .swiper-wrapper {
-		overflow: visible !important;
-	}
-
-	@media (max-width: 1024px) {
-		.testimonial-onee__single {
-			padding: 32px 12px 64px;
-			min-height: 320px;
-		}
-		.testimonial-onee__author-img img {
-			width: 64px !important;
-			height: 64px;
-		}
-	}
-
-	@media (max-width: 640px) {
-		.testimonial-onee__single {
-			padding: 20px 20px 20px;
-			min-height: 220px;
-		}
-		.testimonial-onee__author-img img {
-			width: 48px !important;
-			height: 48px;
-		}
-		.testimonial-onee__text {
-			font-size: 16px;
-			line-height: 1.4;
-		}
-	}
-
-	/* Styles pour le carousel des marques */
-	.brand-one__carousel {
-		padding: 20px 0;
-	}
-
-	.brand-one__single {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		height: 100px;
-		transition: all 0.3s ease;
-	}
-
-	.brand-one__single img {
-		max-width: 100%;
-		max-height: 80px;
-		object-fit: contain;
-		opacity: 0.7;
-		filter: grayscale(0%);
-
-		transition: all 0.3s ease;
-	}
-
-	.brand-one__single:hover img {
-		opacity: 1;
-	}
-
-	/* Ajustements pour Swiper */
-	.swiper-slide {
-		height: auto;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-	/* Styles pour le carrousel des éthiques */
-	.ethics-swiper {
-		position: relative;
-		padding: 0;
-		width: 100%;
-		max-width: 100%;
-		margin-left: -15px;
-		margin-right: -15px;
-	}
-
-	.ethics-swiper :deep(.swiper-button-next),
-	.ethics-swiper :deep(.swiper-button-prev) {
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		width: 48px;
-		height: 48px;
-		border-radius: 50%;
-		background-color: #ffffff;
-		border: 1px solid #ffffff;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		cursor: pointer;
-		transition: all 0.3s ease;
-		z-index: 10;
-	}
-
-	.ethics-swiper :deep(.swiper-button-next:hover),
-	.ethics-swiper :deep(.swiper-button-prev:hover) {
-		background-color: var(--conult-base);
-		border-color: var(--conult-base);
-	}
-
-	.ethics-swiper :deep(.swiper-button-next:hover i),
-	.ethics-swiper :deep(.swiper-button-prev:hover i) {
-		color: #00aeef !important;
-	}
-
-	.ethics-swiper :deep(.swiper-button-next i),
-	.ethics-swiper :deep(.swiper-button-prev i) {
-		font-size: 16px;
-		color: #00aeef !important;
-		transition: all 0.3s ease;
-	}
-
-	.ethics-swiper :deep(.swiper-button-next) {
-		right: 10px;
-	}
-
-	.ethics-swiper :deep(.swiper-button-prev) {
-		left: 10px;
-	}
-
-	.ethics-swiper :deep(.swiper-slide) {
-		display: flex;
-		justify-content: center;
-		align-items: stretch;
-		height: auto;
-	}
-
-	.ethics-swiper :deep(.swiper-wrapper) {
-		align-items: stretch;
-	}
-
-	.ethics-swiper :deep(.swiper-pagination) {
-		position: relative;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		display: flex;
-		justify-content: center;
-		gap: 8px;
-		margin-top: 32px;
-	}
-
-	.ethics-swiper :deep(.swiper-pagination-bullet) {
-		width: 12px;
-		height: 12px;
-		border-radius: 50%;
-		background-color: #d1d5db;
-		opacity: 1;
-		transition: all 0.3s ease;
-		cursor: pointer;
-	}
-
-	.ethics-swiper :deep(.swiper-pagination-bullet-active) {
-		background-color: var(--conult-base);
-		transform: scale(1.2);
-	}
-
-	.ethics-swiper :deep(.swiper-pagination-bullet:hover) {
-		background-color: var(--conult-base);
-		opacity: 0.7;
-	}
-
-	/* Extra small devices (phones, 320px and up) */
-	@media (max-width: 480px) {
-		.ethics-swiper {
-			padding: 0 20px;
-			margin-left: 0;
-			margin-right: 0;
-		}
-
-		.container {
-			padding-left: 0 !important;
-			padding-right: 0 !important;
-			max-width: 100vw !important;
-		}
-
-		.ethics-swiper :deep(.swiper-slide) {
-			width: calc(100vw - 40px) !important;
-			max-width: calc(100vw - 40px);
-		}
-
-		.ethics-swiper :deep(.swiper-button-next) {
-			right: 5px;
-		}
-
-		.ethics-swiper :deep(.swiper-button-prev) {
-			left: 5px;
-		}
-
-		.ethics-swiper :deep(.swiper-button-next),
-		.ethics-swiper :deep(.swiper-button-prev) {
-			width: 32px;
-			height: 32px;
-		}
-
-		.ethics-swiper :deep(.swiper-button-next i),
-		.ethics-swiper :deep(.swiper-button-prev i) {
-			font-size: 12px;
-		}
-
-		.ethics-swiper :deep(.swiper-pagination) {
-			margin-top: 20px;
-		}
-
-		.ethics-swiper :deep(.swiper-pagination-bullet) {
-			width: 8px;
-			height: 8px;
-		}
-	}
-
-	/* Small devices (landscape phones, 576px and up) */
-	@media (min-width: 481px) and (max-width: 640px) {
-		.ethics-swiper {
-			padding: 0 20px;
-			margin-left: 0;
-			margin-right: 0;
-		}
-
-		.container {
-			padding-left: 0 !important;
-			padding-right: 0 !important;
-			max-width: 100vw !important;
-		}
-
-		.ethics-swiper :deep(.swiper-slide) {
-			width: calc(100vw - 40px) !important;
-			max-width: calc(100vw - 40px);
-		}
-
-		.ethics-swiper :deep(.swiper-button-next) {
-			right: 5px;
-		}
-
-		.ethics-swiper :deep(.swiper-button-prev) {
-			left: 5px;
-		}
-
-		.ethics-swiper :deep(.swiper-button-next),
-		.ethics-swiper :deep(.swiper-button-prev) {
-			width: 36px;
-			height: 36px;
-		}
-
-		.ethics-swiper :deep(.swiper-button-next i),
-		.ethics-swiper :deep(.swiper-button-prev i) {
-			font-size: 13px;
-		}
-	}
-
-	/* Medium devices (tablets, 768px and up) */
-	@media (min-width: 641px) and (max-width: 768px) {
-		.ethics-swiper {
-			padding: 0;
-			margin-left: -12.5px;
-			margin-right: -12.5px;
-		}
-
-		.ethics-swiper :deep(.swiper-button-next) {
-			right: 5px;
-		}
-
-		.ethics-swiper :deep(.swiper-button-prev) {
-			left: 5px;
-		}
-
-		.ethics-swiper :deep(.swiper-button-next),
-		.ethics-swiper :deep(.swiper-button-prev) {
-			width: 40px;
-			height: 40px;
-		}
-
-		.ethics-swiper :deep(.swiper-button-next i),
-		.ethics-swiper :deep(.swiper-button-prev i) {
-			font-size: 14px;
-		}
-	}
-
-	/* Large devices (desktops, 1024px and up) */
-	@media (min-width: 769px) and (max-width: 1024px) {
-		.ethics-swiper {
-			padding: 0;
-			margin-left: -15px;
-			margin-right: -15px;
-		}
-
-		.ethics-swiper :deep(.swiper-button-next) {
-			right: 10px;
-		}
-
-		.ethics-swiper :deep(.swiper-button-prev) {
-			left: 10px;
-		}
-
-		.ethics-swiper :deep(.swiper-button-next),
-		.ethics-swiper :deep(.swiper-button-prev) {
-			width: 44px;
-			height: 44px;
-		}
-
-		.ethics-swiper :deep(.swiper-button-next i),
-		.ethics-swiper :deep(.swiper-button-prev i) {
-			font-size: 15px;
-		}
-	}
-
-	/* Extra large devices (large desktops, 1200px and up) */
-	@media (min-width: 1025px) {
-		.ethics-swiper {
-			padding: 0;
-			margin-left: -15px;
-			margin-right: -15px;
-		}
-
-		.ethics-swiper :deep(.swiper-button-next) {
-			right: 10px;
-		}
-
-		.ethics-swiper :deep(.swiper-button-prev) {
-			left: 10px;
-		}
-
-		.ethics-swiper :deep(.swiper-button-next),
-		.ethics-swiper :deep(.swiper-button-prev) {
-			width: 48px;
-			height: 48px;
-		}
-
-		.ethics-swiper :deep(.swiper-button-next i),
-		.ethics-swiper :deep(.swiper-button-prev i) {
-			font-size: 16px;
-		}
-	}
+/* Styles pour le carousel personnalisé */
+.carousel-container {
+  @apply relative overflow-hidden;
+}
+
+.carousel-slide {
+  @apply transition-transform duration-500 ease-in-out;
+}
+
+/* Styles pour les boutons de navigation */
+.carousel-button {
+  @apply absolute top-1/2 -translate-y-1/2 w-12 h-12 rounded-full  border border-gray-200 flex items-center justify-center text-conult-base hover:bg-conult-base hover:text-white transition-colors z-10;
+}
+
+.carousel-button-prev {
+  @apply -left-6;
+}
+
+.carousel-button-next {
+  @apply -right-6;
+}
+
+/* Styles pour les points de navigation */
+.carousel-dots {
+  @apply flex justify-center mt-8 gap-2;
+}
+
+.carousel-dot {
+  @apply w-3 h-3 rounded-full transition-colors;
+}
+
+.carousel-dot-active {
+  @apply bg-conult-base;
+}
+
+/* Ajustements pour le responsive */
+@media (max-width: 640px) {
+  .carousel-button {
+    @apply w-10 h-10;
+  }
+
+  .carousel-button-prev {
+    @apply -left-4;
+  }
+
+  .carousel-button-next {
+    @apply -right-4;
+  }
+}
+
+.main-slider {
+  position: relative;
+}
+
+.main-slider :deep(.swiper) {
+  width: 100%;
+  height: 100%;
+}
+
+.main-slider :deep(.swiper-slide) {
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.main-slider :deep(.swiper-slide-active) {
+  opacity: 1;
+}
+
+.image-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.1);
+  transition: transform 10000ms ease;
+}
+
+.main-slider__content {
+  position: relative;
+  z-index: 2;
+}
+
+.main-slider__content h2 {
+  font-size: 60px;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: transform 1000ms ease, opacity 1000ms ease;
+}
+
+.main-slider__content p {
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 34px;
+  margin-bottom: 30px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: transform 1000ms ease, opacity 1000ms ease;
+  transition-delay: 100ms;
+}
+
+.main-slider__content .thm-btn {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: transform 1000ms ease, opacity 1000ms ease;
+  transition-delay: 200ms;
+}
+
+.main-slider :deep(.swiper-slide-active) .main-slider__content h2,
+.main-slider :deep(.swiper-slide-active) .main-slider__content p,
+.main-slider :deep(.swiper-slide-active) .main-slider__content .thm-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.main-slider__nav {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  transform: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  z-index: 10;
+  padding: 0 1rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #00aeef !important;
+}
+
+.swiper-button-next:hover i,
+.swiper-button-prev:hover i {
+  color: #00aeef !important;
+}
+
+.swiper-button-next i,
+.swiper-button-prev i {
+  color: #00aeef !important;
+}
+
+.main-slider__nav :deep(.swiper-button-next),
+.main-slider__nav :deep(.swiper-button-prev) {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0;
+  flex: 0 0 auto;
+}
+
+.main-slider__nav :deep(.swiper-button-next i),
+.main-slider__nav :deep(.swiper-button-prev i) {
+  font-size: 16px;
+  color: #00aeef !important;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .main-slider__nav {
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: none;
+    justify-content: space-between;
+    padding: 0 2rem;
+    max-width: 1320px; /* Largeur standard du container */
+    margin: 0 auto;
+  }
+
+  .main-slider__nav :deep(.swiper-button-next),
+  .main-slider__nav :deep(.swiper-button-prev) {
+    width: 50px;
+    height: 50px;
+  }
+
+  .main-slider__nav :deep(.swiper-button-next i),
+  .main-slider__nav :deep(.swiper-button-prev i) {
+    font-size: 18px;
+  }
+}
+
+.main-slider-shape-1,
+.main-slider-shape-2,
+.main-slider-shape-3 {
+  position: absolute;
+  z-index: 1;
+}
+
+.main-slider-shape-1 {
+  top: 0;
+  right: 0;
+}
+
+.main-slider-shape-2 {
+  bottom: 0;
+  left: 0;
+}
+
+.main-slider-shape-3 {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 991px) {
+  .main-slider__content {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .main-slider__content h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-slider__content {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .main-slider__content h2 {
+    font-size: 30px;
+  }
+
+  .main-slider__content p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+.testimonial-onee__single {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 380px; /* Ajuste selon le contenu */
+  padding: 60px 60px 60px; /* padding-bottom augmenté */
+  background: #fff;
+  box-shadow: 0px 10px 60px 0px rgb(0 0 0 / 5%);
+}
+
+.testimonial-onee__author {
+  bottom: -50px; /* Ajuste selon la taille de l'avatar */
+  left: 60px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.testimonial-onee__author-img img {
+  width: 50px !important;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 767px) {
+  .testimonial-onee__author {
+    left: 24px;
+    bottom: -40px;
+  }
+  .testimonial-onee__single {
+    padding: 32px 16px 80px;
+    min-height: 320px;
+  }
+}
+
+.testimonial-onee__carousel .swiper-wrapper {
+  overflow: visible !important;
+}
+
+@media (max-width: 1024px) {
+  .testimonial-onee__single {
+    padding: 32px 12px 64px;
+    min-height: 320px;
+  }
+  .testimonial-onee__author-img img {
+    width: 64px !important;
+    height: 64px;
+  }
+}
+
+@media (max-width: 640px) {
+  .testimonial-onee__single {
+    padding: 20px 20px 20px;
+    min-height: 220px;
+  }
+  .testimonial-onee__author-img img {
+    width: 48px !important;
+    height: 48px;
+  }
+  .testimonial-onee__text {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
+
+/* Styles pour le carousel des marques */
+.brand-one__carousel {
+  padding: 20px 0;
+}
+
+.brand-one__single {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  transition: all 0.3s ease;
+}
+
+.brand-one__single img {
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+  opacity: 0.7;
+  filter: grayscale(0%);
+
+  transition: all 0.3s ease;
+}
+
+.brand-one__single:hover img {
+  opacity: 1;
+}
+
+/* Ajustements pour Swiper */
+.swiper-slide {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styles pour le carrousel des éthiques */
+.ethics-swiper {
+  position: relative;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.ethics-swiper :deep(.swiper-button-next),
+.ethics-swiper :deep(.swiper-button-prev) {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.ethics-swiper :deep(.swiper-button-next:hover),
+.ethics-swiper :deep(.swiper-button-prev:hover) {
+  background-color: var(--conult-base);
+  border-color: var(--conult-base);
+}
+
+.ethics-swiper :deep(.swiper-button-next:hover i),
+.ethics-swiper :deep(.swiper-button-prev:hover i) {
+  color: #00aeef !important;
+}
+
+.ethics-swiper :deep(.swiper-button-next i),
+.ethics-swiper :deep(.swiper-button-prev i) {
+  font-size: 16px;
+  color: #00aeef !important;
+  transition: all 0.3s ease;
+}
+
+.ethics-swiper :deep(.swiper-button-next) {
+  right: 10px;
+}
+
+.ethics-swiper :deep(.swiper-button-prev) {
+  left: 10px;
+}
+
+.ethics-swiper :deep(.swiper-slide) {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: auto;
+}
+
+.ethics-swiper :deep(.swiper-wrapper) {
+  align-items: stretch;
+}
+
+.ethics-swiper :deep(.swiper-pagination) {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 32px;
+}
+
+.ethics-swiper :deep(.swiper-pagination-bullet) {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #d1d5db;
+  opacity: 1;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.ethics-swiper :deep(.swiper-pagination-bullet-active) {
+  background-color: var(--conult-base);
+  transform: scale(1.2);
+}
+
+.ethics-swiper :deep(.swiper-pagination-bullet:hover) {
+  background-color: var(--conult-base);
+  opacity: 0.7;
+}
+
+/* Extra small devices (phones, 320px and up) */
+@media (max-width: 480px) {
+  .ethics-swiper {
+    padding: 0 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: 100vw !important;
+  }
+
+  .ethics-swiper :deep(.swiper-slide) {
+    width: calc(100vw - 40px) !important;
+    max-width: calc(100vw - 40px);
+  }
+
+  .ethics-swiper :deep(.swiper-button-next) {
+    right: 5px;
+  }
+
+  .ethics-swiper :deep(.swiper-button-prev) {
+    left: 5px;
+  }
+
+  .ethics-swiper :deep(.swiper-button-next),
+  .ethics-swiper :deep(.swiper-button-prev) {
+    width: 32px;
+    height: 32px;
+  }
+
+  .ethics-swiper :deep(.swiper-button-next i),
+  .ethics-swiper :deep(.swiper-button-prev i) {
+    font-size: 12px;
+  }
+
+  .ethics-swiper :deep(.swiper-pagination) {
+    margin-top: 20px;
+  }
+
+  .ethics-swiper :deep(.swiper-pagination-bullet) {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 481px) and (max-width: 640px) {
+  .ethics-swiper {
+    padding: 0 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: 100vw !important;
+  }
+
+  .ethics-swiper :deep(.swiper-slide) {
+    width: calc(100vw - 40px) !important;
+    max-width: calc(100vw - 40px);
+  }
+
+  .ethics-swiper :deep(.swiper-button-next) {
+    right: 5px;
+  }
+
+  .ethics-swiper :deep(.swiper-button-prev) {
+    left: 5px;
+  }
+
+  .ethics-swiper :deep(.swiper-button-next),
+  .ethics-swiper :deep(.swiper-button-prev) {
+    width: 36px;
+    height: 36px;
+  }
+
+  .ethics-swiper :deep(.swiper-button-next i),
+  .ethics-swiper :deep(.swiper-button-prev i) {
+    font-size: 13px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 641px) and (max-width: 768px) {
+  .ethics-swiper {
+    padding: 0;
+    margin-left: -12.5px;
+    margin-right: -12.5px;
+  }
+
+  .ethics-swiper :deep(.swiper-button-next) {
+    right: 5px;
+  }
+
+  .ethics-swiper :deep(.swiper-button-prev) {
+    left: 5px;
+  }
+
+  .ethics-swiper :deep(.swiper-button-next),
+  .ethics-swiper :deep(.swiper-button-prev) {
+    width: 40px;
+    height: 40px;
+  }
+
+  .ethics-swiper :deep(.swiper-button-next i),
+  .ethics-swiper :deep(.swiper-button-prev i) {
+    font-size: 14px;
+  }
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .ethics-swiper {
+    padding: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .ethics-swiper :deep(.swiper-button-next) {
+    right: 10px;
+  }
+
+  .ethics-swiper :deep(.swiper-button-prev) {
+    left: 10px;
+  }
+
+  .ethics-swiper :deep(.swiper-button-next),
+  .ethics-swiper :deep(.swiper-button-prev) {
+    width: 44px;
+    height: 44px;
+  }
+
+  .ethics-swiper :deep(.swiper-button-next i),
+  .ethics-swiper :deep(.swiper-button-prev i) {
+    font-size: 15px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1025px) {
+  .ethics-swiper {
+    padding: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .ethics-swiper :deep(.swiper-button-next) {
+    right: 10px;
+  }
+
+  .ethics-swiper :deep(.swiper-button-prev) {
+    left: 10px;
+  }
+
+  .ethics-swiper :deep(.swiper-button-next),
+  .ethics-swiper :deep(.swiper-button-prev) {
+    width: 48px;
+    height: 48px;
+  }
+
+  .ethics-swiper :deep(.swiper-button-next i),
+  .ethics-swiper :deep(.swiper-button-prev i) {
+    font-size: 16px;
+  }
+}
 </style>

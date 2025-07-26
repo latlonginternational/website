@@ -151,7 +151,7 @@ const { t } = useI18n();
 const getImageSrc = (key: string): string => {
   switch (key) {
     case 'conseils':
-      return '/assets/images/ethique/consultance.jpeg'
+      return '/assets/images/ethique/consultance.png'
     case 'csr':
       return '/assets/images/ethique/lp-1-2.jpg'
     case 'code':
@@ -161,7 +161,7 @@ const getImageSrc = (key: string): string => {
     case 'terms':
       return '/assets/images/ethique/nouvellesst.png'
     default:
-      return '/assets/images/ethique/consultance.jpeg'
+      return '/assets/images/ethique/consultance.png'
   }
 }
 

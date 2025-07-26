@@ -42,7 +42,7 @@
           <div class="col-xl-12">
             <div class="cta-one__inner">
               <h2 class="cta-one__title" v-html="t('ethics.cta.title').replace('\n', '<br />')"></h2>
-              <a href="/about" class="thm-btn cta-one__btn">{{ t('ethics.cta.button') }}</a>
+              <a href="/contact" class="thm-btn cta-one__btn">{{ t('ethics.cta.button') }}</a>
               <div
                 class="cta-one__shape wow slideInLeft"
                 data-wow-delay="100ms"

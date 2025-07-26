@@ -23,7 +23,7 @@
           <div class="col-xl-8 col-lg-7">
             <div class="news-details__left">
               <div class="news-details__img">
-                <img src="/assets/images/ethique/consultance.jpeg" class="max-h-[500px] object-cover" :alt="t('ethics.advice.content.title')" />
+                <img src="/assets/images/ethique/consultance.png" class="max-h-[500px] object-cover" :alt="t('ethics.advice.content.title')" />
                 <div class="news-details__date-box">
                   <p>{{ t('ethics.advice.content.date') }}</p>
                 </div>
@@ -125,7 +125,7 @@ const { t } = useI18n()
 const getImageSrc = (key: string): string => {
   switch (key) {
     case 'conseils':
-      return '/assets/images/ethique/consultance.jpeg'
+      return '/assets/images/ethique/consultance.png'
     case 'csr':
       return '/assets/images/ethique/lp-1-2.jpg'
     case 'code':
@@ -135,7 +135,7 @@ const getImageSrc = (key: string): string => {
     case 'terms':
       return '/assets/images/ethique/nouvellesst.png'
     default:
-      return '/assets/images/ethique/consultance.jpeg'
+      return '/assets/images/ethique/consultance.png'
   }
 }
 

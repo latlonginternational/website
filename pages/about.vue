@@ -329,7 +329,7 @@
           <div class="col-xl-12">
             <div class="cta-one__inner">
               <h2 class="cta-one__title">{{ t('about.cta.title') }}</h2>
-              <a href="/about" class="thm-btn cta-one__btn">{{ t('about.cta.button') }}</a>
+              <a href="/contact" class="thm-btn cta-one__btn">{{ t('about.cta.button') }}</a>
               <div
                 class="cta-one__shape wow slideInLeft"
                 data-wow-delay="100ms"
@@ -514,14 +514,20 @@ useHead({
 onMounted(() => {
   // Initialiser le token d'accès Mapbox
   mapboxgl.accessToken =
-    "pk.eyJ1Ijoia2J1bGFidWxhIiwiYSI6ImNtNHR1N2FybzBlbXkyaXNpMmNiYm54a2MifQ.pqKC_ay2GLvkQ6yt3yxZGw";
+    "pk.eyJ1IjoiY2FwdGFpbnZpbmNlIiwiYSI6ImNtZGs4NThqeDBuMzIyc3F5eHdwZmllamYifQ.tKseNa9WiD6oUe72PMDTNA";
 
   // Initialiser la carte
   const map = new mapboxgl.Map({
     container: "map", // L'ID ou la classe de l'élément HTML contenant la carte
-    style: "mapbox://styles/mapbox/light-v11",
+    style: "mapbox://styles/captainvince/cmdk7nec9007z01r1bd5ifwtj",
     center: [23.656, -2.882], // Centré sur la RDC
-    zoom: 5,
+    zoom: 4,
+    maxBounds: [
+      [8.0, -16.0], // Sud-ouest (longitude, latitude) - très large pour voir toute la RDC
+      [35.0, 8.0]   // Nord-est (longitude, latitude) - très large pour voir toute la RDC
+    ],
+    minZoom: 3,
+    maxZoom: 8
   });
 
   // Données pour les marqueurs des villes
@@ -529,175 +535,321 @@ onMounted(() => {
   {
     name: "Kinshasa",
     coordinates: [15.3136, -4.3276],
-    color: "#FF5733",
+    color: "#00AEEF",
     description: "Capitale politique et économique de la RDC.",
   },
   {
     name: "Goma",
     coordinates: [29.2333, -1.6833],
-    color: "#33C1FF",
+    color: "#00AEEF",
     description: "Base principale de nos opérations.",
   },
   {
     name: "Lubumbashi",
     coordinates: [27.4794, -11.6609],
-    color: "#76FF33",
+    color: "#00AEEF",
     description: "Hub minier et centre économique du Katanga.",
   },
   {
     name: "Bisie",
     coordinates: [27.2500, -1.0000],
-    color: "#FFB300",
+    color: "#00AEEF",
     description: "Site minier important.",
   },
   {
     name: "Bukavu",
     coordinates: [28.8428, -2.4908],
-    color: "#FFB300",
+    color: "#00AEEF",
     description: "Ville du Sud-Kivu.",
   },
   {
     name: "Bule",
     coordinates: [30.6000, 1.9167],
-    color: "#FFB300",
+    color: "#00AEEF",
     description: "Localité de l'Ituri.",
   },
   {
     name: "Bunia",
     coordinates: [30.2522, 1.5594],
-    color: "#FFB300",
+    color: "#00AEEF",
     description: "Chef-lieu de l'Ituri.",
   },
   {
     name: "Butembo",
     coordinates: [29.2912, 0.1416],
-    color: "#FFB300",
+    color: "#00AEEF",
     description: "Ville commerciale du Nord-Kivu.",
   },
   {
     name: "Durba",
     coordinates: [28.0333, 3.4833],
-    color: "#FFB300",
+    color: "#00AEEF",
     description: "Ville minière du Haut-Uele.",
   },
   {
     name: "Geti",
     coordinates: [29.3167, -1.9500],
-    color: "#FFB300",
+    color: "#00AEEF",
     description: "Localité du Sud-Kivu.",
   },
   {
     name: "Kalemie",
     coordinates: [29.1947, -5.9475],
-    color: "#FFB300",
+    color: "#00AEEF",
     description: "Ville portuaire du Tanganyika.",
   },
   {
     name: "Kirumba",
     coordinates: [29.1667, -0.5833],
-    color: "#FFB300",
+    color: "#00AEEF",
     description: "Ville du Nord-Kivu.",
   },
   {
     name: "Kisangani",
     coordinates: [25.2001, 0.5153],
-    color: "#FFB300",
+    color: "#00AEEF",
     description: "Grande ville de la Tshopo.",
   },
   {
     name: "Kitshanga",
     coordinates: [28.5667, -1.0500],
-    color: "#FFB300",
+    color: "#00AEEF",
     description: "Localité du Nord-Kivu.",
   },
   {
     name: "Komanda",
     coordinates: [29.6167, 1.1833],
-    color: "#FFB300",
+    color: "#00AEEF",
     description: "Localité de l'Ituri.",
   },
   {
     name: "Mahagi",
     coordinates: [31.1500, 2.2833],
-    color: "#FFB300",
+    color: "#00AEEF",
     description: "Ville frontalière de l'Ituri.",
   },
   {
     name: "Minova",
     coordinates: [28.9667, -3.4000],
-    color: "#FFB300",
+    color: "#00AEEF",
     description: "Ville du Sud-Kivu.",
   },
   {
     name: "Niangara",
     coordinates: [27.7333, 3.3500],
-    color: "#FFB300",
+    color: "#00AEEF",
     description: "Ville du Haut-Uele.",
   },
   {
     name: "Nyunzu",
     coordinates: [27.2500, -6.1500],
-    color: "#FFB300",
+    color: "#00AEEF",
     description: "Ville du Tanganyika.",
   },
   {
     name: "Ramogi",
     coordinates: [28.0000, 2.8000],
-    color: "#FFB300",
+    color: "#00AEEF",
     description: "Localité du Haut-Uele.",
   },
   {
     name: "Uvira",
     coordinates: [29.1386, -3.3958],
-    color: "#FFB300",
+    color: "#00AEEF",
     description: "Ville du Sud-Kivu, au bord du lac Tanganyika.",
   },
   {
     name: "Walikale",
     coordinates: [27.9833, -0.6833],
-    color: "#FFB300",
+    color: "#00AEEF",
     description: "Ville du Nord-Kivu.",
   },
   {
     name: "Watsa",
     coordinates: [28.0000, 3.0333],
-    color: "#FFB300",
+    color: "#00AEEF",
     description: "Ville du Haut-Uele.",
   },
   {
     name: "Beni",
     coordinates: [29.4731, 0.4911],
-    color: "#FFB300",
+    color: "#00AEEF",
     description: "Ville du Nord-Kivu.",
   },
 ];
 
 
-  // Fonction pour créer un marqueur coloré
-  function createColoredMarker(color) {
-    const el = document.createElement("div");
-    el.className = "marker";
-    el.style.backgroundColor = color;
-    el.style.width = "20px";
-    el.style.height = "20px";
-    el.style.borderRadius = "50%";
-    el.style.cursor = "pointer";
-    return el;
+  // Fonction pour créer un marqueur coloré avec nom
+  function createColoredMarker(color, name) {
+    const markerContainer = document.createElement("div");
+    markerContainer.style.display = "flex";
+    markerContainer.style.flexDirection = "column";
+    markerContainer.style.alignItems = "center";
+    markerContainer.style.cursor = "pointer";
+
+    const marker = document.createElement("div");
+    marker.className = "marker";
+    marker.style.backgroundColor = color;
+    marker.style.width = "20px";
+    marker.style.height = "20px";
+    marker.style.borderRadius = "50%";
+    marker.style.marginBottom = "5px";
+
+    const nameLabel = document.createElement("div");
+    nameLabel.textContent = name;
+    nameLabel.style.fontSize = "12px";
+    nameLabel.style.fontWeight = "bold";
+    nameLabel.style.color = "#333";
+    nameLabel.style.textAlign = "center";
+    nameLabel.style.whiteSpace = "nowrap";
+    nameLabel.style.backgroundColor = "rgba(255,255,255,0.9)";
+    nameLabel.style.padding = "2px 6px";
+    nameLabel.style.borderRadius = "3px";
+    nameLabel.style.boxShadow = "0 1px 3px rgba(0,0,0,0.2)";
+
+    markerContainer.appendChild(marker);
+    markerContainer.appendChild(nameLabel);
+    return markerContainer;
   }
 
-  // Ajouter les marqueurs sur la carte
+  // Ajouter les marqueurs sur la carte avec clustering
   map.on("load", () => {
-    cities.forEach((city) => {
-      // Créer un marqueur coloré
-      const marker = new mapboxgl.Marker({
-        element: createColoredMarker(city.color),
-      })
-        .setLngLat(city.coordinates)
-        .setPopup(
-          new mapboxgl.Popup({ offset: 25 }) // Ajoute une popup au marqueur
-            .setHTML(`<h4>${city.name}</h4><p>${city.description}</p>`)
-        )
+    // Créer une source GeoJSON pour les marqueurs
+    map.addSource('cities', {
+      type: 'geojson',
+      data: {
+        type: 'FeatureCollection',
+        features: cities.map(city => ({
+          type: 'Feature',
+          geometry: {
+            type: 'Point',
+            coordinates: city.coordinates
+          },
+          properties: {
+            name: city.name,
+            description: city.description,
+            color: city.color
+          }
+        }))
+      },
+      cluster: true,
+      clusterMaxZoom: 14,
+      clusterRadius: 50
+    });
+
+    // Ajouter le layer pour les clusters
+    map.addLayer({
+      id: 'clusters',
+      type: 'circle',
+      source: 'cities',
+      filter: ['has', 'point_count'],
+      paint: {
+        'circle-color': '#00AEEF',
+        'circle-radius': [
+          'step',
+          ['get', 'point_count'],
+          20, 100,
+          30, 750,
+          40
+        ]
+      }
+    });
+
+    // Ajouter le layer pour le nombre de points dans les clusters
+    map.addLayer({
+      id: 'cluster-count',
+      type: 'symbol',
+      source: 'cities',
+      filter: ['has', 'point_count'],
+      layout: {
+        'text-field': '{point_count_abbreviated}',
+        'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
+        'text-size': 16,
+        'font-weight': 'bold'
+      },
+      paint: {
+        'text-color': '#ffffff'
+      }
+    });
+
+    // Ajouter le layer pour les marqueurs individuels
+    map.addLayer({
+      id: 'unclustered-point',
+      type: 'circle',
+      source: 'cities',
+      filter: ['!', ['has', 'point_count']],
+      paint: {
+        'circle-color': ['get', 'color'],
+        'circle-radius': 10,
+        'circle-stroke-width': 3,
+        'circle-stroke-color': '#ffffff'
+      }
+    });
+
+    // Ajouter les labels pour les marqueurs individuels avec style rectangulaire
+    map.addLayer({
+      id: 'point-labels-bg',
+      type: 'symbol',
+      source: 'cities',
+      filter: ['!', ['has', 'point_count']],
+      layout: {
+        'text-field': ['get', 'name'],
+        'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
+        'text-size': 12,
+        'text-offset': [0, 1.5],
+        'text-anchor': 'top'
+      },
+      paint: {
+        'text-color': '#333333',
+        'text-halo-color': 'rgba(255,255,255,0.9)',
+        'text-halo-width': 8,
+        'text-halo-blur': 2
+      }
+    });
+
+    // Gestion des clics sur les clusters
+    map.on('click', 'clusters', (e) => {
+      const features = map.queryRenderedFeatures(e.point, {
+        layers: ['clusters']
+      });
+      const clusterId = features[0].properties.cluster_id;
+      map.getSource('cities').getClusterExpansionZoom(
+        clusterId,
+        (err, zoom) => {
+          if (err) return;
+
+          map.easeTo({
+            center: features[0].geometry.coordinates,
+            zoom: zoom
+          });
+        }
+      );
+    });
+
+    // Gestion des clics sur les marqueurs individuels
+    map.on('click', 'unclustered-point', (e) => {
+      const coordinates = e.features[0].geometry.coordinates.slice();
+      const properties = e.features[0].properties;
+
+      // Créer la popup
+      const popup = new mapboxgl.Popup()
+        .setLngLat(coordinates)
+        .setHTML(`<h4>${properties.name}</h4><p>${properties.description}</p>`)
         .addTo(map);
+    });
+
+    // Changer le curseur au survol
+    map.on('mouseenter', 'clusters', () => {
+      map.getCanvas().style.cursor = 'pointer';
+    });
+    map.on('mouseleave', 'clusters', () => {
+      map.getCanvas().style.cursor = '';
+    });
+    map.on('mouseenter', 'unclustered-point', () => {
+      map.getCanvas().style.cursor = 'pointer';
+    });
+    map.on('mouseleave', 'unclustered-point', () => {
+      map.getCanvas().style.cursor = '';
     });
   });
 });
