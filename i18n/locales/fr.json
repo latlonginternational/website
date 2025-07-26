@@ -42,6 +42,11 @@
 			"en": "Anglais"
 		}
 	},
+	"partners": {
+		"title": "Ils nous font confiance",
+		"discoverIcoca": "Découvrir ICoCA",
+		"ourCertificate": "Notre certificat ICoCA"
+	},
 	"contact": {
 		"pageHeader": {
 			"title": "Contactez-nous",
@@ -1037,25 +1042,30 @@
 			},
 			"content": {
 				"date": "Mars",
-				"title": "Notre code de conduite professionnel",
-				"intro": "Le Code de conduite de Latlong définit les standards éthiques et professionnels que tous nos employés et partenaires doivent respecter. Ce code reflète nos valeurs fondamentales et notre engagement envers l'excellence.",
+				"title": "Notre Code de Conduite",
+				"subtitle": "Latlong International – Sécurité avec des Valeurs",
+				"intro": "Chez Latlong, nos opérations sont guidées par six valeurs essentielles : Passion, Respect, Environnement, Intégrité, Discipline et Excellence. Ces principes reflètent notre identité et structurent chaque action que nous entreprenons—sur le terrain et en partenariat.",
 				"sections": {
 					"1": {
-						"title": "Conduite professionnelle",
-						"description": "Tous les membres de notre équipe s'engagent à maintenir une apparence professionnelle en toutes circonstances, respecter la hiérarchie et la chaîne de commandement, exercer leurs fonctions avec diligence et compétence, et respecter les horaires et les procédures établies."
+						"title": "Engagement professionnel",
+						"description": "Nous agissons avec fierté et dévouement dans chaque tâche. Notre personnel maintient une apparence professionnelle, respecte les procédures internes et la hiérarchie, et s'engage à fournir des services de haute qualité avec soin et efficacité."
 					},
 					"2": {
 						"title": "Éthique et intégrité",
-						"description": "Nos employés doivent agir avec honnêteté et transparence, éviter tout conflit d'intérêt, refuser les cadeaux et avantages inappropriés, et signaler toute situation contraire à l'éthique."
+						"description": "Tous les membres de l'équipe Latlong maintiennent les plus hauts standards d'honnêteté, évitent les conflits d'intérêt et refusent toute forme de corruption ou d'avantage indu. La confidentialité et la transparence ne sont pas optionnelles—elles sont essentielles."
 					},
 					"3": {
-						"title": "Relations avec les clients",
-						"description": "Dans leurs interactions avec les clients, nos employés doivent faire preuve de courtoisie et de respect, maintenir la confidentialité des informations, répondre promptement aux demandes, et respecter les protocoles de sécurité établis."
+						"title": "Respect des clients et des communautés",
+						"description": "Nos relations sont construites sur le respect mutuel, la courtoisie et la sensibilité culturelle. Nous assurons la protection des données de nos clients et appliquons des protocoles stricts de confidentialité et de sécurité dans toutes nos missions."
 					},
 					"4": {
-						"title": "Conformité légale",
-						"description": "Nous exigeons le respect strict des lois et réglementations en vigueur, des droits de l'homme fondamentaux, des normes de sécurité internationales, et des procédures de reporting établies."
+						"title": "Responsabilité légale et sociale",
+						"description": "Latlong se conforme aux réglementations nationales et internationales, aux standards des droits de l'homme et aux responsabilités environnementales. Nous promouvons activement le recrutement équitable, l'inclusion et l'élévation sociale partout où nous opérons."
 					}
+				},
+				"download": {
+					"title": "Découvrez comment ces principes sont appliqués dans tous les aspects de nos opérations en téléchargeant notre Code de Conduite complet :",
+					"button": "Télécharger"
 				},
 				"author": {
 					"name": "Latlong International",

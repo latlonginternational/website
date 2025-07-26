@@ -53,14 +53,56 @@ export default defineNuxtConfig({
 	// Configuration Nitro
 	nitro: {
 		routeRules: {
-			"/**": { cors: true }
+			"/**": { 
+				cors: true,
+				headers: {
+					"X-Content-Type-Options": "nosniff",
+					"X-Frame-Options": "SAMEORIGIN",
+					"X-XSS-Protection": "1; mode=block",
+					"Referrer-Policy": "strict-origin-when-cross-origin",
+					"Permissions-Policy": "camera=(), microphone=(), geolocation=()",
+					"X-DNS-Prefetch-Control": "on",
+					"Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+					"Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google-analytics.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://api.mapbox.com; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'"
+				}
+			},
+			"/sitemap.xml": { 
+				headers: { 
+					"Content-Type": "application/xml",
+					"Cache-Control": "public, max-age=3600"
+				} 
+			},
+			"/robots.txt": { 
+				headers: { 
+					"Content-Type": "text/plain",
+					"Cache-Control": "public, max-age=3600"
+				} 
+			},
+			"/assets/**": {
+				headers: {
+					"Cache-Control": "public, max-age=31536000, immutable"
+				}
+			},
+			"/images/**": {
+				headers: {
+					"Cache-Control": "public, max-age=31536000, immutable"
+				}
+			},
+			"/docs/**": {
+				headers: {
+					"Cache-Control": "public, max-age=86400"
+				}
+			}
 		},
 		devProxy: {
 			"/api": {
 				target: "http://localhost:3000",
 				changeOrigin: true
 			}
-		}
+		},
+		// Configuration pour la compression et les performances
+		compressPublicAssets: true,
+		minify: true
 	},
 
 	runtimeConfig: {
@@ -89,35 +131,60 @@ export default defineNuxtConfig({
 
 	app: {
 		head: {
-			title: "Latlong International", // Autres méta-informations
-
+			title: "Latlong International - Sécurité et Protection en RDC",
+			htmlAttrs: {
+				lang: "fr"
+			},
 			meta: [
-				{ charset: "utf-8" }, // Définir le charset
-				{ name: "viewport", content: "width=device-width, initial-scale=1.0" }, // Viewport responsive
-				{ name: "description", content: "Latlong International - Your Gateway to Secure Business in Africa" }, // Description
+				// Charset et viewport
+				{ charset: "utf-8" },
+				{ name: "viewport", content: "width=device-width, initial-scale=1.0, maximum-scale=5.0" },
 				{ name: "format-detection", content: "telephone=no" },
-				{ property: "og:title", content: "Latlong International" },
-				{
-					property: "og:description",
-					content: "Latlong International - Your Gateway to Secure Business in Africa"
-				},
-				{ property: "og:url", content: "https://Latlong.witoxr.app" },
-				{
-					property: "og:image",
-					content: "/cover.png"
-				},
-				{ name: "twitter:title", content: "Latlong International" },
-				{
-					name: "twitter:description",
-					content: "Latlong International - Your Gateway to Secure Business in Africa"
-				},
-				{
-					name: "twitter:image",
-					content: "/cover.png"
-				},
-				{ name: "twitter:card", content: "summary_large_image" }
+				
+				// Meta tags SEO de base
+				{ name: "description", content: "Latlong International - Votre partenaire de confiance pour la sécurité et la protection en République Démocratique du Congo. Services de protection, technologie, consultance et formation depuis 2012." },
+				{ name: "keywords", content: "sécurité, protection, RDC, Congo, Goma, Latlong, services de sécurité, protection VIP, surveillance, formation sécurité, consultance sécurité" },
+				{ name: "author", content: "Latlong International" },
+				{ name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
+				{ name: "googlebot", content: "index, follow" },
+				
+				// Open Graph (Facebook, LinkedIn)
+				{ property: "og:type", content: "website" },
+				{ property: "og:title", content: "Latlong International - Sécurité et Protection en RDC" },
+				{ property: "og:description", content: "Votre partenaire de confiance pour la sécurité et la protection en République Démocratique du Congo. Services de protection, technologie, consultance et formation depuis 2012." },
+				{ property: "og:url", content: "https://latlongcongo.com" },
+				{ property: "og:site_name", content: "Latlong International" },
+				{ property: "og:image", content: "https://latlongcongo.com/cover.png" },
+				{ property: "og:image:width", content: "1200" },
+				{ property: "og:image:height", content: "630" },
+				{ property: "og:image:alt", content: "Latlong International - Services de sécurité en RDC" },
+				{ property: "og:locale", content: "fr_FR" },
+				
+				// Twitter Card
+				{ name: "twitter:card", content: "summary_large_image" },
+				{ name: "twitter:site", content: "@latlongcongo" },
+				{ name: "twitter:creator", content: "@latlongcongo" },
+				{ name: "twitter:title", content: "Latlong International - Sécurité et Protection en RDC" },
+				{ name: "twitter:description", content: "Votre partenaire de confiance pour la sécurité et la protection en République Démocratique du Congo." },
+				{ name: "twitter:image", content: "https://latlongcongo.com/cover.png" },
+				{ name: "twitter:image:alt", content: "Latlong International - Services de sécurité en RDC" },
+				
+				// Additional SEO meta tags
+				{ name: "theme-color", content: "#00AEEF" },
+				{ name: "msapplication-TileColor", content: "#00AEEF" },
+				{ name: "apple-mobile-web-app-capable", content: "yes" },
+				{ name: "apple-mobile-web-app-status-bar-style", content: "default" },
+				{ name: "apple-mobile-web-app-title", content: "Latlong International" },
+				
+				// Security headers
+				{ "http-equiv": "X-UA-Compatible", content: "IE=edge" },
+				{ "http-equiv": "X-Content-Type-Options", content: "nosniff" },
+				{ "http-equiv": "X-Frame-Options", content: "SAMEORIGIN" },
+				{ "http-equiv": "X-XSS-Protection", content: "1; mode=block" }
 			],
 			link: [
+				// Canonical URL
+				{ rel: "canonical", href: "https://latlongcongo.com" },
 				// Favicon and manifest links
 				{
 					rel: "icon",
@@ -198,7 +265,37 @@ export default defineNuxtConfig({
 				{ src: "/assets/vendors/vegas/vegas.min.js", defer: true },
 				{ src: "/assets/vendors/jquery-ui/jquery-ui.js", defer: true },
 				{ src: "/assets/vendors/timepicker/timePicker.js", defer: true },
-				{ src: "/assets/js/conult.js", defer: true } // Script principal de votre template
+				{ src: "/assets/js/conult.js", defer: true }, // Script principal de votre template
+				
+				// Structured Data (JSON-LD)
+				{
+					type: "application/ld+json",
+					children: JSON.stringify({
+						"@context": "https://schema.org",
+						"@type": "Organization",
+						"name": "Latlong International",
+						"url": "https://latlongcongo.com",
+						"logo": "https://latlongcongo.com/logo-dark.png",
+						"description": "Services de sécurité et de protection en République Démocratique du Congo",
+						"foundingDate": "2012",
+						"address": {
+							"@type": "PostalAddress",
+							"streetAddress": "325 Boulevard Kanyamuhanga",
+							"addressLocality": "Goma",
+							"addressRegion": "Nord-Kivu",
+							"addressCountry": "CD"
+						},
+						"contactPoint": {
+							"@type": "ContactPoint",
+							"telephone": "+243-810-041-500",
+							"contactType": "customer service",
+							"availableLanguage": ["French", "English"]
+						},
+						"sameAs": [
+							"https://www.linkedin.com/company/latlong-international"
+						]
+					})
+				}
 			]
 		}
 	}

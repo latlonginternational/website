@@ -47,9 +47,9 @@
                   </template>
 
                   <div>
-							       <a  target="_blank" rel="noopener noreferrer" href="/docs/doc-2025_LLI ICoCAAffiliateCertificate.pdf" class="thm-btn flex max-w-[250px] items-center gap-2">
-                      <span><img class="w-6 h-6" src="/docs/pdf-101.svg" alt=""></span>
-                      <span>{{ t('ethics.icoca.content.button') }}</span>
+							       <a  target="_blank" rel="noopener noreferrer" href="/docs/doc-2025_LLI ICoCAAffiliateCertificate.pdf" class="thm-btn flex max-w-[280px] justify-center items-center gap-0">
+                      <div class="w-4 h-4"><img class="w-4 h-4" src="/docs/pdf-101.svg" alt=""></div>
+                      <div class="w-full ml-2">{{ t('ethics.icoca.content.button') }}</div>
                     </a>
                   </div>
                 </div>

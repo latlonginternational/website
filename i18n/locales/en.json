@@ -42,6 +42,11 @@
 			"en": "English"
 		}
 	},
+	"partners": {
+		"title": "They trust us",
+		"discoverIcoca": "Discover ICoCA",
+		"ourCertificate": "Our ICoCA certificate"
+	},
 	"contact": {
 		"pageHeader": {
 			"title": "Contact Us",
@@ -1035,25 +1040,30 @@
 			},
 			"content": {
 				"date": "March",
-				"title": "Our professional code of conduct",
-				"intro": "Latlong's Code of Conduct defines the ethical and professional standards that all our employees and partners must adhere to. This code reflects our core values and our commitment to excellence.",
+				"title": "Our Code of Conduct",
+				"subtitle": "Latlong International – Security with Values",
+				"intro": "At Latlong, our operations are guided by six essential values: Passion, Respect, Environment, Integrity, Discipline, and Excellence. These principles reflect our identity and structure every action we take—on the ground and in partnership.",
 				"sections": {
 					"1": {
-						"title": "Professional conduct",
-						"description": "All team members commit to maintaining a professional appearance at all times, respecting hierarchy and chain of command, performing their duties with diligence and competence, and adhering to established schedules and procedures."
+						"title": "Professional commitment",
+						"description": "We act with pride and dedication in every task. Our personnel maintain a professional appearance, respect internal procedures and hierarchy, and are committed to delivering high-quality services with care and efficiency."
 					},
 					"2": {
-						"title": "Ethics and integrity",
-						"description": "Our employees must act with honesty and transparency, avoid any conflict of interest, refuse inappropriate gifts and benefits, and report any unethical situations."
+						"title": "Ethics & integrity",
+						"description": "All Latlong team members uphold the highest standards of honesty, avoid conflicts of interest, and refuse any form of bribery or undue advantage. Confidentiality and transparency are not optional—they are essential."
 					},
 					"3": {
-						"title": "Client relationships",
-						"description": "In their interactions with clients, our employees must demonstrate courtesy and respect, maintain information confidentiality, respond promptly to requests, and follow established security protocols."
+						"title": "Respect for clients and communities",
+						"description": "Our relationships are built on mutual respect, courtesy, and cultural sensitivity. We ensure the protection of our clients' data and apply strict confidentiality and security protocols across all missions."
 					},
 					"4": {
-						"title": "Legal compliance",
-						"description": "We require strict adherence to applicable laws and regulations, fundamental human rights, international security standards, and established reporting procedures."
+						"title": "Legal and social responsibility",
+						"description": "Latlong complies with national and international regulations, human rights standards, and environmental responsibilities. We actively promote fair recruitment, inclusion, and social upliftment wherever we operate."
 					}
+				},
+				"download": {
+					"title": "Discover how these principles are applied in every aspect of our operations by downloading our full Code of Conduct:",
+					"button": "Download"
 				},
 				"author": {
 					"name": "Latlong International",

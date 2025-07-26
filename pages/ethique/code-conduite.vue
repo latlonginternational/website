@@ -30,16 +30,25 @@
               </div>
               <div class="news-details__content">
                 <h3 class="news-details__title">{{ t('ethics.code.content.title') }}</h3>
+                <h4 class="news-details__subtitle text-lg font-medium text-conult-base mb-4">{{ t('ethics.code.content.subtitle') }}</h4>
                 <p class="news-details__text-1">
                   {{ t('ethics.code.content.intro') }}
                 </p>
                 <div class="space-y-6 mt-6">
                   <template v-for="i in 4" :key="i">
-                    <p class="news-details__text-3" v-if="t(`ethics.code.content.sections.${i}.title`)">
-                      <strong>{{ t(`ethics.code.content.sections.${i}.title`) }}</strong><br>
-                      {{ t(`ethics.code.content.sections.${i}.description`) }}
-                    </p>
+                    <div class="news-details__text-3" v-if="t(`ethics.code.content.sections.${i}.title`)">
+                      <h5 class="font-semibold text-lg mb-2">{{ t(`ethics.code.content.sections.${i}.title`) }}</h5>
+                      <p>{{ t(`ethics.code.content.sections.${i}.description`) }}</p>
+                    </div>
                   </template>
+
+                  <div class="mt-8">
+                    <p class="news-details__text-3 mb-4">{{ t('ethics.code.content.download.title') }}</p>
+                    <a target="_blank" rel="noopener noreferrer" href="/docs/LLI-Code-of-Conduct.pdf" class="thm-btn flex max-w-[300px] justify-center items-center gap-2">
+                      <div class="w-4 h-4"><img class="w-4 h-4" src="/docs/pdf-101.svg" alt="PDF"></div>
+                      <div class="text-center">{{ t('ethics.code.content.download.button') }}</div>
+                    </a>
+                  </div>
                 </div>
               </div>
               <div class="news-details__bottom">

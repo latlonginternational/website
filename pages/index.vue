@@ -780,52 +780,6 @@
     </section>
     <!--News One End-->
 
-    <!--Brand One Start-->
-    <section class="brand-one">
-      <div class="container">
-        <Swiper
-          :modules="[Autoplay]"
-          :slides-per-view="5"
-          :space-between="100"
-          :loop="true"
-          :autoplay="{ delay: 5000 }"
-          :breakpoints="{
-            0: {
-              slidesPerView: 2,
-              spaceBetween: 30,
-            },
-            375: {
-              slidesPerView: 2,
-              spaceBetween: 30,
-            },
-            575: {
-              slidesPerView: 3,
-              spaceBetween: 30,
-            },
-            767: {
-              slidesPerView: 4,
-              spaceBetween: 50,
-            },
-            991: {
-              slidesPerView: 5,
-              spaceBetween: 50,
-            },
-            1199: {
-              slidesPerView: 6,
-              spaceBetween: 100,
-            },
-          }"
-          class="brand-one__carousel"
-        >
-          <SwiperSlide v-for="(brand, index) in brands" :key="index">
-            <div class="brand-one__single">
-              <img :src="brand.image" :alt="brand.name" />
-            </div>
-          </SwiperSlide>
-        </Swiper>
-      </div>
-    </section>
-    <!--Brand One End-->
   </div>
 </template>
 
@@ -1023,48 +977,7 @@ const brandSwiperOptions = {
 };
 
 // Ajout des marques
-const brands = ref([
-  {
-    name: "Brasimba",
-    image: "/assets/images/brand/brasimba.png",
-  },
-  {
-    name: "Easter",
-    image: "/assets/images/brand/easter.png",
-  },
-  {
-    name: "European Union",
-    image: "/assets/images/brand/europeanunion.png",
-  },
-  {
-    name: "Institut Français",
-    image: "/assets/images/brand/instituufrancais.png",
-  },
-  {
-    name: "Jane Goodall",
-    image: "/assets/images/brand/janegoodall.png",
-  },
-  {
-    name: "OIM",
-    image: "/assets/images/brand/oim.png",
-  },
-  {
-    name: "SGML",
-    image: "/assets/images/brand/sgml.png",
-  },
-  {
-    name: "Skyborn",
-    image: "/assets/images/brand/skyborn.png",
-  },
-  {
-    name: "Tearfund",
-    image: "/assets/images/brand/tearfund.png",
-  },
-  {
-    name: "TMK",
-    image: "/assets/images/brand/tmk.png",
-  },
-]);
+
 </script>
 
 <style scoped>
@@ -1392,40 +1305,7 @@ const brands = ref([
   }
 }
 
-/* Styles pour le carousel des marques */
-.brand-one__carousel {
-  padding: 20px 0;
-}
 
-.brand-one__single {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100px;
-  transition: all 0.3s ease;
-}
-
-.brand-one__single img {
-  max-width: 100%;
-  max-height: 80px;
-  object-fit: contain;
-  opacity: 0.7;
-  filter: grayscale(0%);
-
-  transition: all 0.3s ease;
-}
-
-.brand-one__single:hover img {
-  opacity: 1;
-}
-
-/* Ajustements pour Swiper */
-.swiper-slide {
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 /* Styles pour le carrousel des éthiques */
 .ethics-swiper {

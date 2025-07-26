@@ -1,1 +1,32 @@
+User-agent: *
+Allow: /
 
+# Sitemap
+Sitemap: https://latlongcongo.com/sitemap.xml
+
+# Crawl-delay pour éviter de surcharger le serveur
+Crawl-delay: 1
+
+# Bloquer les fichiers sensibles
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_nuxt/
+Disallow: /server/
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /favicon.ico
+
+# Permettre les ressources importantes
+Allow: /assets/
+Allow: /images/
+Allow: /docs/
+
+# User-agent spécifique pour Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0.5
+
+# User-agent spécifique pour Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0.5

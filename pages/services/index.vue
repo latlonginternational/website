@@ -8,10 +8,14 @@
       ></div>
       <div class="container">
         <div class="page-header__inner">
-          <h2>{{ t('services.pageHeader.title') }}</h2>
+          <h2>{{ t("services.pageHeader.title") }}</h2>
           <ul class="thm-breadcrumb list-unstyled">
-            <li><a href="/">{{ t('services.pageHeader.breadcrumb.home') }}</a></li>
-            <li class="active">{{ t('services.pageHeader.breadcrumb.current') }}</li>
+            <li>
+              <a href="/">{{ t("services.pageHeader.breadcrumb.home") }}</a>
+            </li>
+            <li class="active">
+              {{ t("services.pageHeader.breadcrumb.current") }}
+            </li>
           </ul>
         </div>
       </div>
@@ -32,7 +36,11 @@
             <div class="services-one__single">
               <div class="services-one__img-box">
                 <div class="services-one__img">
-                  <img :src="item.image" class="max-h-[250px] object-cover" :alt="t(`services.items.${item.id}.title`)" />
+                  <img
+                    :src="item.image"
+                    class="max-h-[250px] object-cover"
+                    :alt="t(`services.items.${item.id}.title`)"
+                  />
                 </div>
                 <div class="services-one__icon">
                   <span :class="item.icon"></span>
@@ -40,7 +48,9 @@
               </div>
               <div class="services-one__content">
                 <h3 class="services-one__title">
-                  <a :href="item.link">{{ t(`services.items.${item.id}.title`) }}</a>
+                  <a :href="item.link">{{
+                    t(`services.items.${item.id}.title`)
+                  }}</a>
                 </h3>
                 <p class="services-one__text">
                   {{ t(`services.items.${item.id}.description`) }}
@@ -60,44 +70,45 @@
       </div>
     </section>
     <!--Services Page End-->
+
   </div>
 </template>
 
 <script setup>
-import { useI18n } from 'vue-i18n'
+import { useI18n } from "vue-i18n";
 
-const { t } = useI18n()
+const { t } = useI18n();
 
 const services_data = [
   {
     id: "protection",
     image: "/assets/images/services/serv.jpg",
     icon: "icon-strategy",
-    link: "/services/protection"
+    link: "/services/protection",
   },
   {
     id: "technology",
     image: "/assets/images/services/tech.png",
     icon: "icon-mobile-analytics",
-    link: "/services/technology"
+    link: "/services/technology",
   },
   {
     id: "consultancy",
     image: "/assets/images/services/consultance-1.png",
     icon: "icon-consultant",
-    link: "/services/consultancy"
+    link: "/services/consultancy",
   },
   {
     id: "training",
     image: "/assets/images/services/formation.jpeg",
     icon: "icon-creative",
-    link: "/services/training"
+    link: "/services/training",
   },
   {
     id: "others",
     image: "/assets/images/services/other.jpg",
     icon: "icon-analysis",
-    link: "/services/others-security-services"
-  }
+    link: "/services/others-security-services",
+  },
 ];
 </script>
