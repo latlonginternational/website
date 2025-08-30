@@ -147,9 +147,9 @@ export default defineNuxtConfig({
 				{ property: "og:type", content: "website" },
 				{ property: "og:title", content: "Latlong International - Sécurité et Protection en RDC" },
 				{ property: "og:description", content: "Votre partenaire de confiance pour la sécurité et la protection en République Démocratique du Congo. Services de protection, technologie, consultance et formation depuis 2012." },
-				{ property: "og:url", content: "https://latlong.witoxr.app/" },
+				{ property: "og:url", content: "https://www.latlonginternational.com/" },
 				{ property: "og:site_name", content: "Latlong International" },
-				{ property: "og:image", content: "https://latlong.witoxr.app//cover.png" },
+				{ property: "og:image", content: "https://www.latlonginternational.com/cover.png" },
 				{ property: "og:image:width", content: "1200" },
 				{ property: "og:image:height", content: "630" },
 				{ property: "og:image:alt", content: "Latlong International - Services de sécurité en RDC" },
@@ -161,7 +161,7 @@ export default defineNuxtConfig({
 				{ name: "twitter:creator", content: "@latlongcongo" },
 				{ name: "twitter:title", content: "Latlong International - Sécurité et Protection en RDC" },
 				{ name: "twitter:description", content: "Votre partenaire de confiance pour la sécurité et la protection en République Démocratique du Congo." },
-				{ name: "twitter:image", content: "https://latlong.witoxr.app//cover.png" },
+				{ name: "twitter:image", content: "https://www.latlonginternational.com/cover.png" },
 				{ name: "twitter:image:alt", content: "Latlong International - Services de sécurité en RDC" },
 				
 				// Additional SEO meta tags
@@ -176,7 +176,7 @@ export default defineNuxtConfig({
 			],
 			link: [
 				// Canonical URL
-				{ rel: "canonical", href: "https://latlong.witoxr.app/" },
+				{ rel: "canonical", href: "https://www.latlonginternational.com/" },
 				// Favicon and manifest links
 				{
 					rel: "icon",
@@ -266,8 +266,8 @@ export default defineNuxtConfig({
 						"@context": "https://schema.org",
 						"@type": "Organization",
 						"name": "Latlong International",
-						"url": "https://latlong.witoxr.app/",
-						"logo": "https://latlong.witoxr.app//logo-dark.png",
+						"url": "https://www.latlonginternational.com/",
+						"logo": "https://www.latlonginternational.com//logo-dark.png",
 						"description": "Services de sécurité et de protection en République Démocratique du Congo",
 						"foundingDate": "2012",
 						"address": {

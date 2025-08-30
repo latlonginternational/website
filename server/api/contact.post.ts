@@ -109,7 +109,7 @@ export default defineEventHandler(async (event) => {
             <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee; text-align: center;">
               <p style="color: #666; font-size: 12px; margin: 0;">
                 Ce message a été envoyé depuis le formulaire de contact de Latlong International<br>
-                <a href="https://latlong.witoxr.app/" style="color: #00AEEF; text-decoration: none;">https://latlong.witoxr.app/</a>
+                <a href="https://www.latlonginternational.com/" style="color: #00AEEF; text-decoration: none;">https://www.latlonginternational.com/</a>
               </p>
             </div>
           </div>
