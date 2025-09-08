@@ -4,7 +4,7 @@ export default defineNuxtConfig({
 	compatibilityDate: "2024-11-01",
 	devtools: { enabled: true },
 	css: ["~/public/assets/css/main.css"],
-	modules: ["nuxt-mail", "@nuxtjs/i18n"],
+	modules: ["nuxt-mail", "@nuxtjs/i18n", "nuxt-simple-sitemap"],
 
 	i18n: {
 		strategy: "no_prefix",
@@ -34,6 +34,7 @@ export default defineNuxtConfig({
 		langDir: "locales/",
 		vueI18n: "./i18n.config.ts"
 	},
+
 
 	// Configuration pour éviter la sérialisation des fonctions
 	experimental: {
