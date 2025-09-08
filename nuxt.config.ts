@@ -209,27 +209,16 @@ export default defineNuxtConfig({
 					rel: "stylesheet",
 					href: "https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
 				},
-				// CSS stylesheets
+				// CSS stylesheets (only used vendors)
 				{ rel: "stylesheet", href: "/assets/vendors/bootstrap/css/bootstrap.min.css" },
 				{ rel: "stylesheet", href: "/assets/vendors/animate/animate.min.css" },
 				{ rel: "stylesheet", href: "/assets/vendors/animate/custom-animate.css" },
 				{ rel: "stylesheet", href: "/assets/vendors/fontawesome/css/all.min.css" },
 				{ rel: "stylesheet", href: "/assets/vendors/jarallax/jarallax.css" },
-				{ rel: "stylesheet", href: "/assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" },
-				{ rel: "stylesheet", href: "/assets/vendors/nouislider/nouislider.min.css" },
-				{ rel: "stylesheet", href: "/assets/vendors/nouislider/nouislider.pips.css" },
 				{ rel: "stylesheet", href: "/assets/vendors/odometer/odometer.min.css" },
 				{ rel: "stylesheet", href: "/assets/vendors/swiper/swiper.min.css" },
 				{ rel: "stylesheet", href: "/assets/vendors/conult-icons/style.css" },
-				{ rel: "stylesheet", href: "/assets/vendors/tiny-slider/tiny-slider.min.css" },
 				{ rel: "stylesheet", href: "/assets/vendors/reey-font/stylesheet.css" },
-				{ rel: "stylesheet", href: "/assets/vendors/owl-carousel/owl.carousel.min.css" },
-				{ rel: "stylesheet", href: "/assets/vendors/owl-carousel/owl.theme.default.min.css" },
-				{ rel: "stylesheet", href: "/assets/vendors/bxslider/jquery.bxslider.css" },
-				{ rel: "stylesheet", href: "/assets/vendors/bootstrap-select/css/bootstrap-select.min.css" },
-				{ rel: "stylesheet", href: "/assets/vendors/vegas/vegas.min.css" },
-				{ rel: "stylesheet", href: "/assets/vendors/jquery-ui/jquery-ui.css" },
-				{ rel: "stylesheet", href: "/assets/vendors/timepicker/timePicker.css" },
 				// Template styles
 				{ rel: "stylesheet", href: "/assets/css/conult.css" },
 				{ rel: "stylesheet", href: "/assets/css/conult-responsive.css" }
@@ -239,29 +228,20 @@ export default defineNuxtConfig({
 				{
 					children: "(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({\\'gtm.start\\': new Date().getTime(),event: \\'gtm.js\\'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!=\\'dataLayer\\'?\\'&l=\\'+l:\\'';j.async=true;j.src=\\'https://www.googletagmanager.com/gtm.js?id=\\'+i+dl;f.parentNode.insertBefore(j,f);})(window,document,\\'script\\',\\'dataLayer\\',\\'GTM-WMBNT9CL\\');"
 				},
+				// Google Analytics (gtag.js)
+				{ src: "https://www.googletagmanager.com/gtag/js?id=G-9VXFHBKQ85", async: true },
+				{
+					children: "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-9VXFHBKQ85');"
+				},
 				{ src: "/assets/vendors/jquery/jquery-3.6.0.min.js", defer: true },
 				{ src: "/assets/vendors/bootstrap/js/bootstrap.bundle.min.js", defer: true },
 				{ src: "/assets/vendors/jarallax/jarallax.min.js", defer: true },
-				{ src: "/assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js", defer: true },
 				{ src: "/assets/vendors/jquery-appear/jquery.appear.min.js", defer: true },
 				{ src: "/assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js", defer: true },
-				{ src: "/assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js", defer: true },
-				{ src: "/assets/vendors/jquery-validate/jquery.validate.min.js", defer: true },
-				{ src: "/assets/vendors/nouislider/nouislider.min.js", defer: true },
 				{ src: "/assets/vendors/odometer/odometer.min.js", defer: true },
 				{ src: "/assets/vendors/swiper/swiper.min.js", defer: true },
-				{ src: "/assets/vendors/tiny-slider/tiny-slider.min.js", defer: true },
-				{ src: "/assets/vendors/wnumb/wNumb.min.js", defer: true },
 				{ src: "/assets/vendors/wow/wow.js", defer: true },
-				{ src: "/assets/vendors/isotope/isotope.js", defer: true },
-				{ src: "/assets/vendors/countdown/countdown.min.js", defer: true },
-				{ src: "/assets/vendors/owl-carousel/owl.carousel.min.js", defer: true },
-				{ src: "/assets/vendors/bxslider/jquery.bxslider.min.js", defer: true },
-				{ src: "/assets/vendors/bootstrap-select/js/bootstrap-select.min.js", defer: true },
-				{ src: "/assets/vendors/vegas/vegas.min.js", defer: true },
-				{ src: "/assets/vendors/jquery-ui/jquery-ui.js", defer: true },
-				{ src: "/assets/vendors/timepicker/timePicker.js", defer: true },
-				{ src: "/assets/js/conult.js", defer: true }, // Script principal de votre template
+				{ src: "/assets/js/conult.js", defer: true }, // Script principal du template
 				
 				// Structured Data (JSON-LD)
 				{

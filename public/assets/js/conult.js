@@ -41,7 +41,10 @@
     $("#datepicker-inline").datepicker();
   }
 
-  $('input[name="time"]').ptTimeSelect();
+  // Safeguard for time picker plugin
+  if ($.fn && $.fn.ptTimeSelect && $('input[name="time"]').length) {
+    $('input[name="time"]').ptTimeSelect();
+  }
 
   if ($(".banner-bg-slide").length) {
     $(".banner-bg-slide").each(function () {
@@ -406,7 +409,7 @@
     });
   }
 
-  if ($(".video-popup").length) {
+  if ($(".video-popup").length && $.fn && $.fn.magnificPopup) {
     $(".video-popup").magnificPopup({
       type: "iframe",
       mainClass: "mfp-fade",
@@ -417,7 +420,7 @@
     });
   }
 
-  if ($(".img-popup").length) {
+  if ($(".img-popup").length && $.fn && $.fn.magnificPopup) {
     var groups = {};
     $(".img-popup").each(function () {
       var id = parseInt($(this).attr("data-group"), 10);
