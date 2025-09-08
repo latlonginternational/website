@@ -1,5 +1,6 @@
 <template>
   <div>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMBNT9CL" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="preloader">
       <img class="preloader__image" width="60" src="/assets/images/loader.png" alt="" />
     </div>

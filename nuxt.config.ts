@@ -63,7 +63,7 @@ export default defineNuxtConfig({
 					"Permissions-Policy": "camera=(), microphone=(), geolocation=()",
 					"X-DNS-Prefetch-Control": "on",
 					"Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
-					"Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https://www.google-analytics.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https: blob:; connect-src 'self' https://api.mapbox.com https://*.mapbox.com; frame-src 'self' https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; worker-src 'self' blob:; child-src 'self' blob:"
+					"Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https://www.google-analytics.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https: blob:; connect-src 'self' https://api.mapbox.com https://*.mapbox.com https://www.google-analytics.com https://www.googletagmanager.com https://stats.g.doubleclick.net; frame-src 'self' https://www.google.com https://www.googletagmanager.com; object-src 'none'; base-uri 'self'; form-action 'self'; worker-src 'self' blob:; child-src 'self' blob:"
 				}
 			},
 			"/sitemap.xml": { 
@@ -235,6 +235,10 @@ export default defineNuxtConfig({
 				{ rel: "stylesheet", href: "/assets/css/conult-responsive.css" }
 			],
 			script: [
+				// Google Tag Manager
+				{
+					children: "(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({\\'gtm.start\\': new Date().getTime(),event: \\'gtm.js\\'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!=\\'dataLayer\\'?\\'&l=\\'+l:\\'';j.async=true;j.src=\\'https://www.googletagmanager.com/gtm.js?id=\\'+i+dl;f.parentNode.insertBefore(j,f);})(window,document,\\'script\\',\\'dataLayer\\',\\'GTM-WMBNT9CL\\');"
+				},
 				{ src: "/assets/vendors/jquery/jquery-3.6.0.min.js", defer: true },
 				{ src: "/assets/vendors/bootstrap/js/bootstrap.bundle.min.js", defer: true },
 				{ src: "/assets/vendors/jarallax/jarallax.min.js", defer: true },
