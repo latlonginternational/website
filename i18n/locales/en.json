@@ -335,18 +335,21 @@
 			"items": {
 				"1": {
 					"text": "Latlong has transformed our security management. The team is proactive and always available to meet our specific needs.",
-					"author": "Christine Muhindo",
-					"position": "CEO - Amaliza Store"
+					"author": "Sumbi Komba Jackson",
+					"position": " HR/Admin. Manager - CTC",
+					"image": "/assets/images/testimonial/Sumbi.png"
 				},
 				"2": {
 					"text": "We have been working with Latlong for several years. Their professionalism and commitment are exceptional.",
-					"author": "Kevin Banza",
-					"position": "Client"
+					"author": "Maitaji Masumbuko Dieumerci",
+					"position": "Photographer & Graphic Designer",
+					"image": "/assets/images/testimonial/Maitaji.jpeg"
 				},
 				"3": {
 					"text": "Latlong has helped us secure our operations. We recommend their services to any organization seeking reliable security.",
-					"author": "Jessica Byamungu",
-					"position": "Director Habana Habi"
+					"author": "Sekombi Katondolo Jérémie",
+					"position": "Head of Mission - BRIDGEWAY",
+					"image": "/assets/images/testimonial/Sekombi.jpeg"
 				}
 			}
 		},
@@ -481,13 +484,24 @@
 				"4": {
 					"name": "Mack Mupita Henry",
 					"position": "Business Manager",
-					"image": "/assets/images/team/henry.png",
+					"image": "/assets/images/team/henry-2.jpeg",
 					"tel": "+243 993 400 082",
 					"email": {
 						"name": "henry",
 						"domain": "latlongcongo.com"
 					},
 					"linkedin": "https://www.linkedin.com/in/henry-mack-2a9651298/"
+				},
+				"5": {
+					"name": "Nicholas Mills",
+					"position": "Director of Operations",
+					"image": "/assets/images/team/Nicholas.jpeg",
+					"tel": "+243 834 382 595",
+					"email": {
+						"name": "nicholas.mills",
+						"domain": "latlongcongo.com"
+					},
+					"linkedin": "https://www.linkedin.com/in/millsey/"
 				}
 			}
 		},
@@ -1236,20 +1250,20 @@
 				"title": "Our ICoCA Commitment",
 				"intro": "Latlong International is proud to be a member of the International Code of Conduct Association (ICoCA), a multi-stakeholder initiative that promotes, governs, and oversees the implementation of the International Code of Conduct for Private Security Service Providers.",
 				"button": "Download",
-				 "sections": {
-        "1": {
-          "title": "Our commitments",
-          "description": "We provide continuous training for our agents on ICoCA standards, implement integrated due diligence procedures, ensure accessible and secure complaint mechanisms, conduct regular audits of our operations, and actively report any potential Code violations."
-        },
-        "2": {
-          "title": "For our clients",
-          "description": "Choosing an ICoCA-affiliated provider means benefiting from a high level of international compliance, ethical operational management, and enhanced transparency through robust reporting."
-        },
-        "3": {
-          "title": "Our ICoCA certificate",
-          "description": "Download the certificate (PDF). Issued on January 24, 2025 – Valid until January 31, 2026."
-        }
-      },
+				"sections": {
+					"1": {
+						"title": "Our commitments",
+						"description": "We provide continuous training for our agents on ICoCA standards, implement integrated due diligence procedures, ensure accessible and secure complaint mechanisms, conduct regular audits of our operations, and actively report any potential Code violations."
+					},
+					"2": {
+						"title": "For our clients",
+						"description": "Choosing an ICoCA-affiliated provider means benefiting from a high level of international compliance, ethical operational management, and enhanced transparency through robust reporting."
+					},
+					"3": {
+						"title": "Our ICoCA certificate",
+						"description": "Download the certificate (PDF). Issued on January 24, 2025 – Valid until January 31, 2026."
+					}
+				},
 				"author": {
 					"name": "Latlong International",
 					"description": "Our ICoCA membership reflects our commitment to excellence and ethics in the private security sector. We are determined to maintain and continuously improve our standards to meet the most stringent international requirements."

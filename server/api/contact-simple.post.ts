@@ -1,100 +1,100 @@
-import nodemailer from 'nodemailer'
+import nodemailer from "nodemailer";
 
 export default defineEventHandler(async (event) => {
-  console.log('=== API CONTACT SIMPLE APPELÉE ===')
-  
-  try {
-    const body = await readBody(event)
-    const { name, email, phone, subject, message } = body
-    console.log('Données reçues:', { name, email, phone, subject, message: message.substring(0, 50) + '...' })
+	console.log("=== API CONTACT SIMPLE APPELÉE ===");
 
-    // Validation des données
-    if (!name || !email || !phone || !subject || !message) {
-      throw createError({
-        statusCode: 400,
-        statusMessage: 'Tous les champs sont requis'
-      })
-    }
+	try {
+		const body = await readBody(event);
+		const { name, email, phone, subject, message } = body;
+		console.log("Données reçues:", { name, email, phone, subject, message: message.substring(0, 50) + "..." });
 
-    // Validation de l'email
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-    if (!emailRegex.test(email)) {
-      throw createError({
-        statusCode: 400,
-        statusMessage: 'Format d\'email invalide'
-      })
-    }
+		// Validation des données
+		if (!name || !email || !phone || !subject || !message) {
+			throw createError({
+				statusCode: 400,
+				statusMessage: "Tous les champs sont requis"
+			});
+		}
 
-               // Validation du téléphone (plus flexible pour les standards internationaux)
-           const phoneRegex = /^\+[0-9]{1,4}\s[0-9\s\-\(\)\.]{6,15}$/
-           if (!phoneRegex.test(phone)) {
-             throw createError({
-               statusCode: 400,
-               statusMessage: 'Format de téléphone invalide (ex: +243 123456789)'
-             })
-           }
+		// Validation de l'email
+		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+		if (!emailRegex.test(email)) {
+			throw createError({
+				statusCode: 400,
+				statusMessage: "Format d'email invalide"
+			});
+		}
 
-    // Vérifier la configuration SMTP
-    console.log('=== CONFIGURATION SMTP ===')
-    console.log('SMTP_HOST:', process.env.SMTP_HOST || 'NON DÉFINI')
-    console.log('SMTP_PORT:', process.env.SMTP_PORT || 'NON DÉFINI')
-    console.log('SMTP_USER:', process.env.SMTP_USER || 'NON DÉFINI')
-    console.log('SMTP_PASS:', process.env.SMTP_PASS ? `***${process.env.SMTP_PASS.substring(0, 3)}***` : 'NON DÉFINI')
-    
-    // Vérifier si toutes les variables sont définies
-    if (!process.env.SMTP_HOST || !process.env.SMTP_PORT || !process.env.SMTP_USER || !process.env.SMTP_PASS) {
-      throw createError({
-        statusCode: 500,
-        statusMessage: 'Configuration SMTP incomplète'
-      })
-    }
+		// Validation du téléphone (plus flexible pour les standards internationaux)
+		const phoneRegex = /^\+[0-9]{1,4}\s[0-9\s\-\(\)\.]{6,15}$/;
+		if (!phoneRegex.test(phone)) {
+			throw createError({
+				statusCode: 400,
+				statusMessage: "Format de téléphone invalide (ex: +243 810 041 500)"
+			});
+		}
 
-    // Créer le transporteur SMTP
-    console.log('=== CRÉATION TRANSPORTEUR SMTP ===')
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port: 587, // Port STARTTLS pour Titan.email
-      secure: false, // STARTTLS
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS
-      },
-      tls: {
-        rejectUnauthorized: false
-      },
-      connectionTimeout: 60000,
-      greetingTimeout: 30000,
-      socketTimeout: 60000,
-      debug: true,
-      logger: true
-    })
+		// Vérifier la configuration SMTP
+		console.log("=== CONFIGURATION SMTP ===");
+		console.log("SMTP_HOST:", process.env.SMTP_HOST || "NON DÉFINI");
+		console.log("SMTP_PORT:", process.env.SMTP_PORT || "NON DÉFINI");
+		console.log("SMTP_USER:", process.env.SMTP_USER || "NON DÉFINI");
+		console.log("SMTP_PASS:", process.env.SMTP_PASS ? `***${process.env.SMTP_PASS.substring(0, 3)}***` : "NON DÉFINI");
 
-    // Vérifier la connexion SMTP
-    console.log('=== VÉRIFICATION CONNEXION SMTP ===')
-    try {
-      await transporter.verify()
-      console.log('✅ Connexion SMTP réussie')
-    } catch (verifyError: any) {
-      console.log('❌ Échec de la connexion SMTP:', verifyError.message)
-      console.log('Détails de l\'erreur:', verifyError)
-      throw createError({
-        statusCode: 500,
-        statusMessage: 'Erreur de connexion SMTP: ' + verifyError.message
-      })
-    }
+		// Vérifier si toutes les variables sont définies
+		if (!process.env.SMTP_HOST || !process.env.SMTP_PORT || !process.env.SMTP_USER || !process.env.SMTP_PASS) {
+			throw createError({
+				statusCode: 500,
+				statusMessage: "Configuration SMTP incomplète"
+			});
+		}
 
-    // Envoyer l'email
-          console.log('=== ENVOI EMAIL ===')
-      console.log('De:', process.env.SMTP_USER)
-      console.log('À:', ['info@latlongcongo.com', 'vincent@wito-inc.com'])
-      console.log('Sujet:', `Message de contact: ${subject}`)
-    
-    await transporter.sendMail({
-      from: `"Latlong International" <latlong@wito-inc.com>`,
-      to: ['info@latlongcongo.com', 'vincent@wito-inc.com'],
-      replyTo: email, // Permet de répondre directement à l'expéditeur
-      subject: `Message de contact: ${subject}`,
-      html: `
+		// Créer le transporteur SMTP
+		console.log("=== CRÉATION TRANSPORTEUR SMTP ===");
+		const transporter = nodemailer.createTransport({
+			host: process.env.SMTP_HOST,
+			port: 587, // Port STARTTLS pour Titan.email
+			secure: false, // STARTTLS
+			auth: {
+				user: process.env.SMTP_USER,
+				pass: process.env.SMTP_PASS
+			},
+			tls: {
+				rejectUnauthorized: false
+			},
+			connectionTimeout: 60000,
+			greetingTimeout: 30000,
+			socketTimeout: 60000,
+			debug: true,
+			logger: true
+		});
+
+		// Vérifier la connexion SMTP
+		console.log("=== VÉRIFICATION CONNEXION SMTP ===");
+		try {
+			await transporter.verify();
+			console.log("✅ Connexion SMTP réussie");
+		} catch (verifyError: any) {
+			console.log("❌ Échec de la connexion SMTP:", verifyError.message);
+			console.log("Détails de l'erreur:", verifyError);
+			throw createError({
+				statusCode: 500,
+				statusMessage: "Erreur de connexion SMTP: " + verifyError.message
+			});
+		}
+
+		// Envoyer l'email
+		console.log("=== ENVOI EMAIL ===");
+		console.log("De:", process.env.SMTP_USER);
+		console.log("À:", ["info@latlongcongo.com", "vincent@wito-inc.com"]);
+		console.log("Sujet:", `Message de contact: ${subject}`);
+
+		await transporter.sendMail({
+			from: `"Latlong International" <latlong@wito-inc.com>`,
+			to: ["info@latlongcongo.com", "vincent@wito-inc.com"],
+			replyTo: email, // Permet de répondre directement à l'expéditeur
+			subject: `Message de contact: ${subject}`,
+			html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f9f9f9;">
           <div style="background-color: #00AEEF; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0;">
             <h1 style="margin: 0; font-size: 24px;">Nouveau message de contact</h1>
@@ -126,43 +126,42 @@ export default defineEventHandler(async (event) => {
           </div>
         </div>
       `
-    })
-    
-    console.log('✅ Email envoyé avec succès!')
-    
-    return {
-      success: true,
-      message: 'Message envoyé avec succès !'
-    }
-    
-  } catch (error: any) {
-    console.log('❌ ERREUR DANS L\'API:', error)
-    console.log('Type d\'erreur:', error.constructor.name)
-    console.log('Message d\'erreur:', error.message)
-    console.log('Code d\'erreur:', error.code)
-    
-    // Gestion des erreurs spécifiques
-    if (error?.message && error.message.includes('Missing credentials')) {
-      throw createError({
-        statusCode: 500,
-        statusMessage: 'Configuration email non disponible. Veuillez nous contacter directement.'
-      })
-    } else if (error?.message && error.message.includes('Greeting never received')) {
-      throw createError({
-        statusCode: 500,
-        statusMessage: 'Problème de connexion au serveur email. Veuillez réessayer plus tard.'
-      })
-    } else if (error?.message && error.message.includes('SMTP')) {
-      throw createError({
-        statusCode: 500,
-        statusMessage: 'Erreur de configuration email. Veuillez nous contacter directement.'
-      })
-    }
+		});
 
-    // Erreur générique
-    throw createError({
-      statusCode: 500,
-      statusMessage: 'Une erreur est survenue lors de l\'envoi du message. Veuillez réessayer.'
-    })
-  }
-}) 
+		console.log("✅ Email envoyé avec succès!");
+
+		return {
+			success: true,
+			message: "Message envoyé avec succès !"
+		};
+	} catch (error: any) {
+		console.log("❌ ERREUR DANS L'API:", error);
+		console.log("Type d'erreur:", error.constructor.name);
+		console.log("Message d'erreur:", error.message);
+		console.log("Code d'erreur:", error.code);
+
+		// Gestion des erreurs spécifiques
+		if (error?.message && error.message.includes("Missing credentials")) {
+			throw createError({
+				statusCode: 500,
+				statusMessage: "Configuration email non disponible. Veuillez nous contacter directement."
+			});
+		} else if (error?.message && error.message.includes("Greeting never received")) {
+			throw createError({
+				statusCode: 500,
+				statusMessage: "Problème de connexion au serveur email. Veuillez réessayer plus tard."
+			});
+		} else if (error?.message && error.message.includes("SMTP")) {
+			throw createError({
+				statusCode: 500,
+				statusMessage: "Erreur de configuration email. Veuillez nous contacter directement."
+			});
+		}
+
+		// Erreur générique
+		throw createError({
+			statusCode: 500,
+			statusMessage: "Une erreur est survenue lors de l'envoi du message. Veuillez réessayer."
+		});
+	}
+});

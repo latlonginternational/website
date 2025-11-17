@@ -98,8 +98,8 @@
 			"subtitle": "Toutes nos informations de contact",
 			"callUs": {
 				"label": "Appelez-nous",
-		"phone": "+243 810 041 500",
-		
+				"phone": "+243 810 041 500",
+
 				"phone2": "+243 993 400 082"
 			},
 			"email": {
@@ -285,7 +285,7 @@
 			},
 			"contact": {
 				"text": "Contactez-nous",
-				"phone": "+243 820 123 456",
+				"phone": "+243 810 041 500",
 				"phone2": "+243 993 400 082"
 			},
 			"button": "En savoir plus"
@@ -337,18 +337,21 @@
 			"items": {
 				"1": {
 					"text": "Latlong a transformé notre gestion de sécurité. L'équipe est proactive et toujours disponible pour répondre à nos besoins spécifiques.",
-					"author": "Christine Muhindo",
-					"position": "CEO - Amaliza Store"
+					"author": "Sumbi Komba Jackson",
+					"position": " HR/Admin. Manager - CTC",
+					"image": "/assets/images/testimonial/Sumbi.png"
 				},
 				"2": {
 					"text": "Nous travaillons avec Latlong depuis plusieurs années. Leur professionnalisme et leur engagement sont exceptionnels.",
-					"author": "Kevin Banza",
-					"position": "Client"
+					"author": "Maitaji Masumbuko Dieumerci",
+					"position": "Photographe & Designer Graphique",
+					"image": "/assets/images/testimonial/Maitaji.jpeg"
 				},
 				"3": {
 					"text": "Latlong nous a aidés à sécuriser nos opérations. Nous recommandons leurs services à toute organisation recherchant une sécurité fiable.",
-					"author": "Jessica Byamungu",
-					"position": "Directrice Habana Habi"
+					"author": "Sekombi Katondolo Jérémie",
+					"position": "Directeur de Mission - BRIDGEWAY",
+					"image": "/assets/images/testimonial/Sekombi.jpeg"
 				}
 			}
 		},
@@ -483,13 +486,24 @@
 				"4": {
 					"name": "Mack Mupita Henry",
 					"position": "Directeur Commercial",
-					"image": "/assets/images/team/henry.png",
+					"image": "/assets/images/team/henry-2.jpeg",
 					"tel": "+243 993 400 082",
 					"email": {
 						"name": "henry",
 						"domain": "latlongcongo.com"
 					},
 					"linkedin": "https://www.linkedin.com/in/henry-mack-2a9651298/"
+				},
+				"5": {
+					"name": "Nicholas Mills",
+					"position": "Directeur des opérations",
+					"image": "/assets/images/team/Nicholas.jpeg",
+					"tel": "+243 834 382 595",
+					"email": {
+						"name": "nicholas.mills",
+						"domain": "latlongcongo.com"
+					},
+					"linkedin": "https://www.linkedin.com/in/millsey/"
 				}
 			}
 		},
@@ -1240,19 +1254,19 @@
 				"button": "Télécharger",
 				"sections": {
 					"1": {
-          "title": "Nos engagements",
-          "description": "Nous assurons la formation continue de nos agents aux standards ICoCA, mettons en œuvre des procédures de diligence raisonnable, garantissons des mécanismes de plaintes accessibles et sécurisés, réalisons des audits réguliers, et signalons activement toute violation du Code."
-        },
-        "2": {
-          "title": "Pour nos clients",
-          "description": "Choisir un prestataire affilié à l’ICoCA, c’est bénéficier d’un haut niveau de conformité internationale, d’une gestion éthique des opérations, et d’une transparence accrue accompagnée d’un reporting rigoureux."
-        },
-        "3": {
-          "title": "Notre certificat ICoCA",
-          "description": "Télécharger le certificat (PDF). Émis le 24 janvier 2025 – Valide jusqu’au 31 janvier 2026."
-        }
-				  },
-				
+						"title": "Nos engagements",
+						"description": "Nous assurons la formation continue de nos agents aux standards ICoCA, mettons en œuvre des procédures de diligence raisonnable, garantissons des mécanismes de plaintes accessibles et sécurisés, réalisons des audits réguliers, et signalons activement toute violation du Code."
+					},
+					"2": {
+						"title": "Pour nos clients",
+						"description": "Choisir un prestataire affilié à l’ICoCA, c’est bénéficier d’un haut niveau de conformité internationale, d’une gestion éthique des opérations, et d’une transparence accrue accompagnée d’un reporting rigoureux."
+					},
+					"3": {
+						"title": "Notre certificat ICoCA",
+						"description": "Télécharger le certificat (PDF). Émis le 24 janvier 2025 – Valide jusqu’au 31 janvier 2026."
+					}
+				},
+
 				"author": {
 					"name": "Latlong International",
 					"description": "Notre adhésion à l'ICoCA reflète notre engagement envers l'excellence et l'éthique dans le secteur de la sécurité privée. Nous sommes déterminés à maintenir et à améliorer continuellement nos standards pour répondre aux exigences internationales les plus strictes."
