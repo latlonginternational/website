@@ -25,7 +25,7 @@ export default defineEventHandler(async (event) => {
 			});
 		}
 
-		// Validation du téléphone (plus flexible pour les standards internationaux)
+		// Validation du téléphone (plus flexible pour les standards internationaux) dd
 		const phoneRegex = /^\+[0-9]{1,4}\s[0-9\s\-\(\)\.]{6,15}$/;
 		if (!phoneRegex.test(phone)) {
 			throw createError({
